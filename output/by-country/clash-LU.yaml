@@ -4,13 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.18.9.83
+- name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
+  server: 188.42.145.180
   port: 443
   udp: true
   type: trojan
   password: humanity
-  sni: www.calmlunch.com
+  sni: www.volumeroot.com
   skip-cert-verify: false
   network: ws
   ws-opts:
@@ -20,12 +20,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01 - xiaohe
+  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaohe
 rules:
 - MATCH,PROXIES
