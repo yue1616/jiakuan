@@ -5,17 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
-  server: 103.190.178.195
+  server: 47.250.84.25
+  port: 443
+  udp: true
+  type: trojan
+  password: 5931134d1cde66bf83a54acdfebe7ab2
+  sni: 47.250.84.25
+  skip-cert-verify: true
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
+  server: 129.212.225.217
   port: 443
   udp: true
   type: vless
   uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
   tls: true
   servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /topic/htm?ed=2560fp=chrome
+    path: /cp/vod?ed=2560fp=chrome
     headers:
       Host: cdn8848.776676.xyz
 proxy-groups:
@@ -24,11 +32,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 马来西亚 (Malaysia) 01 - xiaohe
+  - 🇲🇾 马来西亚 (Malaysia) 02 - xiaohe
 rules:
 - MATCH,PROXIES
