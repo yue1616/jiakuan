@@ -4,30 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇶 IQ 01 - xiaoyu
-  server: 185.255.179.11
-  port: 9443
+- name: 🇧🇪 比利时 (Belgium) 01 - xiaoyu
+  server: 141.98.233.6
+  port: 443
   udp: true
   type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  uuid: b2593749-691c-428c-9481-14979cba3446
   tls: true
-  servername: hub-de-03.hanvpn.cc
+  servername: xi.tbv.ccwu.cc
   skip-cert-verify: false
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: de03-grpc-8e47a
+  network: ws
+  ws-opts:
+    path: /proxyip=us.xiabibi.cf
+    headers:
+      Host: xi.tbv.ccwu.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇶 IQ 01 - xiaoyu
+  - 🇧🇪 比利时 (Belgium) 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇶 IQ 01 - xiaoyu
+  - 🇧🇪 比利时 (Belgium) 01 - xiaoyu
 rules:
 - MATCH,PROXIES

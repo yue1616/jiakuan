@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 01 - xiaoyu",
       "server": "49.254.204.133",
       "server_port": 1774,
       "method": "aes-256-cfb",
@@ -13,7 +13,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaoyu",
       "server": "34.64.149.137",
       "server_port": 443,
       "uuid": "700a7a0e-3f27-406c-81d1-aa1abe411af8",
@@ -32,29 +32,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaohe",
-      "server": "3.39.4.109",
-      "server_port": 18967,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaoyu",
       "server": "3.36.93.74",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -65,8 +44,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaoyu",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaoyu",
       "server": "152.67.200.82",
       "server_port": 50160,
       "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
@@ -78,19 +78,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaohe",
-      "server": "vpn-kr-002.fastervpn.world",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-kr-002.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaoyu",
       "server": "152.70.237.123",
       "server_port": 2053,
       "password": "maintell",
@@ -101,29 +89,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaohe",
-      "server": "3.39.4.109",
-      "server_port": 13672,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - xiaoyu",
       "server": "152-69-231-175.liao.kdns.fr",
       "server_port": 50160,
       "password": "1beb216e3f60aea9555dae60d219a5ca",
@@ -135,7 +102,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaoyu",
       "server": "151.245.106.49",
       "server_port": 2053,
       "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -144,7 +111,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -154,8 +121,53 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - xiaoyu",
+      "server": "vpn-kr-002.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ9wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-kr-002.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - xiaoyu",
+      "server": "150-230-252-217.liao.kdns.fr",
+      "server_port": 50160,
+      "password": "9cfc9458e48c028ec03ff86ebc71c744",
+      "tls": {
+        "enabled": true,
+        "server_name": "150-230-252-217.liao.kdns.fr",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - xiaoyu",
+      "server": "3.39.4.109",
+      "server_port": 13672,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - xiaohe",
+      "tag": "🇰🇷 韩国 (South Korea) 12 - xiaoyu",
       "server": "154.90.62.70",
       "server_port": 56127,
       "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
@@ -166,52 +178,40 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 12 - xiaohe",
-      "server": "150-230-252-217.liao.kdns.fr",
-      "server_port": 50160,
-      "password": "9cfc9458e48c028ec03ff86ebc71c744",
-      "tls": {
-        "enabled": true,
-        "server_name": "127.0.0.1",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 03 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 04 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 05 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 06 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 07 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 08 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 09 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 10 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 11 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 12 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 02 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 03 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 04 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 05 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 06 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 07 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 08 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 09 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 10 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 11 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 12 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 02 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 03 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 04 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 05 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 06 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 07 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 08 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 09 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 10 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 11 - xiaohe",
-        "🇰🇷 韩国 (South Korea) 12 - xiaohe"
+        "🇰🇷 韩国 (South Korea) 01 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 02 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 03 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 04 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 05 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 06 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 07 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 08 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 09 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 10 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 11 - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 12 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

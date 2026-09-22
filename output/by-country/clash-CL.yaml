@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇱 智利 (Chile) 01 - xiaohe
+- name: 🇨🇱 智利 (Chile) 01 - xiaoyu
   server: 34.176.98.128
   port: 443
   udp: true
@@ -16,7 +16,7 @@ proxies:
     short-id: d7676b6a468a03b3
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇱 智利 (Chile) 02 - xiaohe
+- name: 🇨🇱 智利 (Chile) 02 - xiaoyu
   server: platform118.golnamakcert.top
   port: 80
   udp: true
@@ -32,14 +32,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇨🇱 智利 (Chile) 01 - xiaohe
-  - 🇨🇱 智利 (Chile) 02 - xiaohe
+  - 🇨🇱 智利 (Chile) 01 - xiaoyu
+  - 🇨🇱 智利 (Chile) 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇱 智利 (Chile) 01 - xiaohe
-  - 🇨🇱 智利 (Chile) 02 - xiaohe
+  - 🇨🇱 智利 (Chile) 01 - xiaoyu
+  - 🇨🇱 智利 (Chile) 02 - xiaoyu
 rules:
 - MATCH,PROXIES
