@@ -5,15 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: whatsapp.com
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
-  server: 85.204.107.170
+  server: 85.204.107.183
   port: 8443
   udp: true
   type: hysteria2
@@ -26,13 +18,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
-  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
-  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
 rules:
 - MATCH,PROXIES

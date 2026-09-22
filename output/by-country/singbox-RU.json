@@ -12,31 +12,12 @@
       "tls": {
         "enabled": true,
         "server_name": "hy.quattro-tech.ru",
-        "insecure": true
+        "insecure": false
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu",
-      "server": "46.8.200.91",
-      "server_port": 443,
-      "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf3.rumedia-cdn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "cf3.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -55,37 +36,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaoyu",
-      "server": "5.129.238.144",
-      "server_port": 8443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xinnusvpn.duckdns.org",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/wsnl",
-        "headers": {
-          "Host": "xinnusvpn.duckdns.org"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 04 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu"
       ]
     },
     {
@@ -93,9 +49,7 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 04 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

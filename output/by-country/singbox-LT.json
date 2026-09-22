@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu",
-      "server": "dnlmchnmzhmqwah.cfooov.xyz",
-      "server_port": 30198,
-      "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu",
+      "server": "84.32.215.94",
+      "server_port": 443,
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "lt.aether-runet.top",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "6dy7ISNOWfupnmbmQ2kMVGDBoD9NjNbrbsh8IltocSQ",
-          "short_id": "dcb9c81d1094"
+          "public_key": "vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk",
+          "short_id": "4fa44664f6a566d3"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu"
+        "🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

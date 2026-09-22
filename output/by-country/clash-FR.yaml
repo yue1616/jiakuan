@@ -5,13 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01 - xiaoyu
-  server: 54.36.174.140
+  server: 13.39.211.208
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 02 - xiaoyu
+  server: 51.44.119.98
+  port: 22223
+  udp: true
+  type: vless
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+- name: 🇫🇷 法国 (France) 03 - xiaoyu
+  server: 35.181.166.40
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: mrs2e9a
-- name: 🇫🇷 法国 (France) 02 - xiaoyu
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 04 - xiaoyu
   server: 34.155.10.226
   port: 443
   udp: true
@@ -23,8 +36,32 @@ proxies:
     short-id: ae682368818bd6c5
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 03 - xiaoyu
-  server: 62.210.91.10
+- name: 🇫🇷 法国 (France) 05 - xiaoyu
+  server: 62.210.124.146
+  port: 22000
+  udp: true
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 06 - xiaoyu
+  server: 62.210.147.2
+  port: 43115
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 07 - xiaoyu
+  server: 151.247.197.253
+  port: 36723
+  udp: true
+  type: hysteria2
+  password: Krab9Hyst2_Rk7pQ2xL
+  sni: 151.247.197.253
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 08 - xiaoyu
+  server: 62.210.91.2
   port: 23576
   udp: true
   type: vless
@@ -35,31 +72,46 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 04 - xiaoyu
-  server: vpn-fr-002.fastervpn.world
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 09 - xiaoyu
+  server: 151.247.193.190
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 05 - xiaoyu
-  server: 152.228.139.33
-  port: 51671
-  udp: true
   type: vless
-  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  reality-opts:
-    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
-    short-id: 2fed44d8c59f7e71
-  servername: www.sony.com
-  client-fingerprint: chrome
+  servername: assets-fra.pleiades.codes
+  skip-cert-verify: false
   network: grpc
   grpc-opts:
-    grpc-service-name: grpc_common3
-- name: 🇫🇷 法国 (France) 06 - xiaoyu
+    grpc-service-name: cdn.v1.AssetService
+- name: 🇫🇷 法国 (France) 10 - xiaoyu
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 11 - xiaoyu
+  server: 51.255.13.232
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: BqnqToih0PbU
+- name: 🇫🇷 法国 (France) 12 - xiaoyu
+  server: 172.64.152.23
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 13 - xiaoyu
   server: 152.228.139.33
   port: 35108
   udp: true
@@ -74,23 +126,52 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-common3
-- name: 🇫🇷 法国 (France) 07 - xiaoyu
-  server: 151.247.197.253
-  port: 36723
+- name: 🇫🇷 法国 (France) 14 - xiaoyu
+  server: 152.228.139.33
+  port: 51671
   udp: true
-  type: hysteria2
-  password: Krab9Hyst2_Rk7pQ2xL
-  sni: www.cloudflare.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 08 - xiaoyu
-  server: 51.255.13.232
-  port: 8388
+  type: vless
+  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
+  tls: true
+  reality-opts:
+    public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
+    short-id: 2fed44d8c59f7e71
+  servername: www.sony.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc_common3
+- name: 🇫🇷 法国 (France) 15 - xiaoyu
+  server: jgzt1997.qivfelo.ir
+  port: 5050
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: BqnqToih0PbU
-- name: 🇫🇷 法国 (France) 09 - xiaoyu
-  server: 62.210.91.2
+  password: DfokaAndibyl-wXjoVex_zDT78r-kwmX
+- name: 🇫🇷 法国 (France) 16 - xiaoyu
+  server: 185.255.179.166
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 17 - xiaoyu
+  server: 45.87.41.18
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 18 - xiaoyu
+  server: 62.210.91.10
   port: 23576
   udp: true
   type: vless
@@ -101,35 +182,34 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
+  client-fingerprint: ''
+- name: 🇫🇷 法国 (France) 19 - xiaoyu
+  server: 91.108.240.205
+  port: 443
+  udp: true
+  type: vless
+  uuid: c795bdd5-0460-42bd-927b-fbff154d2ab5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wK66Ve91QmwuclMGLWiN3ADL0i4-VwEK-_P4sDynogo
+    short-id: ce019009
+  servername: max.ru
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10 - xiaoyu
-  server: 151.247.193.190
+- name: 🇫🇷 法国 (France) 20 - xiaoyu
+  server: assets-frnl.pleiades.codes
   port: 443
   udp: true
   type: vless
   uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
   tls: true
-  servername: assets-fra.pleiades.codes
+  servername: assets-frnl.pleiades.codes
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇫🇷 法国 (France) 11 - xiaoyu
-  server: 199.232.246.236
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  tls: true
-  servername: global.fastly.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: teranko.global.ssl.fastly.net
-- name: 🇫🇷 法国 (France) 12 - xiaoyu
+    grpc-service-name: cdn.v1.MediaService
+- name: 🇫🇷 法国 (France) 21 - xiaoyu
   server: 188.114.96.19
   port: 80
   udp: true
@@ -142,20 +222,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 13 - xiaoyu
-  server: 57.131.21.102
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 69ac162b-1643-4acb-9f49-09d8b0fad609
-  tls: true
-  servername: milan.adaspoloandco.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /RoBeRt
-    headers:
-      Host: milan.adaspoloandco.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -174,6 +240,14 @@ proxy-groups:
   - 🇫🇷 法国 (France) 11 - xiaoyu
   - 🇫🇷 法国 (France) 12 - xiaoyu
   - 🇫🇷 法国 (France) 13 - xiaoyu
+  - 🇫🇷 法国 (France) 14 - xiaoyu
+  - 🇫🇷 法国 (France) 15 - xiaoyu
+  - 🇫🇷 法国 (France) 16 - xiaoyu
+  - 🇫🇷 法国 (France) 17 - xiaoyu
+  - 🇫🇷 法国 (France) 18 - xiaoyu
+  - 🇫🇷 法国 (France) 19 - xiaoyu
+  - 🇫🇷 法国 (France) 20 - xiaoyu
+  - 🇫🇷 法国 (France) 21 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -192,5 +266,13 @@ proxy-groups:
   - 🇫🇷 法国 (France) 11 - xiaoyu
   - 🇫🇷 法国 (France) 12 - xiaoyu
   - 🇫🇷 法国 (France) 13 - xiaoyu
+  - 🇫🇷 法国 (France) 14 - xiaoyu
+  - 🇫🇷 法国 (France) 15 - xiaoyu
+  - 🇫🇷 法国 (France) 16 - xiaoyu
+  - 🇫🇷 法国 (France) 17 - xiaoyu
+  - 🇫🇷 法国 (France) 18 - xiaoyu
+  - 🇫🇷 法国 (France) 19 - xiaoyu
+  - 🇫🇷 法国 (France) 20 - xiaoyu
+  - 🇫🇷 法国 (France) 21 - xiaoyu
 rules:
 - MATCH,PROXIES
