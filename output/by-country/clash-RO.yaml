@@ -5,24 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
-  server: 85.204.107.183
+  server: 85.204.107.187
   port: 8443
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
+  server: 46.28.67.55
+  port: 443
+  udp: true
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu
+  server: 38.180.35.145
+  port: 443
+  udp: true
+  type: trojan
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: bu2.freeguard.org
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu
 rules:
 - MATCH,PROXIES
