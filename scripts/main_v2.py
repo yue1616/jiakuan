@@ -113,7 +113,7 @@ SOURCE_URLS = [
     "https://bestcf.pages.dev/nirevil/ipv6.txt",
     "https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestCF/bestcfv4.txt",
     "https://raw.githubusercontent.com/ymyuuu/IPDB/refs/heads/main/BestCF/bestcfv6.txt",
-    "https://raw.githubusercontent.com/yuanxiawan/cfipv4db/refs/heads/main/cfip.txt
+    "https://raw.githubusercontent.com/yuanxiawan/cfipv4db/refs/heads/main/cfip.txt",
     "https://bestcf.pages.dev/cmliu/all.txt",
     "https://bestcf.pages.dev/cmliu2/all.txt",
     "https://raw.githubusercontent.com/cmliu/WorkerVless2sub/refs/heads/main/addressesapi.txt",
