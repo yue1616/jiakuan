@@ -6,61 +6,68 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu
   server: 195.238.126.20
+  port: 9078
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: JCJpbRbQZNw9XFZG
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
+  server: 195.238.126.20
   port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   server: 195.238.126.20
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
   server: 195.238.126.20
-  port: 9078
+  port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
+  password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   server: 195.238.126.20
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
   server: 195.238.126.20
   port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Lp27rqyJq72bZsqX
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
+  server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 (Lithuania) 10 - xiaoyu
   server: 84.32.215.5
   port: 443
   udp: true
@@ -72,7 +79,7 @@ proxies:
     public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
     short-id: 4fa44664f6a566d3
   servername: lt.aether-runet.top
-  client-fingerprint: chrome
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +94,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
+  - 🇱🇹 立陶宛 (Lithuania) 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -101,5 +109,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
+  - 🇱🇹 立陶宛 (Lithuania) 10 - xiaoyu
 rules:
 - MATCH,PROXIES

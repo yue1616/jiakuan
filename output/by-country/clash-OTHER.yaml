@@ -5,53 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaoyu
-  server: 172.67.161.144
-  port: 8443
+  server: ccs2g.pai50288.uk
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
   tls: true
-  servername: v2ray1.dozapp.xyz
+  servername: ccs2g.pai50288.uk
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /pai50288
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: ccs2g.pai50288.uk
 - name: 🌐 其他地区 (Other) 02 - xiaoyu
-  server: 172.67.161.144
-  port: 8443
+  server: 172.67.153.156
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
   tls: true
-  servername: v2ray1.dozapp.xyz
+  servername: ccs2g.pai50288.uk
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /pai50288
     headers:
-      Host: v2ray1.dozapp.xyz
-- name: 🌐 其他地区 (Other) 03 - xiaoyu
-  server: 172.67.161.144
-  port: 8443
-  udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: v2ray1.dozapp.xyz
+      Host: ccs2g.pai50288.uk
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,7 +41,6 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaoyu
   - 🌐 其他地区 (Other) 02 - xiaoyu
-  - 🌐 其他地区 (Other) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,6 +48,5 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaoyu
   - 🌐 其他地区 (Other) 02 - xiaoyu
-  - 🌐 其他地区 (Other) 03 - xiaoyu
 rules:
 - MATCH,PROXIES
