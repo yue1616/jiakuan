@@ -5,34 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
-  server: 162.159.24.131
-  port: 2052
+  server: 188.114.97.6
+  port: 2082
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: '/?ed=2560security=tls '
+    path: /
     headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  server: 118.167.206.152
-  port: 24215
+  server: 36.224.141.124
+  port: 50099
   udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  server: dsftrtshjytuertew.jiedddym.com
-  port: 46635
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  server: tyhinetak.jiedddym.com
+  port: 30096
   udp: true
   type: anytls
   password: 38128648-ee0c-4724-8893-d633d95f50e5
-  sni: dsftrtshjytuertew.jiedddym.com
+  sni: tyhinetak.jiedddym.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
   server: yydsbgwoqqnadlao.jiedddym.com
@@ -43,31 +39,13 @@ proxies:
   sni: yydsbgwoqqnadlao.jiedddym.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
-  server: sczznmbbbzgwlwzdhsql.jiedddym.com
-  port: 43142
+  server: dsftrtshjytuertew.jiedddym.com
+  port: 46635
   udp: true
-  type: vless
-  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: HGk0MQ7l4mWgJo1-7PctGx5pf88HECBpLRUtBSemkzY
-    short-id: b93f2026953855c5
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu
-  server: sczznmbbbzgwlwzdhsql.jiedddym.com
-  port: 62638
-  udp: true
-  type: vless
-  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PhXLfJ4s8EPauWaeRpzAjSuZibhmMiZFEMr8h8qU6iI
-    short-id: d1f38c0f15ed22
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  type: anytls
+  password: 38128648-ee0c-4724-8893-d633d95f50e5
+  sni: dsftrtshjytuertew.jiedddym.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,10 +53,9 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,9 +63,8 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

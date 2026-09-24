@@ -5,33 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01 - xiaoyu
-  server: 51.77.225.200
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-- name: 🇬🇧 英国 (United Kingdom) 02 - xiaoyu
   server: 143.110.161.156
   port: 17000
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 02 - xiaoyu
   server: 141.98.101.181
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 04 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaoyu
   server: 158.173.221.214
   port: 11001
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: c58d16e593d44f42
+- name: 🇬🇧 英国 (United Kingdom) 04 - xiaoyu
+  server: 51.77.225.200
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
 - name: 🇬🇧 英国 (United Kingdom) 05 - xiaoyu
   server: 66.90.104.42
   port: 2083
@@ -53,7 +53,7 @@ proxies:
     public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
     short-id: b19b017d6f453873
   servername: speed.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 07 - xiaoyu
   server: 146.70.61.37
   port: 8080
@@ -62,6 +62,19 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 08 - xiaoyu
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 09 - xiaoyu
   server: 35.234.143.34
   port: 443
   udp: true
@@ -72,21 +85,33 @@ proxies:
     public-key: bx1ylgNlSmg4i-abKzPcSHGMlIE6gdf66Ysjv25ZrE4
     short-id: 1b580f160d965b01
   servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇬🇧 英国 (United Kingdom) 09 - xiaoyu
-  server: tomaz1337shellbuy.vvzzkontaktezzvv.garden
-  port: 443
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 10 - xiaoyu
+  server: 194.150.166.228
+  port: 9443
   udp: true
   type: vless
-  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
-    short-id: 2e124af254a65e7c
-  servername: tomaz1337shellbuy.vvzzkontaktezzvv.garden
-  client-fingerprint: qq
-- name: 🇬🇧 英国 (United Kingdom) 10 - xiaoyu
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: ad20d2ba
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
+  server: 46.250.250.149
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b4caaf57-ad77-4948-a6f5-51b3513799bf
+  tls: true
+  reality-opts:
+    public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
+    short-id: 9922313fffed1c63
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
   server: 31.76.88.10
   port: 443
   udp: true
@@ -101,20 +126,46 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf5.rumedia-cdn.com
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
-  server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
-  port: 63793
+- name: 🇬🇧 英国 (United Kingdom) 13 - xiaoyu
+  server: tomaz1337shellbuy.vvzzkontaktezzvv.garden
+  port: 443
   udp: true
   type: vless
-  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
+  uuid: 4bdeee92-97e8-414d-bef6-ec1d5e2ab73b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1h6RALL3XxV1ycc0Fs-9UWoxscumAUYkakszZMOrz1Q
-    short-id: d3a6bfdaa8c732
-  servername: www.lamer.com.hk
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
+    public-key: s0ypPx0AL3k2KOk74tbm-aE-i7eIR_MYVzfLHZeLaUk
+    short-id: 2e124af254a65e7c
+  servername: tomaz1337shellbuy.vvzzkontaktezzvv.garden
+  client-fingerprint: qq
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
+  server: 194.150.166.230
+  port: 9443
+  udp: true
+  type: vless
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: ad20d2ba
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
+- name: 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
+  server: 194.150.166.108
+  port: 9443
+  udp: true
+  type: vless
+  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: ad20d2ba
+  servername: storage.yandexcloud.net
+  client-fingerprint: safari
+- name: 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
   server: clhkzzzdbgwxxndnlm.cfooov.xyz
   port: 64823
   udp: true
@@ -127,7 +178,20 @@ proxies:
     short-id: d3a6bfdaa8c732
   servername: www.lamer.com.hk
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 13 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 17 - xiaoyu
+  server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
+  port: 63793
+  udp: true
+  type: vless
+  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1h6RALL3XxV1ycc0Fs-9UWoxscumAUYkakszZMOrz1Q
+    short-id: d3a6bfdaa8c732
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 18 - xiaoyu
   server: sczznmbbbzgwlwzdhsql.jiedddym.com
   port: 40714
   udp: true
@@ -140,6 +204,27 @@ proxies:
     short-id: d3a6bfdaa8c732
   servername: www.lamer.com.hk
   client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
+  server: 193.163.203.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 11aabba0-5fd1-4f15-8068-74c1a466cefc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GCCZ1ZZjB_nj7yxqFi22bIIWWr_G6rnWUzDcssN_40o
+    short-id: b28db60d77c50b4f
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
+  server: 66.163.117.58
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -158,6 +243,13 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 13 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 17 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 18 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -176,5 +268,12 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 13 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 17 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 18 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
 rules:
 - MATCH,PROXIES

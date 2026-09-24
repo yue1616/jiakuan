@@ -15,25 +15,19 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
-  server: 85.204.107.181
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
-  server: 84.235.244.108
-  port: 22573
+  server: clhkzzzdbgwxxndnlm.cfooov.xyz
+  port: 45081
   udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
+    short-id: 461b0192ec23b6
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
   port: 48948
   udp: true
@@ -46,7 +40,7 @@ proxies:
     short-id: 461b0192ec23b6
   servername: www.lamer.com.hk
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   server: sczznmbbbzgwlwzdhsql.jiedddym.com
   port: 39652
   udp: true
@@ -59,6 +53,23 @@ proxies:
     short-id: 461b0192ec23b6
   servername: www.lamer.com.hk
   client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
+  server: 85.204.107.171
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +80,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,5 +91,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
 rules:
 - MATCH,PROXIES
