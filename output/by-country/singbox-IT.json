@@ -12,8 +12,15 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 02 - xiaoyu",
+      "server": "204.216.216.23",
+      "server_port": 10086,
+      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 03 - xiaoyu",
       "server": "57.131.48.45",
       "server_port": 8388,
       "method": "aes-256-gcm",
@@ -21,73 +28,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 03 - xiaoyu",
-      "server": "31.77.154.14",
-      "server_port": 8443,
-      "uuid": "75079a7f-75b5-418b-8a65-f7b2f438cd4a",
-      "tls": {
-        "enabled": true,
-        "server_name": "swscan.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3O__mdy-whzI07V-QEyR6GQnag1FNwtHijDxt2_jkDQ",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 04 - xiaoyu",
-      "server": "31.76.113.231",
+      "server": "31.76.113.108",
       "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "uuid": "fed5c436-f9aa-4a60-b25f-876052fdf578",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "italia.superbuba.top",
+        "server_name": "rome.spbculture.org",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
-          "short_id": "4fa44664f6a566d3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 05 - xiaoyu",
-      "server": "italia.superbuba.top",
-      "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "italia.superbuba.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
-          "short_id": "4fa44664f6a566d3"
+          "public_key": "EpCXTNjfOio49u5WHJDERuPmwc_e7HZQcS5aSOovo04",
+          "short_id": ""
         }
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 06 - xiaoyu",
+      "tag": "🇮🇹 意大利 (Italy) 05 - xiaoyu",
       "server": "91.201.65.122",
       "server_port": 9050,
       "method": "aes-256-cfb",
@@ -95,21 +57,43 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 07 - xiaoyu",
-      "server": "57.131.38.163",
-      "server_port": 2053,
-      "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
+      "tag": "🇮🇹 意大利 (Italy) 06 - xiaoyu",
+      "server": "31.76.113.212",
+      "server_port": 443,
+      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "italia.superbuba.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc",
-          "short_id": "5b8a942318178e7b"
+          "public_key": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
+          "short_id": "4fa44664f6a566d3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 07 - xiaoyu",
+      "server": "82.118.16.189",
+      "server_port": 443,
+      "uuid": "d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY",
+          "short_id": "37fbf155c7a9f3ff"
         }
       }
     },
@@ -135,45 +119,28 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 09 - xiaoyu",
-      "server": "91.201.65.122",
-      "server_port": 9070,
-      "method": "aes-256-cfb",
-      "password": "bf7v334KKDV3YDhH"
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 10 - xiaoyu",
-      "server": "31.76.113.212",
-      "server_port": 443,
-      "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇮🇹 意大利 (Italy) 09 - xiaoyu",
+      "server": "57.131.38.163",
+      "server_port": 2053,
+      "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
       "tls": {
         "enabled": true,
-        "server_name": "italia.superbuba.top",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw",
-          "short_id": "4fa44664f6a566d3"
+          "public_key": "Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc",
+          "short_id": "5b8a942318178e7b"
         }
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇹 意大利 (Italy) 11 - xiaoyu",
-      "server": "89.41.172.85",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 12 - xiaoyu",
+      "tag": "🇮🇹 意大利 (Italy) 10 - xiaoyu",
       "server": "204.216.216.23",
       "server_port": 1114,
       "uuid": "6ba2eac6-0ec9-44ca-a42b-a8e23aafb530",
@@ -183,7 +150,7 @@
         "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -194,10 +161,54 @@
     },
     {
       "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 11 - xiaoyu",
+      "server": "31.77.154.14",
+      "server_port": 8443,
+      "uuid": "75079a7f-75b5-418b-8a65-f7b2f438cd4a",
+      "tls": {
+        "enabled": true,
+        "server_name": "swscan.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3O__mdy-whzI07V-QEyR6GQnag1FNwtHijDxt2_jkDQ",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-tunnel"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 12 - xiaoyu",
+      "server": "milan.adaspoloandco.com",
+      "server_port": 8443,
+      "uuid": "69ac162b-1643-4acb-9f49-09d8b0fad609",
+      "tls": {
+        "enabled": true,
+        "server_name": "milan.adaspoloandco.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/RoBeRt",
+        "headers": {
+          "Host": "milan.adaspoloandco.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
       "tag": "🇮🇹 意大利 (Italy) 13 - xiaoyu",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
+      "server": "89.41.172.85",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "selector",

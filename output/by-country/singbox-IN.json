@@ -24,41 +24,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - xiaoyu",
-      "server": "148.113.5.44",
-      "server_port": 443,
-      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
-          "short_id": "221873918e0bb74d"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇮🇳 印度 (India) 03 - xiaoyu",
-      "server": "35.154.58.87",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn-in-001.fastervpn.world",
-        "insecure": true
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 04 - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 02 - xiaoyu",
       "server": "35.244.28.130",
       "server_port": 443,
       "password": "M7v%w11Se*",
@@ -69,8 +36,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 03 - xiaoyu",
+      "server": "148.113.5.44",
+      "server_port": 443,
+      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
+          "short_id": "221873918e0bb74d"
+        }
+      }
+    },
+    {
       "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 05 - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 04 - xiaoyu",
       "server": "34.131.228.210",
       "server_port": 443,
       "password": "M7v%w11Se*",
@@ -81,15 +69,24 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 06 - xiaoyu",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
+      "type": "hysteria2",
+      "tag": "🇮🇳 印度 (India) 05 - xiaoyu",
+      "server": "35.154.58.87",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-in-001.fastervpn.world",
+        "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 (India) 06 - xiaoyu",
+      "server": "139.84.166.47",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "selector",

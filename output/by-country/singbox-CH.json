@@ -4,16 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaoyu",
-      "server": "82.38.64.229",
-      "server_port": 8443,
-      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
-      "tls": {
-        "enabled": true,
-        "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": true
-      }
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
     },
     {
       "type": "vless",
@@ -27,7 +23,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -39,13 +35,13 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaoyu",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
+      "server": "82.38.64.229",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": false
       }
     },
     {
@@ -79,12 +75,27 @@
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
       "transport": {
         "type": "ws",
-        "path": "/vless-test"
+        "path": "/vless-test",
+        "headers": {
+          "Host": "131.123.34.145"
+        }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 06 - xiaoyu",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 07 - xiaoyu",
       "server": "152.67.75.161",
       "server_port": 443,
       "password": "3a702d4d1de4949005d8431220e040fb",
@@ -108,7 +119,8 @@
         "🇨🇭 瑞士 (Switzerland) 03 - xiaoyu",
         "🇨🇭 瑞士 (Switzerland) 04 - xiaoyu",
         "🇨🇭 瑞士 (Switzerland) 05 - xiaoyu",
-        "🇨🇭 瑞士 (Switzerland) 06 - xiaoyu"
+        "🇨🇭 瑞士 (Switzerland) 06 - xiaoyu",
+        "🇨🇭 瑞士 (Switzerland) 07 - xiaoyu"
       ]
     },
     {
@@ -120,7 +132,8 @@
         "🇨🇭 瑞士 (Switzerland) 03 - xiaoyu",
         "🇨🇭 瑞士 (Switzerland) 04 - xiaoyu",
         "🇨🇭 瑞士 (Switzerland) 05 - xiaoyu",
-        "🇨🇭 瑞士 (Switzerland) 06 - xiaoyu"
+        "🇨🇭 瑞士 (Switzerland) 06 - xiaoyu",
+        "🇨🇭 瑞士 (Switzerland) 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
