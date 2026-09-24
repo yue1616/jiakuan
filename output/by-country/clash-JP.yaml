@@ -5,20 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaoyu
-  server: 149.22.87.240
+  server: 3.112.209.209
   port: 443
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇯🇵 日本 (Japan) 02 - xiaoyu
-  server: 149.22.87.204
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 03 - xiaoyu
   server: 45.32.57.118
   port: 4433
   udp: true
@@ -26,33 +19,58 @@ proxies:
   uuid: 35b89832-0a7c-48dd-8d1c-a2891b522195
   alterId: 0
   cipher: auto
+- name: 🇯🇵 日本 (Japan) 03 - xiaoyu
+  server: 13.230.153.249
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 - name: 🇯🇵 日本 (Japan) 04 - xiaoyu
-  server: 54.95.40.17
+  server: 18.179.111.96
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇯🇵 日本 (Japan) 05 - xiaoyu
-  server: 137.220.221.179
+  server: 149.22.87.241
   port: 443
   udp: true
-  type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 06 - xiaoyu
-  server: 168.138.43.75
-  port: 80
+  server: 149.22.87.204
+  port: 443
   udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: jp01.a0a.xyz
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 07 - xiaoyu
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 08 - xiaoyu
+  server: open.w2m.ink
+  port: 443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.w2m.ink
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 09 - xiaoyu
+  server: iijjp.mggl.wang
+  port: 35791
+  udp: true
+  type: anytls
+  password: 9e98496a-0036-4cc6-8302-3929c29ba772
+  sni: www.apple.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10 - xiaoyu
   server: 138.3.208.26
   port: 50160
   udp: true
@@ -60,7 +78,7 @@ proxies:
   password: 184cdec28da5a09450803c8debcd2cc9
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 11 - xiaoyu
   server: jumpernode.online
   port: 443
   udp: true
@@ -72,23 +90,61 @@ proxies:
     public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
     short-id: 6d962e8d8a0dce
   servername: amazon.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 09 - xiaoyu
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 12 - xiaoyu
+  server: 103.75.118.228
+  port: 11452
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 13 - xiaoyu
+  server: 3.114.220.22
+  port: 10583
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 14 - xiaoyu
   server: 84.247.155.196
   port: 80
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 10 - xiaoyu
-  server: open.w2m.ink
+- name: 🇯🇵 日本 (Japan) 15 - xiaoyu
+  server: 84.247.155.196
   port: 443
   udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.w2m.ink
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 11 - xiaoyu
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 16 - xiaoyu
+  server: 13.231.19.51
+  port: 11690
+  udp: true
+  type: vless
+  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
+    short-id: 034885e346fd30
+  servername: www.tesla.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 17 - xiaoyu
   server: open.w2m.ink
   port: 5443
   udp: true
@@ -96,36 +152,68 @@ proxies:
   password: my_super_password_123
   sni: open.w2m.ink
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 12 - xiaoyu
-  server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
-  port: 21844
+- name: 🇯🇵 日本 (Japan) 18 - xiaoyu
+  server: 154.31.114.248
+  port: 50159
   udp: true
   type: vless
-  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
+  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 5y1oP72Hsd1syjBQD3qETBEaIwH6JqOKAyeYGkEUrXc
-    short-id: 9b1bc2a5f2414a
-  servername: addons.mozilla.org
+    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
+    short-id: 091e1c5db8451757
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 13 - xiaoyu
-  server: smdkyqrmfkcwdnlmyyds.jiedddym.com
-  port: 49113
+- name: 🇯🇵 日本 (Japan) 19 - xiaoyu
+  server: dog-jp.kunlun01dns.com
+  port: 21014
   udp: true
-  type: anytls
-  password: 38128648-ee0c-4724-8893-d633d95f50e5
-  sni: smdkyqrmfkcwdnlmyyds.jiedddym.com
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 20 - xiaoyu
+  server: 172.111.146.64
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 21 - xiaoyu
+  server: 3.114.220.22
+  port: 19645
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 22 - xiaoyu
+  server: 172.67.130.159
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
+  tls: true
+  servername: cdn-jp.skyvora.app
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 14 - xiaoyu
-  server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
-  port: 43789
-  udp: true
-  type: hysteria2
-  password: 38128648-ee0c-4724-8893-d633d95f50e5
-  sni: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 15 - xiaoyu
+  network: ws
+  ws-opts:
+    path: /vqyps6kf3
+    headers:
+      Host: cdn-jp.skyvora.app
+- name: 🇯🇵 日本 (Japan) 23 - xiaoyu
   server: 3.114.220.22
   port: 18007
   udp: true
@@ -137,9 +225,9 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 16 - xiaoyu
-  server: 162.159.254.3
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 24 - xiaoyu
+  server: 172.67.156.147
   port: 443
   udp: true
   type: vless
@@ -153,114 +241,14 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 17 - xiaoyu
-  server: bbqqnbgwkymzyhgsrd.jiedddym.com
-  port: 37188
-  udp: true
-  type: anytls
-  password: 38128648-ee0c-4724-8893-d633d95f50e5
-  sni: bbqqnbgwkymzyhgsrd.jiedddym.com
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 18 - xiaoyu
-  server: 154.31.114.248
-  port: 50159
-  udp: true
-  type: vless
-  uuid: d56624b2-35bb-468c-9b2a-e0b0df7230c1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: j4QXngGuJkUGwRj4XIrfHRohYYuEfnJlX4cvCE-WklA
-    short-id: 091e1c5db8451757
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 19 - xiaoyu
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 20 - xiaoyu
-  server: 3.114.220.22
-  port: 10583
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 21 - xiaoyu
-  server: 172.67.130.159
-  port: 2096
-  udp: true
-  type: vless
-  uuid: 36788cf4-fcb4-49c5-a563-5f888849b1cc
-  tls: true
-  servername: cdn-jp.skyvora.app
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vqyps6kf3
-    headers:
-      Host: cdn-jp.skyvora.app
-- name: 🇯🇵 日本 (Japan) 22 - xiaoyu
-  server: 13.231.19.51
-  port: 11690
-  udp: true
-  type: vless
-  uuid: e2b8b217-cffb-4d66-9b8b-eca6e4334032
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Bv3z0_uFRabB9C4CFpNfqepZUyeO4YTh1duJdMBNLkg
-    short-id: 034885e346fd30
-  servername: www.tesla.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 23 - xiaoyu
-  server: clhkzzzdbgwxxndnlm.cfooov.xyz
-  port: 50500
-  udp: true
-  type: vless
-  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5y1oP72Hsd1syjBQD3qETBEaIwH6JqOKAyeYGkEUrXc
-    short-id: 9b1bc2a5f2414a
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 24 - xiaoyu
-  server: 3.114.220.22
-  port: 19645
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇯🇵 日本 (Japan) 25 - xiaoyu
-  server: sczznmbbbzgwlwzdhsql.jiedddym.com
-  port: 65057
+  server: 168.110.60.104
+  port: 18112
   udp: true
-  type: vless
-  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5y1oP72Hsd1syjBQD3qETBEaIwH6JqOKAyeYGkEUrXc
-    short-id: 9b1bc2a5f2414a
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  type: vmess
+  uuid: ad45f8f6-0f0a-4cc4-b907-c4582407dc94
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,60 +6,24 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
-      "server": "188.114.97.6",
+      "server": "108.162.198.178",
       "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "zb1zi.s3nx.dyz.hh.vavava.kdns.fr"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
-      "server": "36.224.141.124",
+      "server": "r3mrcg001286ek2.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu",
-      "server": "tyhinetak.jiedddym.com",
-      "server_port": 30096,
-      "password": "38128648-ee0c-4724-8893-d633d95f50e5",
-      "tls": {
-        "enabled": true,
-        "server_name": "tyhinetak.jiedddym.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu",
-      "server": "yydsbgwoqqnadlao.jiedddym.com",
-      "server_port": 58823,
-      "password": "38128648-ee0c-4724-8893-d633d95f50e5",
-      "tls": {
-        "enabled": true,
-        "server_name": "yydsbgwoqqnadlao.jiedddym.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu",
-      "server": "dsftrtshjytuertew.jiedddym.com",
-      "server_port": 46635,
-      "password": "38128648-ee0c-4724-8893-d633d95f50e5",
-      "tls": {
-        "enabled": true,
-        "server_name": "dsftrtshjytuertew.jiedddym.com",
-        "insecure": true
-      }
     },
     {
       "type": "selector",
@@ -67,10 +31,7 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu"
       ]
     },
     {
@@ -78,10 +39,7 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

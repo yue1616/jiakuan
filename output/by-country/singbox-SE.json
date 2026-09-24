@@ -12,8 +12,45 @@
       "password": "amazonskr05"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
+      "server": "172.238.244.13",
+      "server_port": 17000,
+      "method": "aes-256-gcm",
+      "password": "pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
+      "server": "143.246.196.122",
+      "server_port": 443,
+      "uuid": "ac0c2945-b758-11f1-8181-54db13ea7d40",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.blocket.se",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
       "server": "143.246.194.60",
       "server_port": 8081,
       "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
@@ -23,12 +60,112 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaoyu",
+      "server": "143.246.195.98",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 07 - xiaoyu",
+      "server": "91.193.17.156",
+      "server_port": 9458,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 08 - xiaoyu",
+      "server": "se-node.rumedia-cdn.com",
+      "server_port": 25443,
+      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf2.rumedia-cdn.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 09 - xiaoyu",
+      "server": "79.141.174.147",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 10 - xiaoyu",
+      "server": "surstreming.vvzzkontaktezzvv.garden",
+      "server_port": 443,
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA",
+          "short_id": "fb442438e2223836"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 02 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 07 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 08 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 09 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 10 - xiaoyu"
       ]
     },
     {
@@ -36,7 +173,15 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 02 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 07 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 08 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 09 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 10 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

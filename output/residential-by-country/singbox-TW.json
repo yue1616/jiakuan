@@ -6,38 +6,24 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu",
-      "server": "36.224.141.124",
+      "server": "r3mrcg001286ek2.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
-      "server": "tyhinetak.jiedddym.com",
-      "server_port": 30096,
-      "password": "38128648-ee0c-4724-8893-d633d95f50e5",
-      "tls": {
-        "enabled": true,
-        "server_name": "tyhinetak.jiedddym.com",
-        "insecure": true
-      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,96 +5,75 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01 - xiaoyu
-  server: 199.232.78.101
-  port: 443
+  server: 206.189.52.4
+  port: 17000
   udp: true
-  type: trojan
-  password: MITIVpN
-  sni: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
+  type: ss
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 - name: 🇩🇪 德国 (Germany) 02 - xiaoyu
-  server: 104.21.16.123
-  port: 443
+  server: 209.46.102.22
+  port: 8388
   udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: 7x7o3vtq5z6ymu3hv1fh-op9blt.hya6losm6lznoxhm6w3mk.workers.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /tr/qL8YIeH28wNcXfNTPgLCwOhNFEr?ed=2560
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 1hhrqrokj3ag
 - name: 🇩🇪 德国 (Germany) 03 - xiaoyu
+  server: 213.202.208.199
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇩🇪 德国 (Germany) 04 - xiaoyu
   server: 185.226.172.8
   port: 8008
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 04 - xiaoyu
-  server: 216.106.187.60
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 - name: 🇩🇪 德国 (Germany) 05 - xiaoyu
-  server: 51.195.126.38
-  port: 8388
+  server: 2.58.81.221
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 06 - xiaoyu
+  server: 2.58.81.221
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kKEd0rBrd56Furjz
+- name: 🇩🇪 德国 (Germany) 07 - xiaoyu
+  server: 8.209.74.72
+  port: 20001
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: 2YdE4lFOid5a
-- name: 🇩🇪 德国 (Germany) 06 - xiaoyu
-  server: 212.80.7.129
-  port: 6215
-  udp: true
-  type: vless
-  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
-  tls: true
-  servername: cdn.astranet.ignorelist.com
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: api.v1.ApiService
-- name: 🇩🇪 德国 (Germany) 07 - xiaoyu
-  server: 163.8.195.241
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 56ba5d34-ef22-4ba6-8090-4188b807df54
-  network: ws
-  ws-opts:
-    path: /29c8fed7ca22
+  password: PWpjPo3tqhPN4yRZ
 - name: 🇩🇪 德国 (Germany) 08 - xiaoyu
-  server: 144.31.168.95
+  server: 31.77.161.15
   port: 443
   udp: true
   type: vless
-  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
-    short-id: 00bca5982f82d083
-  servername: eu-central.cendora.ru
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: nvidia.com
   client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 09 - xiaoyu
-  server: 159.69.103.251
-  port: 80
+  server: 178.105.126.242
+  port: 443
   udp: true
-  type: vless
-  uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms
-    short-id: 253126232f9bb9be
-  servername: www.yahoo.com
-  client-fingerprint: chrome
+  type: anytls
+  password: e70ec0f2ab60e8c22b316156bf9ac43fec98b45be6681401
+  sni: cn.bing.com
+  skip-cert-verify: true
 - name: 🇩🇪 德国 (Germany) 10 - xiaoyu
   server: 144.31.159.86
   port: 443
@@ -107,6 +86,77 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: safari
 - name: 🇩🇪 德国 (Germany) 11 - xiaoyu
+  server: 162.55.242.208
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 659ffdfa-47d2-47d7-af40-5afe0907eead
+  tls: true
+  reality-opts:
+    public-key: jeS6Zu-p1Gf6GtraIAbpgQoSeT26Xq3GqgqVxccbVhY
+    short-id: 4d14da19b19cfc8c
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 12 - xiaoyu
+  server: 212.80.7.129
+  port: 6215
+  udp: true
+  type: vless
+  uuid: 2f2ae482-5a3e-455e-aad6-4ac28a82f64f
+  tls: true
+  servername: cdn.astranet.ignorelist.com
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: api.v1.ApiService
+- name: 🇩🇪 德国 (Germany) 13 - xiaoyu
+  server: 2.26.51.75
+  port: 443
+  udp: true
+  type: vless
+  uuid: 57e2a48b-0cc2-4b60-aacd-b36358fcba96
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8q_xD5tfjZGDPsnq-3VqXWVV7-D03crExMBuL4xQNBM
+    short-id: d4f6a8c1b2e3f9aa
+  servername: 4pda.to
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 14 - xiaoyu
+  server: 64.188.79.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: 94006a20-6cd6-4751-a14d-c5a0bacb68bb
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg
+    short-id: 992e5a9a
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 15 - xiaoyu
+  server: 82.118.19.153
+  port: 443
+  udp: true
+  type: vless
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 16 - xiaoyu
+  server: dggg.wsone.icu
+  port: 443
+  udp: true
+  type: trojan
+  password: M7v%w11Se*
+  sni: dggg.wsone.icu
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 17 - xiaoyu
   server: 57.129.41.216
   port: 80
   udp: true
@@ -117,7 +167,16 @@ proxies:
     path: /vless/
     headers:
       Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 12 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 18 - xiaoyu
+  server: 82.24.203.20
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
+  network: ws
+  ws-opts:
+    path: /fd5ba98a3970
+- name: 🇩🇪 德国 (Germany) 19 - xiaoyu
   server: 146.103.43.8
   port: 9543
   udp: true
@@ -130,21 +189,7 @@ proxies:
     short-id: 123abcdf
   servername: storage.yandexcloud.net
   client-fingerprint: safari
-- name: 🇩🇪 德国 (Germany) 13 - xiaoyu
-  server: 176.123.161.222
-  port: 9892
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-  servername: dl.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇩🇪 德国 (Germany) 14 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 20 - xiaoyu
   server: de1.apexvpn.space
   port: 443
   udp: true
@@ -152,42 +197,110 @@ proxies:
   password: af60078b-e956-4752-8728-ce7c9ef630a5
   sni: de1.apexvpn.space
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 15 - xiaoyu
-  server: 82.24.203.20
-  port: 2087
+- name: 🇩🇪 德国 (Germany) 21 - xiaoyu
+  server: 159.69.103.251
+  port: 80
   udp: true
   type: vless
-  uuid: 5fcdc9b7-e70f-4a5c-85c3-e018ad818326
+  uuid: 1bbef2cd-2851-4f00-b37e-a2478a1e5a70
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0Ag8wyoyN-M84yS4cbZ04wtqawZCHAzfKFT1A1xBFms
+    short-id: 253126232f9bb9be
+  servername: www.yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 22 - xiaoyu
+  server: 51.195.126.38
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2YdE4lFOid5a
+- name: 🇩🇪 德国 (Germany) 23 - xiaoyu
+  server: 144.31.168.95
+  port: 443
+  udp: true
+  type: vless
+  uuid: 423b1d79-08c4-403f-9d5e-c541f791b55f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: b-Cm9hX-3UHsS1L_lnUB6AMjuKhlN1IDdBbZ506itjI
+    short-id: 00bca5982f82d083
+  servername: eu-central.cendora.ru
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 24 - xiaoyu
+  server: 82.39.171.12
+  port: 443
+  udp: true
+  type: vless
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 25 - xiaoyu
+  server: 172.67.130.159
+  port: 2096
+  udp: true
+  type: vless
+  uuid: 735b8344-0b95-464c-b687-1c5616138908
+  tls: true
+  servername: cdn-de.skyvora.app
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /fd5ba98a3970
-- name: 🇩🇪 德国 (Germany) 16 - xiaoyu
-  server: clhkzzzdbgwxxndnlm.cfooov.xyz
-  port: 17594
+    path: /3cagtz3
+    headers:
+      Host: cdn-de.skyvora.app
+- name: 🇩🇪 德国 (Germany) 26 - xiaoyu
+  server: de1.xiaoliyu.cyou
+  port: 4433
+  udp: true
+  type: hysteria2
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 27 - xiaoyu
+  server: 82.39.171.142
+  port: 443
   udp: true
   type: vless
-  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
+  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 9wkREVS6QxqFyds7LzwRsS546sEPYykf9IFQDoCzmjA
-    short-id: 383e976fcf298029
-  servername: www.lamer.com.hk
+    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
+    short-id: c39cc7310a
+  servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 17 - xiaoyu
-  server: sczznmbbbzgwlwzdhsql.jiedddym.com
-  port: 57877
+- name: 🇩🇪 德国 (Germany) 28 - xiaoyu
+  server: 45.32.157.84
+  port: 443
+  udp: true
+  type: trojan
+  password: Tg3RnK7Xp8B1
+  sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 29 - xiaoyu
+  server: 89.169.53.176
+  port: 4443
   udp: true
   type: vless
-  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 9wkREVS6QxqFyds7LzwRsS546sEPYykf9IFQDoCzmjA
-    short-id: 383e976fcf298029
-  servername: www.lamer.com.hk
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 18 - xiaoyu
+    public-key: YIyohkkCU5kw6J5iZYZkhILyDwlfftFPDTkbITlrAUw
+    short-id: df3aff719526dc5a
+  servername: de.wvpn.one
+  client-fingerprint: random
+- name: 🇩🇪 德国 (Germany) 30 - xiaoyu
   server: rubifen.adaspoloandco.com
   port: 443
   udp: true
@@ -200,8 +313,42 @@ proxies:
   network: ws
   ws-opts:
     path: /GOrbEh
-- name: 🇩🇪 德国 (Germany) 19 - xiaoyu
+- name: 🇩🇪 德国 (Germany) 31 - xiaoyu
+  server: 64.118.158.56
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8af93649-403b-46d8-9966-923d4c58402c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: XTarABsaaFbjYNk6lRKnUzGavHzeqMIP7B8dZGNCvkE
+    short-id: 5c6481cdd4
+  servername: buckeye-retail-website.amazon.com
+  client-fingerprint: ''
+- name: 🇩🇪 德国 (Germany) 32 - xiaoyu
   server: 216.106.187.60
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇩🇪 德国 (Germany) 33 - xiaoyu
+  server: 185.229.9.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 7o36V1H4H_34kTMpwCfJmDB1bbd21Rgbk2dM_dAonyM
+    short-id: 0bb3fbdc6cb178d4
+  servername: www.vk.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 34 - xiaoyu
+  server: kentspark.org
   port: 443
   udp: true
   type: vmess
@@ -240,6 +387,21 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 17 - xiaoyu
   - 🇩🇪 德国 (Germany) 18 - xiaoyu
   - 🇩🇪 德国 (Germany) 19 - xiaoyu
+  - 🇩🇪 德国 (Germany) 20 - xiaoyu
+  - 🇩🇪 德国 (Germany) 21 - xiaoyu
+  - 🇩🇪 德国 (Germany) 22 - xiaoyu
+  - 🇩🇪 德国 (Germany) 23 - xiaoyu
+  - 🇩🇪 德国 (Germany) 24 - xiaoyu
+  - 🇩🇪 德国 (Germany) 25 - xiaoyu
+  - 🇩🇪 德国 (Germany) 26 - xiaoyu
+  - 🇩🇪 德国 (Germany) 27 - xiaoyu
+  - 🇩🇪 德国 (Germany) 28 - xiaoyu
+  - 🇩🇪 德国 (Germany) 29 - xiaoyu
+  - 🇩🇪 德国 (Germany) 30 - xiaoyu
+  - 🇩🇪 德国 (Germany) 31 - xiaoyu
+  - 🇩🇪 德国 (Germany) 32 - xiaoyu
+  - 🇩🇪 德国 (Germany) 33 - xiaoyu
+  - 🇩🇪 德国 (Germany) 34 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -264,5 +426,20 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 17 - xiaoyu
   - 🇩🇪 德国 (Germany) 18 - xiaoyu
   - 🇩🇪 德国 (Germany) 19 - xiaoyu
+  - 🇩🇪 德国 (Germany) 20 - xiaoyu
+  - 🇩🇪 德国 (Germany) 21 - xiaoyu
+  - 🇩🇪 德国 (Germany) 22 - xiaoyu
+  - 🇩🇪 德国 (Germany) 23 - xiaoyu
+  - 🇩🇪 德国 (Germany) 24 - xiaoyu
+  - 🇩🇪 德国 (Germany) 25 - xiaoyu
+  - 🇩🇪 德国 (Germany) 26 - xiaoyu
+  - 🇩🇪 德国 (Germany) 27 - xiaoyu
+  - 🇩🇪 德国 (Germany) 28 - xiaoyu
+  - 🇩🇪 德国 (Germany) 29 - xiaoyu
+  - 🇩🇪 德国 (Germany) 30 - xiaoyu
+  - 🇩🇪 德国 (Germany) 31 - xiaoyu
+  - 🇩🇪 德国 (Germany) 32 - xiaoyu
+  - 🇩🇪 德国 (Germany) 33 - xiaoyu
+  - 🇩🇪 德国 (Germany) 34 - xiaoyu
 rules:
 - MATCH,PROXIES
