@@ -5,34 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaoyu
-  server: 199.232.249.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8abb648a-b004-42a4-aa05-49cdc2f94d4e
-  tls: true
-  servername: global.fastly.com
-  skip-cert-verify: false
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: sardach3.global.ssl.fastly.net
-- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaoyu
-  server: 179.255.191.40
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d544c858-b1ba-45b2-8868-8197daf2a6ee
-  tls: true
-  servername: switz.luxes.network
-  skip-cert-verify: false
-  client-fingerprint: safari
-  network: ws
-  ws-opts:
-    path: /assets
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaoyu
   server: 151.242.2.81
   port: 443
   udp: true
@@ -46,6 +18,14 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
+- name: 🇨🇭 瑞士 (Switzerland) 02 - xiaoyu
+  server: 77.110.104.238
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5413edfb-08d6-4fba-b51c-809c04feb127
+  sni: ch2-hy2.veilvpn.life
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaoyu
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01 - xiaoyu
   - 🇨🇭 瑞士 (Switzerland) 02 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 03 - xiaoyu
 rules:
 - MATCH,PROXIES
