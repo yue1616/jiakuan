@@ -1,0 +1,80 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu",
+      "server": "dsftrtshjytuertew.jiedddym.com",
+      "server_port": 46635,
+      "password": "38128648-ee0c-4724-8893-d633d95f50e5",
+      "tls": {
+        "enabled": true,
+        "server_name": "dsftrtshjytuertew.jiedddym.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu",
+      "server": "yydsbgwoqqnadlao.jiedddym.com",
+      "server_port": 58823,
+      "password": "38128648-ee0c-4724-8893-d633d95f50e5",
+      "tls": {
+        "enabled": true,
+        "server_name": "yydsbgwoqqnadlao.jiedddym.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu",
+      "server": "sczznmbbbzgwlwzdhsql.jiedddym.com",
+      "server_port": 43142,
+      "uuid": "38128648-ee0c-4724-8893-d633d95f50e5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HGk0MQ7l4mWgJo1-7PctGx5pf88HECBpLRUtBSemkzY",
+          "short_id": "b93f2026953855c5"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

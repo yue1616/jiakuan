@@ -7,21 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaoyu",
       "server": "217.30.10.44",
-      "server_port": 9041,
-      "method": "aes-256-cfb",
-      "password": "U6qnYRhfyDmn8sgn"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaoyu",
-      "server": "217.30.10.44",
       "server_port": 9099,
       "method": "aes-256-cfb",
       "password": "7heRqkPG3hg4UnRm"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaoyu",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaoyu",
       "server": "217.30.10.44",
       "server_port": 9071,
       "method": "aes-256-cfb",
@@ -29,11 +21,19 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaoyu",
+      "server": "217.30.10.44",
+      "server_port": 9063,
+      "method": "aes-256-cfb",
+      "password": "aQqJbtwFGcCCaeL3"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 04 - xiaoyu",
       "server": "217.30.10.44",
-      "server_port": 9062,
+      "server_port": 9041,
       "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
+      "password": "U6qnYRhfyDmn8sgn"
     },
     {
       "type": "vless",
@@ -46,7 +46,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -62,16 +62,16 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 06 - xiaoyu",
-      "server": "2.59.253.251",
+      "server": "144.31.131.38",
       "server_port": 443,
       "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nvidia.com",
+        "server_name": "prod.pl-node-01.security-sbrf.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -81,16 +81,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 07 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9063,
-      "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08 - xiaoyu",
+      "tag": "🇵🇱 波兰 (Poland) 07 - xiaoyu",
       "server": "144.31.171.108",
       "server_port": 8444,
       "uuid": "02bd8b5a-170b-4a79-8e68-9cec710272c7",
@@ -107,6 +99,18 @@
           "public_key": "ltHl15Wq549qC2JdAtesy-POs6Hwm_BbrlzuwDkWoUk",
           "short_id": "93f5b0d1a8ce6247"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇵🇱 波兰 (Poland) 08 - xiaoyu",
+      "server": "admin.wwwinternetvideo.click",
+      "server_port": 443,
+      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
+      "tls": {
+        "enabled": true,
+        "server_name": "admin.wwwinternetvideo.click",
+        "insecure": true
       }
     },
     {
@@ -135,33 +139,21 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 11 - xiaoyu",
-      "server": "144.31.5.64",
+      "server": "144.31.5.3",
       "server_port": 443,
       "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "pl6.moritech.net",
+        "server_name": "pl4.moritech.net",
         "insecure": false,
         "alpn": [
           "h2"
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 12 - xiaoyu",
-      "server": "admin.wwwinternetvideo.click",
-      "server_port": 443,
-      "password": "YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc",
-      "tls": {
-        "enabled": true,
-        "server_name": "admin.wwwinternetvideo.click",
-        "insecure": true
       }
     },
     {
@@ -179,8 +171,7 @@
         "🇵🇱 波兰 (Poland) 08 - xiaoyu",
         "🇵🇱 波兰 (Poland) 09 - xiaoyu",
         "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 11 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 12 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 11 - xiaoyu"
       ]
     },
     {
@@ -197,8 +188,7 @@
         "🇵🇱 波兰 (Poland) 08 - xiaoyu",
         "🇵🇱 波兰 (Poland) 09 - xiaoyu",
         "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 11 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 12 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 11 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

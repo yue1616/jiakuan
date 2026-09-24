@@ -15,7 +15,7 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
-  server: 85.204.107.171
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2
@@ -33,6 +33,32 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
+  port: 48948
+  udp: true
+  type: vless
+  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
+    short-id: 461b0192ec23b6
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
+  server: sczznmbbbzgwlwzdhsql.jiedddym.com
+  port: 39652
+  udp: true
+  type: vless
+  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
+    short-id: 461b0192ec23b6
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +67,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +77,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

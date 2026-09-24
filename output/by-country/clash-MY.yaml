@@ -1,0 +1,48 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇾 马来西亚 (Malaysia) 01 - xiaoyu
+  server: sczznmbbbzgwlwzdhsql.jiedddym.com
+  port: 31378
+  udp: true
+  type: vless
+  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zCNI8OUsvp6NKt52Z_93OoqegAjbVjzP2tHGXd3cQjM
+    short-id: 0888830f7006f1
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇲🇾 马来西亚 (Malaysia) 02 - xiaoyu
+  server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
+  port: 16967
+  udp: true
+  type: vless
+  uuid: 38128648-ee0c-4724-8893-d633d95f50e5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zCNI8OUsvp6NKt52Z_93OoqegAjbVjzP2tHGXd3cQjM
+    short-id: 0888830f7006f1
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaoyu
+  - 🇲🇾 马来西亚 (Malaysia) 02 - xiaoyu
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇾 马来西亚 (Malaysia) 01 - xiaoyu
+  - 🇲🇾 马来西亚 (Malaysia) 02 - xiaoyu
+rules:
+- MATCH,PROXIES

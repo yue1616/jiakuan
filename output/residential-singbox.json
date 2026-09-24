@@ -6,8 +6,8 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
-      "server": "172.64.42.85",
-      "server_port": 80,
+      "server": "162.159.24.131",
+      "server_port": 2052,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
@@ -18,18 +18,114 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
+      "server": "118.167.206.152",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu",
+      "server": "dsftrtshjytuertew.jiedddym.com",
+      "server_port": 46635,
+      "password": "38128648-ee0c-4724-8893-d633d95f50e5",
+      "tls": {
+        "enabled": true,
+        "server_name": "dsftrtshjytuertew.jiedddym.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu",
+      "server": "yydsbgwoqqnadlao.jiedddym.com",
+      "server_port": 58823,
+      "password": "38128648-ee0c-4724-8893-d633d95f50e5",
+      "tls": {
+        "enabled": true,
+        "server_name": "yydsbgwoqqnadlao.jiedddym.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu",
+      "server": "sczznmbbbzgwlwzdhsql.jiedddym.com",
+      "server_port": 43142,
+      "uuid": "38128648-ee0c-4724-8893-d633d95f50e5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HGk0MQ7l4mWgJo1-7PctGx5pf88HECBpLRUtBSemkzY",
+          "short_id": "b93f2026953855c5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu",
+      "server": "sczznmbbbzgwlwzdhsql.jiedddym.com",
+      "server_port": 62638,
+      "uuid": "38128648-ee0c-4724-8893-d633d95f50e5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PhXLfJ4s8EPauWaeRpzAjSuZibhmMiZFEMr8h8qU6iI",
+          "short_id": "d1f38c0f15ed22"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 06 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
