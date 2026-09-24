@@ -15,7 +15,7 @@
         "server_name": "store.steampowered.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -36,7 +36,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -57,12 +57,54 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
           "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
           "short_id": "db46e2946fc466fd"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 04 - xiaoyu",
+      "server": "platform118.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform118",
+        "headers": {
+          "Host": "platform118.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 05 - xiaoyu",
+      "server": "platform113.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113",
+        "headers": {
+          "Host": "platform113.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 06 - xiaoyu",
+      "server": "platform117.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform117",
+        "headers": {
+          "Host": "platform117.halalkhor.info"
         }
       }
     },
@@ -73,7 +115,10 @@
         "auto",
         "🇮🇱 以色列 (Israel) 01 - xiaoyu",
         "🇮🇱 以色列 (Israel) 02 - xiaoyu",
-        "🇮🇱 以色列 (Israel) 03 - xiaoyu"
+        "🇮🇱 以色列 (Israel) 03 - xiaoyu",
+        "🇮🇱 以色列 (Israel) 04 - xiaoyu",
+        "🇮🇱 以色列 (Israel) 05 - xiaoyu",
+        "🇮🇱 以色列 (Israel) 06 - xiaoyu"
       ]
     },
     {
@@ -82,7 +127,10 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - xiaoyu",
         "🇮🇱 以色列 (Israel) 02 - xiaoyu",
-        "🇮🇱 以色列 (Israel) 03 - xiaoyu"
+        "🇮🇱 以色列 (Israel) 03 - xiaoyu",
+        "🇮🇱 以色列 (Israel) 04 - xiaoyu",
+        "🇮🇱 以色列 (Israel) 05 - xiaoyu",
+        "🇮🇱 以色列 (Israel) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
