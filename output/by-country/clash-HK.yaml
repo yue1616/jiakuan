@@ -12,14 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: bdb313adf74c2ede
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
-  server: dog-hk.kunlun01dns.com
-  port: 21021
-  udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
   server: 89.223.95.77
   port: 22324
   udp: true
@@ -27,40 +19,15 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
-  server: 34.92.145.185
-  port: 443
-  udp: true
-  type: vless
-  uuid: 75d38591-267e-4d89-98bc-164f25b50880
-  tls: true
-  reality-opts:
-    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
-    short-id: 64b3f192fc0669e1
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
-  server: 119.246.1.143
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
+  server: 47.240.80.220
+  port: 2052
   udp: true
   type: trojan
-  password: BxceQaOe
-  sni: 119.246.1.143
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: vpn.12169.top
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
-  server: 47.239.6.251
-  port: 13779
-  udp: true
-  type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
   server: 141.11.238.17
   port: 443
   udp: true
@@ -73,50 +40,75 @@ proxies:
     short-id: 8eb5
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүрҹү
+  sni: css.rbxcdn.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
-  server: champion.xn--kivt58h.lol
-  port: 80
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
+  server: 34.92.145.185
+  port: 443
   udp: true
   type: vless
-  uuid: b5af4a3d-f525-43aa-9cc3-de1ba437e4ed
+  uuid: 75d38591-267e-4d89-98bc-164f25b50880
+  tls: true
+  reality-opts:
+    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
+    short-id: 64b3f192fc0669e1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
+  server: 47.243.65.243
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: lcv8v9l7OyamxxfZ.v.3dns.vip
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /ws-vmess
     headers:
-      Host: ak.mcdonaldshamburgergoodgoodgood.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
-  server: mz.hkychina.com
-  port: 8443
+      Host: lcv8v9l7OyamxxfZ.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
+  server: 47.76.44.32
+  port: 443
   udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaoyu
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -124,6 +116,89 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
+  server: 2.27.109.179
+  port: 45464
+  udp: true
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaoyu
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - xiaoyu
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - xiaoyu
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: nycqg19zkwacpm1b.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - xiaoyu
+  server: 119.246.1.143
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - xiaoyu
+  server: 47.239.6.251
+  port: 13779
+  udp: true
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - xiaoyu
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -142,6 +217,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 13 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 16 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 17 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 18 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -160,5 +240,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 13 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 16 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 17 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 18 - xiaoyu
 rules:
 - MATCH,PROXIES

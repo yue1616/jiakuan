@@ -4,45 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21041,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - xiaoyu",
-      "server": "zfd-hkv2.kunlun01dns.com",
-      "server_port": 16116,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu",
-      "server": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
-        "insecure": true
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
+      "server": "172.64.158.146",
+      "server_port": 8080,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - xiaoyu",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21019,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu",
-      "server": "hinet1.2yly.com",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
+      "server": "118.167.230.191",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -50,7 +27,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -60,20 +37,20 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu",
-      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu",
+      "server": "6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com",
       "server_port": 443,
-      "password": "9sK2mP8xQ7vL3nZ6",
+      "password": "c12f73f6-e8c7-11ed-9246-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
+        "server_name": "6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com",
         "insecure": true
       }
     },
     {
       "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaoyu",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu",
       "server": "6ivh.pnuqcnp.cn",
       "server_port": 443,
       "password": "9sK2mP8xQ7vL3nZ6",
@@ -84,19 +61,15 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇺🇸 美国 (United States) 08 (家宽) - xiaoyu",
-      "server": "155.117.19.17",
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu",
+      "server": "ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn",
       "server_port": 443,
-      "password": "5fa748137b6d822308eea4611f474ad5",
+      "password": "9sK2mP8xQ7vL3nZ6",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
+        "server_name": "ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "a39ca173b57ac7021b08bf3e3de9f1f6"
       }
     },
     {
@@ -104,28 +77,22 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - xiaoyu",
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaoyu",
-        "🇺🇸 美国 (United States) 08 (家宽) - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 02 (移动家宽) - xiaoyu",
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
         "🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 04 (移动家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 06 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽) - xiaoyu",
-        "🇺🇸 美国 (United States) 08 (家宽) - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

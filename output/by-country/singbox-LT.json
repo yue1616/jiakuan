@@ -7,25 +7,25 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu",
       "server": "195.238.126.20",
-      "server_port": 9078,
+      "server_port": 9011,
       "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
+      "password": "M3t2ZEQcMGRWBjRa"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu",
       "server": "195.238.126.20",
-      "server_port": 9002,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "b8KkNDjEd5QqFyRm"
+      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu",
       "server": "195.238.126.20",
-      "server_port": 9086,
+      "server_port": 9078,
       "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
+      "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "shadowsocks",
@@ -47,30 +47,38 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu",
       "server": "195.238.126.20",
-      "server_port": 9001,
+      "server_port": 9002,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu",
-      "server": "195.238.126.20",
-      "server_port": 9012,
-      "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu",
       "server": "195.238.126.20",
       "server_port": 9068,
       "method": "aes-256-cfb",
       "password": "mwgRg9hRq3b4Qnwb"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu",
-      "server": "84.32.215.5",
+      "server": "195.238.126.20",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 10 - xiaoyu",
+      "server": "84.32.215.94",
       "server_port": 443,
       "uuid": "c5694dc5-39fd-4a92-8430-3837baa522a3",
       "flow": "xtls-rprx-vision",
@@ -79,7 +87,7 @@
         "server_name": "lt.aether-runet.top",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -101,7 +109,8 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu",
         "🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu",
         "🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu",
-        "🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu"
+        "🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu",
+        "🇱🇹 立陶宛 (Lithuania) 10 - xiaoyu"
       ]
     },
     {
@@ -116,7 +125,8 @@
         "🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu",
         "🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu",
         "🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu",
-        "🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu"
+        "🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu",
+        "🇱🇹 立陶宛 (Lithuania) 10 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
