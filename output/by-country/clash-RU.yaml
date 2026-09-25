@@ -38,7 +38,7 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcdf
   servername: storage.yandexcloud.net
-  client-fingerprint: random
+  client-fingerprint: safari
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
   server: 91.240.86.70
   port: 22443
@@ -61,18 +61,12 @@ proxies:
   servername: amd.com
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  server: 138.124.121.233
-  port: 443
+  server: 94.249.187.46
+  port: 1080
   udp: true
-  type: vless
-  uuid: 8e826a69-63f6-0001-a67d-4a1958e8b2d2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: IXa3ylzS_jBOAsQy071tIQ
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   server: 45.12.75.242
   port: 26424
@@ -86,46 +80,19 @@ proxies:
   servername: ya.ru
   client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  server: fbsv6.guardora.pro
+  server: 46.8.200.91
   port: 443
   udp: true
   type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
+  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
   tls: true
-  servername: fbsv6.guardora.pro
+  servername: cf3.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws
+    path: /cdn/v3/live
     headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  server: dostavitos.stroymatdv.cc
-  port: 443
-  udp: true
-  type: vless
-  uuid: 365de9e9-ba29-4819-af2d-766f9638e3be
-  tls: true
-  servername: dostavitos.stroymatdv.cc
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /e9ws
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  server: 176.109.106.182
-  port: 9881
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+      Host: cf3.rumedia-cdn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,8 +106,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -154,7 +119,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
 rules:
 - MATCH,PROXIES

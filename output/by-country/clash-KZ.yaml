@@ -18,21 +18,6 @@ proxies:
   servername: kazartip.thewalkingded.life
   client-fingerprint: firefox
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
-  server: 176.109.104.195
-  port: 9882
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabbccdd
-  servername: dl.google.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
   server: 77.73.232.61
   port: 19747
   udp: true
@@ -43,9 +28,59 @@ proxies:
     public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
     short-id: '2001'
   servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu
+  server: 38.107.234.57
   port: 80
   udp: true
   type: vmess
@@ -57,7 +92,71 @@ proxies:
     path: /vmess/
     headers:
       Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 12 - xiaoyu
+  server: 83.222.23.81
+  port: 38065
+  udp: true
+  type: vless
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
+  tls: true
+  reality-opts:
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
+  servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 13 - xiaoyu
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -69,30 +168,41 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu
-  server: 178.236.16.98
-  port: 35728
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 14 - xiaoyu
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
   udp: true
-  type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
-  tls: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu
-  server: 83.222.23.81
-  port: 38065
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 15 - xiaoyu
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
   udp: true
-  type: vless
-  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
-  tls: true
-  reality-opts:
-    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
-    short-id: fa
-  servername: yahoo.com
-  client-fingerprint: edge
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 16 - xiaoyu
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,6 +215,15 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 12 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 13 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 14 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 15 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 16 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,5 +236,14 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 11 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 12 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 13 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 14 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 15 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 16 - xiaoyu
 rules:
 - MATCH,PROXIES

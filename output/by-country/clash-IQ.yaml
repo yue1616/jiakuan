@@ -16,32 +16,6 @@ proxies:
     public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
     short-id: 123abcde
   servername: storage.yandexcloud.net
-  client-fingerprint: safari
-- name: 🇮🇶 IQ 02 - xiaoyu
-  server: 193.56.135.137
-  port: 9543
-  udp: true
-  type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcde
-  servername: storage.yandexcloud.net
-  client-fingerprint: random
-- name: 🇮🇶 IQ 03 - xiaoyu
-  server: 193.56.135.233
-  port: 9543
-  udp: true
-  type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcde
-  servername: storage.yandexcloud.net
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -49,15 +23,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇶 IQ 01 - xiaoyu
-  - 🇮🇶 IQ 02 - xiaoyu
-  - 🇮🇶 IQ 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇶 IQ 01 - xiaoyu
-  - 🇮🇶 IQ 02 - xiaoyu
-  - 🇮🇶 IQ 03 - xiaoyu
 rules:
 - MATCH,PROXIES

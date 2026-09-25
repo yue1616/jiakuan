@@ -46,7 +46,7 @@
         "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -89,25 +89,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 06 - xiaoyu",
-      "server": "138.124.121.233",
-      "server_port": 443,
-      "uuid": "8e826a69-63f6-0001-a67d-4a1958e8b2d2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "amd.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
-          "short_id": "a696de84963656de"
-        }
-      }
+      "server": "94.249.187.46",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
     },
     {
       "type": "vless",
@@ -132,67 +119,20 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 08 - xiaoyu",
-      "server": "fbsv6.guardora.pro",
+      "server": "46.8.200.91",
       "server_port": 443,
-      "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+      "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
       "tls": {
         "enabled": true,
-        "server_name": "fbsv6.guardora.pro",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "fbsv6.guardora.pro"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09 - xiaoyu",
-      "server": "dostavitos.stroymatdv.cc",
-      "server_port": 443,
-      "uuid": "365de9e9-ba29-4819-af2d-766f9638e3be",
-      "tls": {
-        "enabled": true,
-        "server_name": "dostavitos.stroymatdv.cc",
+        "server_name": "cf3.rumedia-cdn.com",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/e9ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 10 - xiaoyu",
-      "server": "176.109.106.182",
-      "server_port": 9881,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Dfgu8Ey0M8Hz4gXGZAwQ3H9jLt2HByVsjAOTWiuKDB0",
-          "short_id": ""
+        "path": "/cdn/v3/live",
+        "headers": {
+          "Host": "cf3.rumedia-cdn.com"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -207,9 +147,7 @@
         "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 06 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 07 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 08 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 09 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 10 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 08 - xiaoyu"
       ]
     },
     {
@@ -223,9 +161,7 @@
         "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 06 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 07 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 08 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 09 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 10 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 08 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

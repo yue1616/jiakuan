@@ -5,15 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
-  server: 77.74.123.98
+  server: 77.74.123.99
   port: 8443
   udp: true
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
-  server: 85.204.107.187
+  server: 85.204.107.174
   port: 8443
   udp: true
   type: hysteria2
@@ -26,19 +26,9 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: vk.com
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaoyu
-  server: hy2.aspidnet.xyz
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaoyu
   server: 146.70.124.85
   port: 443
   udp: true
@@ -51,21 +41,15 @@ proxies:
     short-id: fe24f8a0a560056e
   servername: www.datadoghq.com
   client-fingerprint: edge
-- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaoyu
-  server: 46.28.67.55
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaoyu
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
-  type: vless
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaoyu
-  server: 193.163.203.253
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaoyu
+  server: bl3fk52.sysopnova.art
   port: 443
   udp: true
   type: vless
@@ -77,13 +61,19 @@ proxies:
     short-id: 5ee019e02e6ed99a
   servername: yandex.ru
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaoyu
-  server: 154.46.31.106
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaoyu
+  server: 46.28.67.55
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,7 +86,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 07 - xiaoyu
-  - 🇷🇴 罗马尼亚 (Romania) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,6 +98,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 05 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 06 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 07 - xiaoyu
-  - 🇷🇴 罗马尼亚 (Romania) 08 - xiaoyu
 rules:
 - MATCH,PROXIES
