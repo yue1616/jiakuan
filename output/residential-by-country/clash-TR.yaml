@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaoyu
-  server: free.sahanwickramasinghe.me
-  port: 80
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu
+  server: 206.1.98.72
+  port: 21811
   udp: true
-  type: vless
-  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
+  type: vmess
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇰 斯里兰卡 (Sri Lanka) 01 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

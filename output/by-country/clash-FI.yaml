@@ -5,45 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaoyu
-  server: 2.27.175.71
+  server: 83.219.97.26
   port: 443
   udp: true
   type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  tls: true
-  servername: assets-fi.pleiades.codes
-  skip-cert-verify: false
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
-  server: k2.cloud--vpn.site
-  port: 443
-  udp: true
-  type: vless
-  uuid: 64c2bc5c-7534-4359-9b1e-e1dce5a380cd
-  tls: true
-  servername: ssl.fastly.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: c12.com
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
-  server: 95.217.24.236
-  port: 2087
-  udp: true
-  type: vless
-  uuid: 10d85f65-f8d6-4504-b1e2-94649db1577a
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: KN8tFlpIwPgJGwUCG7Pp9c9c0juYKPvNIv4kFHwqbyk
-    short-id: a32cfb5deca913ad
-  servername: 95.217.24.236
-  client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -55,18 +28,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
-  server: 104.21.33.198
-  port: 80
-  udp: true
-  type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  network: ws
-  ws-opts:
-    path: /snob-ws
-    headers:
-      Host: fi.snobvpn.online
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
   server: 185.79.138.71
   port: 448
   udp: true
@@ -78,18 +40,56 @@ proxies:
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
-  server: est1313.ggisopi.su
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+  server: 212.193.18.183
+  port: 8446
+  udp: true
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  tls: true
+  reality-opts:
+    public-key: f6xhmL1XqUJ4zdkaDsh9GuEyXc0JXM2Dp5KwU8VHb0c
+    short-id: 7f8e9d0c1b2a
+  servername: maps.apple.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: snob-grpc
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
+  server: 31.129.97.137
   port: 443
   udp: true
   type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  uuid: 28ff173d-b7ad-42d1-84a3-bb2e233c9996
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
+    public-key: x9yfMdHRe9ZAJJUF9kZnDnO3Y7otoyFBCS9RoaIG3Es
+  servername: api-maps.yandex.ru
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+  server: 212.193.18.183
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  tls: true
+  reality-opts:
+    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
+    short-id: a1b2c3d4e5f6
+  servername: maps.apple.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
+  server: 172.67.149.27
+  port: 80
+  udp: true
+  type: vless
+  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
+  network: ws
+  ws-opts:
+    path: /snob-ws
+    headers:
+      Host: fi.snobvpn.online
 - name: 🇫🇮 芬兰 (Finland) 08 - xiaoyu
   server: 37.143.129.244
   port: 443
@@ -104,42 +104,14 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 09 - xiaoyu
-  server: 31.77.199.147
-  port: 4443
+  server: me6.movieseryalirani.ir
+  port: 57361
   udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: random
+  type: vmess
+  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
+  alterId: 0
+  cipher: auto
 - name: 🇫🇮 芬兰 (Finland) 10 - xiaoyu
-  server: fi.riotvpn.eu
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 440f3c08-7599-406e-8ba3-7dbc6324c5ed
-  tls: true
-  reality-opts:
-    public-key: sgFFdQvfeujBKh6g7N7klU_u0mKYlr800MFbko5FzUg
-    short-id: 844352756c1fabba
-  servername: api.vkimages.io
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-yandex
-- name: 🇫🇮 芬兰 (Finland) 11 - xiaoyu
-  server: iq5ny.pleiades.codes
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  sni: iq5ny.pleiades.codes
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 12 - xiaoyu
   server: me2.movieseryalirani.ir
   port: 443
   udp: true
@@ -150,26 +122,6 @@ proxies:
     public-key: CxRZ7oJWwR7okmOoqEEbVYCSfTaBlNA6ycf_UniyeEk
     short-id: 8d814a
   servername: matrix-client.matrix.org
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 13 - xiaoyu
-  server: me6.movieseryalirani.ir
-  port: 57361
-  udp: true
-  type: vmess
-  uuid: ed815caa-bff1-4419-8c61-1d108eabaf1f
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 14 - xiaoyu
-  server: 212.193.18.183
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 246b101b-4e4a-451f-8e9c-5e8d3b64b4ef
-  tls: true
-  reality-opts:
-    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
-    short-id: a1b2c3d4e5f6
-  servername: maps.apple.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -186,10 +138,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 10 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 11 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 12 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 13 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 14 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -205,9 +153,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 08 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 10 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 11 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 12 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 13 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 14 - xiaoyu
 rules:
 - MATCH,PROXIES

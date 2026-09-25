@@ -5,194 +5,78 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaoyu
-  server: 188.114.97.6
+  server: 172.67.169.213
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
+  type: vless
+  uuid: 7e26fd8f-d75a-473d-84ba-9f4e3f47d086
+  tls: true
+  servername: 2-m20.20260721-9dc5-4f76-ad18-12cd86bca954.ccwu.cc
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assignment
+    path: /8qMLgNapWf6SBxo8fhQlVPYO
+    headers:
+      Host: 2-m20.20260721-9dc5-4f76-ad18-12cd86bca954.ccwu.cc
 - name: 🌐 其他地区 (Other) 02 - xiaoyu
-  server: 188.114.97.6
+  server: 172.67.199.80
   port: 443
   udp: true
-  type: trojan
-  password: kHnTqWA+02w:qkJvu_!
-  sni: 8io8nc2-u48ab2sn3ne9vrv76z8.last-zenitsu.workers.dev
+  type: vless
+  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
+  tls: true
+  servername: 9-m13.18f6a5D8-1D18-4649-9D3d-97C46e3AA3ec.Kdns.fR
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ED3ZQPu7lqyeDGD58KabZ
+    headers:
+      Host: 9-M13.18f6A5D8-1d18-4649-9d3D-97C46E3aA3Ec.kdNS.fR
 - name: 🌐 其他地区 (Other) 03 - xiaoyu
-  server: 188.114.97.6
+  server: 172.67.199.80
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.volumeroot.com
+  type: vless
+  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
+  tls: true
+  servername: 9-m13.18f6a5d8-1d18-4649-9d3d-97c46e3aa3ec.kdns.fr
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
+    path: /ED3ZQPu7lqyeDGD58KabZ
+    headers:
+      Host: 9-m13.18f6a5d8-1d18-4649-9d3d-97c46e3aa3ec.kdns.fr
 - name: 🌐 其他地区 (Other) 04 - xiaoyu
-  server: 188.114.97.6
+  server: 172.67.199.80
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  type: vless
+  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
+  tls: true
+  servername: 7-m13.18f6a5d8-1d18-4649-9d3d-97c46e3aa3ec.kdns.fr
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
+    path: /ED3ZQPu7lqyeDGD58KabZ
+    headers:
+      Host: 7-m13.18f6a5d8-1d18-4649-9d3d-97c46e3aa3ec.kdns.fr
 - name: 🌐 其他地区 (Other) 05 - xiaoyu
-  server: 188.114.97.6
+  server: ccs2g.pai50288.uk
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: 188.114.97.6
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
   skip-cert-verify: false
-- name: 🌐 其他地区 (Other) 06 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: 188.114.97.6
-  skip-cert-verify: false
-- name: 🌐 其他地区 (Other) 07 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /
-- name: 🌐 其他地区 (Other) 08 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: //assignment
-- name: 🌐 其他地区 (Other) 09 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 10 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🌐 其他地区 (Other) 11 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 12 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🌐 其他地区 (Other) 13 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.ignitelimit.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: //assignment#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET?ed=512
-- name: 🌐 其他地区 (Other) 14 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: 188.114.97.6
-  skip-cert-verify: false
-- name: 🌐 其他地区 (Other) 15 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: bjsa2ygfitzjtho8ucze29xf2m2q9c.g3fiajpf0erm9k3x6ww-yegzl2.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/J6IJuAAWkqyiEt8UkeRnVdLlkLIGukLr?ed=2560
-- name: 🌐 其他地区 (Other) 16 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: www.ssl.global.digi.my.mitivpn.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ed=mitivpn
-- name: 🌐 其他地区 (Other) 17 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: global.fastly.com.mitivpn-a.site
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?mitivpn
-- name: 🌐 其他地区 (Other) 18 - xiaoyu
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: trojan
-  password: mitivpn
-  sni: mitivpn.sdde.ssdl.globdal.fastdly.net.mitivpn.site
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: https://chatgpt.com
+    path: /pai50288
+    headers:
+      Host: ccs2g.pai50288.uk
 proxy-groups:
 - name: PROXIES
   type: select
@@ -203,19 +87,6 @@ proxy-groups:
   - 🌐 其他地区 (Other) 03 - xiaoyu
   - 🌐 其他地区 (Other) 04 - xiaoyu
   - 🌐 其他地区 (Other) 05 - xiaoyu
-  - 🌐 其他地区 (Other) 06 - xiaoyu
-  - 🌐 其他地区 (Other) 07 - xiaoyu
-  - 🌐 其他地区 (Other) 08 - xiaoyu
-  - 🌐 其他地区 (Other) 09 - xiaoyu
-  - 🌐 其他地区 (Other) 10 - xiaoyu
-  - 🌐 其他地区 (Other) 11 - xiaoyu
-  - 🌐 其他地区 (Other) 12 - xiaoyu
-  - 🌐 其他地区 (Other) 13 - xiaoyu
-  - 🌐 其他地区 (Other) 14 - xiaoyu
-  - 🌐 其他地区 (Other) 15 - xiaoyu
-  - 🌐 其他地区 (Other) 16 - xiaoyu
-  - 🌐 其他地区 (Other) 17 - xiaoyu
-  - 🌐 其他地区 (Other) 18 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -226,18 +97,5 @@ proxy-groups:
   - 🌐 其他地区 (Other) 03 - xiaoyu
   - 🌐 其他地区 (Other) 04 - xiaoyu
   - 🌐 其他地区 (Other) 05 - xiaoyu
-  - 🌐 其他地区 (Other) 06 - xiaoyu
-  - 🌐 其他地区 (Other) 07 - xiaoyu
-  - 🌐 其他地区 (Other) 08 - xiaoyu
-  - 🌐 其他地区 (Other) 09 - xiaoyu
-  - 🌐 其他地区 (Other) 10 - xiaoyu
-  - 🌐 其他地区 (Other) 11 - xiaoyu
-  - 🌐 其他地区 (Other) 12 - xiaoyu
-  - 🌐 其他地区 (Other) 13 - xiaoyu
-  - 🌐 其他地区 (Other) 14 - xiaoyu
-  - 🌐 其他地区 (Other) 15 - xiaoyu
-  - 🌐 其他地区 (Other) 16 - xiaoyu
-  - 🌐 其他地区 (Other) 17 - xiaoyu
-  - 🌐 其他地区 (Other) 18 - xiaoyu
 rules:
 - MATCH,PROXIES

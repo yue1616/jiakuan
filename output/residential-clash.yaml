@@ -6,16 +6,30 @@ log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
   server: 172.64.158.146
-  port: 8080
+  port: 8880
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
+  server: 36.224.141.124
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  server: namrcg001640lrm.cybervena.com
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: a9a0d092-6f0e-4701-81ee-454643d6d506
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
   server: 118.167.230.191
   port: 24215
   udp: true
@@ -26,7 +40,7 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: edge
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
   server: 6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com
   port: 443
   udp: true
@@ -34,22 +48,25 @@ proxies:
   password: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
   sni: 6dd24f6b-tm96o0-tnggms-6gn6.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
-  server: 6ivh.pnuqcnp.cn
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaoyu
+  server: 206.1.98.72
+  port: 21811
   udp: true
-  type: anytls
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
+  type: vmess
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaoyu
   server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
   port: 443
   udp: true
   type: anytls
   password: 9sK2mP8xQ7vL3nZ6
   sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,9 +74,11 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,8 +86,10 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 05 (家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 06 (移动家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

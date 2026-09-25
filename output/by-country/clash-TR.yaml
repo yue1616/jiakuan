@@ -5,17 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
-  server: 151.241.226.201
+  server: 82.47.63.156
   port: 2053
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   server: 78.135.73.47
   port: 443
@@ -28,7 +22,31 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
   client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+  server: 37.221.79.226
+  port: 18443
+  udp: true
+  type: vless
+  uuid: 6933bb34-cb01-4605-88c3-f335e4307d23
+  tls: true
+  reality-opts:
+    public-key: 9hnmqap98ULg2y1fk4aqAtQEtPLQPIypZNmnrb42VWs
+    short-id: 50d9ee91
+  servername: www.sony.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +54,8 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +63,7 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
 rules:
 - MATCH,PROXIES
