@@ -19,33 +19,12 @@
       "uuid": "9aab8f39-ccb3-44ea-acdc-a8aefe211287"
     },
     {
-      "type": "vless",
-      "tag": "🇲🇽 墨西哥 (Mexico) 03 - xiaoyu",
-      "server": "34.51.83.115",
-      "server_port": 443,
-      "uuid": "9ad81959-02c6-4679-a419-2af6a16ca07a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA",
-          "short_id": "dcabbf24adf88abc"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇲🇽 墨西哥 (Mexico) 01 - xiaoyu",
-        "🇲🇽 墨西哥 (Mexico) 02 - xiaoyu",
-        "🇲🇽 墨西哥 (Mexico) 03 - xiaoyu"
+        "🇲🇽 墨西哥 (Mexico) 02 - xiaoyu"
       ]
     },
     {
@@ -53,8 +32,7 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇽 墨西哥 (Mexico) 01 - xiaoyu",
-        "🇲🇽 墨西哥 (Mexico) 02 - xiaoyu",
-        "🇲🇽 墨西哥 (Mexico) 03 - xiaoyu"
+        "🇲🇽 墨西哥 (Mexico) 02 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

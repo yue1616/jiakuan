@@ -18,21 +18,6 @@ proxies:
   servername: kazartip.thewalkingded.life
   client-fingerprint: firefox
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
-  server: 176.109.104.195
-  port: 9882
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aa
-  servername: dl.google.com
-  client-fingerprint: qq
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
   server: 77.73.232.61
   port: 19747
   udp: true
@@ -43,8 +28,8 @@ proxies:
     public-key: ZO9dTeg1slvTXgVsBsaJ1BDvz_YUImTLJjbHs-GdVyM
     short-id: '2001'
   servername: yahoo.com
-  client-fingerprint: edge
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu
+  client-fingerprint: chrome
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
   server: 83.222.23.81
   port: 38065
   udp: true
@@ -56,19 +41,7 @@ proxies:
     short-id: fa
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu
-  server: 109.248.170.119
-  port: 13447
-  udp: true
-  type: vless
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
-  tls: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
-  servername: yahoo.com
-  client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu
   server: 38.107.234.57
   port: 80
   udp: true
@@ -80,19 +53,19 @@ proxies:
   ws-opts:
     path: /vmess/
     headers:
-      Host: viber.com
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu
-  server: 178.236.16.98
-  port: 35728
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu
+  server: 109.248.170.119
+  port: 13447
   udp: true
   type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
   tls: true
   reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
   servername: yahoo.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -103,8 +76,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -115,7 +86,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu
 rules:
 - MATCH,PROXIES

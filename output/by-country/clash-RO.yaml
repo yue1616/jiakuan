@@ -11,8 +11,15 @@ proxies:
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu
   server: 162.249.127.130
   port: 8443
   udp: true
@@ -20,15 +27,17 @@ proxies:
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   sni: hop-germany-september.dynuddns.com
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu
-  server: 185.156.44.99
+- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaoyu
+  server: hy2.aspidnet.xyz
   port: 443
   udp: true
   type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 185.156.44.99
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaoyu
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaoyu
   server: hy2-new.aspidnet.xyz
   port: 443
   udp: true
@@ -38,41 +47,7 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaoyu
-  server: 146.70.124.85
-  port: 443
-  udp: true
-  type: vless
-  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
-    short-id: fe24f8a0a560056e
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 06 - xiaoyu
-  server: 85.204.107.187
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  sni: hopp-romania-new.roxa.org
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaoyu
-  server: bl3fk52.sysopnova.art
-  port: 443
-  udp: true
-  type: vless
-  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
-    short-id: 5ee019e02e6ed99a
-  servername: yandex.ru
-  client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaoyu
   server: 46.28.67.55
   port: 443
   udp: true
@@ -85,13 +60,64 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇷🇴 罗马尼亚 (Romania) 09 - xiaoyu
-  server: bogging-eyeteeth-fly.freesocks.work
+- name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaoyu
+  server: 146.70.124.85
   port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  type: vless
+  uuid: 40abbe13-f02e-4da2-9b19-966c2c3eb4ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE
+    short-id: fe24f8a0a560056e
+  servername: www.datadoghq.com
+  client-fingerprint: edge
+- name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaoyu
+  server: 38.180.35.145
+  port: 443
+  udp: true
+  type: trojan
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  sni: bu2.freeguard.org
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 09 - xiaoyu
+  server: 193.163.203.253
+  port: 443
+  udp: true
+  type: vless
+  uuid: 441afe11-a180-4516-bb80-80a8a6b38705
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gE8LUmGFXik94SoDXNiAG5KprGyhjoRwDuhGebgAVWk
+    short-id: 5ee019e02e6ed99a
+  servername: yandex.ru
+  client-fingerprint: random
+- name: 🇷🇴 罗马尼亚 (Romania) 10 - xiaoyu
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: 185.156.44.99
+  skip-cert-verify: true
+- name: 🇷🇴 罗马尼亚 (Romania) 11 - xiaoyu
+  server: 85.204.107.184
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: false
+- name: 🇷🇴 罗马尼亚 (Romania) 12 - xiaoyu
+  server: 85.204.107.184
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  sni: hopp-romania-new.roxa.org
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -106,6 +132,9 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 07 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 08 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 09 - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 10 - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 11 - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -120,5 +149,8 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 07 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 08 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 09 - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 10 - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 11 - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 12 - xiaoyu
 rules:
 - MATCH,PROXIES

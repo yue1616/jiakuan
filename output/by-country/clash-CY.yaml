@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu
+  server: 2.56.123.131
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0a975d79-6930-4861-a105-dc50793456de
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: wDAQ_iQ_vv6lQiB9nCxIJviEhARWOQOPyhzos8EJW3o
+    short-id: 9da47879658f9f25
+  servername: contact.yump.online
+  client-fingerprint: safari
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu
   server: 194.76.154.31
   port: 40443
   udp: true
@@ -16,19 +29,6 @@ proxies:
     short-id: a8ae
   servername: deepl.com
   client-fingerprint: qq
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu
-  server: 132.243.242.97
-  port: 9543
-  udp: true
-  type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcdf
-  servername: storage.yandexcloud.net
-  client-fingerprint: chrome
 - name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaoyu
   server: 2.56.123.227
   port: 443

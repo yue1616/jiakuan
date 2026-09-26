@@ -15,37 +15,29 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu",
       "server": "185.135.86.175",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
-      "server": "185.135.86.175",
-      "server_port": 9094,
-      "method": "aes-256-cfb",
-      "password": "rpgbNnU9rDDU4aWZ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu",
-      "server": "185.135.86.175",
-      "server_port": 9082,
-      "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu",
-      "server": "185.135.86.175",
       "server_port": 9007,
       "method": "aes-256-cfb",
       "password": "kSPmvwdFzGMMW5pY"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
+      "server": "185.135.86.175",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu",
+      "server": "185.135.86.175",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu",
       "server": "185.135.86.175",
       "server_port": 9033,
       "method": "aes-256-cfb",
@@ -53,11 +45,19 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu",
+      "server": "185.135.86.175",
+      "server_port": 9094,
+      "method": "aes-256-cfb",
+      "password": "rpgbNnU9rDDU4aWZ"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu",
       "server": "185.135.86.175",
-      "server_port": 9068,
+      "server_port": 9034,
       "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
+      "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
       "type": "vless",
@@ -71,7 +71,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -81,8 +81,24 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu",
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - xiaoyu",
+      "server": "185.135.86.175",
+      "server_port": 9082,
+      "method": "aes-256-cfb",
+      "password": "45xgMgm386pjWjTx"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu",
       "server": "195.123.213.28",
       "server_port": 443,
       "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
@@ -92,7 +108,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -114,7 +130,9 @@
         "🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu"
+        "🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu",
+        "🇱🇻 拉脱维亚 (Latvia) 10 - xiaoyu",
+        "🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu"
       ]
     },
     {
@@ -129,7 +147,9 @@
         "🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu"
+        "🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu",
+        "🇱🇻 拉脱维亚 (Latvia) 10 - xiaoyu",
+        "🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

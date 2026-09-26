@@ -17,18 +17,6 @@ proxies:
   udp: true
   type: vless
   uuid: 9aab8f39-ccb3-44ea-acdc-a8aefe211287
-- name: 🇲🇽 墨西哥 (Mexico) 03 - xiaoyu
-  server: 34.51.83.115
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
-  tls: true
-  reality-opts:
-    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
-    short-id: dcabbf24adf88abc
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,7 +24,6 @@ proxy-groups:
   - AUTO
   - 🇲🇽 墨西哥 (Mexico) 01 - xiaoyu
   - 🇲🇽 墨西哥 (Mexico) 02 - xiaoyu
-  - 🇲🇽 墨西哥 (Mexico) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,6 +31,5 @@ proxy-groups:
   proxies:
   - 🇲🇽 墨西哥 (Mexico) 01 - xiaoyu
   - 🇲🇽 墨西哥 (Mexico) 02 - xiaoyu
-  - 🇲🇽 墨西哥 (Mexico) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

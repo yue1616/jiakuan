@@ -28,7 +28,16 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
+  server: 93.114.98.221
+  port: 443
+  udp: true
+  type: vless
+  uuid: 22453764-c126-4f39-ba05-f4972a33f589
+  tls: true
+  servername: 00iwuafi1019.dopgangster.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

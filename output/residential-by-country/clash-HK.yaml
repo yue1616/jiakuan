@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu
-  server: dog-hk.kunlun01dns.com
-  port: 21020
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16115
   udp: true
   type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
@@ -19,7 +19,7 @@ proxies:
   type: anytls
   password: 9sK2mP8xQ7vL3nZ6
   sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  skip-cert-verify: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
