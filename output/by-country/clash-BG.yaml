@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu
   server: 213.183.63.60
-  port: 9064
+  port: 9029
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
+  password: dU3DSNS8wYPXzEKw
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu
   server: 213.183.63.60
   port: 9054
@@ -27,18 +27,18 @@ proxies:
   password: 2KUaE2a8NWTvuCZ3
 - name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu
   server: 213.183.63.60
-  port: 9029
+  port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: dU3DSNS8wYPXzEKw
+  password: GeregetR8cvQHzYr
 - name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu
   server: 213.183.63.60
-  port: 9028
+  port: 9061
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
+  password: 4R3hUfZ2FHhDmNcP
 - name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu
   server: 213.183.63.60
   port: 9049
@@ -48,25 +48,25 @@ proxies:
   password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu
   server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu
-  server: 213.183.63.60
   port: 9085
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - xiaoyu
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu
   server: 213.183.63.60
-  port: 9030
+  port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 09 - xiaoyu
+  server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
 - name: 🇧🇬 保加利亚 (Bulgaria) 10 - xiaoyu
   server: 193.148.59.178
   port: 443
@@ -81,6 +81,13 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 11 - xiaoyu
+  server: 213.183.63.60
+  port: 9098
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aLpQtfEZe445QyHk
+- name: 🇧🇬 保加利亚 (Bulgaria) 12 - xiaoyu
   server: 136.175.82.85
   port: 18775
   udp: true
@@ -92,16 +99,7 @@ proxies:
     public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
     short-id: 6ba85179e30d4fc2
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 12 - xiaoyu
-  server: 131.123.41.177
-  port: 8081
-  udp: true
-  type: vless
-  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
-  network: ws
-  ws-opts:
-    path: /vless-test
+  client-fingerprint: random
 - name: 🇧🇬 保加利亚 (Bulgaria) 13 - xiaoyu
   server: 131.123.37.199
   port: 8081
@@ -112,7 +110,7 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇧🇬 保加利亚 (Bulgaria) 14 - xiaoyu
-  server: 131.123.41.31
+  server: 131.123.41.177
   port: 8081
   udp: true
   type: vless
@@ -121,24 +119,14 @@ proxies:
   ws-opts:
     path: /vless-test
 - name: 🇧🇬 保加利亚 (Bulgaria) 15 - xiaoyu
-  server: 213.183.63.60
-  port: 9061
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 16 - xiaoyu
-  server: p.jigilibaw.ir
-  port: 10071
+  server: 131.123.41.31
+  port: 8081
   udp: true
   type: vless
-  uuid: 7b11c7e2-cb50-4aad-8bc4-996fdde69b4d
-  tls: true
-  reality-opts:
-    public-key: vKwb09bRtduMwrkaiyGl8_W40BxT2dSGb-3xmD1JuWY
-    short-id: bd2efbd84a3817aa
-  servername: commondatastorage.googleapis.com
-  client-fingerprint: chrome
+  uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
+  network: ws
+  ws-opts:
+    path: /vless-test
 proxy-groups:
 - name: PROXIES
   type: select
@@ -159,7 +147,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 13 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 14 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 15 - xiaoyu
-  - 🇧🇬 保加利亚 (Bulgaria) 16 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -180,6 +167,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 13 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 14 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 15 - xiaoyu
-  - 🇧🇬 保加利亚 (Bulgaria) 16 - xiaoyu
 rules:
 - MATCH,PROXIES

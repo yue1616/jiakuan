@@ -4,26 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇧🇷 巴西 (Brazil) 01 - xiaoyu",
-      "server": "172.233.14.17",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 01 - xiaoyu",
+      "server": "153.76.185.104",
+      "server_port": 3090,
+      "uuid": "6bd9b04b-17de-4f05-b8b8-e5f2a0a649c1",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,18 +5,51 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇱 智利 (Chile) 01 - xiaoyu
-  server: 64.176.4.15
+  server: platform117.golnamakcert.top
   port: 80
   udp: true
   type: vless
   uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /platform109
+    path: /platform117
     headers:
-      Host: platform109.halalkhor.info
+      Host: platform117.halalkhor.info
 - name: 🇨🇱 智利 (Chile) 02 - xiaoyu
-  server: 64.176.21.237
+  server: platform101.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform101
+    headers:
+      Host: platform101.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 03 - xiaoyu
+  server: platform115.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform115
+    headers:
+      Host: platform115.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 04 - xiaoyu
+  server: platform106.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform106
+    headers:
+      Host: platform106.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 05 - xiaoyu
+  server: platform108.golnamakcert.top
   port: 80
   udp: true
   type: vless
@@ -26,6 +59,61 @@ proxies:
     path: /platform108
     headers:
       Host: platform108.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 06 - xiaoyu
+  server: platform113.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform113
+    headers:
+      Host: platform113.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 07 - xiaoyu
+  server: platform102.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform102
+    headers:
+      Host: platform102.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 08 - xiaoyu
+  server: platform109.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform109
+    headers:
+      Host: platform109.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 09 - xiaoyu
+  server: platform103.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform103
+    headers:
+      Host: platform103.halalkhor.info
+- name: 🇨🇱 智利 (Chile) 10 - xiaoyu
+  server: platform118.golnamakcert.top
+  port: 80
+  udp: true
+  type: vless
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
+  network: ws
+  ws-opts:
+    path: /platform118
+    headers:
+      Host: platform118.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +121,14 @@ proxy-groups:
   - AUTO
   - 🇨🇱 智利 (Chile) 01 - xiaoyu
   - 🇨🇱 智利 (Chile) 02 - xiaoyu
+  - 🇨🇱 智利 (Chile) 03 - xiaoyu
+  - 🇨🇱 智利 (Chile) 04 - xiaoyu
+  - 🇨🇱 智利 (Chile) 05 - xiaoyu
+  - 🇨🇱 智利 (Chile) 06 - xiaoyu
+  - 🇨🇱 智利 (Chile) 07 - xiaoyu
+  - 🇨🇱 智利 (Chile) 08 - xiaoyu
+  - 🇨🇱 智利 (Chile) 09 - xiaoyu
+  - 🇨🇱 智利 (Chile) 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +136,13 @@ proxy-groups:
   proxies:
   - 🇨🇱 智利 (Chile) 01 - xiaoyu
   - 🇨🇱 智利 (Chile) 02 - xiaoyu
+  - 🇨🇱 智利 (Chile) 03 - xiaoyu
+  - 🇨🇱 智利 (Chile) 04 - xiaoyu
+  - 🇨🇱 智利 (Chile) 05 - xiaoyu
+  - 🇨🇱 智利 (Chile) 06 - xiaoyu
+  - 🇨🇱 智利 (Chile) 07 - xiaoyu
+  - 🇨🇱 智利 (Chile) 08 - xiaoyu
+  - 🇨🇱 智利 (Chile) 09 - xiaoyu
+  - 🇨🇱 智利 (Chile) 10 - xiaoyu
 rules:
 - MATCH,PROXIES
