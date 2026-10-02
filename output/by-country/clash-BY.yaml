@@ -4,8 +4,8 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
-  server: 89.125.96.74
+- name: 🇧🇾 白俄罗斯 (Belarus) 01 - xiaoyu
+  server: ddnl0.zazazuza.ru
   port: 2053
   udp: true
   type: vless
@@ -13,23 +13,20 @@ proxies:
   tls: true
   servername: wss.zazazuza.ru
   skip-cert-verify: false
-  client-fingerprint: random
   network: ws
   ws-opts:
     path: /vpn-wss/fluxor/59011/
-    headers:
-      Host: wss.zazazuza.ru
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaohe
+  - 🇧🇾 白俄罗斯 (Belarus) 01 - xiaoyu
 rules:
 - MATCH,PROXIES

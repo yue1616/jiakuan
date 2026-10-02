@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-      "server": "zfd-boardv2.kunlun01dns.com",
-      "server_port": 16256,
-      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
-      "security": "auto"
-    },
-    {
       "type": "trojan",
-      "tag": "🇻🇳 越南 (Vietnam) 02 - xiaohe",
+      "tag": "🇻🇳 越南 (Vietnam) 01 - xiaoyu",
       "server": "109.110.162.40",
       "server_port": 23005,
       "password": "fac593ac-d6aa-4523-bea9-b3eb2a2b3da3",
@@ -28,16 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01 - xiaohe",
-        "🇻🇳 越南 (Vietnam) 02 - xiaohe"
+        "🇻🇳 越南 (Vietnam) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

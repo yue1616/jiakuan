@@ -5,8 +5,8 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇱 AL 01 - xiaohe",
-      "server": "194.93.61.86",
+      "tag": "🇦🇱 AL 01 - xiaoyu",
+      "server": "194.93.61.100",
       "server_port": 443,
       "uuid": "41e71ba7-d389-47aa-94f7-ed1f55fdbcdf",
       "flow": "xtls-rprx-vision",
@@ -15,7 +15,7 @@
         "server_name": "cdnjs.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaohe"
+        "🇦🇱 AL 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

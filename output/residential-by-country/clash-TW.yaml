@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 丹麦 (Denmark) 01 - xiaohe
-  server: zfd-boardv2.kunlun01dns.com
-  port: 16305
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
+  server: sbgfgov.vip24.wogacnmnagfwgov.com
+  port: 11224
   udp: true
   type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+  alterId: 2
   cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 丹麦 (Denmark) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 丹麦 (Denmark) 01 - xiaohe
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

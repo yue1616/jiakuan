@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 印尼 (Indonesia) 01 - xiaohe
+- name: 🇮🇩 印尼 (Indonesia) 01 - xiaoyu
   server: 103.172.197.3
   port: 16006
   udp: true
@@ -15,8 +15,8 @@ proxies:
   reality-opts:
     public-key: ll7JTP628PuBMZJvx6fuhGSmCRSURnReAetmhCEL8GU
   servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇮🇩 印尼 (Indonesia) 02 - xiaohe
+  client-fingerprint: safari
+- name: 🇮🇩 印尼 (Indonesia) 02 - xiaoyu
   server: 103.172.197.2
   port: 29172
   udp: true
@@ -27,20 +27,20 @@ proxies:
   reality-opts:
     public-key: pff94OJwuKXnF7_3SJ8KKJuAN4GJtInBlR-kg-4mwzQ
   servername: aws.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
-  - 🇮🇩 印尼 (Indonesia) 02 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaoyu
+  - 🇮🇩 印尼 (Indonesia) 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 印尼 (Indonesia) 01 - xiaohe
-  - 🇮🇩 印尼 (Indonesia) 02 - xiaohe
+  - 🇮🇩 印尼 (Indonesia) 01 - xiaoyu
+  - 🇮🇩 印尼 (Indonesia) 02 - xiaoyu
 rules:
 - MATCH,PROXIES

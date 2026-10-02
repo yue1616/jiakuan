@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
+- name: 🇷🇸 塞尔维亚 (Serbia) 01 - xiaoyu
   server: 176.108.246.58
   port: 9889
   udp: true
@@ -14,7 +14,7 @@ proxies:
   reality-opts:
     public-key: ycPIUcY6ci2yi7YA_OHc20e4gzxEdJTqpmeShxSuHRU
   servername: dl.google.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
@@ -23,12 +23,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
+  - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaohe
+  - 🇷🇸 塞尔维亚 (Serbia) 01 - xiaoyu
 rules:
 - MATCH,PROXIES
