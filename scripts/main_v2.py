@@ -65,8 +65,19 @@ SOURCE_URLS = [
     "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://raw.githubusercontent.com/ishalumi/proxy-node-collector/main/output/nodes_base64.txt",
     "https://gist.githubusercontent.com/shuaidaoya/9e5cf2749c0ce79932dd9229d9b4162b/raw/base64.txt",
-    "https://raw.githubusercontent.com/PuddinCat/BestClash/main/proxies.yaml",
+    "https://freev2ray.top/V2rayNHP1001.txt",
+    "https://bestcf.pages.dev/s5gy/all.txt",
     "https://raw.githubusercontent.com/twj0/subseek/refs/heads/master/data/sub_github.txt",
+    "https://raw.githubusercontent.com/aiboboxx/v2rayfree/refs/heads/main/README.md",
+    "https://raw.githubusercontent.com/SoliSpirit/v2ray-configs/main/all_configs.txt",
+    "https://raw.githubusercontent.com/Pawdroid/Free-servers/refs/heads/main/sub",
+    "https://raw.githubusercontent.com/acymz/AutoVPN/main/data/V2.txt",
+    "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/wenode.txt",
+    "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/v2rayshare.txt",
+    "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/nodefree.txt",
+    "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/ndnode.txt",
+    "https://raw.githubusercontent.com/Barabama/FreeNodes/main/nodes/clashmeta.txt",
+    "https://raw.githubusercontent.com/xiaoji235/airport-free/main/v2ray.txt",
 ]
 
 OUTPUT_DIR = "output"
