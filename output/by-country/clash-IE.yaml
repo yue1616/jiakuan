@@ -5,37 +5,45 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu
-  server: 50.7.5.164
+  server: 54.72.130.222
   port: 443
   udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: ekb.eg
+  type: trojan
+  password: UX82473651
+  sni: adapting-basilisk.rooster465.autos
   skip-cert-verify: true
-  client-fingerprint: firefox
 - name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaoyu
-  server: ie.tronsg.com
+  server: master-possum.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: master-possum.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaoyu
+  server: 3.253.106.233
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: loved-shark.rooster465.autos
+  skip-cert-verify: false
+- name: 🇮🇪 爱尔兰 (Ireland) 04 - xiaoyu
+  server: sacred-anemone.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: sacred-anemone.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 (Ireland) 05 - xiaoyu
+  server: 3.255.76.207
   port: 443
   udp: true
   type: trojan
   password: Trojan@82164024
-  sni: ie.tronsg.com
-  skip-cert-verify: false
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaoyu
-  server: 3.9.135.156
-  port: 51847
-  udp: true
-  type: vless
-  uuid: 391a01e9-b664-407b-9158-610fab3f5920
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: S6noV0L8eNASnTe1gXLutLZNdfENsvKMsOJiGQYi6nc
-    short-id: 0eec442e7b34d2f2
-  servername: www.tesla.com
-  client-fingerprint: chrome
+  sni: 3.255.76.207
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +52,8 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaoyu
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaoyu
+  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaoyu
+  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +62,7 @@ proxy-groups:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu
   - 🇮🇪 爱尔兰 (Ireland) 02 - xiaoyu
   - 🇮🇪 爱尔兰 (Ireland) 03 - xiaoyu
+  - 🇮🇪 爱尔兰 (Ireland) 04 - xiaoyu
+  - 🇮🇪 爱尔兰 (Ireland) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

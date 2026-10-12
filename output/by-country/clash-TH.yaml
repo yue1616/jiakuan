@@ -13,7 +13,7 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaoyu
-  server: 103.86.49.57
+  server: support.zoom.us.support.zoom.us.v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -22,9 +22,9 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: aIs.SpEeDtEsT.nEt
+      Host: support.zoom.us.support.zoom.us.v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaoyu
-  server: 104.18.26.90
+  server: 104.16.10.185
   port: 443
   udp: true
   type: vless
@@ -38,6 +38,19 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 04 - xiaoyu
+  server: 154.21.203.106
+  port: 21033
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  servername: www.kaidee.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,6 +59,7 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - xiaoyu
   - 🇹🇭 泰国 (Thailand) 02 - xiaoyu
   - 🇹🇭 泰国 (Thailand) 03 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,5 +68,6 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 01 - xiaoyu
   - 🇹🇭 泰国 (Thailand) 02 - xiaoyu
   - 🇹🇭 泰国 (Thailand) 03 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 04 - xiaoyu
 rules:
 - MATCH,PROXIES

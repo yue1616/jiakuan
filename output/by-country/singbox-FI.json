@@ -4,61 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaoyu",
-      "server": "144.31.232.216",
-      "server_port": 443,
-      "password": "06e88dd6-e264-4981-8c26-d7ab17348ab2",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi01.clgate.network",
-        "insecure": false
-      }
+      "server": "185.103.110.66",
+      "server_port": 18280,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
-      "server": "45.149.147.97",
-      "server_port": 443,
-      "uuid": "f28e0ce1-ed75-4e90-b069-5215a80dfb4a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg",
-          "short_id": "d345ad4657adeef9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
       "server": "144.31.212.253",
       "server_port": 443,
       "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
@@ -70,24 +33,169 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-      "server": "144.31.27.215",
-      "server_port": 43000,
-      "uuid": "47f79fc1-0646-40e8-8a58-73e85d183d5a",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
       "tls": {
         "enabled": true,
-        "server_name": "144.31.27.215",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg",
-          "short_id": "568d87a47271344e"
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
         }
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
+      "server": "fi.pythonsetupbib.online",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi.pythonsetupbib.online",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZqVz1kWNxh_5zQ5PPkoPHoaXQOvppM0ZyIo8uKp2dCg",
+          "short_id": "bdf5852d1423e694"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
+      "server": "170.168.4.59",
+      "server_port": 17170,
+      "uuid": "3eec23c1-2a0d-4d53-afa5-62745a1f5ffe",
+      "tls": {
+        "enabled": true,
+        "server_name": "northerntrail.gazette.help",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "trail-grpc"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
+      "server": "feow.nomush.ir",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "K63q-WhHdJoC_AIxT6E4r_IIuGIb6CuV"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
+      "server": "109.172.54.135",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 09 - xiaoyu",
+      "server": "feow.nomush.ir",
+      "server_port": 11497,
+      "uuid": "2c5f2d6e-d683-49f7-a12b-a95460b90a92",
+      "tls": {
+        "enabled": true,
+        "server_name": "dynu.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J3DhtzId04tRrOF9HmIxpv6QOGY1g6j2wJ_UtVKmimk",
+          "short_id": "b0063cec752e829a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 10 - xiaoyu",
+      "server": "van2.ragnarok-it.xyz",
+      "server_port": 8446,
+      "uuid": "a61496c3-f256-4a36-8a52-8638b9cc900a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "amd.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM",
+          "short_id": "7bac4b112d30d1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 11 - xiaoyu",
+      "server": "65.108.3.59",
+      "server_port": 443,
+      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "web.eitaa.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
+          "short_id": "90ec9bba2019"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 12 - xiaoyu",
+      "server": "45.149.114.171",
+      "server_port": 777,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
     },
     {
       "type": "selector",
@@ -98,7 +206,14 @@
         "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 05 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 09 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 10 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 11 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 12 - xiaoyu"
       ]
     },
     {
@@ -109,7 +224,14 @@
         "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 05 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 09 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 10 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 11 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 12 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

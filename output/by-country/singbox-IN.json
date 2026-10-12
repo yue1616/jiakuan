@@ -4,20 +4,61 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01 - xiaoyu",
-      "server": "35.244.28.130",
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 02 - xiaoyu",
+      "server": "34.131.228.210",
       "server_port": 443,
       "password": "M7v%w11Se*",
       "tls": {
         "enabled": true,
-        "server_name": "tttyder.wsone.icu",
+        "server_name": "hyfuuf6.wsone.icu",
         "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 03 - xiaoyu",
+      "server": "217.217.249.70",
+      "server_port": 43000,
+      "uuid": "47b83a67-f69d-4d15-9c63-73b7cd0f7d26",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "217.217.249.70",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3gTzdNHyWfheX_IrYiMoraornFzYxPFU9EGirW1gfRk",
+          "short_id": "99f735c4"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇳 印度 (India) 04 - xiaoyu",
+      "server": "in.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "in.tronsg.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 05 - xiaoyu",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -37,7 +78,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 06 - xiaoyu",
       "server": "148.113.5.44",
       "server_port": 443,
       "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
@@ -47,7 +88,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -57,13 +98,73 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 07 - xiaoyu",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 08 - xiaoyu",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "152.67.8.205"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 09 - xiaoyu",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "null"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 10 - xiaoyu",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01 - xiaoyu",
         "🇮🇳 印度 (India) 02 - xiaoyu",
-        "🇮🇳 印度 (India) 03 - xiaoyu"
+        "🇮🇳 印度 (India) 03 - xiaoyu",
+        "🇮🇳 印度 (India) 04 - xiaoyu",
+        "🇮🇳 印度 (India) 05 - xiaoyu",
+        "🇮🇳 印度 (India) 06 - xiaoyu",
+        "🇮🇳 印度 (India) 07 - xiaoyu",
+        "🇮🇳 印度 (India) 08 - xiaoyu",
+        "🇮🇳 印度 (India) 09 - xiaoyu",
+        "🇮🇳 印度 (India) 10 - xiaoyu"
       ]
     },
     {
@@ -72,7 +173,14 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01 - xiaoyu",
         "🇮🇳 印度 (India) 02 - xiaoyu",
-        "🇮🇳 印度 (India) 03 - xiaoyu"
+        "🇮🇳 印度 (India) 03 - xiaoyu",
+        "🇮🇳 印度 (India) 04 - xiaoyu",
+        "🇮🇳 印度 (India) 05 - xiaoyu",
+        "🇮🇳 印度 (India) 06 - xiaoyu",
+        "🇮🇳 印度 (India) 07 - xiaoyu",
+        "🇮🇳 印度 (India) 08 - xiaoyu",
+        "🇮🇳 印度 (India) 09 - xiaoyu",
+        "🇮🇳 印度 (India) 10 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

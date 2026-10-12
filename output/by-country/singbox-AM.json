@@ -4,15 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - xiaoyu",
-      "server": "us3.xiaoliyu.cyou",
-      "server_port": 18333,
-      "password": "19f72087-4591-4d72-930b-2697078ec2be",
+      "server": "88.218.95.88",
+      "server_port": 443,
+      "uuid": "b8df3f50-ffef-4c7e-9ef3-d5b156a47c02",
       "tls": {
         "enabled": true,
-        "server_name": "us3.xiaoliyu.cyou",
-        "insecure": true
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE",
+          "short_id": "43adea0ec9f97a0a"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {

@@ -5,13 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - xiaoyu
-  server: 109.110.162.40
-  port: 23005
+  server: 154.21.203.106
+  port: 51279
   udp: true
-  type: trojan
-  password: fac593ac-d6aa-4523-bea9-b3eb2a2b3da3
-  sni: 82.yuanul.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: f6Tj8-uvWsLv3V-lGLuPciArp5oKqUImBg-U7-WJ-0A
+    short-id: bb82c8
+  servername: www.tesla.com
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

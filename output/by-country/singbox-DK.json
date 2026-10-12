@@ -5,22 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇶🇦 卡塔尔 (Qatar) 01 - xiaoyu",
-      "server": "34.18.212.19",
-      "server_port": 443,
-      "uuid": "b6f775c2-70fd-4247-8d12-82cac46fdd50",
+      "tag": "🇩🇰 丹麦 (Denmark) 01 - xiaoyu",
+      "server": "193.233.253.180",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "github.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "tT6wEOh8ASizQYNRb51QdDlxAksSJbEaBnbQBajc6SQ",
-          "short_id": "c5426331173ca15c"
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
       }
     },
     {
@@ -28,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇶🇦 卡塔尔 (Qatar) 01 - xiaoyu"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇶🇦 卡塔尔 (Qatar) 01 - xiaoyu"
+        "🇩🇰 丹麦 (Denmark) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
