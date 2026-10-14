@@ -5,33 +5,118 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu
-  server: 206.223.249.90
-  port: 33891
+  server: 109.248.170.119
+  port: 13447
   udp: true
   type: vless
-  uuid: 9977ba41-b6aa-4033-9492-2f6abfcade31
-  flow: xtls-rprx-vision
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
   tls: true
   reality-opts:
-    public-key: fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8
-    short-id: f5bc6788
-  servername: browser.yandex.com
-  client-fingerprint: chrome
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
+  servername: yahoo.com
+  client-fingerprint: edge
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
-  server: 5.252.33.175
-  port: 9882
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaoyu
+  server: 178.236.16.98
+  port: 35728
   udp: true
   type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
   tls: true
   reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabbccdd
-  servername: dl.google.com
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +124,13 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +138,12 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaoyu
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaoyu
 rules:
 - MATCH,PROXIES

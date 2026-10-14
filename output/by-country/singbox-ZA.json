@@ -42,7 +42,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -54,10 +54,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇿🇦 南非 (South Africa) 04 - xiaoyu",
-      "server": "102.37.156.224",
-      "server_port": 443,
+      "server": "139.84.247.164",
+      "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
-      "password": "aduB9HGxQHjA2SBMRjkHX6"
+      "password": "tfAcRikawhNoZAhu"
     },
     {
       "type": "selector",

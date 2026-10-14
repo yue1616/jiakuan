@@ -4,23 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 01 - xiaoyu",
-      "server": "ddnl0.zazazuza.ru",
-      "server_port": 2053,
-      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
+      "type": "trojan",
+      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu",
+      "server": "107.189.26.160",
+      "server_port": 443,
+      "password": "Puj01Rc8UcA9IzcFcYOs8KMOhCz6aX2Q",
       "tls": {
         "enabled": true,
-        "server_name": "wss.zazazuza.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "mfyousheng.nl.eu.org",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/"
+        "path": "/tjwsLhx0SFASG4l9FERJ1g",
+        "headers": {
+          "Host": "mfyousheng.nl.eu.org"
+        }
       }
     },
     {
@@ -28,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaoyu"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01 - xiaoyu"
+        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

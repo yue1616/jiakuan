@@ -4,16 +4,13 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu
-  server: me17.msjia8844.site
-  port: 7443
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  server: 218.237.185.234
+  port: 4652
   udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu
   server: test.keoplentuio.xyz
   port: 2053
@@ -21,22 +18,27 @@ proxies:
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  server: 118.167.248.243
-  port: 24215
+  server: fujrdt.d6f54hd1j.cc
+  port: 443
   udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  type: vmess
+  uuid: d877dc6f-7323-4b47-a7dd-14228cbae854
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: firefox
+  servername: fujrdt.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: fujrdt.d6f54hd1j.cc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
 - name: AUTO
@@ -44,7 +46,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
 rules:

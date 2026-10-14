@@ -18,15 +18,14 @@ proxies:
   client-fingerprint: chrome
 - name: 🇧🇷 巴西 (Brazil) 02 - xiaoyu
   server: 147.15.23.247
-  port: null
+  port: 20000
   udp: true
   type: hysteria2
   password: CyG0RFxMjzs41uQD4OLuHQ==
   sni: rmgyvpn.rest
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
-  ports: 20000-30000
 proxy-groups:
 - name: PROXIES
   type: select

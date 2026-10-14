@@ -34,14 +34,14 @@ proxies:
     public-key: dcox8XXfkOCmKn3kgrloj6wY5o1_0brJOi2mczYmAT4
     short-id: 5ced03e42cc31aab
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇿🇦 南非 (South Africa) 04 - xiaoyu
-  server: 102.37.156.224
-  port: 443
+  server: 139.84.247.164
+  port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: aduB9HGxQHjA2SBMRjkHX6
+  password: tfAcRikawhNoZAhu
 proxy-groups:
 - name: PROXIES
   type: select
