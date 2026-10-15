@@ -1,7 +1,9 @@
 name: Update Subscriptions
 
 on:
-  workflow_dispatch:  # 仅保留手动触发按钮
+  schedule:
+    - cron: "0 */6 * * *" # 每 6 小时自动更新（UTC）
+  workflow_dispatch: # 同时保留手动触发
 
 jobs:
   build:
@@ -25,9 +27,19 @@ jobs:
         run: |
           pip install -r scripts/requirements.txt
 
-      - name: Run Real-Prober and Classifier (sing-box v1.14 全协议)
+      - name: Prepare sing-box runtime for unit tests
         run: |
-          python scripts/main_v2.py
+          python -c "import sys; sys.path.insert(0, 'scripts'); import main_v2 as m; m.ensure_directories(); m.setup_environment()"
+        env:
+          PYTHONUNBUFFERED: '1'
+
+      - name: Run parser and configuration tests
+        run: python scripts/test_parsers.py
+        env:
+          PYTHONUNBUFFERED: '1'
+
+      - name: Run Real-Prober and Classifier (sing-box v1.14 全协议)
+        run: python scripts/main_v2.py
         env:
           # 便于 ip-api 等识别限速; GitHub runner 出口为美国 Azure
           PYTHONUNBUFFERED: '1'
