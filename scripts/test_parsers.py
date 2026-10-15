@@ -7,9 +7,11 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import main_v2 as mv
 
 BASEDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SB = os.path.join(BASEDIR, "runtime", "sing-box.exe")  # 与 main_v2 运行时同一内核
+# 按当前操作系统选择正确的 sing-box 文件名；CI 为 Linux，不能硬编码 .exe。
+SB_NAME = "sing-box.exe" if os.name == "nt" else "sing-box"
+SB = os.path.join(BASEDIR, "runtime", SB_NAME)
 if not os.path.exists(SB):
-    SB = os.path.join(BASEDIR, ".sb-probe", "sing-box.exe")
+    SB = os.path.join(BASEDIR, ".sb-probe", SB_NAME)
 
 # ══════════ 测试样本 (覆盖用户全部协议) ══════════
 SAMPLES = {
@@ -154,9 +156,44 @@ def run_test():
         for f in FAIL:
             print(f"  - {f}")
         sys.exit(1)
-    else:
-        print("全部测试通过 ✅")
+
+    # 阶段4: 去重指纹回归测试——同 endpoint 的不同凭据/传输参数不能共享结果。
+    print()
+    print("阶段4: 节点去重指纹回归测试")
+    base = {"type": "vless", "tag": "one", "server": "node.example", "server_port": 443,
+            "uuid": "user-a", "tls": {"enabled": True, "server_name": "a.example"},
+            "transport": {"type": "ws", "path": "/ws", "headers": {"Host": "a.example"}}}
+    same = dict(base, tag="renamed")
+    other_credentials = dict(base, uuid="user-b")
+    other_sni = dict(base, tls={"enabled": True, "server_name": "b.example"})
+    other_path = dict(base, transport={"type": "ws", "path": "/other", "headers": {"Host": "a.example"}})
+    key = mv.node_dedup_key(base, "node.example", 443, "vless")
+    assert key == mv.node_dedup_key(same, "node.example", 443, "vless"), "显示名称不应影响去重"
+    assert key != mv.node_dedup_key(other_credentials, "node.example", 443, "vless"), "不同 UUID 不可合并"
+    assert key != mv.node_dedup_key(other_sni, "node.example", 443, "vless"), "不同 SNI 不可合并"
+    assert key != mv.node_dedup_key(other_path, "node.example", 443, "vless"), "不同传输路径不可合并"
+    print("  ✅ 相同配置可去重；凭据、SNI、传输路径不同则独立测活")
+    print("全部测试通过 ✅")
+
+
+def write_report(status: str, error: str = ""):
+    report_dir = os.path.join(BASEDIR, "output")
+    os.makedirs(report_dir, exist_ok=True)
+    report = {
+        "status": status,
+        "sample_count": len(SAMPLES),
+        "failures": list(FAIL),
+        "error": error,
+    }
+    with open(os.path.join(report_dir, "e2e_test_report.json"), "w", encoding="utf-8") as f:
+        json.dump(report, f, ensure_ascii=False, indent=2)
 
 
 if __name__ == "__main__":
-    run_test()
+    try:
+        run_test()
+    except BaseException as exc:
+        write_report("failed", f"{type(exc).__name__}: {exc}")
+        raise
+    else:
+        write_report("passed")
