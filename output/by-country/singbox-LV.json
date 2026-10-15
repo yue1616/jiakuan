@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaoyu",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9086,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "37Z4TFCYhfxcpc9Q"
     },
     {
       "type": "vless",
@@ -23,7 +23,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -33,37 +33,29 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
-      "server": "185.135.86.175",
-      "server_port": 9094,
-      "method": "aes-256-cfb",
-      "password": "rpgbNnU9rDDU4aWZ"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu",
-      "server": "216.173.71.43",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
+      "server": "195.123.213.28",
       "server_port": 443,
-      "uuid": "ee18d188-14cc-417e-beb1-70e4add6d023",
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "lv.nztvpn.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08",
-          "short_id": "0da7e14db353e7d0"
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu",
       "server": "195.123.208.32",
       "server_port": 443,
       "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
@@ -90,8 +82,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu"
+        "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu"
       ]
     },
     {
@@ -101,8 +92,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu"
+        "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaoyu
   server: 185.135.86.175
-  port: 9082
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
+  password: 37Z4TFCYhfxcpc9Q
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu
   server: 138.124.180.137
   port: 443
@@ -23,28 +23,21 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu
-  server: 185.135.86.175
-  port: 9094
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
-  server: 216.173.71.43
+  server: 195.123.213.28
   port: 443
   udp: true
   type: vless
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08
-    short-id: 0da7e14db353e7d0
-  servername: lv.nztvpn.com
-  client-fingerprint: safari
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
   server: 195.123.208.32
   port: 443
   udp: true
@@ -66,7 +59,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,6 +68,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
-  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu
 rules:
 - MATCH,PROXIES
