@@ -25,11 +25,13 @@ import re
 import io
 import sys
 import json
+import hashlib
 import time
 import uuid
 import base64
 import shutil
 import socket
+import threading
 import zipfile
 import tarfile
 import platform
@@ -392,6 +394,16 @@ def b64_decode(data: str) -> str:
 #        宁可本地多杀, 不可 CI 误杀 — 生产判定以 Actions 为准)
 # ══════════════════════════════════════════════════════════════════
 
+_PROBE_FAILURE_COUNTS = {}
+_PROBE_FAILURE_LOCK = threading.Lock()
+
+
+def record_probe_failure(reason: str):
+    """并发探测时记录失败原因，避免所有异常都静默变成 None。"""
+    with _PROBE_FAILURE_LOCK:
+        _PROBE_FAILURE_COUNTS[reason] = _PROBE_FAILURE_COUNTS.get(reason, 0) + 1
+
+
 DIRECT_SESSION = requests.Session()
 DIRECT_SESSION.trust_env = True    # 跟随系统/环境代理 (本地大陆网络抓 GitHub 需要; Actions 无代理直连不受影响)
 DIRECT_SESSION.headers.update({"User-Agent": USER_AGENT, "Accept": "*/*"})
@@ -535,8 +547,14 @@ def setup_environment():
     # --- GeoLite2 数据库 ---
     country_db = os.path.join(RUNTIME_DIR, "Country.mmdb")
     asn_db = os.path.join(RUNTIME_DIR, "ASN.mmdb")
-    download_file("https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb", country_db)
-    download_file("https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb", asn_db)
+    if not os.path.exists(country_db) or os.path.getsize(country_db) < 1024:
+        download_file("https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-Country.mmdb", country_db)
+    else:
+        print("[=] 复用现有 Country.mmdb")
+    if not os.path.exists(asn_db) or os.path.getsize(asn_db) < 1024:
+        download_file("https://github.com/P3TERX/GeoLite.mmdb/raw/download/GeoLite2-ASN.mmdb", asn_db)
+    else:
+        print("[=] 复用现有 ASN.mmdb")
     print(f"[+] GeoLite 数据库就绪: Country={os.path.getsize(country_db)//1024}KB, ASN={os.path.getsize(asn_db)//1024}KB")
 
 
@@ -951,6 +969,20 @@ def parse_node_uri(uri: str):
     return None
 
 
+def node_dedup_key(outbound: dict, server: str, port: int, proto: str) -> tuple:
+    """仅合并功能配置完全一致的节点。
+
+    不只比较 UUID/密码：SNI、Reality 公钥/short-id、传输层、WS path/Host、
+    TLS、混淆参数等也会改变连接结果，必须纳入指纹，避免把不同配置的节点互相回填。
+    """
+    # tag 是客户端显示名称，不影响连接；除此之外完整保留协议参数。
+    normalized = {k: v for k, v in outbound.items() if k != "tag"}
+    serialized = json.dumps(normalized, sort_keys=True, ensure_ascii=False,
+                            separators=(",", ":"), default=str)
+    fingerprint = hashlib.sha256(serialized.encode("utf-8")).hexdigest()
+    return ((server or "").lower(), int(port), proto, fingerprint)
+
+
 def extract_nodes_from_text(text: str) -> set:
     results = set()
     if not text:
@@ -1180,6 +1212,7 @@ def test_single_node(item, keep_alive_check=True):
                              capture_output=True, text=True, timeout=15,
                              creationflags=(subprocess.CREATE_NO_WINDOW if os.name == "nt" else 0))
         if chk.returncode != 0:
+            record_probe_failure("sing-box配置校验失败")
             return None  # 配置级错误 → 该节点无法被 sing-box 使用, 必淘汰
     except Exception:
         pass  # check 本身失败不阻止后续 run 尝试
@@ -1205,6 +1238,7 @@ def test_single_node(item, keep_alive_check=True):
             except Exception:
                 time.sleep(0.15)
         if not ready:
+            record_probe_failure("sing-box未启动或本地SOCKS未就绪")
             return None
 
         proxies = {"http": f"socks5h://127.0.0.1:{socks_port}",
@@ -1224,6 +1258,7 @@ def test_single_node(item, keep_alive_check=True):
             except Exception:
                 continue
         if alive_hits == 0:
+            record_probe_failure("活性探测URL均未返回200/204")
             return None
 
         # --- 2) 真实出口 IP (多路冗余) ---
@@ -1337,7 +1372,8 @@ def test_single_node(item, keep_alive_check=True):
             "is_stalled": is_stalled,
         }
         return result
-    except Exception:
+    except Exception as exc:
+        record_probe_failure(f"节点探测异常:{type(exc).__name__}")
         return None
     finally:
         if proc and proc.poll() is None:
@@ -1356,6 +1392,8 @@ def test_single_node(item, keep_alive_check=True):
 def run_liveness_test(candidates: list) -> list:
     print(f"[*] sing-box 全协议真实测活: {len(candidates)} 节点 (并发 {MAX_WORKERS_TEST}) ...")
     results = []
+    with _PROBE_FAILURE_LOCK:
+        _PROBE_FAILURE_COUNTS.clear()
     done_count = [0]
 
     def _work(item):
@@ -1369,12 +1407,21 @@ def run_liveness_test(candidates: list) -> list:
             if r:
                 results.append(r)
             if done_count[0] % 40 == 0:
-                print(f"[*] 测活进度: {done_count[0]}/{len(candidates)}, 通过 {len(results)}")
+                passing = sum(1 for x in results if x["alive"] and not x["is_stalled"])
+                print(f"[*] 测活进度: {done_count[0]}/{len(candidates)}, 达标 {passing}")
 
     alive = [r for r in results if r["alive"] and not r["is_stalled"]]
     mitm = sum(1 for r in results if r["mitm_risk"])
     stalled = sum(1 for r in results if r["is_stalled"])
-    print(f"[+] 测活完成: 真活 {len(alive)} | 断流淘汰 {stalled} | MITM 风险 {mitm}")
+    speed_unavailable = sum(1 for r in results if r.get("speed_bps", 0) <= 0)
+    print(f"[+] 测活完成: 达标 {len(alive)} | 低速/测速无数据淘汰 {stalled} "
+          f"(其中测速无数据 {speed_unavailable}) | MITM 风险 {mitm}")
+    with _PROBE_FAILURE_LOCK:
+        failure_summary = sorted(_PROBE_FAILURE_COUNTS.items(), key=lambda item: -item[1])
+    if failure_summary:
+        print("[*] 未通过基础隧道检测的原因统计:")
+        for reason, count in failure_summary:
+            print(f"    - {reason}: {count}")
     return results  # 保留全部信息, 分类阶段再决定去留
 
 
@@ -2433,7 +2480,7 @@ export default {{
 
 ## 🛠️ 项目使用说明
 1. **自动更新机制**：GitHub Actions 每 6 小时全自动运行并刷新上述全部订阅与数据。
-2. **测活标准**：节点必须通过 ① 端口预检 ② sing-box 实际隧道 3 个 generate_204 探测 ③ 真实出口 IP 穿透获取 ④ Cloudflare 5MB 限时下载 (吞吐 ≥ 70KB/s) ⑤ TLS 证书校验非 MITM, 方可入库。
+2. **测活标准**：节点必须通过 ① 端口预检 ② sing-box 实际隧道 3 个 generate_204 探测 ③ 真实出口 IP 穿透获取 ④ 测速端点 2.5MB 限时下载 (吞吐 ≥ 70KB/s) ⑤ TLS 证书校验非 MITM, 方可入库。
 3. **多客户端兼容**：Clash / v2rayN / sing-box 全格式订阅。
 """
     with open(os.path.join(BASEDIR, "README.md"), "w", encoding="utf-8") as f:
@@ -2468,36 +2515,12 @@ def main():
             continue
         candidates.append((uri, outbound, server, port, proto))
 
-    # 2.5 ★ 测前强去重 (凭据指纹去重: 同 凭据+目标+协议 只测一次, 结果回填全部重复节点)
-    #     key = (server, port, proto, 凭据指纹): 凭据不同 → 服务端校验结果可能不同, 不可合并
-    #     凭据指纹: uuid/password 各协议的核心身份字段 (vless uuid / vmess id+alterId /
-    #               trojan password / ss 2022密钥 / hy2 auth / tuic uuid+passwd / anytls password)
-    #     完全相同 = 同一节点被多源重复收录 (免费池常态, 30+ 份不同名字) → 只测一次
-    def cred_fingerprint(outbound: dict, proto: str) -> str:
-        try:
-            if proto == "vless":
-                return f"{outbound.get('uuid','')}"
-            if proto == "vmess":
-                return f"{outbound.get('uuid','') or outbound.get('user_id','')}"
-            if proto == "trojan":
-                return f"{outbound.get('password','')}"
-            if proto == "shadowsocks":
-                return f"{outbound.get('method','')}|{outbound.get('password','')}"
-            if proto == "hysteria2":
-                return f"{outbound.get('password','') or ''}|{outbound.get('server_ports','')}"
-            if proto == "tuic":
-                return f"{outbound.get('uuid','')}|{outbound.get('password','')}"
-            if proto == "anytls":
-                return f"{outbound.get('password','')}"
-            return json.dumps({k: v for k, v in outbound.items()
-                              if k in ("uuid", "password", "user_id", "method")}, sort_keys=True)
-        except Exception:
-            return ""  # 指纹失败 → 不合并 (宁慢不错)
-
+    # 2.5 测前去重：只合并 endpoint 与完整协议配置都相同的节点。
+    # 旧回填只按 server/port/proto 匹配，会将同地址不同凭据/传输参数的测试结果串用。
     seen_keys, deduped, dup_count = {}, [], 0
     for item in candidates:
         uri, outbound, server, port, proto = item
-        key = (server.lower() if server else "", port, proto, cred_fingerprint(outbound, proto))
+        key = node_dedup_key(outbound, server, port, proto)
         if key in seen_keys:
             seen_keys[key].append(uri)  # 记录重复 URI, 测活后回填
             dup_count += 1
@@ -2505,7 +2528,7 @@ def main():
             seen_keys[key] = [uri]
             deduped.append(item)
     if dup_count:
-        print(f"[*] 测前去重(凭据指纹): {len(candidates)} → {len(deduped)} (剔除重复 {dup_count} — 结果将回填)")
+        print(f"[*] 测前去重(完整协议配置指纹): {len(candidates)} → {len(deduped)} (剔除重复 {dup_count} — 结果将回填)")
     DEDUP_MAP = seen_keys  # 供测活后回填 (全局)
     candidates = deduped
 
@@ -2524,21 +2547,27 @@ def main():
     # 4. 真实测活 (只测去重后的代表节点)
     test_results = run_liveness_test(candidates)
 
-    # 4.5 ★ 重复节点结果回填: 同 凭据+目标 的重复 URI 继承测活结果 (凭据相同 → 服务端表现一致)
+    # 4.5 重复节点结果回填：仅完整协议配置指纹相同的 URI 才继承测活结果
     if DEDUP_MAP:
+        # 必须按「服务器 + 端口 + 协议 + 凭据指纹」查找测试结果。
+        # 旧逻辑只按 server/port/proto 匹配，会把同地址上另一组账号/密码的成功结果
+        # 回填给失败凭据，导致已失效节点被错误写入订阅（典型假阳性）。
         result_by_key = {}
         for r in test_results:
-            key = ((r["server"] or "").lower(), r["port"], r["proto"])
-            result_by_key[key] = r
+            parsed_result = parse_node_uri(r.get("raw", ""))
+            if not parsed_result:
+                continue
+            result_ob, result_server, result_port, result_proto = parsed_result
+            result_key = node_dedup_key(result_ob, result_server, result_port, result_proto)
+            result_by_key[result_key] = r
+
         expanded = list(test_results)
         backfilled = 0
-        # 反向索引: server:port:proto → 原始 fingerprint (从 DEDUP_MAP 的 key 直接继承)
         for key, uris in DEDUP_MAP.items():
             if len(uris) <= 1:
                 continue
-            # 用 key 的前三段 (server, port, proto) 找测活结果
-            lookup = (key[0], key[1], key[2])
-            r = result_by_key.get(lookup)
+            # key 本身已经包含完整凭据指纹，不得降级成前三段匹配。
+            r = result_by_key.get(key)
             if not r or not r.get("alive"):
                 continue
             for extra_uri in uris[1:]:
@@ -2547,7 +2576,7 @@ def main():
                 expanded.append(clone)
                 backfilled += 1
         if backfilled:
-            print(f"[+] 重复节点回填: +{backfilled} (继承代表测活结果)")
+            print(f"[+] 重复节点回填: +{backfilled} (仅继承相同凭据的代表节点结果)")
         test_results = expanded
 
     # 5. ★ 家宽链式复测: 用最快存活节点做前置双跳复测家宽候选
