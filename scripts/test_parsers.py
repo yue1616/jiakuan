@@ -203,6 +203,41 @@ def run_test():
     assert special_parsed and special_parsed[0]["password"] == special_password_node["password"], \
         "Hysteria2 特殊字符密码在导出/导入往返中发生变化"
     print("  ✅ Hysteria2 特殊字符密码可以安全往返")
+
+    print()
+    print("阶段6: v2rayN/Xray 不兼容 VLESS 过滤测试")
+    unsafe_public_ip = {
+        "type": "vless", "tag": "public-plain", "server": "203.0.113.10",
+        "server_port": 443, "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+        "transport": {"type": "ws", "path": "/ws"},
+    }
+    # 文档网段不是 global，因此再用实际 public-IP 语义测试；地址只作为纯单元样本，不发起网络连接。
+    unsafe_public_ip["server"] = "8.8.4.4"
+    assert mv.outbound_to_v2ray_link(unsafe_public_ip, "unsafe") == "", \
+        "公网 IP 且没有 TLS/REALITY 的 VLESS 应从 v2rayN 订阅过滤"
+    print("  ✅ 公网 IP + 无 TLS/REALITY 的 VLESS 会被过滤")
+
+    safe_tls = dict(unsafe_public_ip, server="8.8.4.4", tls={"enabled": True, "server_name": "node.example"})
+    safe_link = mv.outbound_to_v2ray_link(safe_tls, "safe-tls")
+    assert safe_link and "security=tls" in safe_link, "带 TLS 的 VLESS 不应被误过滤"
+    print("  ✅ 公网 IP + TLS 的 VLESS 保留")
+
+    safe_domain = dict(unsafe_public_ip, server="node.example")
+    safe_domain_link = mv.outbound_to_v2ray_link(safe_domain, "domain-node")
+    assert safe_domain_link, "域名型 VLESS 不应仅因没有 TLS 被此规则误过滤"
+    print("  ✅ 域名型 VLESS 不会被此过滤规则误伤")
+
+    print()
+    print("阶段7: 最终去重不会误删共享出口 IP 的备用入口")
+    uri_a = "vless://b831381d-6324-4d53-ad4f-8cda48b30811@edge-a.example.com:443?encryption=none&security=tls&sni=edge.example.com&type=ws&host=edge.example.com&path=%2Fws#edge-a"
+    uri_a_renamed = uri_a.rsplit("#", 1)[0] + "#another-name"
+    uri_b = "vless://b831381d-6324-4d53-ad4f-8cda48b30811@edge-b.example.com:443?encryption=none&security=tls&sni=edge.example.com&type=ws&host=edge.example.com&path=%2Fws#edge-b"
+    key_a = mv.final_node_dedup_key({"raw": uri_a, "exit_ip": "198.51.100.10", "port": 443})
+    key_a_renamed = mv.final_node_dedup_key({"raw": uri_a_renamed, "exit_ip": "198.51.100.10", "port": 443})
+    key_b = mv.final_node_dedup_key({"raw": uri_b, "exit_ip": "198.51.100.10", "port": 443})
+    assert key_a == key_a_renamed, "只改显示名称不应生成重复连接配置"
+    assert key_a != key_b, "共享出口 IP/端口的不同入口不能被当作同一个连接配置"
+    print("  ✅ 相同配置不同名称合并；不同服务器入口即使共享出口 IP/端口也会保留")
     print("全部测试通过 ✅")
 
 
