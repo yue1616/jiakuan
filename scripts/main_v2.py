@@ -997,6 +997,20 @@ def node_dedup_key(outbound: dict, server: str, port: int, proto: str) -> tuple:
     return ((server or "").lower(), int(port), proto, fingerprint)
 
 
+def final_node_dedup_key(node: dict) -> tuple:
+    """最终导出时仅合并完全相同的连接配置，不按出口 IP+端口合并。
+
+    不同入口/协议/凭据可能共享同一个出口 IP 与端口；按出口 IP+端口只保留最快项，
+    会提前丢弃备用线路。尤其当客户端核心与 CI 测活核心不同，最快代表项未必是客户端可用项。
+    """
+    raw = node.get("raw") or ""
+    parsed = parse_node_uri(raw)
+    if not parsed:
+        return ("raw", raw.strip())
+    outbound, server, port, proto = parsed
+    return node_dedup_key(outbound, server, port, proto)
+
+
 def extract_nodes_from_text(text: str) -> set:
     results = set()
     if not text:
@@ -1857,6 +1871,18 @@ def outbound_to_v2ray_link(node: dict, name: str) -> str:
                 data["host"] = transport["host"]
         return "vmess://" + base64.b64encode(json.dumps(data, ensure_ascii=False).encode()).decode()
     if t == "vless":
+        # Xray 拒绝“公网 IP + 无 TLS/REALITY”的 VLESS outbound。
+        # sing-box 的测活可能通过，但导入 v2rayN/Xray 后会在启动阶段失败；
+        # 不伪造 TLS/SNI，而是仅从 v2rayN URI 订阅中跳过这类不兼容节点。
+        has_tls = bool(tls.get("enabled") or tls.get("reality"))
+        if not has_tls:
+            try:
+                server_ip = ipaddress.ip_address(str(server).strip("[]"))
+            except ValueError:
+                server_ip = None
+            if server_ip is not None and server_ip.is_global:
+                return ""
+
         # v2rayN 官方标准示例包含 encryption=none；显式输出默认 TCP，避免产生 ?#name 空查询。
         q = {"encryption": "none", "type": transport.get("type") or "tcp"}
         ttype = q["type"]
@@ -2176,16 +2202,19 @@ def classify_and_export(test_results: list):
     if downgraded:
         print(f"[*] 高 fraud 分 (≥75) 家宽候选降级: {downgraded} 个")
 
-    # ── 去重 (同出口IP+端口 只留最快) ──
+    # ── 最终去重：仅合并完整连接配置相同的重复项 ──
+    # 不再按 exit_ip:port 去重。相同出口 IP/端口不代表相同代理入口；
+    # 旧做法会丢掉不同域名、协议、凭据或传输参数的备用线路，且可能只留下 Xray 不兼容的代表项。
     best_by_key = {}
     for n in safe_nodes:
-        key = f"{n['exit_ip']}:{n['port']}" if n["exit_ip"] else f"{n['server']}:{n['port']}|{n['raw'][:64]}"
+        key = final_node_dedup_key(n)
         cur = best_by_key.get(key)
         if not cur or n["latency_ms"] < cur["latency_ms"]:
             best_by_key[key] = n
     unique_nodes = list(best_by_key.values())
     dup_dropped = len(safe_nodes) - len(unique_nodes)
-    print(f"[*] 去重: {len(safe_nodes)} → {len(unique_nodes)} (剔除重复 {dup_dropped})")
+    print(f"[*] 最终连接配置去重: {len(safe_nodes)} → {len(unique_nodes)} "
+          f"(合并完全相同配置 {dup_dropped}；保留共享出口 IP 的不同备用入口)")
 
     # 去重: 出口IP+端口 唯一化, 家宽区严格防同IP刷屏
     # ★ 链式复测 (chain_retest) 双跳失败的家宽候选 → 不进家宽专区 (降级普通)
@@ -2253,27 +2282,34 @@ def export_all(unique_nodes, residential, non_residential):
 
     def build_group(nodes_list, force_res=False):
         links, proxies, sb_nodes = [], [], []
+        v2ray_skipped = 0
         for idx, item in enumerate(nodes_list, start=1):
             name = make_node_name(item, idx, force_res)
             ob = item["outbound"]
             if not ob:
                 continue
-            links.append(outbound_to_v2ray_link(ob, name))
+            link = outbound_to_v2ray_link(ob, name)
+            if link:
+                links.append(link)
+            else:
+                v2ray_skipped += 1
             cp = outbound_to_clash(ob, name)
             if cp:
                 proxies.append(cp)
             sb_nodes.append(outbound_to_singbox(ob, name))
-        return links, proxies, sb_nodes
+        return links, proxies, sb_nodes, v2ray_skipped
 
     # 1) 全量
-    all_links, all_proxies, all_sb = build_group(unique_nodes)
+    all_links, all_proxies, all_sb, all_v2ray_skipped = build_group(unique_nodes)
+    if all_v2ray_skipped:
+        print(f"[!] v2rayN 兼容性过滤: 跳过 {all_v2ray_skipped} 个公网 IP 且无 TLS/REALITY 的 VLESS 节点（避免 Xray 启动失败）")
     with open(os.path.join(OUTPUT_DIR, "v2ray.txt"), "w", encoding="utf-8") as f:
         f.write(base64.b64encode("\n".join(all_links).encode()).decode())
     export_clash_yaml(all_proxies, os.path.join(OUTPUT_DIR, "clash.yaml"))
     export_singbox_json(all_sb, os.path.join(OUTPUT_DIR, "singbox.json"))
 
     # 2) 家宽总订阅
-    res_links, res_proxies, res_sb = build_group(residential, force_res=True)
+    res_links, res_proxies, res_sb, _ = build_group(residential, force_res=True)
     with open(os.path.join(OUTPUT_DIR, "residential.txt"), "w", encoding="utf-8") as f:
         f.write(base64.b64encode("\n".join(res_links).encode()).decode())
     if res_proxies:
@@ -2292,7 +2328,7 @@ def export_all(unique_nodes, residential, non_residential):
     for n in non_residential:
         by_cc.setdefault(n["country"], []).append(n)
     for cc, lst in by_cc.items():
-        l, p, s = build_group(lst)
+        l, p, s, _ = build_group(lst)
         with open(os.path.join(COUNTRY_DIR, f"{cc}.txt"), "w", encoding="utf-8") as f:
             f.write(base64.b64encode("\n".join(l).encode()).decode())
         export_clash_yaml(p, os.path.join(COUNTRY_DIR, f"clash-{cc}.yaml"))
