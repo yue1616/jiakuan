@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaoyu
+  server: 88.216.223.66
+  port: 443
+  udp: true
+  type: vless
+  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: 868419504747f6de
+  servername: tcpswed1.figurapn.ru
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -15,19 +27,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
-  server: 193.27.200.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
-    short-id: 3b20e438da99
-  servername: swe.wizard.select
-  client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   server: 62.60.159.81
   port: 2053
@@ -39,37 +38,46 @@ proxies:
     public-key: ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw
     short-id: d0ea1847066af5a6
   servername: www.samsung.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
-  server: sub.merky.top
+  server: 77.110.96.201
+  port: 36264
+  udp: true
+  type: hysteria2
+  password: Telegram-vpnjey
+  sni: se.vpnjey2.dpdns.org
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
+  server: swe.wizard.select
   port: 443
   udp: true
   type: vless
-  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
-  tls: true
-  servername: sub.merky.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /merky-connect/de6/
-    headers:
-      Host: sub.merky.top
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
-  server: se3.h1cloud.net
-  port: 25119
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
-    short-id: 10f517
-  servername: www.samsung.com
+    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
+    short-id: 3b20e438da99
+  servername: swe.wizard.select
   client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
+  server: 193.27.200.200
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3db6eb7e-c548-11f1-9902-a337233c6cda
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0
+    short-id: 3b20e438da99
+  servername: swe.wizard.select
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,6 +88,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,5 +99,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
 rules:
 - MATCH,PROXIES
