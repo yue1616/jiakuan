@@ -602,7 +602,7 @@ def _parse_transport(params: dict) -> dict:
     if network == "ws":
         t = {"type": "ws"}
         if params.get("path"):
-            t["path"] = urllib.parse.unquote(params["path"])
+            t["path"] = params["path"]
         if params.get("host"):
             t["headers"] = {"Host": params["host"]}
         # 0-RTT early data (v2ray ws 0-RTT: path 含 ?ed=2560 时由 max-early-data 指定)
@@ -613,7 +613,7 @@ def _parse_transport(params: dict) -> dict:
     if network in ("grpc", "gun"):
         t = {"type": "grpc"}
         if params.get("serviceName"):
-            t["service_name"] = urllib.parse.unquote(params["serviceName"])
+            t["service_name"] = params["serviceName"]
         return t
     if network in ("h2", "http"):   # v2ray 生态两种写法都有: type=h2 / type=http (导出用 http, 兼容两者)
         t = {"type": "http"}
@@ -621,12 +621,12 @@ def _parse_transport(params: dict) -> dict:
         if host:
             t["host"] = [h for h in host.split(",") if h]
         if params.get("path"):
-            t["path"] = urllib.parse.unquote(params["path"])
+            t["path"] = params["path"]
         return t
     if network == "httpupgrade":
         t = {"type": "httpupgrade"}
         if params.get("path"):
-            t["path"] = urllib.parse.unquote(params["path"])
+            t["path"] = params["path"]
         if params.get("host"):
             t["host"] = params["host"]
         return t
@@ -683,11 +683,25 @@ def parse_vmess(uri: str):
         outbound["alter_id"] = aid
     net = str(data.get("net", "tcp")).lower()
     if data.get("tls") in ("tls", "1", 1, True):
-        outbound["tls"] = {
+        # VMess 分享 JSON 常见字段：sni、fp、alpn、allowInsecure。
+        # verify_cert 是少见的反向语义兼容字段：true 表示验证证书，不应反过来跳过验证。
+        allow_insecure = data.get("allowInsecure", data.get("allow_insecure"))
+        if allow_insecure is None and "verify_cert" in data:
+            allow_insecure = not (str(data.get("verify_cert")).lower() in ("true", "1"))
+        tls_cfg = {
             "enabled": True,
             "server_name": str(data.get("sni") or data.get("host") or server).strip(),
-            "insecure": str(data.get("verify_cert", "false")).lower() in ("true", "1"),
+            "insecure": str(allow_insecure or "false").lower() in ("true", "1"),
         }
+        fp = str(data.get("fp") or "").strip()
+        if fp:
+            tls_cfg["utls"] = {"enabled": True, "fingerprint": fp}
+        alpn = data.get("alpn")
+        if isinstance(alpn, str) and alpn.strip():
+            tls_cfg["alpn"] = [x.strip() for x in alpn.split(",") if x.strip()]
+        elif isinstance(alpn, list) and alpn:
+            tls_cfg["alpn"] = [str(x).strip() for x in alpn if str(x).strip()]
+        outbound["tls"] = tls_cfg
     transport = None
     if net in ("ws",):
         transport = {"type": "ws"}
@@ -1815,6 +1829,12 @@ def outbound_to_v2ray_link(node: dict, name: str) -> str:
             "tls": "tls" if tls.get("enabled") else "",
             "sni": tls.get("server_name", ""),
         }
+        if tls.get("utls", {}).get("fingerprint"):
+            data["fp"] = tls["utls"]["fingerprint"]
+        if tls.get("alpn"):
+            data["alpn"] = ",".join(tls["alpn"])
+        if tls.get("insecure"):
+            data["allowInsecure"] = True
         if ttype == "ws":
             if transport.get("path"):
                 data["path"] = transport["path"]
@@ -1837,10 +1857,10 @@ def outbound_to_v2ray_link(node: dict, name: str) -> str:
                 data["host"] = transport["host"]
         return "vmess://" + base64.b64encode(json.dumps(data, ensure_ascii=False).encode()).decode()
     if t == "vless":
-        q = {}
-        ttype = transport.get("type")
+        # v2rayN 官方标准示例包含 encryption=none；显式输出默认 TCP，避免产生 ?#name 空查询。
+        q = {"encryption": "none", "type": transport.get("type") or "tcp"}
+        ttype = q["type"]
         if ttype:
-            q["type"] = ttype
             if ttype == "ws":
                 if transport.get("path"):
                     q["path"] = transport["path"]
@@ -1911,7 +1931,7 @@ def outbound_to_v2ray_link(node: dict, name: str) -> str:
                 if transport.get("host"):
                     q["host"] = transport["host"]
         query = urllib.parse.urlencode(q)
-        return f"trojan://{urllib.parse.quote(node['password'])}@{server}:{port}?{query}#{urllib.parse.quote(name)}"
+        return f"trojan://{urllib.parse.quote(node['password'], safe='')}@{server}:{port}?{query}#{urllib.parse.quote(name)}"
     if t == "shadowsocks":
         # SIP002: userinfo = urlsafe-base64(method:password), ★ 必须保留 padding ("=")
         # 实测: rstrip("=") 砍 padding 后 v2rayN 解析失败 (无 padding 的畸形 base64)
@@ -1931,7 +1951,7 @@ def outbound_to_v2ray_link(node: dict, name: str) -> str:
         if node.get("server_ports"):
             q["mport"] = ",".join(p.replace(":", "-") for p in node["server_ports"])
         query = urllib.parse.urlencode(q)
-        return f"hysteria2://{urllib.parse.quote(node['password'])}@{server}:{port}?{query}#{urllib.parse.quote(name)}"
+        return f"hysteria2://{urllib.parse.quote(node['password'], safe='')}@{server}:{port}?{query}#{urllib.parse.quote(name)}"
     if t == "tuic":
         q = {
             "congestion_control": node.get("congestion_control", "bbr"),
@@ -1943,7 +1963,7 @@ def outbound_to_v2ray_link(node: dict, name: str) -> str:
         if tls.get("insecure"):
             q["allow_insecure"] = "1"
         query = urllib.parse.urlencode(q)
-        return f"tuic://{urllib.parse.quote(node['uuid'])}:{urllib.parse.quote(node['password'])}@{server}:{port}?{query}#{urllib.parse.quote(name)}"
+        return f"tuic://{urllib.parse.quote(node['uuid'], safe='')}:{urllib.parse.quote(node['password'], safe='')}@{server}:{port}?{query}#{urllib.parse.quote(name)}"
     if t == "anytls":
         q = {}
         if tls.get("server_name"):
@@ -1951,7 +1971,7 @@ def outbound_to_v2ray_link(node: dict, name: str) -> str:
         if tls.get("insecure"):
             q["insecure"] = "1"
         query = urllib.parse.urlencode(q)
-        return f"anytls://{urllib.parse.quote(node['password'])}@{server}:{port}?{query}#{urllib.parse.quote(name)}"
+        return f"anytls://{urllib.parse.quote(node['password'], safe='')}@{server}:{port}?{query}#{urllib.parse.quote(name)}"
     return ""
 
 
