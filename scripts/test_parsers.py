@@ -30,7 +30,8 @@ SAMPLES = {
         "v": "2", "ps": "TestVmess", "add": "vm.example.com", "port": "443",
         "id": "b831381d-6324-4d53-ad4f-8cda48b30811", "aid": "0",
         "scy": "auto", "net": "ws", "type": "none", "host": "vm.example.com",
-        "path": "/vmws", "tls": "tls", "sni": "vm.example.com"}).encode()).decode(),
+        "path": "/vmws", "tls": "tls", "sni": "vm.example.com",
+        "fp": "chrome", "alpn": "h2,http/1.1", "allowInsecure": True}).encode()).decode(),
     # VMess legacy (tcp, no tls, aid>0)
     "vmess_legacy": "vmess://" + mv.base64.b64encode(json.dumps({
         "v": "2", "ps": "TestVmessLegacy", "add": "legacy.example.com", "port": "8080",
@@ -173,6 +174,35 @@ def run_test():
     assert key != mv.node_dedup_key(other_sni, "node.example", 443, "vless"), "不同 SNI 不可合并"
     assert key != mv.node_dedup_key(other_path, "node.example", 443, "vless"), "不同传输路径不可合并"
     print("  ✅ 相同配置可去重；凭据、SNI、传输路径不同则独立测活")
+
+    print()
+    print("阶段5: v2rayN 导出链接往返测试")
+    for sample_name, original_ob in outbounds.items():
+        exported = mv.outbound_to_v2ray_link(original_ob, "roundtrip")
+        assert exported, f"{sample_name}: 导出结果为空"
+        reparsed = mv.parse_node_uri(exported)
+        assert reparsed, f"{sample_name}: 导出的链接无法再次解析: {exported[:100]}"
+        ob2, server2, port2, proto2 = reparsed
+        server1 = original_ob["server"]
+        port1 = original_ob.get("server_port")
+        if port1 is None:
+            port1 = int(str(original_ob["server_ports"][0]).split(":")[0])
+        key1 = mv.node_dedup_key(original_ob, server1, port1, original_ob["type"])
+        key2 = mv.node_dedup_key(ob2, server2, port2, proto2)
+        assert key1 == key2, f"{sample_name}: 导出后连接参数发生变化"
+        print(f"  ✅ {sample_name}: 导出后协议参数保持一致")
+
+    # 保留对 URI 保留字符密码的覆盖，避免 / ? # @ 被误判成 URI 分隔符。
+    special_password_node = {
+        "type": "hysteria2", "tag": "node", "server": "hy2.example.com",
+        "server_port": 443, "password": "a/b?c#d@e",
+        "tls": {"enabled": True, "server_name": "hy2.example.com", "insecure": False},
+    }
+    special_link = mv.outbound_to_v2ray_link(special_password_node, "special-password")
+    special_parsed = mv.parse_node_uri(special_link)
+    assert special_parsed and special_parsed[0]["password"] == special_password_node["password"], \
+        "Hysteria2 特殊字符密码在导出/导入往返中发生变化"
+    print("  ✅ Hysteria2 特殊字符密码可以安全往返")
     print("全部测试通过 ✅")
 
 
