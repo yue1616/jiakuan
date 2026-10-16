@@ -17,6 +17,17 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇧🇷 巴西 (Brazil) 02 - xiaoyu
+  server: 137.131.171.249
+  port: null
+  udp: true
+  type: hysteria2
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  ports: 20000-30000
+- name: 🇧🇷 巴西 (Brazil) 03 - xiaoyu
   server: platform101.golnamakcert.top
   port: 80
   udp: true
@@ -27,6 +38,13 @@ proxies:
     path: /platform101
     headers:
       Host: platform101.halalkhor.info
+- name: 🇧🇷 巴西 (Brazil) 04 - xiaoyu
+  server: 216.128.168.190
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: owVdNnQcdPgthSyX
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +52,8 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaoyu
   - 🇧🇷 巴西 (Brazil) 02 - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 03 - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +61,7 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaoyu
   - 🇧🇷 巴西 (Brazil) 02 - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 03 - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 04 - xiaoyu
 rules:
 - MATCH,PROXIES

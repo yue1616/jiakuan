@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
-  server: 152.67.115.203
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 633bc3be486b646190661ac2387c150a
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
   server: 192.9.175.191
   port: null
   udp: true
@@ -24,15 +14,17 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a34f3990b69f44bfa0d32385
-  ports: 20000-30000
-- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
-  server: vpn-au-001.fastervpn.world
+  ports: 20000-30000,20000-20000
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
+  server: 152.67.115.203
   port: 443
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
+  password: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
   skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
-  - 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
-  - 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

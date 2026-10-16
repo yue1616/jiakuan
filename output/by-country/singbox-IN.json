@@ -6,6 +6,20 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01 - xiaoyu",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - xiaoyu",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -25,7 +39,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 03 - xiaoyu",
       "server": "148.113.5.44",
       "server_port": 443,
       "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
@@ -46,18 +60,22 @@
     },
     {
       "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 03 - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 04 - xiaoyu",
       "server": "152.67.8.205",
       "server_port": 80,
       "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
       "security": "auto",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "152.67.8.205"
+        }
       }
     },
     {
       "type": "trojan",
-      "tag": "🇮🇳 印度 (India) 04 - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 05 - xiaoyu",
       "server": "in.tronsg.com",
       "server_port": 443,
       "password": "Trojan@82164024",
@@ -68,18 +86,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - xiaoyu",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 (India) 06 - xiaoyu",
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 (India) 07 - xiaoyu",
+      "server": "139.84.166.47",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "selector",
@@ -90,7 +110,9 @@
         "🇮🇳 印度 (India) 02 - xiaoyu",
         "🇮🇳 印度 (India) 03 - xiaoyu",
         "🇮🇳 印度 (India) 04 - xiaoyu",
-        "🇮🇳 印度 (India) 05 - xiaoyu"
+        "🇮🇳 印度 (India) 05 - xiaoyu",
+        "🇮🇳 印度 (India) 06 - xiaoyu",
+        "🇮🇳 印度 (India) 07 - xiaoyu"
       ]
     },
     {
@@ -101,7 +123,9 @@
         "🇮🇳 印度 (India) 02 - xiaoyu",
         "🇮🇳 印度 (India) 03 - xiaoyu",
         "🇮🇳 印度 (India) 04 - xiaoyu",
-        "🇮🇳 印度 (India) 05 - xiaoyu"
+        "🇮🇳 印度 (India) 05 - xiaoyu",
+        "🇮🇳 印度 (India) 06 - xiaoyu",
+        "🇮🇳 印度 (India) 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

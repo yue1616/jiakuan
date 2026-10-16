@@ -28,13 +28,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu",
       "server": "185.135.86.175",
+      "server_port": 9033,
+      "method": "aes-256-cfb",
+      "password": "UTJA57ypk2XKQpnm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
+      "server": "185.135.86.175",
       "server_port": 9017,
       "method": "aes-256-cfb",
       "password": "HAVAdE3nXhqA5nHp"
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu",
       "server": "195.123.208.32",
       "server_port": 443,
       "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
@@ -60,7 +68,8 @@
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
+        "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu"
       ]
     },
     {
@@ -69,7 +78,8 @@
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu"
+        "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
+        "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
