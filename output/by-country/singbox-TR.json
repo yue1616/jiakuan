@@ -14,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -69,65 +69,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-      "server": "85.192.48.142",
-      "server_port": 443,
-      "uuid": "adc11f30-e4cb-4985-bf5e-f9ded69c019f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nvidia.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI",
-          "short_id": "db04ce8bdb8900f1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
-      "server": "177.3.208.65",
-      "server_port": 443,
-      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
-      "tls": {
-        "enabled": true,
-        "server_name": "tgmansion.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless-tr"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaoyu",
-      "server": "me17.msjia8844.site",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
-      "tls": {
-        "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇹🇷 土耳其 (Turkey) 07 - xiaoyu",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
       "server": "188.114.98.0",
       "server_port": 443,
       "password": "e309e031-991e-4656-9934-44d10deb8fd8",
@@ -152,22 +95,23 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇹🇷 土耳其 (Turkey) 08 - xiaoyu",
-      "server": "104.21.48.18",
-      "server_port": 2053,
-      "password": "e309e031-991e-4656-9934-44d10deb8fd8",
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
       "tls": {
         "enabled": true,
-        "server_name": "nimm.mpd.cc.cd",
-        "insecure": false
+        "server_name": "tgmansion.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/0962",
-        "headers": {
-          "Host": "nimm.mpd.cc.cd"
-        }
+        "path": "/vless-tr"
       }
     },
     {
@@ -179,10 +123,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 06 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 07 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 08 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu"
       ]
     },
     {
@@ -193,10 +134,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 06 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 07 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 08 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

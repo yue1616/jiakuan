@@ -4,20 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 01 - xiaoyu",
-      "server": "155.138.138.2",
+      "server": "149.22.95.183",
       "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "ca.tronsg.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
     },
     {
       "type": "vmess",
@@ -30,22 +22,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 03 - xiaoyu",
-      "server": "137.184.174.93",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 04 - xiaoyu",
-      "server": "149.22.95.183",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 05 - xiaoyu",
       "server": "51.222.136.236",
       "server_port": 8882,
       "method": "aes-256-gcm",
@@ -53,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 06 - xiaoyu",
+      "tag": "🇨🇦 加拿大 (Canada) 04 - xiaoyu",
       "server": "66.70.179.198",
       "server_port": 2053,
       "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
@@ -73,7 +49,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇨🇦 加拿大 (Canada) 07 - xiaoyu",
+      "tag": "🇨🇦 加拿大 (Canada) 05 - xiaoyu",
       "server": "23.162.200.198",
       "server_port": 18000,
       "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
@@ -81,7 +57,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 08 - xiaoyu",
+      "tag": "🇨🇦 加拿大 (Canada) 06 - xiaoyu",
+      "server": "137.184.174.93",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 07 - xiaoyu",
       "server": "138.197.141.58",
       "server_port": 8080,
       "method": "rc4-md5",
@@ -89,7 +73,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 09 - xiaoyu",
+      "tag": "🇨🇦 加拿大 (Canada) 08 - xiaoyu",
       "server": "209.200.246.148",
       "server_port": 443,
       "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
@@ -99,7 +83,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -110,7 +94,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 10 - xiaoyu",
+      "tag": "🇨🇦 加拿大 (Canada) 09 - xiaoyu",
       "server": "148.113.196.75",
       "server_port": 8443,
       "uuid": "08f96221-9b7b-4e6f-8ffe-aee8b9c9b504",
@@ -126,7 +110,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 11 - xiaoyu",
+      "tag": "🇨🇦 加拿大 (Canada) 10 - xiaoyu",
       "server": "51.79.31.36",
       "server_port": 31146,
       "uuid": "f0466557-2fd5-442e-94cb-12c6b764155e",
@@ -146,36 +130,23 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 11 - xiaoyu",
+      "server": "51.222.200.165",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 12 - xiaoyu",
-      "server": "511.150333.xyz",
-      "server_port": 21003,
-      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
-          "short_id": "bab49aa4c2a88d27"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇨🇦 加拿大 (Canada) 13 - xiaoyu",
-      "server": "51.222.155.32",
-      "server_port": 5003,
-      "method": "aes-256-gcm",
-      "password": "g5MeD6Ft3CWlJId"
+      "server": "milo.rubinaz.xyz",
+      "server_port": 8080,
+      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 14 - xiaoyu",
+      "tag": "🇨🇦 加拿大 (Canada) 13 - xiaoyu",
       "server": "511.150333.xyz",
       "server_port": 21004,
       "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
@@ -195,7 +166,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 15 - xiaoyu",
+      "tag": "🇨🇦 加拿大 (Canada) 14 - xiaoyu",
       "server": "511.150333.xyz",
       "server_port": 21001,
       "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
@@ -215,7 +186,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 16 - xiaoyu",
+      "tag": "🇨🇦 加拿大 (Canada) 15 - xiaoyu",
       "server": "511.150333.xyz",
       "server_port": 21002,
       "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
@@ -235,10 +206,35 @@
     },
     {
       "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 16 - xiaoyu",
+      "server": "511.150333.xyz",
+      "server_port": 21003,
+      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
+          "short_id": "bab49aa4c2a88d27"
+        }
+      }
+    },
+    {
+      "type": "trojan",
       "tag": "🇨🇦 加拿大 (Canada) 17 - xiaoyu",
-      "server": "milo.rubinaz.xyz",
-      "server_port": 8080,
-      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
+      "server": "ca.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "ca.tronsg.com",
+        "insecure": true
+      }
     },
     {
       "type": "selector",

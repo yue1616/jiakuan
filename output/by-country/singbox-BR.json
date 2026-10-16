@@ -26,20 +26,45 @@
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 02 - xiaoyu",
-      "server": "platform102.golnamakcert.top",
+      "server": "platform101.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform102",
+        "path": "/platform101",
         "headers": {
-          "Host": "platform102.halalkhor.info"
+          "Host": "platform101.halalkhor.info"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇧🇷 巴西 (Brazil) 03 - xiaoyu",
+      "server": "platform106.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform106",
+        "headers": {
+          "Host": "platform106.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 04 - xiaoyu",
+      "server": "platform107.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform107"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇷 巴西 (Brazil) 05 - xiaoyu",
       "server": "platform118.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -53,21 +78,21 @@
     },
     {
       "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 04 - xiaoyu",
-      "server": "platform101.golnamakcert.top",
+      "tag": "🇧🇷 巴西 (Brazil) 06 - xiaoyu",
+      "server": "platform102.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
-        "path": "/platform101",
+        "path": "/platform102",
         "headers": {
-          "Host": "platform101.halalkhor.info"
+          "Host": "platform102.halalkhor.info"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇧🇷 巴西 (Brazil) 05 - xiaoyu",
+      "tag": "🇧🇷 巴西 (Brazil) 07 - xiaoyu",
       "server": "137.131.171.249",
       "password": "CyG0RFxMjzs41uQD4OLuHQ==",
       "tls": {
@@ -92,7 +117,9 @@
         "🇧🇷 巴西 (Brazil) 02 - xiaoyu",
         "🇧🇷 巴西 (Brazil) 03 - xiaoyu",
         "🇧🇷 巴西 (Brazil) 04 - xiaoyu",
-        "🇧🇷 巴西 (Brazil) 05 - xiaoyu"
+        "🇧🇷 巴西 (Brazil) 05 - xiaoyu",
+        "🇧🇷 巴西 (Brazil) 06 - xiaoyu",
+        "🇧🇷 巴西 (Brazil) 07 - xiaoyu"
       ]
     },
     {
@@ -103,7 +130,9 @@
         "🇧🇷 巴西 (Brazil) 02 - xiaoyu",
         "🇧🇷 巴西 (Brazil) 03 - xiaoyu",
         "🇧🇷 巴西 (Brazil) 04 - xiaoyu",
-        "🇧🇷 巴西 (Brazil) 05 - xiaoyu"
+        "🇧🇷 巴西 (Brazil) 05 - xiaoyu",
+        "🇧🇷 巴西 (Brazil) 06 - xiaoyu",
+        "🇧🇷 巴西 (Brazil) 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
