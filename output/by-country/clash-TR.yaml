@@ -5,29 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
-  server: 151.241.226.201
-  port: 2053
+  server: 78.135.73.47
+  port: 443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: firefox
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
-  server: 151.241.226.201
-  port: 2053
+  server: 78.135.73.47
+  port: 443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: random
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   server: 151.241.226.201
   port: 2053
@@ -39,33 +41,31 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  server: 78.135.73.47
-  port: 443
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   tls: true
   reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
-  server: 78.135.73.47
-  port: 443
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   tls: true
   reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
-  client-fingerprint: firefox
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
   server: 62.60.233.157
   port: 8444
@@ -76,7 +76,7 @@ proxies:
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   servername: github.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -90,11 +90,11 @@ proxies:
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   servername: github.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - xiaoyu
   server: 177.3.208.65
   port: 443
   udp: true
@@ -107,6 +107,37 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-tr
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
+  server: 87.120.106.130
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6fab89df-d5c3-4d73-8df5-897ca352bfe8
+  tls: true
+  servername: pqro5mlb4c88.dopwiz.com
+  skip-cert-verify: false
+- name: 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
+  server: nimm.mpd.cc.cd
+  port: 2053
+  udp: true
+  type: trojan
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  sni: nimm.mpd.cc.cd
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /0962
+- name: 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
+  server: 104.21.48.18
+  port: 2053
+  udp: true
+  type: trojan
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  sni: nimm.mpd.cc.cd
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /0962
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,7 +150,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,6 +166,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
 rules:
 - MATCH,PROXIES

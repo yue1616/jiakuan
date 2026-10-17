@@ -14,7 +14,7 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 02 - xiaoyu",
-      "server": "api.mediakaskad.cc",
+      "server": "189.74.115.16",
       "server_port": 443,
       "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
       "flow": "xtls-rprx-vision",
@@ -23,7 +23,7 @@
         "server_name": "api.mediakaskad.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -44,7 +44,7 @@
         "server_name": "api.mediakaskad.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -65,7 +65,7 @@
         "server_name": "api.mediakaskad.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -86,7 +86,28 @@
         "server_name": "api.mediakaskad.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+          "short_id": "a8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 06 - xiaoyu",
+      "server": "api.mediakaskad.cc",
+      "server_port": 443,
+      "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.mediakaskad.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -104,7 +125,8 @@
         "🇦🇹 奥地利 (Austria) 02 - xiaoyu",
         "🇦🇹 奥地利 (Austria) 03 - xiaoyu",
         "🇦🇹 奥地利 (Austria) 04 - xiaoyu",
-        "🇦🇹 奥地利 (Austria) 05 - xiaoyu"
+        "🇦🇹 奥地利 (Austria) 05 - xiaoyu",
+        "🇦🇹 奥地利 (Austria) 06 - xiaoyu"
       ]
     },
     {
@@ -115,7 +137,8 @@
         "🇦🇹 奥地利 (Austria) 02 - xiaoyu",
         "🇦🇹 奥地利 (Austria) 03 - xiaoyu",
         "🇦🇹 奥地利 (Austria) 04 - xiaoyu",
-        "🇦🇹 奥地利 (Austria) 05 - xiaoyu"
+        "🇦🇹 奥地利 (Austria) 05 - xiaoyu",
+        "🇦🇹 奥地利 (Austria) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

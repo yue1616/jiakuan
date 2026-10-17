@@ -14,7 +14,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -38,7 +38,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -62,31 +62,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇩🇰 丹麦 (Denmark) 04 - xiaoyu",
-      "server": "193.233.253.180",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -106,8 +82,7 @@
         "auto",
         "🇩🇰 丹麦 (Denmark) 01 - xiaoyu",
         "🇩🇰 丹麦 (Denmark) 02 - xiaoyu",
-        "🇩🇰 丹麦 (Denmark) 03 - xiaoyu",
-        "🇩🇰 丹麦 (Denmark) 04 - xiaoyu"
+        "🇩🇰 丹麦 (Denmark) 03 - xiaoyu"
       ]
     },
     {
@@ -116,8 +91,7 @@
       "outbounds": [
         "🇩🇰 丹麦 (Denmark) 01 - xiaoyu",
         "🇩🇰 丹麦 (Denmark) 02 - xiaoyu",
-        "🇩🇰 丹麦 (Denmark) 03 - xiaoyu",
-        "🇩🇰 丹麦 (Denmark) 04 - xiaoyu"
+        "🇩🇰 丹麦 (Denmark) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
