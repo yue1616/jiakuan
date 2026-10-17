@@ -15,15 +15,11 @@ proxies:
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 - name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu
-  server: me17.msjia8844.site
-  port: 7443
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
-  type: hysteria2
-  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
-  sni: me17.msjia8844.site
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   server: hinet1.2yly.com
   port: 24215
@@ -34,7 +30,7 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaoyu
-  server: uk2-2.998998.best
+  server: uk3-2.998998.best
   port: 443
   udp: true
   type: vmess
@@ -13,72 +13,24 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: server3.9966338.xyz
+  servername: server22.9966338.xyz
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /waetasiuofguiwer
+    path: /serhrdftshg
     headers:
-      Host: server3.9966338.xyz
-- name: 🌐 其他地区 (Other) 02 - xiaoyu
-  server: hikvision-plus.com
-  port: 2053
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 03 - xiaoyu
-  server: cctvhikvision.center
-  port: 2053
-  udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🌐 其他地区 (Other) 04 - xiaoyu
-  server: ccs2g.pai50288.uk
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
-  tls: true
-  servername: ccs2g.pai50288.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /pai50288
+      Host: server22.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaoyu
-  - 🌐 其他地区 (Other) 02 - xiaoyu
-  - 🌐 其他地区 (Other) 03 - xiaoyu
-  - 🌐 其他地区 (Other) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaoyu
-  - 🌐 其他地区 (Other) 02 - xiaoyu
-  - 🌐 其他地区 (Other) 03 - xiaoyu
-  - 🌐 其他地区 (Other) 04 - xiaoyu
 rules:
 - MATCH,PROXIES

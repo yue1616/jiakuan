@@ -5,13 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaoyu
-  server: 132.243.175.144
-  port: 8388
+  server: 86.106.84.194
+  port: 13261
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  cipher: aes-128-gcm
+  password: 2bf536a4bd6008511734a505d248de2c
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaoyu
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 140.238.213.114
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaoyu
   server: 140.238.213.114
   port: 50160
   udp: true
@@ -19,7 +27,7 @@ proxies:
   password: 84a506ca5aca505696a454d828420b3f
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 03 - xiaoyu
+- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaoyu
   server: 152.67.75.161
   port: 443
   udp: true
@@ -29,19 +37,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 04 - xiaoyu
-  server: 45.90.59.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: 19253fae84102271
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 05 - xiaoyu
   server: 138.124.63.224
   port: 8444
@@ -58,35 +53,42 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇨🇭 瑞士 (Switzerland) 06 - xiaoyu
-  server: 86.106.84.194
-  port: 13261
+  server: 45.90.59.15
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 2bf536a4bd6008511734a505d248de2c
+  type: vless
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 07 - xiaoyu
-  server: 208.69.78.217
-  port: 21086
+  server: 104.165.205.42
+  port: 8443
   udp: true
   type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
+  password: 990c8eb6-4c4e-4277-8602-79af8402cdd0
+  sni: speedtestmark.com
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 08 - xiaoyu
-  server: 208.69.78.217
-  port: 21154
+  server: freefl.aiage.work
+  port: 443
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4
+    short-id: ff0ddf949624ef2a
+  servername: freefl.aiage.work
+  client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 09 - xiaoyu
   server: 208.69.78.217
-  port: 33092
+  port: 21158
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -96,7 +98,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 10 - xiaoyu
   server: 208.69.78.217
-  port: 21084
+  port: 33152
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -106,7 +108,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 11 - xiaoyu
   server: 208.69.78.217
-  port: 21161
+  port: 33092
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -116,7 +118,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 12 - xiaoyu
   server: 208.69.78.217
-  port: 33174
+  port: 21161
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -126,7 +128,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 13 - xiaoyu
   server: 208.69.78.217
-  port: 33130
+  port: 21154
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -136,7 +138,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 14 - xiaoyu
   server: 208.69.78.217
-  port: 21113
+  port: 33141
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -146,7 +148,37 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 15 - xiaoyu
   server: 208.69.78.217
-  port: 21067
+  port: 21113
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 16 - xiaoyu
+  server: 208.69.78.217
+  port: 33187
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 17 - xiaoyu
+  server: 208.69.78.217
+  port: 21086
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 18 - xiaoyu
+  server: 208.69.78.217
+  port: 21021
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -174,6 +206,9 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 13 - xiaoyu
   - 🇨🇭 瑞士 (Switzerland) 14 - xiaoyu
   - 🇨🇭 瑞士 (Switzerland) 15 - xiaoyu
+  - 🇨🇭 瑞士 (Switzerland) 16 - xiaoyu
+  - 🇨🇭 瑞士 (Switzerland) 17 - xiaoyu
+  - 🇨🇭 瑞士 (Switzerland) 18 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -194,5 +229,8 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 13 - xiaoyu
   - 🇨🇭 瑞士 (Switzerland) 14 - xiaoyu
   - 🇨🇭 瑞士 (Switzerland) 15 - xiaoyu
+  - 🇨🇭 瑞士 (Switzerland) 16 - xiaoyu
+  - 🇨🇭 瑞士 (Switzerland) 17 - xiaoyu
+  - 🇨🇭 瑞士 (Switzerland) 18 - xiaoyu
 rules:
 - MATCH,PROXIES
