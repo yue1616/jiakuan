@@ -4,25 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu
-  server: dog-hk.kunlun01dns.com
-  port: 21018
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  server: 183.109.131.75
+  port: 20086
   udp: true
   type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
   alterId: 0
   cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

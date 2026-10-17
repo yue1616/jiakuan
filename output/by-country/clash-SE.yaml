@@ -5,16 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaoyu
-  server: 5.178.109.174
-  port: 14430
+  server: se3.h1cloud.net
+  port: 25119
   udp: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: ios
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
   server: 62.60.159.81
   port: 2053
@@ -46,6 +48,18 @@ proxies:
   grpc-opts:
     grpc-service-name: grpce5bb9e71
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
+  server: 45.12.63.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  tls: true
+  servername: edge-lab-b.10media.top
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: swedenfeed
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   server: edge-lab-b.10media.top
   port: 443
   udp: true
@@ -55,18 +69,6 @@ proxies:
   servername: edge-lab-b.10media.top
   skip-cert-verify: false
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: swedenfeed
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
-  server: 45.12.63.219
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-  tls: true
-  servername: edge-lab-b.10media.top
-  skip-cert-verify: false
   network: grpc
   grpc-opts:
     grpc-service-name: swedenfeed
@@ -92,11 +94,21 @@ proxies:
   tls: true
   servername: edge-lab-b.10media.top
   skip-cert-verify: false
-  client-fingerprint: ios
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: swedenfeed
 - name: 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
+  server: 77.110.96.201
+  port: 36264
+  udp: true
+  type: hysteria2
+  password: Telegram-vpnjey
+  sni: se.vpnjey2.dpdns.org
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
+- name: 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
   server: edge-lab-b.10media.top
   port: 443
   udp: true
@@ -105,10 +117,61 @@ proxies:
   tls: true
   servername: edge-lab-b.10media.top
   skip-cert-verify: false
-  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: swedenfeed
+- name: 🇸🇪 瑞典 (Sweden) 10 - xiaoyu
+  server: se3.h1cloud.net
+  port: 25119
+  udp: true
+  type: vless
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: random
+- name: 🇸🇪 瑞典 (Sweden) 11 - xiaoyu
+  server: edge-lab-b.10media.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  tls: true
+  servername: edge-lab-b.10media.top
+  skip-cert-verify: false
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: swedenfeed
+- name: 🇸🇪 瑞典 (Sweden) 12 - xiaoyu
+  server: se3.h1cloud.net
+  port: 25119
+  udp: true
+  type: vless
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: safari
+- name: 🇸🇪 瑞典 (Sweden) 13 - xiaoyu
+  server: se3.h1cloud.net
+  port: 25119
+  udp: true
+  type: vless
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4
+    short-id: 10f517
+  servername: www.samsung.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -122,6 +185,11 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 10 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 11 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 12 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 13 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -135,5 +203,10 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 10 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 11 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 12 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 13 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -12,28 +12,18 @@
       "password": "dU3DSNS8wYPXzEKw"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu",
-      "server": "213.183.63.60",
-      "server_port": 9098,
-      "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu"
+        "🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
