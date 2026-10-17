@@ -238,6 +238,32 @@ def run_test():
     assert key_a == key_a_renamed, "只改显示名称不应生成重复连接配置"
     assert key_a != key_b, "共享出口 IP/端口的不同入口不能被当作同一个连接配置"
     print("  ✅ 相同配置不同名称合并；不同服务器入口即使共享出口 IP/端口也会保留")
+    print()
+    print("阶段8: build_group 返回值解包回归测试")
+    import ast
+    source_path = os.path.join(os.path.dirname(mv.__file__), "main_v2.py")
+    with open(source_path, "r", encoding="utf-8") as source_file:
+        source_tree = ast.parse(source_file.read(), filename=source_path)
+    build_group_defs = [n for n in ast.walk(source_tree)
+                        if isinstance(n, ast.FunctionDef) and n.name == "build_group"]
+    assert len(build_group_defs) == 1, "应当只有一个 build_group 定义"
+    build_group_returns = [n for n in ast.walk(build_group_defs[0])
+                           if isinstance(n, ast.Return) and isinstance(n.value, ast.Tuple)]
+    assert build_group_returns, "build_group 应返回元组"
+    return_arities = {len(n.value.elts) for n in build_group_returns}
+    assert return_arities == {4}, f"build_group 返回项数量异常: {return_arities}"
+    build_group_assignments = [n for n in ast.walk(source_tree)
+                               if isinstance(n, ast.Assign)
+                               and isinstance(n.value, ast.Call)
+                               and isinstance(n.value.func, ast.Name)
+                               and n.value.func.id == "build_group"]
+    assert build_group_assignments, "没有找到 build_group 调用"
+    for assignment in build_group_assignments:
+        target = assignment.targets[0]
+        assert isinstance(target, ast.Tuple) and len(target.elts) == 4, \
+            f"第 {assignment.lineno} 行 build_group 解包数量与返回值不一致"
+    print("  ✅ build_group 的所有调用都接收 4 个返回值")
+
     print("全部测试通过 ✅")
 
 

@@ -2341,7 +2341,7 @@ def export_all(unique_nodes, residential, non_residential):
     for n in residential:
         res_by_cc.setdefault(n["country"], []).append(n)
     for cc, lst in res_by_cc.items():
-        l, p, s = build_group(lst, force_res=True)
+        l, p, s, _ = build_group(lst, force_res=True)
         with open(os.path.join(RESIDENTIAL_COUNTRY_DIR, f"{cc}.txt"), "w", encoding="utf-8") as f:
             f.write(base64.b64encode("\n".join(l).encode()).decode())
         export_clash_yaml(p, os.path.join(RESIDENTIAL_COUNTRY_DIR, f"clash-{cc}.yaml"))
