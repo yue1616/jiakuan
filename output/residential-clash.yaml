@@ -4,16 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
-  server: 155.117.19.17
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu
+  server: dog-hk.kunlun01dns.com
+  port: 21018
   udp: true
-  type: hysteria2
-  password: 5fa748137b6d822308eea4611f474ad5
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 - name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu
   server: test.keoplentuio.xyz
   port: 2053
@@ -21,7 +19,7 @@ proxies:
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  server: hinet1.2yly.com
+  server: 118.167.219.24
   port: 24215
   udp: true
   type: vless
@@ -30,13 +28,13 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
 - name: AUTO
@@ -44,7 +42,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
 rules:

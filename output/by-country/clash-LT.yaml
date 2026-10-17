@@ -6,26 +6,40 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu
   server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
+  server: 195.238.126.84
+  port: 9039
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qYEN5HX4JKeVCdEC
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
+  server: 195.238.126.20
   port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   server: 195.238.126.20
   port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
   server: 84.32.109.20
   port: 443
   udp: true
@@ -38,7 +52,7 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: litv.nztvpn.com
   client-fingerprint: chrome
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
   server: 84.32.109.20
   port: 443
   udp: true
@@ -51,7 +65,7 @@ proxies:
     short-id: 0da7e14db353e7d0
   servername: litv.nztvpn.com
   client-fingerprint: random
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
   server: b58e68t.lt1.h1clayd.click
   port: 443
   udp: true
@@ -74,6 +88,8 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
+  - 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
+  - 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,5 +101,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
+  - 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
+  - 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -5,21 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaoyu
-  server: uk3-2.998998.best
-  port: 443
+  server: 172.64.150.43
+  port: 2052
   udp: true
-  type: vmess
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: server22.9966338.xyz
-  skip-cert-verify: false
+  type: vless
+  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
   network: ws
   ws-opts:
-    path: /serhrdftshg
+    path: /rain1226
     headers:
-      Host: server22.9966338.xyz
+      Host: eu02.123450908.xyz
 proxy-groups:
 - name: PROXIES
   type: select

@@ -35,6 +35,27 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 03 - xiaoyu",
+      "server": "api.mediakaskad.cc",
+      "server_port": 443,
+      "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.mediakaskad.cc",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r5WB5FnSCt4eeBC1FJMfkWHbzsMuabo0Rc6wuAhlZUs",
+          "short_id": "a8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - xiaoyu",
       "server": "kozyavka.yandex-api.com",
       "server_port": 443,
       "uuid": "1b7ee703-fa08-4305-8469-ae3e30e61e44",
@@ -55,7 +76,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 04 - xiaoyu",
+      "tag": "🇦🇹 奥地利 (Austria) 05 - xiaoyu",
       "server": "api.mediakaskad.cc",
       "server_port": 443,
       "uuid": "082f5694-9019-4110-b67b-8125dbb9bab8",
@@ -65,7 +86,7 @@
         "server_name": "api.mediakaskad.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -82,7 +103,8 @@
         "🇦🇹 奥地利 (Austria) 01 - xiaoyu",
         "🇦🇹 奥地利 (Austria) 02 - xiaoyu",
         "🇦🇹 奥地利 (Austria) 03 - xiaoyu",
-        "🇦🇹 奥地利 (Austria) 04 - xiaoyu"
+        "🇦🇹 奥地利 (Austria) 04 - xiaoyu",
+        "🇦🇹 奥地利 (Austria) 05 - xiaoyu"
       ]
     },
     {
@@ -92,7 +114,8 @@
         "🇦🇹 奥地利 (Austria) 01 - xiaoyu",
         "🇦🇹 奥地利 (Austria) 02 - xiaoyu",
         "🇦🇹 奥地利 (Austria) 03 - xiaoyu",
-        "🇦🇹 奥地利 (Austria) 04 - xiaoyu"
+        "🇦🇹 奥地利 (Austria) 04 - xiaoyu",
+        "🇦🇹 奥地利 (Austria) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
