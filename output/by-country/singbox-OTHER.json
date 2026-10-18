@@ -4,35 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01 - xiaoyu",
-      "server": "188.114.97.6",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.volumeroot.com",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.volumeroot.com"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 02 - xiaoyu",
-      "server": "ccs2g.pai50288.uk",
+      "tag": "🌐 其他地区 (Other) 01 - xiaoyu",
+      "server": "104.21.3.219",
       "server_port": 443,
       "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
       "tls": {
@@ -57,16 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaoyu",
-        "🌐 其他地区 (Other) 02 - xiaoyu"
+        "🌐 其他地区 (Other) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaoyu",
-        "🌐 其他地区 (Other) 02 - xiaoyu"
+        "🌐 其他地区 (Other) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

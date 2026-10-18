@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇰🇭 柬埔寨 (Cambodia) 01 - xiaoyu",
-      "server": "nl5.hap-plus.ru",
-      "server_port": 8443,
-      "uuid": "05d7a479-a099-40cf-aecf-41aa934767b0",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 01 - xiaoyu",
+      "server": "81.208.170.142",
+      "server_port": 1500,
+      "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
       "tls": {
         "enabled": true,
-        "server_name": "nl5.hap-plus.ru",
-        "insecure": false,
+        "server_name": "www.ebay.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
+          "short_id": "775eb6408888248e"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/api/v1/events",
-        "headers": {
-          "Host": "nl5.hap-plus.ru"
-        }
+        "type": "grpc"
       }
     },
     {
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇭 柬埔寨 (Cambodia) 01 - xiaoyu"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇭 柬埔寨 (Cambodia) 01 - xiaoyu"
+        "🇸🇦 沙特 (Saudi Arabia) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

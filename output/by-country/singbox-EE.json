@@ -16,20 +16,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
-      "tls": {
-        "enabled": true,
-        "server_name": "109.206.241.10",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
       "server": "143.246.41.31",
       "server_port": 443,
       "uuid": "43212c32-01f2-4356-b216-67dc1c178262",
@@ -49,107 +37,20 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "109.206.241.10",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
-      "server": "ee.h1cloud.net",
-      "server_port": 25895,
-      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
-          "short_id": "a73f0410d728c823"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu",
-      "server": "196.198.111.138",
-      "server_port": 8443,
-      "uuid": "b3441cc7-1e5f-4eb6-8207-90788eeca21e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-6ad3c751.adhil.uk",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu",
-      "server": "196.198.111.138",
-      "server_port": 8443,
-      "uuid": "b3441cc7-1e5f-4eb6-8207-90788eeca21e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-6ad3c751.adhil.uk",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaoyu",
-      "server": "196.198.111.138",
-      "server_port": 8443,
-      "uuid": "b3441cc7-1e5f-4eb6-8207-90788eeca21e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-6ad3c751.adhil.uk",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaoyu",
-      "server": "ees92.shhflow.xyz",
-      "server_port": 5443,
-      "password": "43212c32-01f2-4356-b216-67dc1c178262",
-      "tls": {
-        "enabled": true,
-        "server_name": "ees92.shhflow.xyz",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 09 - xiaoyu",
-      "server": "one.alpheratzz.org",
-      "server_port": 8443,
-      "uuid": "b3441cc7-1e5f-4eb6-8207-90788eeca21e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api-6ad3c751.adhil.uk",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 10 - xiaoyu",
       "server": "ees92.shhflow.xyz",
       "server_port": 443,
       "uuid": "43212c32-01f2-4356-b216-67dc1c178262",
@@ -169,6 +70,38 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu",
+      "server": "ee.h1cloud.net",
+      "server_port": 25895,
+      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.samsung.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
+          "short_id": "a73f0410d728c823"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu",
+      "server": "ees92.shhflow.xyz",
+      "server_port": 5443,
+      "password": "43212c32-01f2-4356-b216-67dc1c178262",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -178,11 +111,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 09 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 10 - xiaoyu"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu"
       ]
     },
     {
@@ -194,11 +123,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 09 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 10 - xiaoyu"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

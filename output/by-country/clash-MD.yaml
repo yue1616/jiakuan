@@ -16,7 +16,7 @@ proxies:
     public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
     short-id: 296f27de82dad7ff
   servername: www.bing.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇲🇩 摩尔多瓦 (Moldova) 02 - xiaoyu
   server: 5.252.179.15
   port: 443
@@ -29,22 +29,22 @@ proxies:
     public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
     short-id: 296f27de82dad7ff
   servername: www.bing.com
-  client-fingerprint: qq
+  client-fingerprint: chrome
 - name: 🇲🇩 摩尔多瓦 (Moldova) 03 - xiaoyu
-  server: md1.aiage.work
+  server: 5.252.179.15
   port: 443
   udp: true
   type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: 5d7a45ac0ad6adff
-  servername: md1.aiage.work
-  client-fingerprint: firefox
+    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
+    short-id: 296f27de82dad7ff
+  servername: www.bing.com
+  client-fingerprint: qq
 - name: 🇲🇩 摩尔多瓦 (Moldova) 04 - xiaoyu
-  server: md1.aiage.work
+  server: 195.178.106.23
   port: 443
   udp: true
   type: vless
@@ -83,19 +83,6 @@ proxies:
   servername: md1.aiage.work
   client-fingerprint: qq
 - name: 🇲🇩 摩尔多瓦 (Moldova) 07 - xiaoyu
-  server: 195.178.106.23
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: e829f50f0a3f416b
-  servername: md1.aiage.work
-  client-fingerprint: firefox
-- name: 🇲🇩 摩尔多瓦 (Moldova) 08 - xiaoyu
   server: ro2.aiage.work
   port: 443
   udp: true
@@ -107,9 +94,9 @@ proxies:
     public-key: pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c
     short-id: 1d2fecf1d2475168
   servername: ro2.aiage.work
-  client-fingerprint: firefox
-- name: 🇲🇩 摩尔多瓦 (Moldova) 09 - xiaoyu
-  server: 85.120.144.27
+  client-fingerprint: chrome
+- name: 🇲🇩 摩尔多瓦 (Moldova) 08 - xiaoyu
+  server: md1.aiage.work
   port: 443
   udp: true
   type: vless
@@ -119,6 +106,19 @@ proxies:
   reality-opts:
     public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
     short-id: 5d7a45ac0ad6adff
+  servername: md1.aiage.work
+  client-fingerprint: chrome
+- name: 🇲🇩 摩尔多瓦 (Moldova) 09 - xiaoyu
+  server: md1.aiage.work
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
+    short-id: e829f50f0a3f416b
   servername: md1.aiage.work
   client-fingerprint: firefox
 - name: 🇲🇩 摩尔多瓦 (Moldova) 10 - xiaoyu
@@ -133,7 +133,7 @@ proxies:
     public-key: pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c
     short-id: 1d2fecf1d2475168
   servername: ro2.aiage.work
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇲🇩 摩尔多瓦 (Moldova) 11 - xiaoyu
   server: md1.aiage.work
   port: 443
@@ -146,9 +146,9 @@ proxies:
     public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
     short-id: e829f50f0a3f416b
   servername: md1.aiage.work
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇲🇩 摩尔多瓦 (Moldova) 12 - xiaoyu
-  server: 195.178.106.23
+  server: 85.120.144.27
   port: 443
   udp: true
   type: vless
@@ -159,33 +159,7 @@ proxies:
     public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
     short-id: 5d7a45ac0ad6adff
   servername: md1.aiage.work
-  client-fingerprint: chrome
-- name: 🇲🇩 摩尔多瓦 (Moldova) 13 - xiaoyu
-  server: md1.aiage.work
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: e829f50f0a3f416b
-  servername: md1.aiage.work
-  client-fingerprint: chrome
-- name: 🇲🇩 摩尔多瓦 (Moldova) 14 - xiaoyu
-  server: 5.252.179.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  servername: www.bing.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -203,8 +177,6 @@ proxy-groups:
   - 🇲🇩 摩尔多瓦 (Moldova) 10 - xiaoyu
   - 🇲🇩 摩尔多瓦 (Moldova) 11 - xiaoyu
   - 🇲🇩 摩尔多瓦 (Moldova) 12 - xiaoyu
-  - 🇲🇩 摩尔多瓦 (Moldova) 13 - xiaoyu
-  - 🇲🇩 摩尔多瓦 (Moldova) 14 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -222,7 +194,5 @@ proxy-groups:
   - 🇲🇩 摩尔多瓦 (Moldova) 10 - xiaoyu
   - 🇲🇩 摩尔多瓦 (Moldova) 11 - xiaoyu
   - 🇲🇩 摩尔多瓦 (Moldova) 12 - xiaoyu
-  - 🇲🇩 摩尔多瓦 (Moldova) 13 - xiaoyu
-  - 🇲🇩 摩尔多瓦 (Moldova) 14 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -6,48 +6,26 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaoyu",
-      "server": "152.233.71.81",
-      "server_port": 443,
-      "uuid": "741809be-e44e-000b-b411-bf66f0ae3860",
-      "flow": "xtls-rprx-vision",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
       "tls": {
         "enabled": true,
-        "server_name": "brointelengence.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
-          "short_id": "1c3e8241a8743df9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
-      "server": "152.233.71.81",
-      "server_port": 443,
-      "uuid": "741809be-e44e-000b-b411-bf66f0ae3860",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "brointelengence.com",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
           "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY",
-          "short_id": "1c3e8241a8743df9"
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -67,7 +45,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -81,38 +59,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
@@ -131,16 +78,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
-      "server": "200.181.82.92",
-      "server_port": 21940,
-      "method": "aes-256-gcm",
-      "password": "0dad9116-eb88-47b6-98dd-67c9ed43afa6"
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 09 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
       "server": "109.172.54.135",
       "server_port": 8444,
       "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
@@ -164,9 +103,19 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 10 - xiaoyu",
-      "server": "mci1.amir12.ir",
-      "server_port": 1222,
+      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
+      "server": "77.42.73.93",
+      "server_port": 8080,
+      "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
+      "server": "mci.amir12.ir",
+      "server_port": 2112,
       "uuid": "36c3dcc2-17b6-4478-b8a7-3978e6d5afe9",
       "tls": {
         "enabled": true,
@@ -177,8 +126,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE",
-          "short_id": "a25d0f"
+          "public_key": "p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ",
+          "short_id": "125ba3"
         }
       }
     },
@@ -193,10 +142,7 @@
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 09 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 10 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 07 - xiaoyu"
       ]
     },
     {
@@ -209,10 +155,7 @@
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 09 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 10 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

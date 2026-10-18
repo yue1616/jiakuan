@@ -31,6 +31,54 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+  server: 157.228.155.184
+  port: 443
+  udp: true
+  type: vless
+  uuid: c39f95b5-64b5-4f7a-a93d-fa9e9cf24de8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uYU7UXkfNB-BEfjyrCUtRcN2JfFdlFWfMHCeX7bz4Qc
+    short-id: e022bfea
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  server: 157.228.149.211
+  port: 2054
+  udp: true
+  type: vless
+  uuid: cdc72f62-1697-4644-b5a9-ca6308584c86
+  tls: true
+  reality-opts:
+    public-key: UgJ0ENqGGX-ch2mLdRZiw67OhU3Dqz7rDYCPKcdnn0w
+    short-id: d3d9e08a74807928
+  servername: cloud.ibm.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -41,17 +89,7 @@ proxies:
     path: /vless
     headers:
       Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaoyu
   server: hy2.aspidnet.xyz
   port: 443
   udp: true
@@ -61,46 +99,6 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
-  server: 31.59.210.26
-  port: 2088
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
-    short-id: b1ad165f903c62fe
-  servername: www.yandex.ru
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 08 - xiaoyu
-  server: 31.59.210.26
-  port: 2088
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
-    short-id: b1ad165f903c62fe
-  servername: www.yandex.ru
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
 - name: 🇦🇪 阿联酋 (UAE) 09 - xiaoyu
   server: 31.59.210.26
   port: 2088
@@ -112,7 +110,7 @@ proxies:
     public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
     short-id: b1ad165f903c62fe
   servername: www.yandex.ru
-  client-fingerprint: qq
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
@@ -127,7 +125,7 @@ proxies:
     public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
     short-id: b1ad165f903c62fe
   servername: www.yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: ios
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
@@ -142,22 +140,22 @@ proxies:
     public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
     short-id: b1ad165f903c62fe
   servername: www.yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
 - name: 🇦🇪 阿联酋 (UAE) 12 - xiaoyu
-  server: 31.59.210.37
-  port: 443
+  server: 31.59.210.26
+  port: 2088
   udp: true
   type: vless
   uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
-    short-id: 6dbf4931096f9890
+    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
+    short-id: b1ad165f903c62fe
   servername: www.yandex.ru
-  client-fingerprint: chrome
+  client-fingerprint: qq
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
@@ -177,32 +175,32 @@ proxies:
   grpc-opts:
     grpc-service-name: astracat
 - name: 🇦🇪 阿联酋 (UAE) 14 - xiaoyu
-  server: 31.59.210.32
-  port: 443
+  server: 31.59.210.26
+  port: 2088
   udp: true
   type: vless
   uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
-    short-id: 7ec4374ffc6308fd
+    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
+    short-id: b1ad165f903c62fe
   servername: www.yandex.ru
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
 - name: 🇦🇪 阿联酋 (UAE) 15 - xiaoyu
-  server: 31.59.210.32
+  server: 31.59.210.37
   port: 443
   udp: true
   type: vless
   uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
-    short-id: 7ec4374ffc6308fd
+    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
+    short-id: 6dbf4931096f9890
   servername: www.yandex.ru
-  client-fingerprint: random
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
@@ -217,7 +215,7 @@ proxies:
     public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
     short-id: 6dbf4931096f9890
   servername: www.yandex.ru
-  client-fingerprint: safari
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
@@ -232,55 +230,20 @@ proxies:
     public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
     short-id: 6dbf4931096f9890
   servername: www.yandex.ru
-  client-fingerprint: firefox
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
 - name: 🇦🇪 阿联酋 (UAE) 18 - xiaoyu
-  server: 31.59.210.32
-  port: 443
+  server: uae.unixzone.us
+  port: 22573
   udp: true
   type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
-    short-id: 7ec4374ffc6308fd
-  servername: www.yandex.ru
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
 - name: 🇦🇪 阿联酋 (UAE) 19 - xiaoyu
-  server: 31.57.190.71
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇦🇪 阿联酋 (UAE) 20 - xiaoyu
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 21 - xiaoyu
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 22 - xiaoyu
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -291,15 +254,36 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 23 - xiaoyu
-  server: 200.181.82.91
-  port: 28740
+- name: 🇦🇪 阿联酋 (UAE) 20 - xiaoyu
+  server: 95.174.68.188
+  port: 14430
   udp: true
-  type: trojan
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-  sni: www.baidu.com
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 24 - xiaoyu
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇦🇪 阿联酋 (UAE) 21 - xiaoyu
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇦🇪 阿联酋 (UAE) 22 - xiaoyu
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 23 - xiaoyu
   server: 45.59.120.217
   port: 443
   udp: true
@@ -311,7 +295,7 @@ proxies:
     short-id: 29c2dd1e3ef7c4d4
   servername: strm.yandex.net
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 25 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 24 - xiaoyu
   server: 45.59.120.217
   port: 443
   udp: true
@@ -323,25 +307,7 @@ proxies:
     short-id: 29c2dd1e3ef7c4d4
   servername: strm.yandex.net
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 26 - xiaoyu
-  server: 200.181.82.91
-  port: 21737
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-- name: 🇦🇪 阿联酋 (UAE) 27 - xiaoyu
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 28 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 25 - xiaoyu
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -352,23 +318,8 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 29 - xiaoyu
-  server: 31.59.210.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
-  tls: true
-  reality-opts:
-    public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
-    short-id: 6dbf4931096f9890
-  servername: www.yandex.ru
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: astracat
-- name: 🇦🇪 阿联酋 (UAE) 30 - xiaoyu
-  server: 31.57.190.40
+- name: 🇦🇪 阿联酋 (UAE) 26 - xiaoyu
+  server: 31.57.190.71
   port: 443
   udp: true
   type: trojan
@@ -409,10 +360,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 24 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 25 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 26 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 27 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 28 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 29 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 30 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -444,9 +391,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 24 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 25 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 26 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 27 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 28 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 29 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 30 - xiaoyu
 rules:
 - MATCH,PROXIES
