@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaoyu
+  server: 216.128.168.190
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: owVdNnQcdPgthSyX
+- name: 🇧🇷 巴西 (Brazil) 02 - xiaoyu
   server: 137.131.171.249
   port: null
   udp: true
@@ -21,11 +28,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 02 - xiaoyu
 rules:
 - MATCH,PROXIES

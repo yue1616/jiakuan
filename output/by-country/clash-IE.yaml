@@ -5,24 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu
-  server: 13.135.17.74
-  port: 22222
-  udp: true
-  type: vless
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-- name: 🇮🇪 爱尔兰 (Ireland) 02 - xiaoyu
-  server: 18.171.245.198
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  network: h2
-  h2-opts:
-    host: []
-    path: /
-- name: 🇮🇪 爱尔兰 (Ireland) 03 - xiaoyu
-  server: 13.135.17.74
-  port: 22223
+  server: 3.11.104.202
+  port: 22224
   udp: true
   type: vless
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
@@ -32,15 +16,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu
-  - 🇮🇪 爱尔兰 (Ireland) 02 - xiaoyu
-  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu
-  - 🇮🇪 爱尔兰 (Ireland) 02 - xiaoyu
-  - 🇮🇪 爱尔兰 (Ireland) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

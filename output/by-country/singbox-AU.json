@@ -6,29 +6,6 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaoyu",
-      "server": "104.18.155.229",
-      "server_port": 443,
-      "uuid": "42026ed0-7d74-4585-8e46-0fe6aa4d665a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.genflix.co.id.r3xxe.eu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/au-do",
-        "headers": {
-          "Host": "www.genflix.co.id.r3xxe.eu.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
       "server": "51.161.204.242",
       "server_port": 443,
       "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
@@ -49,28 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
-      "server": "51.161.204.244",
-      "server_port": 443,
-      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
-          "short_id": "0ad08b47f498efd2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
       "server": "51.161.204.244",
       "server_port": 443,
       "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
@@ -90,49 +46,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
-      "server": "51.161.204.244",
-      "server_port": 443,
-      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
-          "short_id": "0ad08b47f498efd2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu",
-      "server": "212.81.47.99",
-      "server_port": 51106,
-      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "2k8UhfxEK4WSVLWUr-uRExRiTiAsacWpe6I1xrnyt38",
-          "short_id": "abcd1234"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 07 - xiaoyu",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
       "server": "137.23.27.143",
       "password": "a34f3990b69f44bfa0d32385",
       "tls": {
@@ -151,23 +66,26 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 08 - xiaoyu",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
       "server": "137.23.2.56",
-      "server_port": 20000,
       "password": "b42d90fa667942aebc734d60",
       "tls": {
         "enabled": true,
         "server_name": "rmgyvpn.rest",
-        "insecure": false
+        "insecure": true
       },
       "obfs": {
         "type": "salamander",
         "password": "b42d90fa667942aebc734d60"
-      }
+      },
+      "server_ports": [
+        "20000:30000",
+        "20000:20000"
+      ]
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 09 - xiaoyu",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -182,23 +100,19 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 10 - xiaoyu",
-      "server": "172.67.195.146",
-      "server_port": 443,
-      "uuid": "f5f0babe-aea2-4f07-a1fc-3c9820253f49",
-      "security": "auto",
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu",
+      "server": "137.23.2.56",
+      "server_port": 20000,
+      "password": "b42d90fa667942aebc734d60",
       "tls": {
         "enabled": true,
-        "server_name": "aus.lovehk.xyz",
+        "server_name": "rmgyvpn.rest",
         "insecure": false
       },
-      "transport": {
-        "type": "ws",
-        "path": "/Sydney3",
-        "headers": {
-          "Host": "aus.lovehk.xyz"
-        }
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
       }
     },
     {
@@ -211,11 +125,7 @@
         "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 07 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 08 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 09 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 10 - xiaoyu"
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu"
       ]
     },
     {
@@ -227,11 +137,7 @@
         "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 07 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 08 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 09 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 10 - xiaoyu"
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

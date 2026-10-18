@@ -15,7 +15,7 @@
         "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -36,7 +36,7 @@
         "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -57,7 +57,7 @@
         "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -69,7 +69,7 @@
     {
       "type": "vless",
       "tag": "🇲🇩 摩尔多瓦 (Moldova) 04 - xiaoyu",
-      "server": "85.120.144.116",
+      "server": "ro2.aiage.work",
       "server_port": 443,
       "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
       "flow": "xtls-rprx-vision",
@@ -90,6 +90,27 @@
     {
       "type": "vless",
       "tag": "🇲🇩 摩尔多瓦 (Moldova) 05 - xiaoyu",
+      "server": "85.120.144.116",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ro2.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c",
+          "short_id": "1d2fecf1d2475168"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 06 - xiaoyu",
       "server": "195.178.106.23",
       "server_port": 443,
       "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
@@ -110,27 +131,6 @@
     },
     {
       "type": "vless",
-      "tag": "🇲🇩 摩尔多瓦 (Moldova) 06 - xiaoyu",
-      "server": "md1.aiage.work",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "md1.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo",
-          "short_id": "5d7a45ac0ad6adff"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇲🇩 摩尔多瓦 (Moldova) 07 - xiaoyu",
       "server": "md1.aiage.work",
       "server_port": 443,
@@ -141,7 +141,7 @@
         "server_name": "md1.aiage.work",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -153,7 +153,7 @@
     {
       "type": "vless",
       "tag": "🇲🇩 摩尔多瓦 (Moldova) 08 - xiaoyu",
-      "server": "85.120.144.27",
+      "server": "195.178.106.23",
       "server_port": 443,
       "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
       "flow": "xtls-rprx-vision",
@@ -162,7 +162,7 @@
         "server_name": "md1.aiage.work",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -188,7 +188,7 @@
         "reality": {
           "enabled": true,
           "public_key": "0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo",
-          "short_id": "e829f50f0a3f416b"
+          "short_id": "5d7a45ac0ad6adff"
         }
       }
     },
@@ -204,7 +204,7 @@
         "server_name": "md1.aiage.work",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -216,7 +216,7 @@
     {
       "type": "vless",
       "tag": "🇲🇩 摩尔多瓦 (Moldova) 11 - xiaoyu",
-      "server": "md1.aiage.work",
+      "server": "85.120.144.27",
       "server_port": 443,
       "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
       "flow": "xtls-rprx-vision",
@@ -225,7 +225,7 @@
         "server_name": "md1.aiage.work",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -246,7 +246,7 @@
         "server_name": "md1.aiage.work",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -267,75 +267,12 @@
         "server_name": "ro2.aiage.work",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c",
-          "short_id": "1d2fecf1d2475168"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 摩尔多瓦 (Moldova) 14 - xiaoyu",
-      "server": "md1.aiage.work",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "md1.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo",
-          "short_id": "5d7a45ac0ad6adff"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 摩尔多瓦 (Moldova) 15 - xiaoyu",
-      "server": "ro2.aiage.work",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ro2.aiage.work",
-        "utls": {
-          "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c",
           "short_id": "1d2fecf1d2475168"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇩 摩尔多瓦 (Moldova) 16 - xiaoyu",
-      "server": "md1.aiage.work",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "md1.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo",
-          "short_id": "e829f50f0a3f416b"
         }
       }
     },
@@ -356,10 +293,7 @@
         "🇲🇩 摩尔多瓦 (Moldova) 10 - xiaoyu",
         "🇲🇩 摩尔多瓦 (Moldova) 11 - xiaoyu",
         "🇲🇩 摩尔多瓦 (Moldova) 12 - xiaoyu",
-        "🇲🇩 摩尔多瓦 (Moldova) 13 - xiaoyu",
-        "🇲🇩 摩尔多瓦 (Moldova) 14 - xiaoyu",
-        "🇲🇩 摩尔多瓦 (Moldova) 15 - xiaoyu",
-        "🇲🇩 摩尔多瓦 (Moldova) 16 - xiaoyu"
+        "🇲🇩 摩尔多瓦 (Moldova) 13 - xiaoyu"
       ]
     },
     {
@@ -378,10 +312,7 @@
         "🇲🇩 摩尔多瓦 (Moldova) 10 - xiaoyu",
         "🇲🇩 摩尔多瓦 (Moldova) 11 - xiaoyu",
         "🇲🇩 摩尔多瓦 (Moldova) 12 - xiaoyu",
-        "🇲🇩 摩尔多瓦 (Moldova) 13 - xiaoyu",
-        "🇲🇩 摩尔多瓦 (Moldova) 14 - xiaoyu",
-        "🇲🇩 摩尔多瓦 (Moldova) 15 - xiaoyu",
-        "🇲🇩 摩尔多瓦 (Moldova) 16 - xiaoyu"
+        "🇲🇩 摩尔多瓦 (Moldova) 13 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

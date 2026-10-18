@@ -35,29 +35,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03 - xiaoyu",
-      "server": "81.28.12.12",
-      "server_port": 443,
-      "uuid": "6206cb76-491d-4237-baf1-8c29eea4eafb",
-      "tls": {
-        "enabled": true,
-        "server_name": "node-3.wt419.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy",
-        "headers": {
-          "Host": "node-3.wt419.site"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - xiaoyu",
       "server": "cl-glb6e059ee.gcdn.co",
       "server_port": 443,
       "uuid": "6206cb76-491d-4237-baf1-8c29eea4eafb",
@@ -83,8 +60,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 05 - xiaoyu",
-      "server": "cl-glb6e059ee.gcdn.co",
+      "tag": "🇨🇿 捷克 (Czech) 04 - xiaoyu",
+      "server": "81.28.12.12",
       "server_port": 443,
       "uuid": "6206cb76-491d-4237-baf1-8c29eea4eafb",
       "tls": {
@@ -93,7 +70,30 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy",
+        "headers": {
+          "Host": "node-3.wt419.site"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 05 - xiaoyu",
+      "server": "81.28.12.12",
+      "server_port": 443,
+      "uuid": "6206cb76-491d-4237-baf1-8c29eea4eafb",
+      "tls": {
+        "enabled": true,
+        "server_name": "node-3.wt419.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       },
       "transport": {
