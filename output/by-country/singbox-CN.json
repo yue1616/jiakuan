@@ -11,6 +11,17 @@
       "uuid": "4fc543d5-23ce-4556-ae2b-01685edd4397",
       "security": "auto",
       "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇨🇳 CN 02 - xiaoyu",
+      "server": "39.108.113.127",
+      "server_port": 10086,
+      "uuid": "4fc543d5-23ce-4556-ae2b-01685edd4397",
+      "security": "auto",
+      "transport": {
         "type": "ws",
         "path": "/"
       }
@@ -20,14 +31,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01 - xiaoyu"
+        "🇨🇳 CN 01 - xiaoyu",
+        "🇨🇳 CN 02 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01 - xiaoyu"
+        "🇨🇳 CN 01 - xiaoyu",
+        "🇨🇳 CN 02 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

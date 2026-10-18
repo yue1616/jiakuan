@@ -34,13 +34,17 @@
     {
       "type": "vless",
       "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 03 - xiaoyu",
-      "server": "104.17.70.206",
+      "server": "free.sahanwickramasinghe.me",
       "server_port": 8443,
       "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
       "tls": {
         "enabled": true,
         "server_name": "free.sahanwickramasinghe.me",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -53,44 +57,6 @@
     {
       "type": "vless",
       "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 04 - xiaoyu",
-      "server": "104.17.71.206",
-      "server_port": 8443,
-      "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
-      "tls": {
-        "enabled": true,
-        "server_name": "free.sahanwickramasinghe.me",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "free.sahanwickramasinghe.me"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 05 - xiaoyu",
-      "server": "104.17.72.206",
-      "server_port": 8443,
-      "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
-      "tls": {
-        "enabled": true,
-        "server_name": "free.sahanwickramasinghe.me",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "free.sahanwickramasinghe.me"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 06 - xiaoyu",
       "server": "104.17.73.206",
       "server_port": 8443,
       "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
@@ -109,7 +75,68 @@
     },
     {
       "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 05 - xiaoyu",
+      "server": "104.17.71.206",
+      "server_port": 8443,
+      "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.sahanwickramasinghe.me",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "free.sahanwickramasinghe.me"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 06 - xiaoyu",
+      "server": "104.17.70.206",
+      "server_port": 8443,
+      "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.sahanwickramasinghe.me",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "free.sahanwickramasinghe.me"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 07 - xiaoyu",
+      "server": "centurylink.es",
+      "server_port": 8443,
+      "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.sahanwickramasinghe.me",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "free.sahanwickramasinghe.me"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 08 - xiaoyu",
       "server": "free.sahanwickramasinghe.me",
       "server_port": 80,
       "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
@@ -119,8 +146,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 08 - xiaoyu",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 09 - xiaoyu",
       "server": "centurylink.es",
+      "server_port": 8443,
+      "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
+      "tls": {
+        "enabled": true,
+        "server_name": "free.sahanwickramasinghe.me",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "free.sahanwickramasinghe.me"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 10 - xiaoyu",
+      "server": "104.17.72.206",
       "server_port": 8443,
       "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
       "tls": {
@@ -148,7 +194,9 @@
         "🇱🇰 斯里兰卡 (Sri Lanka) 05 - xiaoyu",
         "🇱🇰 斯里兰卡 (Sri Lanka) 06 - xiaoyu",
         "🇱🇰 斯里兰卡 (Sri Lanka) 07 - xiaoyu",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 08 - xiaoyu"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 08 - xiaoyu",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 09 - xiaoyu",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 10 - xiaoyu"
       ]
     },
     {
@@ -162,7 +210,9 @@
         "🇱🇰 斯里兰卡 (Sri Lanka) 05 - xiaoyu",
         "🇱🇰 斯里兰卡 (Sri Lanka) 06 - xiaoyu",
         "🇱🇰 斯里兰卡 (Sri Lanka) 07 - xiaoyu",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 08 - xiaoyu"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 08 - xiaoyu",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 09 - xiaoyu",
+        "🇱🇰 斯里兰卡 (Sri Lanka) 10 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

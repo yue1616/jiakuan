@@ -16,8 +16,18 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
+  server: 206.1.100.148
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 53373a04-2dd2-472e-af5d-d55fbffa7dbd
+  tls: true
+  servername: game.jafarghasemivip.ir
+  skip-cert-verify: false
+  client-fingerprint: safari
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   server: 78.135.73.47
   port: 443
   udp: true
@@ -29,31 +39,17 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+  server: me17.msjia8844.site
+  port: 7443
+  udp: true
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
 - name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   server: 151.241.226.201
   port: 2053
@@ -67,6 +63,18 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
   server: 62.60.233.157
   port: 8444
   udp: true
@@ -80,7 +88,19 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
   server: 62.60.233.157
   port: 8444
   udp: true
@@ -94,7 +114,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 10 (移动家宽) - xiaoyu
   server: 177.3.208.65
   port: 443
   udp: true
@@ -107,28 +127,23 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-tr
-- name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
-  server: 87.120.106.130
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
+  server: 155.103.70.53
+  port: 30303
   udp: true
   type: vless
-  uuid: 6fab89df-d5c3-4d73-8df5-897ca352bfe8
+  uuid: d18c6897-2849-456a-8c46-d7ecece47c20
   tls: true
-  servername: pqro5mlb4c88.dopwiz.com
+  servername: wzs.echo.net.eu.org
   skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
-  server: nimm.mpd.cc.cd
-  port: 2053
-  udp: true
-  type: trojan
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  sni: nimm.mpd.cc.cd
-  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /0962
-- name: 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
-  server: 104.21.48.18
+    path: /video/HxNMGkZdGw0PRk1GVw8YF14OXkwNVVtIRg1HAAQNCV1EClxZAgMWAlBZXRlKXU4aTV8WGRQRQkoXFgweUABdHg==
+    headers:
+      Host: wzs.echo.net.eu.org
+- name: 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
+  server: nimm.mpd.cc.cd
   port: 2053
   udp: true
   type: trojan
@@ -150,10 +165,11 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 10 (移动家宽) - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -166,9 +182,10 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 08 (移动家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 10 (移动家宽) - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
 rules:
 - MATCH,PROXIES

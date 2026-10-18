@@ -44,7 +44,7 @@
         "server_name": "api.mediakaskad.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -65,7 +65,7 @@
         "server_name": "api.mediakaskad.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -86,7 +86,7 @@
         "server_name": "api.mediakaskad.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -107,7 +107,7 @@
         "server_name": "api.mediakaskad.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,

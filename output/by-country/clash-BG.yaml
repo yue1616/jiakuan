@@ -5,28 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu
-  server: p1real4.greewebservices.ir
-  port: 1260
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu
+  server: 213.183.63.60
+  port: 9061
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
+  server: 195.123.226.21
+  port: 443
   udp: true
   type: vless
-  uuid: b374647d-7516-4d1e-8c85-544c7d734c1f
+  uuid: 6589c320-db68-43cd-a273-b46299bab355
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  servername: play.googleapis.com
-  client-fingerprint: ios
+    public-key: rabtI-ymNXBUvYYRwAw8DiR-1pdP7U0WPIaCBHEkgzo
+    short-id: 77bb0d07bddbc832
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
 rules:
 - MATCH,PROXIES
