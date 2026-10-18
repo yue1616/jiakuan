@@ -30,38 +30,15 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🌐 其他地区 (Other) 02 - xiaoyu",
-      "server": "or3.sfacg.uk",
-      "server_port": 2083,
-      "uuid": "ac251237-576f-40c8-a543-554960c958b1",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.sfacg.uk",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/or3",
-        "headers": {
-          "Host": "or3.sfacg.uk"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 03 - xiaoyu",
-      "server": "188.114.98.0",
+      "server": "ccs2g.pai50288.uk",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
       "tls": {
         "enabled": true,
-        "server_name": "www.pleadcourt.org",
+        "server_name": "ccs2g.pai50288.uk",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -69,9 +46,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/pai50288",
         "headers": {
-          "Host": "www.pleadcourt.org"
+          "Host": "ccs2g.pai50288.uk"
         }
       }
     },
@@ -81,8 +58,7 @@
       "outbounds": [
         "auto",
         "🌐 其他地区 (Other) 01 - xiaoyu",
-        "🌐 其他地区 (Other) 02 - xiaoyu",
-        "🌐 其他地区 (Other) 03 - xiaoyu"
+        "🌐 其他地区 (Other) 02 - xiaoyu"
       ]
     },
     {
@@ -90,8 +66,7 @@
       "tag": "auto",
       "outbounds": [
         "🌐 其他地区 (Other) 01 - xiaoyu",
-        "🌐 其他地区 (Other) 02 - xiaoyu",
-        "🌐 其他地区 (Other) 03 - xiaoyu"
+        "🌐 其他地区 (Other) 02 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

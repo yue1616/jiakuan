@@ -25,36 +25,6 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 03 - xiaoyu
-  server: cl-glb6e059ee.gcdn.co
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6206cb76-491d-4237-baf1-8c29eea4eafb
-  tls: true
-  servername: node-3.wt419.site
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy
-    headers:
-      Host: node-3.wt419.site
-- name: 🇨🇿 捷克 (Czech) 04 - xiaoyu
-  server: 81.28.12.12
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6206cb76-491d-4237-baf1-8c29eea4eafb
-  tls: true
-  servername: node-3.wt419.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy
-    headers:
-      Host: node-3.wt419.site
-- name: 🇨🇿 捷克 (Czech) 05 - xiaoyu
   server: 81.28.12.12
   port: 443
   udp: true
@@ -77,8 +47,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaoyu
   - 🇨🇿 捷克 (Czech) 02 - xiaoyu
   - 🇨🇿 捷克 (Czech) 03 - xiaoyu
-  - 🇨🇿 捷克 (Czech) 04 - xiaoyu
-  - 🇨🇿 捷克 (Czech) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,7 +55,5 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaoyu
   - 🇨🇿 捷克 (Czech) 02 - xiaoyu
   - 🇨🇿 捷克 (Czech) 03 - xiaoyu
-  - 🇨🇿 捷克 (Czech) 04 - xiaoyu
-  - 🇨🇿 捷克 (Czech) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

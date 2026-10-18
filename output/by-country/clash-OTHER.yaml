@@ -16,32 +16,20 @@ proxies:
   ws-opts:
     path: /assignment
 - name: 🌐 其他地区 (Other) 02 - xiaoyu
-  server: or3.sfacg.uk
-  port: 2083
-  udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: cdn.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🌐 其他地区 (Other) 03 - xiaoyu
-  server: 188.114.98.0
+  server: ccs2g.pai50288.uk
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.pleadcourt.org
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /assignment
+    path: /pai50288
+    headers:
+      Host: ccs2g.pai50288.uk
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaoyu
   - 🌐 其他地区 (Other) 02 - xiaoyu
-  - 🌐 其他地区 (Other) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +44,5 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaoyu
   - 🌐 其他地区 (Other) 02 - xiaoyu
-  - 🌐 其他地区 (Other) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -13,24 +13,23 @@ proxies:
   password: UkXRsXvR6buDMG2Y
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaoyu
   server: 5.188.181.201
-  port: 9025
+  port: 9027
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: XPtzA9sCug3SPR4c
+  password: EXN3S3eQpjE7EJu8
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaoyu
-  server: 83.147.18.3
-  port: 443
+  server: 212.227.235.66
+  port: 2053
   udp: true
   type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
-  flow: xtls-rprx-vision
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
   tls: true
   reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: fd8cf7e1173f0edb
-  servername: www.cloudflare.com
-  client-fingerprint: random
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+  servername: www.apple.com
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaoyu
   server: 212.227.235.66
   port: 2053
@@ -44,39 +43,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 05 - xiaoyu
-  server: 212.227.235.66
-  port: 2053
-  udp: true
-  type: vless
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  tls: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 06 - xiaoyu
-  server: 212.227.235.66
-  port: 2053
-  udp: true
-  type: vless
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
-  tls: true
-  reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 07 - xiaoyu
-  server: spain.unixzone.us
-  port: 36326
-  udp: true
-  type: vless
-  uuid: 63ff4bfa-0f1d-48e4-8314-e882b14e602c
-  network: ws
-  ws-opts:
-    path: /jdiedjiedjijd
-- name: 🇪🇸 西班牙 (Spain) 08 - xiaoyu
   server: 46.28.71.247
   port: 443
   udp: true
@@ -89,33 +55,7 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 09 - xiaoyu
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇪🇸 西班牙 (Spain) 10 - xiaoyu
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇪🇸 西班牙 (Spain) 11 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaoyu
   server: 46.28.71.247
   port: 443
   udp: true
@@ -128,7 +68,44 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 12 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 07 - xiaoyu
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 08 - xiaoyu
+  server: 196.245.52.149
+  port: 25535
+  udp: true
+  type: vless
+  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
+  tls: true
+  reality-opts:
+    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
+    short-id: 7642ce57308852e7
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 09 - xiaoyu
+  server: 212.227.235.66
+  port: 2053
+  udp: true
+  type: vless
+  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  tls: true
+  reality-opts:
+    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
+    short-id: 29e8dcd2b37aaa7f
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇪🇸 西班牙 (Spain) 10 - xiaoyu
   server: 193.238.154.78
   port: 443
   udp: true
@@ -140,6 +117,19 @@ proxies:
     public-key: 4eE3K8Eac-ELze-LwRyJolqmhPqgCVqwQM1DKu6i0Ts
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 11 - xiaoyu
+  server: 83.147.18.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -157,7 +147,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 09 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 10 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 11 - xiaoyu
-  - 🇪🇸 西班牙 (Spain) 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -174,6 +163,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 09 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 10 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 11 - xiaoyu
-  - 🇪🇸 西班牙 (Spain) 12 - xiaoyu
 rules:
 - MATCH,PROXIES

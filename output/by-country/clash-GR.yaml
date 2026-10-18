@@ -29,33 +29,7 @@ proxies:
     public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
     short-id: 94acb54627612d43
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇬🇷 希腊 (Greece) 03 - xiaoyu
-  server: 85.90.197.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
-  servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇬🇷 希腊 (Greece) 04 - xiaoyu
-  server: 85.90.197.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
-  servername: www.cloudflare.com
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,8 +37,6 @@ proxy-groups:
   - AUTO
   - 🇬🇷 希腊 (Greece) 01 - xiaoyu
   - 🇬🇷 希腊 (Greece) 02 - xiaoyu
-  - 🇬🇷 希腊 (Greece) 03 - xiaoyu
-  - 🇬🇷 希腊 (Greece) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -72,7 +44,5 @@ proxy-groups:
   proxies:
   - 🇬🇷 希腊 (Greece) 01 - xiaoyu
   - 🇬🇷 希腊 (Greece) 02 - xiaoyu
-  - 🇬🇷 希腊 (Greece) 03 - xiaoyu
-  - 🇬🇷 希腊 (Greece) 04 - xiaoyu
 rules:
 - MATCH,PROXIES

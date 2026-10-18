@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
-      "server": "38.107.234.57",
+      "server": "3h-kazakhstan1.09vpn.com",
       "server_port": 80,
       "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
       "security": "auto",
@@ -29,7 +29,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
+          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
         }
       }
     },
@@ -44,7 +44,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "38.107.234.57"
+          "Host": "3h-kazakhstan1.09vpn.com"
         }
       }
     },
@@ -59,20 +59,23 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "viber.com"
+          "Host": "google.com"
         }
       }
     },
     {
       "type": "vmess",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu",
-      "server": "3h-kazakhstan1.09vpn.com",
+      "server": "38.107.234.57",
       "server_port": 80,
       "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/"
+        "path": "/vmess/",
+        "headers": {
+          "Host": "38.107.234.57"
+        }
       }
     },
     {
@@ -86,7 +89,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
+          "Host": "3h-kazakhstan1.09vpn.com"
         }
       }
     },
@@ -103,43 +106,8 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaoyu",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "google.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaoyu",
-      "server": "178.236.16.98",
-      "server_port": 35728,
-      "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
-          "short_id": "69a2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - xiaoyu",
       "server": "109.248.170.119",
       "server_port": 13447,
       "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
@@ -148,7 +116,7 @@
         "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -169,9 +137,7 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaoyu"
       ]
     },
     {
@@ -185,9 +151,7 @@
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 05 - xiaoyu",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 06 - xiaoyu",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 07 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 09 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 10 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 08 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -35,55 +35,6 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03 - xiaoyu",
-      "server": "cl-glb6e059ee.gcdn.co",
-      "server_port": 443,
-      "uuid": "6206cb76-491d-4237-baf1-8c29eea4eafb",
-      "tls": {
-        "enabled": true,
-        "server_name": "node-3.wt419.site",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy",
-        "headers": {
-          "Host": "node-3.wt419.site"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 04 - xiaoyu",
-      "server": "81.28.12.12",
-      "server_port": 443,
-      "uuid": "6206cb76-491d-4237-baf1-8c29eea4eafb",
-      "tls": {
-        "enabled": true,
-        "server_name": "node-3.wt419.site",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy",
-        "headers": {
-          "Host": "node-3.wt419.site"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 05 - xiaoyu",
       "server": "81.28.12.12",
       "server_port": 443,
       "uuid": "6206cb76-491d-4237-baf1-8c29eea4eafb",
@@ -111,9 +62,7 @@
         "auto",
         "🇨🇿 捷克 (Czech) 01 - xiaoyu",
         "🇨🇿 捷克 (Czech) 02 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 03 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 04 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 05 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 03 - xiaoyu"
       ]
     },
     {
@@ -122,9 +71,7 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - xiaoyu",
         "🇨🇿 捷克 (Czech) 02 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 03 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 04 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 05 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
