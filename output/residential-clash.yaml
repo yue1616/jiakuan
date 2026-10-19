@@ -4,14 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  server: 218.237.185.234
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu
+  server: dog-hk.kunlun01dns.com
+  port: 21020
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  server: p141.panda001.net
   port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
+- name: 🇺🇸 美国 (United States) 03 (家宽) R46 - xiaoyu
+  server: 4c2d5151.266nets.com
+  port: 12031
+  udp: true
+  type: trojan
+  password: bad06c3525a6eaee1757b34776b83892
+  sni: ixigua.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -22,19 +38,36 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
+  server: 183.109.131.75
+  port: 20086
+  udp: true
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 03 (家宽) R46 - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 03 (家宽) R46 - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

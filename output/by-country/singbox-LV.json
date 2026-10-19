@@ -6,119 +6,27 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaoyu",
-      "server": "138.124.180.137",
+      "server": "185.220.223.25",
       "server_port": 443,
-      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "lv.aiage.work",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
-          "short_id": "33acba1b"
+          "public_key": "ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg",
+          "short_id": "3c6afdc4124d0560"
         }
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu",
-      "server": "185.135.86.175",
-      "server_port": 9082,
-      "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
-      "server": "lv.aiage.work",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lv.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg",
-          "short_id": "3c6afdc4124d0560"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu",
-      "server": "185.220.223.24",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lv.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg",
-          "short_id": "3c6afdc4124d0560"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu",
-      "server": "lv.aiage.work",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "lv.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg",
-          "short_id": "3c6afdc4124d0560"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu",
-      "server": "138.124.180.137",
-      "server_port": 443,
-      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
-          "short_id": "33acba1b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu",
       "server": "185.220.223.25",
       "server_port": 443,
       "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
@@ -139,11 +47,103 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu",
+      "server": "lv.aiage.work",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lv.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg",
+          "short_id": "3c6afdc4124d0560"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu",
+      "server": "185.135.86.175",
+      "server_port": 9082,
+      "method": "aes-256-cfb",
+      "password": "45xgMgm386pjWjTx"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu",
+      "server": "138.124.180.137",
+      "server_port": 443,
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu",
+      "server": "185.220.223.24",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lv.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg",
+          "short_id": "3c6afdc4124d0560"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu",
+      "server": "138.124.180.137",
+      "server_port": 443,
+      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
+          "short_id": "33acba1b"
+        }
+      }
     },
     {
       "type": "vless",
@@ -157,7 +157,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -209,6 +209,51 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu",
+      "server": "94.103.2.109",
+      "server_port": 8463,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu",
+      "server": "lv.aiage.work",
+      "server_port": 443,
+      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "lv.aiage.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg",
+          "short_id": "3c6afdc4124d0560"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -223,7 +268,9 @@
         "🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 10 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu"
+        "🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu",
+        "🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu",
+        "🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu"
       ]
     },
     {
@@ -240,7 +287,9 @@
         "🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 10 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu"
+        "🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu",
+        "🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu",
+        "🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

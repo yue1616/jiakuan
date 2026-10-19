@@ -4,16 +4,36 @@
   },
   "outbounds": [
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21020,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu",
-      "server": "218.237.185.234",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu",
+      "server": "p141.panda001.net",
       "server_port": 4652,
       "method": "aes-256-cfb",
       "password": "qwerREWQ@@"
     },
     {
+      "type": "trojan",
+      "tag": "🇺🇸 美国 (United States) 03 (家宽) R46 - xiaoyu",
+      "server": "4c2d5151.266nets.com",
+      "server_port": 12031,
+      "password": "bad06c3525a6eaee1757b34776b83892",
+      "tls": {
+        "enabled": true,
+        "server_name": "ixigua.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -32,20 +52,38 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu",
+      "server": "183.109.131.75",
+      "server_port": 20086,
+      "uuid": "b26c4803-0bca-467c-a245-c9a80bdd72ec",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu"
+        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu",
+        "🇺🇸 美国 (United States) 03 (家宽) R46 - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu"
+        "🇭🇰 中国香港 (Hong Kong) 01 (移动家宽) - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu",
+        "🇺🇸 美国 (United States) 03 (家宽) R46 - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu",
+        "🇰🇷 韩国 (South Korea) 05 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
