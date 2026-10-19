@@ -5,17 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaoyu
-  server: 95.216.27.15
-  port: 2053
+  server: 65.109.210.160
+  port: 1080
   udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: random
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: q5wE5hbCc-kOUqbaZ3JaAg
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   server: 95.216.27.15
   port: 2053
@@ -29,16 +24,17 @@ proxies:
   servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
-  server: 45.144.234.157
-  port: 14430
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
   server: 95.216.27.15
   port: 2053
@@ -52,6 +48,87 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
+  server: 65.109.243.156
+  port: 2112
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+    short-id: 125ba3
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
+  server: 77.42.73.93
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaoyu
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaoyu
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 10 - xiaoyu
+  server: mci.amir12.ir
+  port: 2112
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+    short-id: 125ba3
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 11 - xiaoyu
+  server: mci1.amir12.ir
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 12 - xiaoyu
   server: 109.172.54.135
   port: 8444
   udp: true
@@ -65,27 +142,34 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
-  server: 77.42.73.93
-  port: 8080
+- name: 🇫🇮 芬兰 (Finland) 13 - xiaoyu
+  server: bs.90909.club
+  port: 2096
   udp: true
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
-  server: mci.amir12.ir
-  port: 2112
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: e667f5c7-6b38-48ef-ab89-40519713afb0
   tls: true
   reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: chrome
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+- name: 🇫🇮 芬兰 (Finland) 14 - xiaoyu
+  server: bs.90909.club
+  port: 2096
+  udp: true
+  type: vless
+  uuid: e667f5c7-6b38-48ef-ab89-40519713afb0
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
+  client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,6 +182,13 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 06 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 07 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 08 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 10 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 11 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 12 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 13 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 14 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,5 +201,12 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 06 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 07 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 08 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 10 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 11 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 12 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 13 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 14 - xiaoyu
 rules:
 - MATCH,PROXIES

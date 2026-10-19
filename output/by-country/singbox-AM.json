@@ -5,25 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaoyu",
-      "server": "104.21.3.219",
+      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - xiaoyu",
+      "server": "88.218.95.88",
       "server_port": 443,
-      "uuid": "8be461cb-a0df-47cf-bc0d-4d9e6a22fa74",
+      "uuid": "b8df3f50-ffef-4c7e-9ef3-d5b156a47c02",
       "tls": {
         "enabled": true,
-        "server_name": "ccs2g.pai50288.uk",
-        "insecure": false,
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rRg3JiP2006ldJYh2TDPAn7dtlXLcSHdgHgkGI_HZTE",
+          "short_id": "43adea0ec9f97a0a"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/pai50288",
-        "headers": {
-          "Host": "ccs2g.pai50288.uk"
-        }
+        "type": "grpc",
+        "service_name": "grpc"
       }
     },
     {
@@ -31,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaoyu"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaoyu"
+        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

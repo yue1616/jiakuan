@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇻🇳 越南 (Vietnam) 01 - xiaoyu
+  server: funagfrdfs.alixxplay.com
+  port: 55688
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
+    short-id: a46bb5972cf50671
+  servername: bilibili-vn.biliimg.com
+  client-fingerprint: firefox
+- name: 🇻🇳 越南 (Vietnam) 02 - xiaoyu
   server: 172.67.168.158
   port: 2087
   udp: true
@@ -19,17 +32,27 @@ proxies:
     path: /vlessvina
     headers:
       Host: vn11vina.210z.dev
+- name: 🇻🇳 越南 (Vietnam) 03 - xiaoyu
+  server: 150.95.109.109
+  port: 2086
+  udp: true
+  type: vless
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇻🇳 越南 (Vietnam) 01 - xiaoyu
+  - 🇻🇳 越南 (Vietnam) 02 - xiaoyu
+  - 🇻🇳 越南 (Vietnam) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇻🇳 越南 (Vietnam) 01 - xiaoyu
+  - 🇻🇳 越南 (Vietnam) 02 - xiaoyu
+  - 🇻🇳 越南 (Vietnam) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

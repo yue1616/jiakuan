@@ -14,7 +14,7 @@
         "server_name": "max.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -30,6 +30,138 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
+      "server": "45.145.12.148",
+      "server_port": 443,
+      "uuid": "b869a8d0-0733-4346-8d1c-c1230a78651c",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM",
+          "short_id": "35debf0dc757d053"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu",
+      "server": "45.145.12.148",
+      "server_port": 443,
+      "uuid": "b869a8d0-0733-4346-8d1c-c1230a78651c",
+      "tls": {
+        "enabled": true,
+        "server_name": "max.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OOI0p2vKjr8xdwcVCzxcd3rAxmMr7XRA0wMk14IXaFM",
+          "short_id": "35debf0dc757d053"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 04 - xiaoyu",
+      "server": "144.31.50.236",
+      "server_port": 443,
+      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
+          "short_id": "bbe46bd8f6b96839"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 05 - xiaoyu",
+      "server": "144.31.50.236",
+      "server_port": 443,
+      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
+          "short_id": "bbe46bd8f6b96839"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 06 - xiaoyu",
+      "server": "prep.wwwinternetvideo.click",
+      "server_port": 443,
+      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
+          "short_id": "bbe46bd8f6b96839"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 07 - xiaoyu",
+      "server": "prep.wwwinternetvideo.click",
+      "server_port": 443,
+      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
+          "short_id": "bbe46bd8f6b96839"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 08 - xiaoyu",
       "server": "45.145.12.148",
       "server_port": 443,
       "uuid": "b869a8d0-0733-4346-8d1c-c1230a78651c",
@@ -57,7 +189,13 @@
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 04 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 05 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 06 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 07 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 08 - xiaoyu"
       ]
     },
     {
@@ -65,7 +203,13 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 04 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 05 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 06 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 07 - xiaoyu",
+        "🇸🇨 塞舌尔 (Seychelles) 08 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
