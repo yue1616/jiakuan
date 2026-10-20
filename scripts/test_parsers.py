@@ -264,6 +264,20 @@ def run_test():
             f"第 {assignment.lineno} 行 build_group 解包数量与返回值不一致"
     print("  ✅ build_group 的所有调用都接收 4 个返回值")
 
+    print()
+    print("阶段9: 严格可用池必须通过双 HTTPS 目标、出口 IP、测速与安全检查")
+    strict_sample = {
+        "alive": True, "mitm_risk": False, "is_stalled": False,
+        "https_probe_hits": 2, "exit_ip": "198.51.100.20", "speed_bps": 250000,
+    }
+    assert mv.strict_round_pass(strict_sample), "满足所有门槛的节点应通过单轮严格检查"
+    assert not mv.strict_round_pass(dict(strict_sample, https_probe_hits=1)), "只命中一个 HTTPS 目标不能进入严格池"
+    assert not mv.strict_round_pass(dict(strict_sample, exit_ip="")), "未取得出口 IP 不能进入严格池"
+    assert not mv.strict_round_pass(dict(strict_sample, speed_bps=mv.SPEED_MIN_BYTES_PER_S - 1)), "测速低于阈值不能进入严格池"
+    assert not mv.strict_round_pass(dict(strict_sample, is_stalled=True)), "断流节点不能进入严格池"
+    assert not mv.strict_round_pass(dict(strict_sample, mitm_risk=True)), "MITM 节点不能进入严格池"
+    print("  ✅ 双 HTTPS 命中、真实出口 IP、速度达标且无断流/MITM 是严格池必要条件")
+
     print("全部测试通过 ✅")
 
 
