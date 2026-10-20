@@ -1,5 +1,10 @@
 name: Update Subscriptions
 
+# Serialize scheduled/manual runs so two jobs don't race while committing generated output.
+concurrency:
+  group: jiakuan-subscription-update-main
+  cancel-in-progress: false
+
 on:
   schedule:
     - cron: "0 */6 * * *" # 每 6 小时自动更新（UTC）
@@ -74,6 +79,9 @@ jobs:
           p README.md
           for f in v2ray.txt clash.yaml singbox.json residential.txt residential-clash.yaml residential-singbox.json; do
             p "output/$f"
+          done
+          for f in v2ray.txt clash.yaml singbox.json; do
+            p "output/candidates/$f"
           done
           find output/residential-by-country output/by-country -type f 2>/dev/null | while read -r f; do
             p "$f"; sleep 0.2
