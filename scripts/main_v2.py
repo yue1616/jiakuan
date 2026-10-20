@@ -997,6 +997,28 @@ def node_dedup_key(outbound: dict, server: str, port: int, proto: str) -> tuple:
     return ((server or "").lower(), int(port), proto, fingerprint)
 
 
+def strict_round_pass(result: dict) -> bool:
+    """一轮严格检测通过：至少两个 HTTPS 目标、拿到真实出口 IP、测速达标，且无劫持/断流。"""
+    return bool(
+        result
+        and result.get("alive")
+        and not result.get("mitm_risk")
+        and not result.get("is_stalled")
+        and int(result.get("https_probe_hits", 0) or 0) >= 2
+        and bool(result.get("exit_ip"))
+        and int(result.get("speed_bps", 0) or 0) >= SPEED_MIN_BYTES_PER_S
+    )
+
+
+def result_dedup_key(result: dict):
+    """由测活结果的原始 URI 重新计算完整连接指纹。"""
+    parsed = parse_node_uri(result.get("raw", ""))
+    if not parsed:
+        return None
+    outbound, server, port, proto = parsed
+    return node_dedup_key(outbound, server, port, proto)
+
+
 def final_node_dedup_key(node: dict) -> tuple:
     """最终导出时仅合并完全相同的连接配置，不按出口 IP+端口合并。
 
@@ -1272,17 +1294,22 @@ def test_single_node(item, keep_alive_check=True):
         proxies = {"http": f"socks5h://127.0.0.1:{socks_port}",
                    "https": f"socks5h://127.0.0.1:{socks_port}"}
 
-        # --- 1) 活性探测: 分层超时重试 (首击宽 12s 容慢节点保准确率; 重试窄 4s 快速放弃死节点) ---
-        alive_hits, latency_ms = 0, 99999
-        t0 = time.time()
+        # --- 1) 多目标活性探测 ---
+        # 不再“命中第一个 URL 就停止”。第一轮与第二轮都记录每个独立目标；
+        # 严格主池后续要求两轮均至少命中两个 HTTPS 目标，降低云端单点成功、本地却 -1 的误入库。
+        alive_hits, https_hits, latency_ms = 0, 0, 99999
+        successful_urls = []
         for i, url in enumerate(LIVENESS_URLS):
             timeout = PROBE_TIMEOUT if i == 0 else PROBE_RETRY_TIMEOUT
+            url_started = time.time()
             try:
                 r = PROBE_SESSION.get(url, proxies=proxies, timeout=timeout, allow_redirects=False)
                 if r.status_code in (204, 200):
                     alive_hits += 1
-                    latency_ms = min(latency_ms, (time.time() - t0) * 1000)
-                    break  # 任一成功即可
+                    if url.lower().startswith("https://"):
+                        https_hits += 1
+                    latency_ms = min(latency_ms, int((time.time() - url_started) * 1000))
+                    successful_urls.append(url)
             except Exception:
                 continue
         if alive_hits == 0:
@@ -1389,6 +1416,9 @@ def test_single_node(item, keep_alive_check=True):
             "proto": proto,
             "alive": True,
             "latency_ms": int(latency_ms),
+            "probe_hits": alive_hits,
+            "https_probe_hits": https_hits,
+            "probe_urls_ok": successful_urls,
             "exit_ip": exit_ip,
             "exit_country_online": exit_country,
             "exit_asn_online": exit_asn,
@@ -1417,8 +1447,8 @@ def test_single_node(item, keep_alive_check=True):
             pass
 
 
-def run_liveness_test(candidates: list) -> list:
-    print(f"[*] sing-box 全协议真实测活: {len(candidates)} 节点 (并发 {MAX_WORKERS_TEST}) ...")
+def run_liveness_test(candidates: list, round_label: str = "测活") -> list:
+    print(f"[*] sing-box 全协议真实测活（{round_label}）: {len(candidates)} 节点 (并发 {MAX_WORKERS_TEST}) ...")
     results = []
     with _PROBE_FAILURE_LOCK:
         _PROBE_FAILURE_COUNTS.clear()
@@ -1442,8 +1472,9 @@ def run_liveness_test(candidates: list) -> list:
     mitm = sum(1 for r in results if r["mitm_risk"])
     stalled = sum(1 for r in results if r["is_stalled"])
     speed_unavailable = sum(1 for r in results if r.get("speed_bps", 0) <= 0)
-    print(f"[+] 测活完成: 达标 {len(alive)} | 低速/测速无数据淘汰 {stalled} "
-          f"(其中测速无数据 {speed_unavailable}) | MITM 风险 {mitm}")
+    strict_probe_hits = sum(1 for r in alive if r.get("https_probe_hits", 0) >= 2)
+    print(f"[+] {round_label}完成: 基础可用 {len(alive)} | 命中≥2个HTTPS目标 {strict_probe_hits} "
+          f"| 低速/测速无数据 {stalled} (其中测速无数据 {speed_unavailable}) | MITM 风险 {mitm}")
     with _PROBE_FAILURE_LOCK:
         failure_summary = sorted(_PROBE_FAILURE_COUNTS.items(), key=lambda item: -item[1])
     if failure_summary:
@@ -2124,6 +2155,11 @@ def classify_and_export(test_results: list):
             "speed_bps": r["speed_bps"],
             "mitm_risk": r["mitm_risk"],
             "is_stalled": r["is_stalled"],
+            "probe_hits": r.get("probe_hits", 0),
+            "https_probe_hits": r.get("https_probe_hits", 0),
+            "probe_urls_ok": r.get("probe_urls_ok", []),
+            "strict_confirmation": bool(r.get("strict_confirmation", False)),
+            "candidate_reason": r.get("candidate_reason", "未满足两轮严格复测条件"),
         })
 
     if country_reader:
@@ -2203,21 +2239,34 @@ def classify_and_export(test_results: list):
         print(f"[*] 高 fraud 分 (≥75) 家宽候选降级: {downgraded} 个")
 
     # ── 最终去重：仅合并完整连接配置相同的重复项 ──
-    # 不再按 exit_ip:port 去重。相同出口 IP/端口不代表相同代理入口；
-    # 旧做法会丢掉不同域名、协议、凭据或传输参数的备用线路，且可能只留下 Xray 不兼容的代表项。
+    # 不按 exit_ip:port 去重。严格主池与候选池分离，候选节点绝不混入主订阅。
     best_by_key = {}
     for n in safe_nodes:
         key = final_node_dedup_key(n)
         cur = best_by_key.get(key)
         if not cur or n["latency_ms"] < cur["latency_ms"]:
             best_by_key[key] = n
-    unique_nodes = list(best_by_key.values())
-    dup_dropped = len(safe_nodes) - len(unique_nodes)
-    print(f"[*] 最终连接配置去重: {len(safe_nodes)} → {len(unique_nodes)} "
+    all_usable_unique = list(best_by_key.values())
+    dup_dropped = len(safe_nodes) - len(all_usable_unique)
+    print(f"[*] 最终连接配置去重: {len(safe_nodes)} → {len(all_usable_unique)} "
           f"(合并完全相同配置 {dup_dropped}；保留共享出口 IP 的不同备用入口)")
 
-    # 去重: 出口IP+端口 唯一化, 家宽区严格防同IP刷屏
-    # ★ 链式复测 (chain_retest) 双跳失败的家宽候选 → 不进家宽专区 (降级普通)
+    # fraud 分极高 (≥90) 的节点整体剔除 (任何池都不要)
+    before_total = len(all_usable_unique)
+    all_usable_unique = [n for n in all_usable_unique if not (0 <= n.get("fraud_score", -1) >= 90)]
+    if len(all_usable_unique) < before_total:
+        print(f"[*] 极高危节点 (fraud≥90) 剔除: {before_total - len(all_usable_unique)} 个")
+
+    # 主订阅严格要求：第一、二轮都命中至少两个独立 HTTPS 目标、两轮都拿到出口 IP、
+    # 两轮测速达标且没有 MITM/断流。其余仍可用的节点只进入候选订阅。
+    unique_nodes = [n for n in all_usable_unique if n.get("strict_confirmation")]
+    candidate_nodes = [n for n in all_usable_unique if not n.get("strict_confirmation")]
+    for n in candidate_nodes:
+        n["candidate"] = True
+    print(f"[*] 质量分池: 严格可用池 {len(unique_nodes)} | 候选池 {len(candidate_nodes)} "
+          f"(候选不会写入主订阅)")
+
+    # 家宽区域只从严格池选择；链式复测失败的家宽候选降级到普通区。
     chain_failed_raws = set()
     for r in test_results:
         if r.get("_chain_failed"):
@@ -2233,25 +2282,18 @@ def classify_and_export(test_results: list):
             if n["exit_ip"] and n["exit_ip"] not in res_seen_ip:
                 res_seen_ip.add(n["exit_ip"])
                 residential.append(n)
-    # fraud 分极高 (≥90) 的节点整体剔除 (任何区都不要)
-    before_total = len(unique_nodes)
-    unique_nodes = [n for n in unique_nodes if not (0 <= n.get("fraud_score", -1) >= 90)]
-    residential = [n for n in residential if not (0 <= n.get("fraud_score", -1) >= 90)]
-    if len(unique_nodes) < before_total:
-        print(f"[*] 极高危节点 (fraud≥90) 剔除: {before_total - len(unique_nodes)} 个")
 
     non_residential = [n for n in unique_nodes if n not in residential]
-    print(f"[*] 家宽/移动网络节点: {len(residential)} | 普通(机房/CDN): {len(non_residential)}")
-
     # 排序: 家宽在前, 延迟升序
     unique_nodes.sort(key=lambda x: (0 if x in residential else 1, x["latency_ms"]))
     residential.sort(key=lambda x: x["latency_ms"])
     non_residential.sort(key=lambda x: x["latency_ms"])
-    # ★ 链式复测双跳失败的家宽 → 降级普通区 (v2rayN 链式场景不可靠)
-    #    保留在总订阅/国家订阅里 (直连场景仍可用), 只是退出家宽专区
+    candidate_nodes.sort(key=lambda x: (x.get("https_probe_hits", 0) < 2,
+                                        x.get("latency_ms", 99999),
+                                        -x.get("speed_bps", 0)))
 
     # 重建 outbound (测活阶段的 outbound 已验证可用); 剥离测试专用字段 (detour 等绝不入订阅)
-    for n in unique_nodes:
+    for n in unique_nodes + candidate_nodes:
         parsed = parse_node_uri(n["raw"])
         if parsed:
             ob = parsed[0]
@@ -2260,15 +2302,16 @@ def classify_and_export(test_results: list):
         else:
             n["outbound"] = None
 
-    return unique_nodes, residential, non_residential
+    return unique_nodes, residential, non_residential, candidate_nodes
 
 
 def make_node_name(item, idx, force_residential=False):
     cc = item["country"]
     flag = get_country_flag(cc)
     cname = COUNTRY_NAMES.get(cc, cc)
-    is_res = item["net_type"] in ("residential", "mobile") and (item["confidence"] >= 60 or force_residential)
-    tag = ""
+    is_candidate = bool(item.get("candidate"))
+    is_res = (not is_candidate) and item["net_type"] in ("residential", "mobile") and (item["confidence"] >= 60 or force_residential)
+    tag = " (候选)" if is_candidate else ""
     if is_res:
         tag = " (家宽)" if item["net_type"] == "residential" else " (移动家宽)"
     # Scamalytics 风控分: 高风险节点名内标注 (R分数), 低危不标 (保持简洁)
@@ -2277,7 +2320,40 @@ def make_node_name(item, idx, force_residential=False):
     return f"{flag} {cname} {idx:02d}{tag}{risk_tag} - xiaoyu"
 
 
-def export_all(unique_nodes, residential, non_residential):
+def export_candidate_pool(candidate_nodes):
+    """单独导出候选池；没有严格节点时也可刷新候选池而不覆盖主订阅。"""
+    ensure_directories()
+    candidates_dir = os.path.join(OUTPUT_DIR, "candidates")
+    os.makedirs(candidates_dir, exist_ok=True)
+    links, proxies, sb_nodes = [], [], []
+    skipped = 0
+    for idx, item in enumerate(candidate_nodes or [], start=1):
+        item["candidate"] = True
+        outbound = item.get("outbound")
+        if not outbound:
+            continue
+        name = make_node_name(item, idx)
+        link = outbound_to_v2ray_link(outbound, name)
+        if link:
+            links.append(link)
+        else:
+            skipped += 1
+        cp = outbound_to_clash(outbound, name)
+        if cp:
+            proxies.append(cp)
+        sb_nodes.append(outbound_to_singbox(outbound, name))
+
+    with open(os.path.join(candidates_dir, "v2ray.txt"), "w", encoding="utf-8") as f:
+        f.write(base64.b64encode("\n".join(links).encode()).decode())
+    export_clash_yaml(proxies, os.path.join(candidates_dir, "clash.yaml"))
+    export_singbox_json(sb_nodes, os.path.join(candidates_dir, "singbox.json"))
+    if skipped:
+        print(f"[!] 候选池 v2rayN 兼容性过滤: 跳过 {skipped} 个不兼容节点")
+    print(f"[*] 候选池已独立导出: {len(links)} 个 V2RayN 节点（不写入主订阅）")
+    return len(links)
+
+
+def export_all(unique_nodes, residential, non_residential, candidate_nodes=None):
     ensure_directories()
 
     def build_group(nodes_list, force_res=False):
@@ -2285,7 +2361,7 @@ def export_all(unique_nodes, residential, non_residential):
         v2ray_skipped = 0
         for idx, item in enumerate(nodes_list, start=1):
             name = make_node_name(item, idx, force_res)
-            ob = item["outbound"]
+            ob = item.get("outbound")
             if not ob:
                 continue
             link = outbound_to_v2ray_link(ob, name)
@@ -2347,8 +2423,11 @@ def export_all(unique_nodes, residential, non_residential):
         export_clash_yaml(p, os.path.join(RESIDENTIAL_COUNTRY_DIR, f"clash-{cc}.yaml"))
         export_singbox_json(s, os.path.join(RESIDENTIAL_COUNTRY_DIR, f"singbox-{cc}.json"))
 
-    print(f"[*] 导出完毕: 全量 {len(all_links)} | 家宽 {len(res_links)}")
-    return len(all_links), len(res_links)
+    # 5) 候选池：独立文件，不与严格主订阅混合。
+    candidate_count = export_candidate_pool(candidate_nodes or [])
+
+    print(f"[*] 导出完毕: 严格可用池 {len(all_links)} | 家宽 {len(res_links)} | 候选池 {candidate_count}")
+    return len(all_links), len(res_links), candidate_count
 
 
 def export_clash_yaml(clash_proxies, filepath):
@@ -2390,7 +2469,7 @@ def export_singbox_json(sb_nodes, filepath):
 # README 生成
 # ═══════════════════════════════════════════N═══════════════════════
 
-def update_readme(total_count, res_count):
+def update_readme(total_count, res_count, candidate_count=0):
     repo_name = os.environ.get("GITHUB_REPOSITORY", "hezhanleiok/freesub").strip()
     cache_bust = ""
     # 私有化部署 Worker 脚本里的仓库参数 (默认值兜底)
@@ -2451,6 +2530,22 @@ def update_readme(total_count, res_count):
 | 🚀 **Clash (YAML 格式)** | `{total_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/clash.yaml) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/clash.yaml) |
 | ⚡ **V2RayN (Base64 格式)** | `{total_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/v2ray.txt) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/v2ray.txt) |
 | 📦 **sing-box (JSON 格式)** | `{total_count}` | [免翻 CDN 直链](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/singbox.json) | [官方 Raw 直链](https://raw.githubusercontent.com/{repo_name}/main/output/singbox.json) |
+
+> **主订阅只放严格可用节点**：每个节点必须连续两轮独立复测通过；每轮至少命中两个独立 HTTPS 探测目标、能获取出口 IP、测速达标，并通过 TLS/MITM 与断流检查。未满足全部条件但仍有一定可用性的节点单独放入候选池。
+
+---
+
+## 🧪 候选节点池（不混入主订阅）
+
+本次候选池可导出的 V2RayN 节点数：**`{candidate_count}`**。各格式链接独立生成，节点数可能因客户端兼容性过滤不同而略有差异。
+
+| 客户端 / 格式类型 | CDN 直链 | Raw 直链 |
+| :--- | :--- | :--- |
+| V2RayN (Base64) | [CDN](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/candidates/v2ray.txt) | [Raw](https://raw.githubusercontent.com/{repo_name}/main/output/candidates/v2ray.txt) |
+| Clash (YAML) | [CDN](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/candidates/clash.yaml) | [Raw](https://raw.githubusercontent.com/{repo_name}/main/output/candidates/clash.yaml) |
+| sing-box (JSON) | [CDN](https://cdn.jsdelivr.net/gh/{repo_name}@main/output/candidates/singbox.json) | [Raw](https://raw.githubusercontent.com/{repo_name}/main/output/candidates/singbox.json) |
+
+候选池适合手动抽测，不建议设置为客户端默认主订阅。候选池的节点名称会带有“候选”标记。
 
 ---
 
@@ -2536,12 +2631,12 @@ export default {{
 
 ## 🛠️ 项目使用说明
 1. **自动更新机制**：GitHub Actions 每 6 小时全自动运行并刷新上述全部订阅与数据。
-2. **测活标准**：节点必须通过 ① 端口预检 ② sing-box 实际隧道 3 个 generate_204 探测 ③ 真实出口 IP 穿透获取 ④ 测速端点 2.5MB 限时下载 (吞吐 ≥ 70KB/s) ⑤ TLS 证书校验非 MITM, 方可入库。
+2. **测活标准**：主订阅要求连续两轮独立复测；每轮至少命中两个独立 HTTPS 活性目标、获取真实出口 IP、测速 ≥70KB/s，并通过 TLS/MITM 与断流检查。未完全满足的可用节点进入独立候选池。
 3. **多客户端兼容**：Clash / v2rayN / sing-box 全格式订阅。
 """
     with open(os.path.join(BASEDIR, "README.md"), "w", encoding="utf-8") as f:
         f.write(readme)
-    print(f"[+] README.md 更新完毕: 总节点 {total_count}, 家宽 {res_count}")
+    print(f"[+] README.md 更新完毕: 严格可用节点 {total_count}, 家宽 {res_count}, 候选节点 {candidate_count}")
 
 
 # ═══════════════════════════════════════════N═══════════════════════
@@ -2600,10 +2695,66 @@ def main():
     # 3. 端口预检
     candidates = prefilter_candidates(candidates)
 
-    # 4. 真实测活 (只测去重后的代表节点)
-    test_results = run_liveness_test(candidates)
+    # 4. 第一轮真实测活 (只测去重后的代表节点)
+    first_round_results = run_liveness_test(candidates, "第一轮初筛")
+    if not first_round_results:
+        print("[!] 第一轮没有可确认节点 — 保留上次所有订阅输出")
+        return
 
-    # 4.5 重复节点结果回填：仅完整协议配置指纹相同的 URI 才继承测活结果
+    # 4.5 对第一轮仍有带宽、无 MITM 的节点做独立第二轮复测。
+    # 这样避免只凭某个 URL 偶尔成功就进入主订阅；第二轮失败的节点不发布。
+    item_by_key = {}
+    for item in candidates:
+        uri, outbound, server, port, proto = item
+        item_by_key[node_dedup_key(outbound, server, port, proto)] = item
+    first_by_key = {}
+    for result in first_round_results:
+        key = result_dedup_key(result)
+        if key:
+            first_by_key[key] = result
+
+    retest_items = []
+    for key, result in first_by_key.items():
+        if result.get("alive") and not result.get("is_stalled") and not result.get("mitm_risk"):
+            item = item_by_key.get(key)
+            if item:
+                retest_items.append(item)
+    print(f"[*] 第二轮独立复测队列: {len(retest_items)} 个首轮未见明显故障的节点")
+    if not retest_items:
+        print("[!] 没有节点进入第二轮 — 保留上次所有订阅输出")
+        return
+
+    second_round_results = run_liveness_test(retest_items, "第二轮独立复测")
+    if not second_round_results:
+        print("[!] 第二轮没有节点通过基本探测 — 保留上次所有订阅输出")
+        return
+
+    test_results = []
+    for result in second_round_results:
+        key = result_dedup_key(result)
+        first = first_by_key.get(key) if key else None
+        first_ok = strict_round_pass(first)
+        second_ok = strict_round_pass(result)
+        result["strict_confirmation"] = bool(first_ok and second_ok)
+        result["confirmed_rounds"] = 2 if first else 1
+        if result["strict_confirmation"]:
+            result["candidate_reason"] = "两轮严格检测通过"  # 不会进入候选池
+        elif not first:
+            result["candidate_reason"] = "缺少第一轮结果"
+        elif int(first.get("https_probe_hits", 0) or 0) < 2 or int(result.get("https_probe_hits", 0) or 0) < 2:
+            result["candidate_reason"] = "独立 HTTPS 目标命中不足"
+        elif not first.get("exit_ip") or not result.get("exit_ip"):
+            result["candidate_reason"] = "至少一轮未取得出口 IP"
+        elif int(first.get("speed_bps", 0) or 0) < SPEED_MIN_BYTES_PER_S or int(result.get("speed_bps", 0) or 0) < SPEED_MIN_BYTES_PER_S:
+            result["candidate_reason"] = "至少一轮测速低于门槛"
+        else:
+            result["candidate_reason"] = "其他严格条件未全部满足"
+        test_results.append(result)
+
+    print(f"[+] 第二轮结果: {len(test_results)} | 两轮均满足严格门槛: "
+          f"{sum(1 for r in test_results if r.get('strict_confirmation'))}")
+
+    # 4.6 重复节点结果回填：仅完整协议配置指纹相同的 URI 才继承测活结果
     if DEDUP_MAP:
         # 必须按「服务器 + 端口 + 协议 + 凭据指纹」查找测试结果。
         # 旧逻辑只按 server/port/proto 匹配，会把同地址上另一组账号/密码的成功结果
@@ -2643,18 +2794,35 @@ def main():
     if not test_results:
         print("[!] 全部节点测活失败 — 保留上次 output, 不覆盖订阅文件")
         return
-    unique_nodes, residential, non_residential = classify_and_export(test_results)
+    unique_nodes, residential, non_residential, candidate_nodes = classify_and_export(test_results)
     if not unique_nodes:
-        print("[!] 分类后无存活节点 — 保留上次 output")
+        if candidate_nodes:
+            candidate_count = export_candidate_pool(candidate_nodes)
+            def _existing_subscription_count(path):
+                try:
+                    with open(path, "r", encoding="utf-8") as stream:
+                        content = stream.read().strip()
+                    if not content:
+                        return 0
+                    decoded = base64.b64decode(content).decode("utf-8", errors="ignore")
+                    return sum(1 for line in decoded.splitlines() if line.strip())
+                except Exception:
+                    return 0
+            previous_total = _existing_subscription_count(os.path.join(OUTPUT_DIR, "v2ray.txt"))
+            previous_res = _existing_subscription_count(os.path.join(OUTPUT_DIR, "residential.txt"))
+            update_readme(previous_total, previous_res, candidate_count)
+            print("[!] 本轮严格池为空：候选池已更新，但保留上次主订阅，避免发布空池。")
+        else:
+            print("[!] 分类后严格池和候选池均为空 — 保留上次 output")
         return
-    total, res = export_all(unique_nodes, residential, non_residential)
-    update_readme(total, res)
+    total, res, candidate_count = export_all(unique_nodes, residential, non_residential, candidate_nodes)
+    update_readme(total, res, candidate_count)
 
 
     # 统计报告
     elapsed = time.time() - t_start
     print("\n===== 运行报告 =====")
-    print(f"总耗时: {elapsed:.0f}s | 抓取 {len(raw_nodes)} → 解析成功 {len(candidates)} → 真活 {len(test_results)} → 去重后 {len(unique_nodes)} → 家宽 {len(residential)}")
+    print(f"总耗时: {elapsed:.0f}s | 抓取 {len(raw_nodes)} → 去重候选 {len(candidates)} → 第二轮确认 {len(test_results)} → 严格池 {len(unique_nodes)} → 候选池 {len(candidate_nodes)} → 家宽 {len(residential)}")
     by_type = {}
     for n in unique_nodes:
         by_type[n["net_type"]] = by_type.get(n["net_type"], 0) + 1
