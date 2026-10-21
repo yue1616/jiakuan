@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaoyu
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 02 - xiaoyu
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -27,6 +16,17 @@ proxies:
     short-id: 9980e0609b0d3891
   servername: www.apple.com
   client-fingerprint: random
+- name: 🇮🇳 印度 (India) 02 - xiaoyu
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 03 - xiaoyu
   server: 194.61.31.126
   port: 2053
@@ -38,29 +38,8 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 04 - xiaoyu
-  server: 165.99.222.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
-  servername: in1.vkusnews.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 05 - xiaoyu
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇮🇳 印度 (India) 06 - xiaoyu
+- name: 🇮🇳 印度 (India) 04 - xiaoyu
   server: 194.61.31.126
   port: 2053
   udp: true
@@ -71,6 +50,27 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 05 - xiaoyu
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇮🇳 印度 (India) 06 - xiaoyu
+  server: 165.99.222.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
+  servername: in1.vkusnews.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 07 - xiaoyu
   server: 165.99.222.161
@@ -96,7 +96,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: in-152.67.8.205-0204
+      Host: in-152.67.8.205-0202
 - name: 🇮🇳 印度 (India) 09 - xiaoyu
   server: 152.67.8.205
   port: 80
@@ -109,7 +109,7 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: in-152.67.8.205-0242
+      Host: in-152.67.8.205-0200
 - name: 🇮🇳 印度 (India) 10 - xiaoyu
   server: 152.67.8.205
   port: 80
@@ -123,6 +123,107 @@ proxies:
     path: /
     headers:
       Host: in-152.67.8.205-0250
+- name: 🇮🇳 印度 (India) 11 - xiaoyu
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0250
+- name: 🇮🇳 印度 (India) 12 - xiaoyu
+  server: 165.99.222.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
+  servername: in1.vkusnews.com
+  client-fingerprint: ios
+- name: 🇮🇳 印度 (India) 13 - xiaoyu
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0202
+- name: 🇮🇳 印度 (India) 14 - xiaoyu
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0204
+- name: 🇮🇳 印度 (India) 15 - xiaoyu
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇮🇳 印度 (India) 16 - xiaoyu
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0242
+- name: 🇮🇳 印度 (India) 17 - xiaoyu
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0204
+- name: 🇮🇳 印度 (India) 18 - xiaoyu
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0184
 proxy-groups:
 - name: PROXIES
   type: select
@@ -138,6 +239,14 @@ proxy-groups:
   - 🇮🇳 印度 (India) 08 - xiaoyu
   - 🇮🇳 印度 (India) 09 - xiaoyu
   - 🇮🇳 印度 (India) 10 - xiaoyu
+  - 🇮🇳 印度 (India) 11 - xiaoyu
+  - 🇮🇳 印度 (India) 12 - xiaoyu
+  - 🇮🇳 印度 (India) 13 - xiaoyu
+  - 🇮🇳 印度 (India) 14 - xiaoyu
+  - 🇮🇳 印度 (India) 15 - xiaoyu
+  - 🇮🇳 印度 (India) 16 - xiaoyu
+  - 🇮🇳 印度 (India) 17 - xiaoyu
+  - 🇮🇳 印度 (India) 18 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -153,5 +262,13 @@ proxy-groups:
   - 🇮🇳 印度 (India) 08 - xiaoyu
   - 🇮🇳 印度 (India) 09 - xiaoyu
   - 🇮🇳 印度 (India) 10 - xiaoyu
+  - 🇮🇳 印度 (India) 11 - xiaoyu
+  - 🇮🇳 印度 (India) 12 - xiaoyu
+  - 🇮🇳 印度 (India) 13 - xiaoyu
+  - 🇮🇳 印度 (India) 14 - xiaoyu
+  - 🇮🇳 印度 (India) 15 - xiaoyu
+  - 🇮🇳 印度 (India) 16 - xiaoyu
+  - 🇮🇳 印度 (India) 17 - xiaoyu
+  - 🇮🇳 印度 (India) 18 - xiaoyu
 rules:
 - MATCH,PROXIES
