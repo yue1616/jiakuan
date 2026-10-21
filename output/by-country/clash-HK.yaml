@@ -10,153 +10,9 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: google.com
+  sni: https://t.me/wangcai2ⁿß«ⁿß
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üáüá
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүёрҹүі
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүрҹү
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2ⁿß
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: httpst.mewangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%80%d2%b9%d2%af
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹүҹү
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: "https://t.me/wangcai2ð\x9F\x87"
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - xiaoyu
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 16 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 17 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 18 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 19 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 20 - xiaoyu
   server: 202.146.222.174
   port: 443
   udp: true
@@ -164,79 +20,15 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 21 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 22 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2ð\x9f\x87¨ð\x9f\x87³
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 23 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 24 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 25 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 26 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 27 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 28 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 29 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 30 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
   server: 202.146.222.29
   port: 443
   udp: true
@@ -244,105 +36,15 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 31 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2��
+  sni: whatsapp.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 32 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2����
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 33 - xiaoyu
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 34 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 35 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: speedtest.tinkoff.ru
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 36 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2ⁿß«ⁿß
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 37 - xiaoyu
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 38 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2≡ƒç¿≡ƒç│
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 39 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 40 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 41 - xiaoyu
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 42 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá®üá≥
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 43 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
   server: 202.146.222.29
   port: 443
   udp: true
@@ -350,36 +52,55 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 44 - xiaoyu
-  server: 207.56.137.51
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+  server: 202.146.222.174
   port: 443
   udp: true
-  type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 45 - xiaoyu
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2рҹү
+  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 46 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: "https://t.me/wangcai2ð\x9F\x87ð\x9F\x87"
+  sni: https://t.me/wangcai2��
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 47 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: httpst.mewangcai2
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaoyu
   server: 202.146.222.29
   port: 443
   udp: true
@@ -387,7 +108,127 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/wangcai2�
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 48 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 14 - xiaoyu
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 15 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 16 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: css.rbxcdn.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 17 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2üá®üá
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 18 - xiaoyu
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 19 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 20 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2ⁿß
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 21 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 22 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2рҹүёрҹүі
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 23 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 24 - xiaoyu
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/oneclickvpnkeys
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 25 - xiaoyu
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 26 - xiaoyu
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 27 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2≡ƒç¿≡ƒç│
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 28 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 29 - xiaoyu
   server: 202.146.222.29
   port: 443
   udp: true
@@ -395,40 +236,133 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/wangcai2≡ƒç
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 49 - xiaoyu
-  server: 74a598d0-tnhmo0-toktib-1hhyy.hk3.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 30 - xiaoyu
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
-  password: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
-  sni: 74a598d0-tnhmo0-toktib-1hhyy.hk3.hyhuawei.com
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 50 - xiaoyu
-  server: 207.56.137.51
+- name: 🇭🇰 中国香港 (Hong Kong) 31 - xiaoyu
+  server: 46.8.120.213
   port: 443
   udp: true
   type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  uuid: 2e34af79-e5dc-ae2a-3393-65479f695282
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 51 - xiaoyu
-  server: 47.238.210.5
-  port: 13779
+    public-key: _u-Nv9dyWbkoAkklJAYQaixa60hmhbn6kZcUNhrdqW8
+    short-id: d498984fe96ad0ab
+  servername: bg1.spacevpn.space
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 32 - xiaoyu
+  server: zfd-hkv1.kunlun01dns.com
+  port: 16114
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 33 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2ð\x9f\x87¨ð\x9f\x87³
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 34 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: google.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 35 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%80%d2%b9%d2%af
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 36 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%c3%b0%c2%9f%c2%87%c2%a8%c3%b0%c2%9f%c2%87%c2%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 37 - xiaoyu
+  server: 45.39.198.205
+  port: 8443
   udp: true
   type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  uuid: 4a3d18d7-dfbe-4077-986a-6b145e417568
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
+    public-key: pOOWxG69IvNxQyZUtd4QDK0KEtFHVsjC-m5-zcsi5Do
+    short-id: c5b8bed4faee8363
+  servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 52 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 38 - xiaoyu
+  server: 154.83.86.85
+  port: 9443
+  udp: true
+  type: vless
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 39 - xiaoyu
+  server: 45.207.157.8
+  port: 9443
+  udp: true
+  type: vless
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 40 - xiaoyu
+  server: 45.202.248.173
+  port: 9443
+  udp: true
+  type: vless
+  uuid: 82eb8419-59f4-4d3e-9106-d05d22af615c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0hIFPaEn4RdFib8_eP8HYxMywR5izEwM3JA2W1Zo8U4
+    short-id: b390142456517acc
+  servername: www.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 41 - xiaoyu
+  server: 151.242.85.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7aec627e-a258-4ded-9fd9-fbd7c024f950
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: gUu1n11Ef_GEoatNQzJJucvIjGTt4qxOWdxMzjoHwDM
+    short-id: 9b6fa4047c24629f
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 42 - xiaoyu
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -444,32 +378,6 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 53 - xiaoyu
-  server: 82.29.36.250
-  port: 443
-  udp: true
-  type: vless
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
-    short-id: 09353d6dc5b789
-  servername: aws.amazon.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 54 - xiaoyu
-  server: 156.239.13.161
-  port: 51443
-  udp: true
-  type: vless
-  uuid: 3e4c67dd-eeaa-48ad-8066-0dca798cccb3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WpfLIDfNGu5tmsHEa_mrZAgTDwPYD_9TK2zagNx3kgk
-    short-id: aa5b653590725505
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -517,18 +425,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 40 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 41 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 42 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 43 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 44 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 45 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 46 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 47 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 48 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 49 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 50 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 51 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 52 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 53 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 54 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -576,17 +472,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 40 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 41 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 42 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 43 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 44 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 45 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 46 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 47 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 48 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 49 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 50 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 51 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 52 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 53 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 54 - xiaoyu
 rules:
 - MATCH,PROXIES

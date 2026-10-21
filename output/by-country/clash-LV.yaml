@@ -5,51 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaoyu
-  server: 185.220.223.25
-  port: 443
+  server: 185.135.86.175
+  port: 9007
   udp: true
-  type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
-    short-id: 3c6afdc4124d0560
-  servername: lv.aiage.work
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: kSPmvwdFzGMMW5pY
 - name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu
-  server: 185.220.223.25
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
-    short-id: 3c6afdc4124d0560
-  servername: lv.aiage.work
-  client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu
   server: 185.135.86.175
   port: 9068
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
-  server: lv.aiage.work
-  port: 443
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu
+  server: 185.135.86.175
+  port: 9034
   udp: true
-  type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
-    short-id: 3c6afdc4124d0560
-  servername: lv.aiage.work
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
 - name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu
   server: 185.135.86.175
   port: 9082
@@ -58,6 +40,41 @@ proxies:
   cipher: aes-256-cfb
   password: 45xgMgm386pjWjTx
 - name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu
+  server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu
+  server: 185.135.86.175
+  port: 9033
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu
+  server: lv1.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: lv1.dedushka.top
+  skip-cert-verify: true
+- name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu
+  server: 195.123.213.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇱🇻 拉脱维亚 (Latvia) 10 - xiaoyu
   server: 138.124.180.137
   port: 443
   udp: true
@@ -70,33 +87,20 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu
-  server: 185.220.223.24
+- name: 🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu
+  server: 195.123.213.28
   port: 443
   udp: true
   type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
-    short-id: 3c6afdc4124d0560
-  servername: lv.aiage.work
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu
-  server: 138.124.180.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu
+- name: 🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu
   server: 138.124.180.137
   port: 443
   udp: true
@@ -109,20 +113,43 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 10 - xiaoyu
-  server: 195.123.208.32
+- name: 🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu
+  server: lv1.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: lv1.dedushka.top
+  skip-cert-verify: false
+- name: 🇱🇻 拉脱维亚 (Latvia) 14 - xiaoyu
+  server: 138.124.180.137
   port: 443
   udp: true
   type: vless
-  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
-    short-id: 757b9e1ef18e60f0
-  servername: gateway.icloud.com
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu
+- name: 🇱🇻 拉脱维亚 (Latvia) 15 - xiaoyu
+  server: us.mediabox12wrr.site
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 1566a6e1-8181-41ef-894c-6d6d0d482470
+  tls: true
+  servername: us.mediabox12wrr.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /dfefc609ed724b3d8647ed29
+    headers:
+      Host: us.mediabox12wrr.site
+- name: 🇱🇻 拉脱维亚 (Latvia) 16 - xiaoyu
   server: 195.123.208.32
   port: 443
   udp: true
@@ -135,33 +162,45 @@ proxies:
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
   client-fingerprint: ios
-- name: 🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu
-  server: 94.103.2.109
-  port: 8463
-  udp: true
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu
-  server: lv.aiage.work
+- name: 🇱🇻 拉脱维亚 (Latvia) 17 - xiaoyu
+  server: 195.123.208.32
   port: 443
   udp: true
   type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
-    short-id: 3c6afdc4124d0560
-  servername: lv.aiage.work
+    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
+    short-id: 757b9e1ef18e60f0
+  servername: gateway.icloud.com
   client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 18 - xiaoyu
+  server: 195.123.208.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
+    short-id: 757b9e1ef18e60f0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 19 - xiaoyu
+  server: 195.123.208.32
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
+    short-id: 757b9e1ef18e60f0
+  servername: gateway.icloud.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -180,6 +219,12 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 14 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 15 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 16 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 17 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 18 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 19 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -198,5 +243,11 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 14 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 15 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 16 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 17 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 18 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 19 - xiaoyu
 rules:
 - MATCH,PROXIES

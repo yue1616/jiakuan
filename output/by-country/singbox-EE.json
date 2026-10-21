@@ -11,7 +11,7 @@
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "109.206.241.10",
+        "server_name": "russiapower.accesscam.org",
         "insecure": true
       }
     },
@@ -23,71 +23,8 @@
       "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "russiapower.accesscam.org",
+        "server_name": "109.206.241.10",
         "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
-      "server": "77.110.105.122",
-      "server_port": 443,
-      "uuid": "019fbe0f-2d9f-4b89-9f81-e1e36129892a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "co-es.speedtec.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI",
-          "short_id": "226509f017e4c36d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
-      "server": "77.110.105.122",
-      "server_port": 443,
-      "uuid": "019fbe0f-2d9f-4b89-9f81-e1e36129892a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "co-es.speedtec.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI",
-          "short_id": "226509f017e4c36d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu",
-      "server": "77.110.105.122",
-      "server_port": 443,
-      "uuid": "019fbe0f-2d9f-4b89-9f81-e1e36129892a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "co-es.speedtec.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EBISh6QAVskJ_nvet-Qio9jS2yqxe9de6GMScYlbjhI",
-          "short_id": "226509f017e4c36d"
-        }
       }
     },
     {
@@ -96,10 +33,7 @@
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu"
       ]
     },
     {
@@ -107,10 +41,7 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
