@@ -14,7 +14,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -38,7 +38,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -62,7 +62,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -86,30 +86,6 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu",
-      "server": "193.233.253.180",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
           "fingerprint": "ios"
         },
         "reality": {
@@ -125,6 +101,27 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu",
+      "server": "113.30.154.239",
+      "server_port": 8443,
+      "uuid": "dc4512bd-44d8-4211-9559-f2e165bb34b0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 06 - xiaoyu",
       "server": "77.90.61.135",
       "server_port": 443,
@@ -134,7 +131,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -154,7 +151,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
@@ -194,7 +191,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -214,7 +211,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -234,7 +231,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -254,7 +251,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -266,14 +263,6 @@
     {
       "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 13 - xiaoyu",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo="
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 14 - xiaoyu",
       "server": "176.32.33.254",
       "server_port": 18443,
       "method": "aes-256-gcm",
@@ -296,8 +285,7 @@
         "🇷🇺 俄罗斯 (Russia) 10 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 11 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 12 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 13 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 14 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 13 - xiaoyu"
       ]
     },
     {
@@ -316,8 +304,7 @@
         "🇷🇺 俄罗斯 (Russia) 10 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 11 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 12 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 13 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 14 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 13 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

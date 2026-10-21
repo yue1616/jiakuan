@@ -14,21 +14,17 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  server: 49.254.204.133
-  port: 1774
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu
+  server: me17.msjia8844.site
+  port: 7443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  type: hysteria2
+  password: M8LP9DztTr3znqCkmf-r08CQLBLLFK1r
+  sni: me17.msjia8844.site
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: u3Soh9_Ui0UmcuY6vk0ug8Lq
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -38,15 +34,29 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: safari
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  server: 9641684.sdf65h4.top
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 250c015d-bab0-4ed3-b638-b4eda48f5840
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 9641684.sdf65h4.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
@@ -54,8 +64,8 @@ proxy-groups:
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

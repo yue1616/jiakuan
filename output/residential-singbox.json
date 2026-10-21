@@ -20,24 +20,24 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu",
-      "server": "49.254.204.133",
-      "server_port": 1774,
-      "method": "aes-256-cfb",
-      "password": "1234!@#$"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu",
+      "server": "me17.msjia8844.site",
+      "server_port": 7443,
+      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "tls": {
+        "enabled": true,
+        "server_name": "me17.msjia8844.site",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+      }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -46,7 +46,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -56,13 +56,29 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu",
+      "server": "9641684.sdf65h4.top",
+      "server_port": 443,
+      "uuid": "250c015d-bab0-4ed3-b638-b4eda48f5840",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "9641684.sdf65h4.top",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu"
       ]
     },
@@ -71,8 +87,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu",
+        "🇹🇷 土耳其 (Turkey) 02 (移动家宽) - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"

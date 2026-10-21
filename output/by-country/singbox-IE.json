@@ -4,15 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu",
+      "server": "34.245.155.44",
+      "server_port": 443,
+      "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
+      "transport": {
+        "type": "http"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 02 - xiaoyu",
+      "server": "34.253.145.77",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 03 - xiaoyu",
       "server": "ie1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
         "server_name": "ie1.dedushka.top",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -20,14 +38,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu",
+        "🇮🇪 爱尔兰 (Ireland) 02 - xiaoyu",
+        "🇮🇪 爱尔兰 (Ireland) 03 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu",
+        "🇮🇪 爱尔兰 (Ireland) 02 - xiaoyu",
+        "🇮🇪 爱尔兰 (Ireland) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
