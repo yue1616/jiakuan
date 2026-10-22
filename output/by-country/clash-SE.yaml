@@ -24,26 +24,6 @@ proxies:
   h2-opts:
     host: []
     path: /
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,8 +31,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,7 +38,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
 rules:
 - MATCH,PROXIES

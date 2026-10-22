@@ -6,7 +6,7 @@ log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaoyu
   server: 147.15.108.14
-  port: null
+  port: 20000
   udp: true
   type: hysteria2
   password: CyG0RFxMjzs41uQD4OLuHQ==
@@ -14,7 +14,6 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
-  ports: 20000-30000,20000-20000
 proxy-groups:
 - name: PROXIES
   type: select
