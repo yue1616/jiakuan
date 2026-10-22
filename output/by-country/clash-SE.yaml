@@ -15,15 +15,20 @@ proxies:
   obfs: salamander
   obfs-password: Telegram@vpnjey
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
-  server: 13.60.198.133
+  server: media.vik.lalibobi.online
   port: 443
   udp: true
   type: vless
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
-  network: h2
-  h2-opts:
-    host: []
-    path: /
+  uuid: 21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad
+  tls: true
+  servername: media.vik.lalibobi.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /live/showroom
+    headers:
+      Host: media.vik.lalibobi.online
 proxy-groups:
 - name: PROXIES
   type: select

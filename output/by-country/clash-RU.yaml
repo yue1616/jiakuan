@@ -15,7 +15,7 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -24,13 +24,12 @@ proxies:
   port: 8444
   udp: true
   type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
   tls: true
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -65,25 +64,18 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  server: 113.30.154.239
-  port: 8443
+  server: 77.90.61.135
+  port: 443
   udp: true
   type: vless
-  uuid: dc4512bd-44d8-4211-9559-f2e165bb34b0
-  flow: xtls-rprx-vision
+  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: qq
+    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
+    short-id: ce1dc482
+  servername: www.cloudflare.com
+  client-fingerprint: ios
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  server: 176.32.34.253
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   server: 77.90.61.135
   port: 443
   udp: true
@@ -95,31 +87,31 @@ proxies:
     short-id: ce1dc482
   servername: www.cloudflare.com
   client-fingerprint: edge
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  server: 77.90.61.135
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  server: 113.30.154.239
+  port: 8443
   udp: true
   type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
+  uuid: dc4512bd-44d8-4211-9559-f2e165bb34b0
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  server: 77.90.61.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
-  tls: true
-  reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
   client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  server: 45.128.78.178
+  port: 443
+  udp: true
+  type: vless
+  uuid: 261160d5-0343-4b85-8c28-3d40dd681559
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
   server: 45.128.78.178
   port: 443
   udp: true
@@ -131,13 +123,33 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: ozon.ru
   client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  server: 176.32.33.254
-  port: 18443
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  server: 77.90.61.135
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  type: vless
+  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
+  tls: true
+  reality-opts:
+    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
+    short-id: ce1dc482
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  server: 0f5857g.msk1.h1clayd.click
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3acb386b-fdd7-4bc9-911f-159fdcd834ce
+  tls: true
+  reality-opts:
+    public-key: _UKyZZvF2cvo6qev4VY-QoOyzqE8cGT3hciD0g--sD8
+    short-id: 07e197719352d606
+  servername: 0f5857g.msk1.h1clayd.click
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: fb78f1bc0355
 - name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   server: 77.90.61.135
   port: 443
@@ -149,26 +161,31 @@ proxies:
     public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
     short-id: ce1dc482
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  server: 77.90.61.135
+  server: 46.254.17.88
+  port: 30065
+  udp: true
+  type: vless
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Buy9pirx5Ih_LHwc6R3BCmvRL4g4Ljx6B3MEsZfIZhU
+  servername: a3.eosapp.net
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  server: 45.91.52.28
   port: 443
   udp: true
   type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
+  uuid: 3acb386b-fdd7-4bc9-911f-159fdcd834ce
   tls: true
   reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
+    public-key: aovrqfVIxA_POvJorIg05wBQJM9nZ859c0fsNL7v9RM
+    short-id: 0ea5f9d7955c3971
+  servername: 9f6635t.msk1.h1clayd.click
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: nQeEoXC5Yl5PZnPLvKUpFTU9cyQcNG902zpibWkwGbo=
 proxy-groups:
 - name: PROXIES
   type: select

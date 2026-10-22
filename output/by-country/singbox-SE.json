@@ -22,11 +22,27 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
-      "server": "13.60.198.133",
+      "server": "media.vik.lalibobi.online",
       "server_port": 443,
-      "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
+      "uuid": "21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad",
+      "tls": {
+        "enabled": true,
+        "server_name": "media.vik.lalibobi.online",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
       "transport": {
-        "type": "http"
+        "type": "ws",
+        "path": "/live/showroom",
+        "headers": {
+          "Host": "media.vik.lalibobi.online"
+        }
       }
     },
     {

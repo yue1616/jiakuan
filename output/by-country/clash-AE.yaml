@@ -15,6 +15,29 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+  server: 151.241.166.159
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7ab86f1f-871e-4de6-9dae-7addf6dc976c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tPhBRGpTbyaPFF3W0wpqncSrdNsV5I-eyM3S9CZoeCQ
+    short-id: 9a26e586f8cadc07
+  servername: pl-hsts.zloygo.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -23,7 +46,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -34,35 +57,15 @@ proxies:
     path: /vless
     headers:
       Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
-  server: uae.unixzone.us
-  port: 22573
+  server: 95.174.68.188
+  port: 14430
   udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
   network: ws
   ws-opts:
-    path: /
+    path: /vless
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
   server: uae.unixzone.us
   port: 22573
@@ -75,27 +78,28 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 08 - xiaoyu
-  server: 84.235.244.108
-  port: 22573
+  server: 45.59.120.217
+  port: 443
   udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  tls: true
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+    short-id: 29c2dd1e3ef7c4d4
+  servername: strm.yandex.net
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 09 - xiaoyu
-  server: 95.174.68.188
-  port: 14430
+  server: 45.59.120.217
+  port: 443
   udp: true
   type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
+  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  tls: true
+  reality-opts:
+    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
+  servername: strm.yandex.net
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 10 - xiaoyu
   server: 45.59.120.217
   port: 443
@@ -109,43 +113,16 @@ proxies:
   servername: strm.yandex.net
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 11 - xiaoyu
-  server: 45.59.120.217
-  port: 443
+  server: uae.unixzone.us
+  port: 22573
   udp: true
   type: vless
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
-  tls: true
-  reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-    short-id: 29c2dd1e3ef7c4d4
-  servername: strm.yandex.net
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 12 - xiaoyu
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: 23b385cf-02c3-4df8-8402-11f1916418cd
-  tls: true
-  servername: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /
     headers:
-      Host: jr61rsc8fog5f.l6yr5b4ialxnf2ll2zcsgmlqf3u.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 13 - xiaoyu
-  server: 45.59.120.217
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
-  tls: true
-  reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-  servername: strm.yandex.net
-  client-fingerprint: chrome
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -162,8 +139,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 10 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 11 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 12 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 13 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -180,7 +155,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 09 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 10 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 11 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 12 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 13 - xiaoyu
 rules:
 - MATCH,PROXIES
