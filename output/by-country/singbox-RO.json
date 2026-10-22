@@ -11,7 +11,7 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
+        "server_name": "css.rbxcdn.com",
         "insecure": true
       }
     },
@@ -23,7 +23,7 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "css.rbxcdn.com",
+        "server_name": "185.156.44.99",
         "insecure": true
       }
     },
@@ -35,24 +35,20 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "www.amazon.com",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaoyu",
-      "server": "hy2-new.aspidnet.xyz",
+      "server": "185.156.44.99",
       "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
+        "server_name": "speedtest.tinkoff.ru",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
       }
     },
     {
@@ -79,7 +75,7 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "google.com",
         "insecure": true
       }
     },
@@ -91,25 +87,91 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "whatsapp.com",
         "insecure": true
       }
     },
     {
-      "type": "hysteria2",
+      "type": "trojan",
       "tag": "🇷🇴 罗马尼亚 (Romania) 08 - xiaoyu",
-      "server": "185.156.44.99",
+      "server": "de1.dedushka.top",
       "server_port": 443,
-      "password": "gf1:gfhysteria2024",
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
-        "server_name": "185.156.44.99",
+        "server_name": "de1.dedushka.top",
         "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 09 - xiaoyu",
+      "server": "it1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "it1.dedushka.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 10 - xiaoyu",
+      "server": "it1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "it1.dedushka.top",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 09 - xiaoyu",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 11 - xiaoyu",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 12 - xiaoyu",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 13 - xiaoyu",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -129,120 +191,47 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 10 - xiaoyu",
-      "server": "46.28.67.55",
-      "server_port": 443,
-      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
-          "short_id": "d06d78e974491b6e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 11 - xiaoyu",
-      "server": "46.28.67.55",
-      "server_port": 443,
-      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
-          "short_id": "d06d78e974491b6e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 12 - xiaoyu",
-      "server": "152.237.230.30",
-      "server_port": 443,
-      "uuid": "e3026ffb-cde6-4cfe-b4b7-f76d5264e969",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI",
-          "short_id": "61a0eb582ed4f2b5"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 13 - xiaoyu",
-      "server": "152.237.230.30",
-      "server_port": 443,
-      "uuid": "e3026ffb-cde6-4cfe-b4b7-f76d5264e969",
-      "tls": {
-        "enabled": true,
-        "server_name": "play.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI",
-          "short_id": "61a0eb582ed4f2b5"
-        }
-      }
-    },
-    {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 14 - xiaoyu",
-      "server": "it1.dedushka.top",
+      "server": "185.156.44.99",
       "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "it1.dedushka.top",
+        "server_name": "vk.com",
         "insecure": true
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 15 - xiaoyu",
+      "server": "87.58.205.242",
+      "server_port": 443,
+      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "backend.mskvibe.fyi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
+          "short_id": "7271129440ade8fa"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 16 - xiaoyu",
       "server": "de1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
         "enabled": true,
         "server_name": "de1.dedushka.top",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 16 - xiaoyu",
-      "server": "it1.dedushka.top",
-      "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
-      "tls": {
-        "enabled": true,
-        "server_name": "it1.dedushka.top",
         "insecure": false
       }
     },
@@ -255,7 +244,10 @@
       "tls": {
         "enabled": true,
         "server_name": "de1.dedushka.top",
-        "insecure": false
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
       }
     },
     {

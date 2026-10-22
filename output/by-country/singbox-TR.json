@@ -62,46 +62,6 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-      "server": "153.56.210.134",
-      "server_port": 34121,
-      "password": "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "9a33460c-b037-47aa-a606-d04211f4e0ec"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
-      "server": "62.133.63.45",
-      "server_port": 8444,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
@@ -117,7 +77,31 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaoyu",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
+      "server": "62.133.63.45",
+      "server_port": 8444,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
       "server": "62.133.63.45",
       "server_port": 8444,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -140,6 +124,22 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaoyu",
+      "server": "153.56.210.134",
+      "server_port": 34121,
+      "password": "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "9a33460c-b037-47aa-a606-d04211f4e0ec"
+      }
+    },
+    {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 07 - xiaoyu",
       "server": "151.241.226.201",
@@ -150,7 +150,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -202,21 +202,20 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 10 - xiaoyu",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
       "tls": {
         "enabled": true,
-        "server_name": "www.datadoghq.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
         }
       }
     },
@@ -263,6 +262,86 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 13 - xiaoyu",
+      "server": "78.135.73.47",
+      "server_port": 443,
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 14 - xiaoyu",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgmansion.site",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-tr"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 15 - xiaoyu",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgmansion.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-tr"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 16 - xiaoyu",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgmansion.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-tr",
+        "headers": {
+          "Host": "tgmansion.site"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -278,7 +357,11 @@
         "🇹🇷 土耳其 (Turkey) 09 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 10 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 11 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 12 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 12 - xiaoyu",
+        "🇹🇷 土耳其 (Turkey) 13 - xiaoyu",
+        "🇹🇷 土耳其 (Turkey) 14 - xiaoyu",
+        "🇹🇷 土耳其 (Turkey) 15 - xiaoyu",
+        "🇹🇷 土耳其 (Turkey) 16 - xiaoyu"
       ]
     },
     {
@@ -296,7 +379,11 @@
         "🇹🇷 土耳其 (Turkey) 09 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 10 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 11 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 12 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 12 - xiaoyu",
+        "🇹🇷 土耳其 (Turkey) 13 - xiaoyu",
+        "🇹🇷 土耳其 (Turkey) 14 - xiaoyu",
+        "🇹🇷 土耳其 (Turkey) 15 - xiaoyu",
+        "🇹🇷 土耳其 (Turkey) 16 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

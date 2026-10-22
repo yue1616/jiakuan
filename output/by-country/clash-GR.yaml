@@ -16,7 +16,7 @@ proxies:
     public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
     short-id: 94acb54627612d43
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 - name: 🇬🇷 希腊 (Greece) 02 - xiaoyu
   server: 85.90.197.220
   port: 443
@@ -29,7 +29,7 @@ proxies:
     public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
     short-id: 94acb54627612d43
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 - name: 🇬🇷 希腊 (Greece) 03 - xiaoyu
   server: 85.90.197.220
   port: 443
@@ -42,7 +42,7 @@ proxies:
     public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
     short-id: 94acb54627612d43
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇬🇷 希腊 (Greece) 04 - xiaoyu
   server: 85.90.197.220
   port: 443
@@ -55,7 +55,7 @@ proxies:
     public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
     short-id: 94acb54627612d43
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇬🇷 希腊 (Greece) 05 - xiaoyu
   server: 85.90.197.220
   port: 443
@@ -68,7 +68,7 @@ proxies:
     public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
     short-id: 94acb54627612d43
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select

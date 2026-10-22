@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: whatsapp.com
+  sni: css.rbxcdn.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
   server: 185.156.44.99
@@ -18,7 +18,7 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
+  sni: 185.156.44.99
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu
   server: 185.156.44.99
@@ -26,18 +26,16 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: vk.com
+  sni: www.amazon.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaoyu
-  server: hy2-new.aspidnet.xyz
+  server: 185.156.44.99
   port: 443
   udp: true
   type: hysteria2
-  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
-  sni: hy2-new.aspidnet.xyz
+  password: gf1:gfhysteria2024
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 05 - xiaoyu
   server: 162.249.125.133
   port: 443
@@ -54,7 +52,7 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: www.amazon.com
+  sni: google.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 07 - xiaoyu
   server: 185.156.44.99
@@ -62,42 +60,32 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: google.com
+  sni: whatsapp.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 08 - xiaoyu
-  server: 185.156.44.99
+  server: de1.dedushka.top
   port: 443
   udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: 185.156.44.99
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: de1.dedushka.top
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 09 - xiaoyu
-  server: 46.28.67.55
+  server: it1.dedushka.top
   port: 443
   udp: true
-  type: vless
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: it1.dedushka.top
+  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 10 - xiaoyu
-  server: 46.28.67.55
+  server: it1.dedushka.top
   port: 443
   udp: true
-  type: vless
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
-    short-id: d06d78e974491b6e
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: it1.dedushka.top
+  skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 11 - xiaoyu
   server: 46.28.67.55
   port: 443
@@ -110,54 +98,61 @@ proxies:
     public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇷🇴 罗马尼亚 (Romania) 12 - xiaoyu
-  server: 152.237.230.30
+  server: 46.28.67.55
   port: 443
   udp: true
   type: vless
-  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI
-    short-id: 61a0eb582ed4f2b5
-  servername: play.google.com
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇷🇴 罗马尼亚 (Romania) 13 - xiaoyu
-  server: 152.237.230.30
+  server: 46.28.67.55
   port: 443
   udp: true
   type: vless
-  uuid: e3026ffb-cde6-4cfe-b4b7-f76d5264e969
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 9Wh7M-tz9D_1WBaQhz2wIJian960Ffcx66NH8HAidDI
-    short-id: 61a0eb582ed4f2b5
-  servername: play.google.com
-  client-fingerprint: firefox
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: random
 - name: 🇷🇴 罗马尼亚 (Romania) 14 - xiaoyu
-  server: it1.dedushka.top
+  server: 185.156.44.99
   port: 443
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: it1.dedushka.top
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: vk.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 15 - xiaoyu
+  server: 87.58.205.242
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: backend.mskvibe.fyi
+  client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 16 - xiaoyu
   server: de1.dedushka.top
   port: 443
   udp: true
   type: trojan
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: de1.dedushka.top
-  skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 16 - xiaoyu
-  server: it1.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: it1.dedushka.top
   skip-cert-verify: false
 - name: 🇷🇴 罗马尼亚 (Romania) 17 - xiaoyu
   server: de1.dedushka.top

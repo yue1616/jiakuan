@@ -22,6 +22,27 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
+      "server": "185.58.115.62",
+      "server_port": 443,
+      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "se2.gderevievsvideos.fyi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
+          "short_id": "7271129440ade8fa"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
       "server": "media.vik.lalibobi.online",
       "server_port": 443,
       "uuid": "21ffcccd-8fbe-43fb-9dd1-24452fdfa8ad",
@@ -51,7 +72,8 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 02 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 03 - xiaoyu"
       ]
     },
     {
@@ -59,7 +81,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 02 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
+        "🇸🇪 瑞典 (Sweden) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -15,6 +15,19 @@ proxies:
   obfs: salamander
   obfs-password: Telegram@vpnjey
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
+  server: 185.58.115.62
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
+    short-id: 7271129440ade8fa
+  servername: se2.gderevievsvideos.fyi
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   server: media.vik.lalibobi.online
   port: 443
   udp: true
@@ -36,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
 rules:
 - MATCH,PROXIES
