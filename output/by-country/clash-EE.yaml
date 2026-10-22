@@ -16,7 +16,7 @@ proxies:
     public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
     short-id: 7271129440ade8fa
   servername: login.sakhweb.fyi
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
   server: 138.124.4.224
   port: 443
@@ -29,7 +29,7 @@ proxies:
     public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
     short-id: 7271129440ade8fa
   servername: login.sakhweb.fyi
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
   server: 93.89.220.37
   port: 443
@@ -42,7 +42,7 @@ proxies:
     public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
     short-id: e88cb983f3c97528
   servername: ibm.com
-  client-fingerprint: chrome
+  client-fingerprint: edge
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
   server: 93.89.220.37
   port: 443
@@ -55,8 +55,21 @@ proxies:
     public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
     short-id: e88cb983f3c97528
   servername: ibm.com
-  client-fingerprint: edge
+  client-fingerprint: random
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
+  server: 93.89.220.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
+    short-id: e88cb983f3c97528
+  servername: ibm.com
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu
   server: 177.3.208.65
   port: 443
   udp: true
@@ -81,6 +94,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,5 +105,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

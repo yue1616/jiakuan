@@ -11,7 +11,7 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "whatsapp.com",
         "insecure": true
       }
     },
@@ -23,7 +23,7 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "css.rbxcdn.com",
+        "server_name": "google.com",
         "insecure": true
       }
     },
@@ -35,7 +35,7 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "www.amazon.com",
         "insecure": true
       }
     },
@@ -47,7 +47,7 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "whatsapp.com",
+        "server_name": "vk.com",
         "insecure": true
       }
     },
@@ -59,7 +59,7 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "speedtest.tinkoff.ru",
+        "server_name": "css.rbxcdn.com",
         "insecure": true
       }
     },
@@ -83,29 +83,13 @@
       "password": "gf1:gfhysteria2024",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "speedtest.tinkoff.ru",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 08 - xiaoyu",
-      "server": "162.249.125.133",
-      "server_port": 443,
-      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-new.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c1b4086fea89914496c7e10967a419216566"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 09 - xiaoyu",
       "server": "hy2-new.aspidnet.xyz",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -120,15 +104,64 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 09 - xiaoyu",
+      "server": "162.249.125.133",
+      "server_port": 443,
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c1b4086fea89914496c7e10967a419216566"
+      }
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇷🇴 罗马尼亚 (Romania) 10 - xiaoyu",
-      "server": "edge10.cyrionflare.com",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 11 - xiaoyu",
+      "server": "154.46.31.106",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 11 - xiaoyu",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 12 - xiaoyu",
+      "server": "de1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "de1.dedushka.top",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 13 - xiaoyu",
+      "server": "de1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "de1.dedushka.top",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 14 - xiaoyu",
       "server": "it1.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
@@ -146,8 +179,20 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 15 - xiaoyu",
+      "server": "it1.dedushka.top",
+      "server_port": 443,
+      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "tls": {
+        "enabled": true,
+        "server_name": "it1.dedushka.top",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 12 - xiaoyu",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 16 - xiaoyu",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -168,7 +213,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 13 - xiaoyu",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 17 - xiaoyu",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 18 - xiaoyu",
       "server": "46.28.67.55",
       "server_port": 443,
       "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
@@ -189,7 +255,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 14 - xiaoyu",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 19 - xiaoyu",
       "server": "146.70.124.85",
       "server_port": 443,
       "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
@@ -199,7 +265,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -210,7 +276,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 15 - xiaoyu",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 20 - xiaoyu",
       "server": "82.117.255.174",
       "server_port": 443,
       "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
@@ -231,28 +297,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 16 - xiaoyu",
-      "server": "146.70.124.85",
-      "server_port": 443,
-      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
-          "short_id": "fe24f8a0a560056e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 17 - xiaoyu",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 21 - xiaoyu",
       "server": "146.70.124.85",
       "server_port": 443,
       "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
@@ -272,15 +317,45 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 18 - xiaoyu",
-      "server": "it1.dedushka.top",
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 22 - xiaoyu",
+      "server": "146.70.124.85",
       "server_port": 443,
-      "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
+      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "it1.dedushka.top",
-        "insecure": false
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
+          "short_id": "fe24f8a0a560056e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 23 - xiaoyu",
+      "server": "82.117.255.174",
+      "server_port": 443,
+      "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0",
+          "short_id": "31e91d43e553bf32"
+        }
       }
     },
     {
@@ -305,7 +380,12 @@
         "🇷🇴 罗马尼亚 (Romania) 15 - xiaoyu",
         "🇷🇴 罗马尼亚 (Romania) 16 - xiaoyu",
         "🇷🇴 罗马尼亚 (Romania) 17 - xiaoyu",
-        "🇷🇴 罗马尼亚 (Romania) 18 - xiaoyu"
+        "🇷🇴 罗马尼亚 (Romania) 18 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 19 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 20 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 21 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 22 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 23 - xiaoyu"
       ]
     },
     {
@@ -329,7 +409,12 @@
         "🇷🇴 罗马尼亚 (Romania) 15 - xiaoyu",
         "🇷🇴 罗马尼亚 (Romania) 16 - xiaoyu",
         "🇷🇴 罗马尼亚 (Romania) 17 - xiaoyu",
-        "🇷🇴 罗马尼亚 (Romania) 18 - xiaoyu"
+        "🇷🇴 罗马尼亚 (Romania) 18 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 19 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 20 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 21 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 22 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 23 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
