@@ -16,34 +16,8 @@ proxies:
     public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
-  client-fingerprint: randomized
+  client-fingerprint: random
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu
-  server: 144.31.50.236
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: random
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu
-  server: prep.wwwinternetvideo.click
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
-  client-fingerprint: random
-- name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaoyu
   server: prep.wwwinternetvideo.click
   port: 443
   udp: true
@@ -56,6 +30,58 @@ proxies:
     short-id: bbe46bd8f6b96839
   servername: yandex.ru
   client-fingerprint: firefox
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu
+  server: 144.31.50.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: firefox
+- name: 🇸🇨 塞舌尔 (Seychelles) 04 - xiaoyu
+  server: prep.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇸🇨 塞舌尔 (Seychelles) 05 - xiaoyu
+  server: 144.31.50.236
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: chrome
+- name: 🇸🇨 塞舌尔 (Seychelles) 06 - xiaoyu
+  server: prep.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
+  client-fingerprint: random
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +91,8 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu
   - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu
   - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaoyu
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaoyu
+  - 🇸🇨 塞舌尔 (Seychelles) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +102,7 @@ proxy-groups:
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu
   - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu
   - 🇸🇨 塞舌尔 (Seychelles) 04 - xiaoyu
+  - 🇸🇨 塞舌尔 (Seychelles) 05 - xiaoyu
+  - 🇸🇨 塞舌尔 (Seychelles) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

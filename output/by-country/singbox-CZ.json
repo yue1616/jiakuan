@@ -23,7 +23,7 @@
         "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -44,7 +44,7 @@
         "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -56,28 +56,49 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 04 - xiaoyu",
-      "server": "193.124.17.190",
+      "server": "server.slavkiti.monster",
       "server_port": 443,
-      "uuid": "d84c13b2-c2b9-4a7c-838f-05ac09ee422e",
+      "uuid": "ff40696b-06d6-443b-9481-8d01eddd13e1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.mozilla.org",
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "2a2ce9e42980"
+          "short_id": "d659da01fb94"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 05 - xiaoyu",
-      "server": "193.124.17.190",
+      "server": "server.slavkiti.monster",
+      "server_port": 443,
+      "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.foxsports.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "8325360e8bd2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 06 - xiaoyu",
+      "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "13aef2e0-b3fb-4322-a0e9-c10b908ce6b5",
       "flow": "xtls-rprx-vision",
@@ -86,7 +107,7 @@
         "server_name": "www.techradar.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -97,7 +118,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 06 - xiaoyu",
+      "tag": "🇨🇿 捷克 (Czech) 07 - xiaoyu",
+      "server": "193.124.17.190",
+      "server_port": 443,
+      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "ee1716767f9b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 08 - xiaoyu",
       "server": "193.124.17.190",
       "server_port": 443,
       "uuid": "6dfc9149-1ff9-41c3-8563-0ef284381731",
@@ -118,133 +160,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 07 - xiaoyu",
-      "server": "server.slavkiti.monster",
-      "server_port": 443,
-      "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.foxsports.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "8325360e8bd2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 08 - xiaoyu",
-      "server": "193.124.17.190",
-      "server_port": 443,
-      "uuid": "b60cab55-e7a1-413d-a297-ddd7bad3fb62",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "bbcab8fa80a3"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 09 - xiaoyu",
-      "server": "server.slavkiti.monster",
-      "server_port": 443,
-      "uuid": "13aef2e0-b3fb-4322-a0e9-c10b908ce6b5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.techradar.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "87f895f23064"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 10 - xiaoyu",
-      "server": "193.124.17.190",
-      "server_port": 443,
-      "uuid": "ff40696b-06d6-443b-9481-8d01eddd13e1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.foxsports.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "d659da01fb94"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 11 - xiaoyu",
-      "server": "server.slavkiti.monster",
-      "server_port": 443,
-      "uuid": "ed042cf7-efe0-49bd-848b-8d7e655111ff",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "1036b2383b72"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 12 - xiaoyu",
-      "server": "server.slavkiti.monster",
-      "server_port": 443,
-      "uuid": "ff40696b-06d6-443b-9481-8d01eddd13e1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.foxsports.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "d659da01fb94"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 13 - xiaoyu",
       "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "d84c13b2-c2b9-4a7c-838f-05ac09ee422e",
@@ -265,29 +181,71 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 14 - xiaoyu",
+      "tag": "🇨🇿 捷克 (Czech) 10 - xiaoyu",
       "server": "server.slavkiti.monster",
       "server_port": 443,
-      "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
+      "uuid": "b60cab55-e7a1-413d-a297-ddd7bad3fb62",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.foxsports.com",
+        "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "8325360e8bd2"
+          "short_id": "bbcab8fa80a3"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 15 - xiaoyu",
+      "tag": "🇨🇿 捷克 (Czech) 11 - xiaoyu",
+      "server": "193.124.17.190",
+      "server_port": 443,
+      "uuid": "b60cab55-e7a1-413d-a297-ddd7bad3fb62",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "bbcab8fa80a3"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 12 - xiaoyu",
       "server": "server.slavkiti.monster",
+      "server_port": 443,
+      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "73a9e631a09b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 13 - xiaoyu",
+      "server": "193.124.17.190",
       "server_port": 443,
       "uuid": "ed042cf7-efe0-49bd-848b-8d7e655111ff",
       "flow": "xtls-rprx-vision",
@@ -296,12 +254,54 @@
         "server_name": "www.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
           "short_id": "1036b2383b72"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 14 - xiaoyu",
+      "server": "193.124.17.190",
+      "server_port": 443,
+      "uuid": "d84c13b2-c2b9-4a7c-838f-05ac09ee422e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "2a2ce9e42980"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 15 - xiaoyu",
+      "server": "server.slavkiti.monster",
+      "server_port": 443,
+      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "ee1716767f9b"
         }
       }
     },
@@ -329,28 +329,28 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 17 - xiaoyu",
-      "server": "server.slavkiti.monster",
+      "server": "193.124.17.190",
       "server_port": 443,
-      "uuid": "b60cab55-e7a1-413d-a297-ddd7bad3fb62",
+      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
         "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "bbcab8fa80a3"
+          "short_id": "73a9e631a09b"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 18 - xiaoyu",
-      "server": "193.124.17.190",
+      "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "ed042cf7-efe0-49bd-848b-8d7e655111ff",
       "flow": "xtls-rprx-vision",
@@ -359,7 +359,7 @@
         "server_name": "www.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -373,53 +373,11 @@
       "tag": "🇨🇿 捷克 (Czech) 19 - xiaoyu",
       "server": "server.slavkiti.monster",
       "server_port": 443,
-      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
+      "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "73a9e631a09b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 20 - xiaoyu",
-      "server": "193.124.17.190",
-      "server_port": 443,
-      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "73a9e631a09b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 21 - xiaoyu",
-      "server": "server.slavkiti.monster",
-      "server_port": 443,
-      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -427,13 +385,13 @@
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "73a9e631a09b"
+          "short_id": "8325360e8bd2"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 22 - xiaoyu",
+      "tag": "🇨🇿 捷克 (Czech) 20 - xiaoyu",
       "server": "server.slavkiti.monster",
       "server_port": 443,
       "uuid": "b60cab55-e7a1-413d-a297-ddd7bad3fb62",
@@ -443,7 +401,7 @@
         "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -454,28 +412,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 23 - xiaoyu",
-      "server": "server.slavkiti.monster",
-      "server_port": 443,
-      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.tradingview.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "ee1716767f9b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 24 - xiaoyu",
+      "tag": "🇨🇿 捷克 (Czech) 21 - xiaoyu",
       "server": "193.124.17.190",
       "server_port": 443,
       "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
@@ -496,28 +433,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 25 - xiaoyu",
-      "server": "193.124.17.190",
+      "tag": "🇨🇿 捷克 (Czech) 22 - xiaoyu",
+      "server": "server.slavkiti.monster",
       "server_port": 443,
-      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
+      "uuid": "ff40696b-06d6-443b-9481-8d01eddd13e1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.tradingview.com",
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "ee1716767f9b"
+          "short_id": "d659da01fb94"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 26 - xiaoyu",
+      "tag": "🇨🇿 捷克 (Czech) 23 - xiaoyu",
       "server": "193.124.17.190",
       "server_port": 443,
       "uuid": "1896c6c9-a941-4688-a865-29027bf7f8e6",
@@ -538,8 +475,71 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 27 - xiaoyu",
+      "tag": "🇨🇿 捷克 (Czech) 24 - xiaoyu",
       "server": "server.slavkiti.monster",
+      "server_port": 443,
+      "uuid": "68cf8d29-5aa0-44b3-88a9-f1a576b6e84c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.microsoft.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "73a9e631a09b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 25 - xiaoyu",
+      "server": "server.slavkiti.monster",
+      "server_port": 443,
+      "uuid": "ed042cf7-efe0-49bd-848b-8d7e655111ff",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "1036b2383b72"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 26 - xiaoyu",
+      "server": "193.124.17.190",
+      "server_port": 443,
+      "uuid": "13aef2e0-b3fb-4322-a0e9-c10b908ce6b5",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.techradar.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "87f895f23064"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 27 - xiaoyu",
+      "server": "193.124.17.190",
       "server_port": 443,
       "uuid": "ff40696b-06d6-443b-9481-8d01eddd13e1",
       "flow": "xtls-rprx-vision",
@@ -548,7 +548,7 @@
         "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,

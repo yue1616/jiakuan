@@ -13,6 +13,14 @@ proxies:
   sni: fi.67chat.ru
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
+  server: 2.26.3.75
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
+  sni: fi.67chat.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
   server: 2.26.106.232
   port: 8443
   udp: true
@@ -27,25 +35,21 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
-  server: 2.26.3.75
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
-  sni: fi.67chat.ru
-  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
-  server: 45.144.234.157
-  port: 14430
+  server: finland02.azotvpn.xyz
+  port: 8443
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
+  tls: true
+  reality-opts:
+    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
+    short-id: 07f508fe5d2355d3
+  servername: finland02.azotvpn.xyz
+  client-fingerprint: ''
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
   server: 95.216.27.15
   port: 2053
@@ -57,7 +61,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
   server: 95.216.27.15
   port: 2053
@@ -69,8 +73,19 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaoyu
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -82,7 +97,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaoyu
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaoyu
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -91,19 +106,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaoyu
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 10 - xiaoyu
   server: 31.77.199.147
   port: 4443
@@ -118,32 +120,17 @@ proxies:
   servername: images.unsplash.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 11 - xiaoyu
-  server: uk9.998998.best
-  port: 443
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  tls: true
-  servername: server8.9966338.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /fdtiouasopeiyre0r95y8
-    headers:
-      Host: server8.9966338.xyz
-- name: 🇫🇮 芬兰 (Finland) 12 - xiaoyu
-  server: 107.181.151.128
-  port: 443
-  udp: true
-  type: vless
-  uuid: 75113671-63e3-452d-87d3-261a37e8b472
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: baf023e1026a
-  servername: www.mozilla.org
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -161,7 +148,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 10 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 11 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -178,6 +164,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 10 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 11 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 12 - xiaoyu
 rules:
 - MATCH,PROXIES
