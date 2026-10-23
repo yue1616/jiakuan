@@ -24,7 +24,10 @@
       "tls": {
         "enabled": true,
         "server_name": "ie1.dedushka.top",
-        "insecure": true
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
       }
     },
     {

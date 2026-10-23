@@ -6,6 +6,22 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaoyu",
+      "server": "hy2.aspidnet.xyz",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -20,8 +36,24 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
       "server": "185.253.116.33",
       "server_port": 14430,
       "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
@@ -35,7 +67,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
       "server": "185.253.116.33",
       "server_port": 14430,
       "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
@@ -46,7 +78,20 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - xiaoyu",
       "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -57,112 +102,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
-      "server": "uae.unixzone.us",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 07 - xiaoyu",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 08 - xiaoyu",
-      "server": "uae.unixzone.us",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 09 - xiaoyu",
-      "server": "45.59.120.217",
-      "server_port": 443,
-      "uuid": "8732f92b-ba85-48f7-92e4-ad029f1cd4e7",
-      "tls": {
-        "enabled": true,
-        "server_name": "strm.yandex.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w",
-          "short_id": "29c2dd1e3ef7c4d4"
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 10 - xiaoyu",
-      "server": "45.59.120.217",
-      "server_port": 443,
-      "uuid": "8732f92b-ba85-48f7-92e4-ad029f1cd4e7",
-      "tls": {
-        "enabled": true,
-        "server_name": "strm.yandex.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 11 - xiaoyu",
-      "server": "45.59.120.217",
-      "server_port": 443,
-      "uuid": "8732f92b-ba85-48f7-92e4-ad029f1cd4e7",
-      "tls": {
-        "enabled": true,
-        "server_name": "strm.yandex.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w",
-          "short_id": "29c2dd1e3ef7c4d4"
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
         }
       }
     },
@@ -180,8 +155,7 @@
         "🇦🇪 阿联酋 (UAE) 07 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 08 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 09 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 10 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 11 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 10 - xiaoyu"
       ]
     },
     {
@@ -197,8 +171,7 @@
         "🇦🇪 阿联酋 (UAE) 07 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 08 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 09 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 10 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 11 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 10 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

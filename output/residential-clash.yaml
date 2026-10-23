@@ -15,21 +15,13 @@ proxies:
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  server: 49.254.204.133
-  port: 1774
+  server: 218.237.185.234
+  port: 4652
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaoyu
-  server: 206.1.99.36
-  port: 58202
-  udp: true
-  type: vmess
-  uuid: e2adaa66-0a40-4e48-a53d-e349e7ac3b80
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -39,7 +31,7 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: qq
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,8 +39,7 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,7 +47,6 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

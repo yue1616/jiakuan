@@ -12,52 +12,10 @@
       "tls": {
         "enabled": true,
         "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇳 CN 02 - xiaoyu",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
         "insecure": false,
         "alpn": [
           "http/1.1"
         ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇳 CN 03 - xiaoyu",
-      "server": "vpn.cintaku.qzz.io",
-      "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "ios"
@@ -73,7 +31,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 04 - xiaoyu",
+      "tag": "🇨🇳 CN 02 - xiaoyu",
       "server": "vpn.cintaku.qzz.io",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
@@ -85,6 +43,48 @@
       "transport": {
         "type": "ws",
         "path": "/vlessws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇳 CN 03 - xiaoyu",
+      "server": "vpn.cintaku.qzz.io",
+      "server_port": 443,
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.cintaku.qzz.io",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇳 CN 04 - xiaoyu",
+      "server": "188.114.98.0",
+      "server_port": 443,
+      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.cintaku.qzz.io",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vlessws",
+        "headers": {
+          "Host": "vpn.cintaku.qzz.io"
+        }
       }
     },
     {
@@ -102,7 +102,7 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -116,13 +116,20 @@
     {
       "type": "vless",
       "tag": "🇨🇳 CN 06 - xiaoyu",
-      "server": "vpn.cintaku.qzz.io",
+      "server": "188.114.98.0",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
         "enabled": true,
         "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
       },
       "transport": {
         "type": "ws",
@@ -135,32 +142,6 @@
     {
       "type": "vless",
       "tag": "🇨🇳 CN 07 - xiaoyu",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇳 CN 08 - xiaoyu",
       "server": "vpn.cintaku.qzz.io",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
@@ -171,55 +152,6 @@
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇳 CN 09 - xiaoyu",
-      "server": "188.114.98.0",
-      "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇳 CN 10 - xiaoyu",
-      "server": "vpn.cintaku.qzz.io",
-      "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
         }
       },
       "transport": {
@@ -241,10 +173,7 @@
         "🇨🇳 CN 04 - xiaoyu",
         "🇨🇳 CN 05 - xiaoyu",
         "🇨🇳 CN 06 - xiaoyu",
-        "🇨🇳 CN 07 - xiaoyu",
-        "🇨🇳 CN 08 - xiaoyu",
-        "🇨🇳 CN 09 - xiaoyu",
-        "🇨🇳 CN 10 - xiaoyu"
+        "🇨🇳 CN 07 - xiaoyu"
       ]
     },
     {
@@ -257,10 +186,7 @@
         "🇨🇳 CN 04 - xiaoyu",
         "🇨🇳 CN 05 - xiaoyu",
         "🇨🇳 CN 06 - xiaoyu",
-        "🇨🇳 CN 07 - xiaoyu",
-        "🇨🇳 CN 08 - xiaoyu",
-        "🇨🇳 CN 09 - xiaoyu",
-        "🇨🇳 CN 10 - xiaoyu"
+        "🇨🇳 CN 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
