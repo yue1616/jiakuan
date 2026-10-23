@@ -6,68 +6,67 @@ log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaoyu
   server: 185.135.86.175
-  port: 9017
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: HAVAdE3nXhqA5nHp
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu
-  server: 185.135.86.175
-  port: 9034
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Yg4MbdXFQ9HFFVY6
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu
-  server: 185.135.86.175
-  port: 9033
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: UTJA57ypk2XKQpnm
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
-  server: 185.135.86.175
   port: 9007
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: kSPmvwdFzGMMW5pY
-- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu
-  server: 185.135.86.175
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu
-  server: 185.135.86.175
-  port: 9082
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
-- name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu
   server: 185.135.86.175
   port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu
-  server: lv1.dedushka.top
-  port: 443
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu
+  server: 185.135.86.175
+  port: 9034
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: lv1.dedushka.top
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
+  server: 185.135.86.175
+  port: 9033
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu
+  server: 185.135.86.175
+  port: 9082
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu
+  server: 185.135.86.175
+  port: 9094
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu
+  server: 185.135.86.175
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu
+  server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
 - name: 🇱🇻 拉脱维亚 (Latvia) 10 - xiaoyu
   server: 138.124.180.137
   port: 443
@@ -80,7 +79,7 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu
   server: 138.124.180.137
   port: 443
@@ -93,24 +92,8 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: ''
 - name: 🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu
-  server: lv1.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: lv1.dedushka.top
-  skip-cert-verify: true
-- name: 🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu
-  server: 94.140.112.22
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: lv1.dedushka.top
-  skip-cert-verify: false
-- name: 🇱🇻 拉脱维亚 (Latvia) 14 - xiaoyu
   server: 138.124.180.137
   port: 443
   udp: true
@@ -123,7 +106,20 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 15 - xiaoyu
+- name: 🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu
+  server: 138.124.180.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇱🇻 拉脱维亚 (Latvia) 14 - xiaoyu
   server: 195.123.208.32
   port: 443
   udp: true
@@ -136,7 +132,7 @@ proxies:
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
   client-fingerprint: qq
-- name: 🇱🇻 拉脱维亚 (Latvia) 16 - xiaoyu
+- name: 🇱🇻 拉脱维亚 (Latvia) 15 - xiaoyu
   server: 195.123.208.32
   port: 443
   udp: true
@@ -149,7 +145,7 @@ proxies:
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 17 - xiaoyu
+- name: 🇱🇻 拉脱维亚 (Latvia) 16 - xiaoyu
   server: 195.123.208.32
   port: 443
   udp: true
@@ -162,7 +158,7 @@ proxies:
     short-id: 757b9e1ef18e60f0
   servername: gateway.icloud.com
   client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 18 - xiaoyu
+- name: 🇱🇻 拉脱维亚 (Latvia) 17 - xiaoyu
   server: 195.123.208.32
   port: 443
   udp: true
@@ -197,7 +193,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 15 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 16 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 17 - xiaoyu
-  - 🇱🇻 拉脱维亚 (Latvia) 18 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -220,6 +215,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 15 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 16 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 17 - xiaoyu
-  - 🇱🇻 拉脱维亚 (Latvia) 18 - xiaoyu
 rules:
 - MATCH,PROXIES

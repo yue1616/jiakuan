@@ -19,7 +19,7 @@ proxies:
   cipher: aes-256-gcm
   password: itzvpn@321
 - name: 🇮🇹 意大利 (Italy) 03 - xiaoyu
-  server: 202.50.253.36
+  server: 202.50.253.90
   port: 19999
   udp: true
   type: ss
@@ -36,7 +36,7 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 05 - xiaoyu
   server: 57.131.38.163
   port: 2053
@@ -60,14 +60,20 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 07 - xiaoyu
-  server: 202.50.253.81
-  port: 19999
+  server: 82.118.16.189
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  uuid: d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
+    short-id: 37fbf155c7a9f3ff
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 08 - xiaoyu
   server: 82.118.16.189
   port: 443
@@ -80,7 +86,7 @@ proxies:
     public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
     short-id: 37fbf155c7a9f3ff
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: ios
 - name: 🇮🇹 意大利 (Italy) 09 - xiaoyu
   server: 82.118.16.189
   port: 443
@@ -93,7 +99,7 @@ proxies:
     public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
     short-id: 37fbf155c7a9f3ff
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 10 - xiaoyu
   server: 82.118.16.189
   port: 443
@@ -106,27 +112,34 @@ proxies:
     public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
     short-id: 37fbf155c7a9f3ff
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: random
 - name: 🇮🇹 意大利 (Italy) 11 - xiaoyu
-  server: 82.118.16.189
+  server: 82.118.16.187
   port: 443
   udp: true
   type: vless
-  uuid: d5e5f5a1-0f23-4c49-af9f-4be445bf9d8e
+  uuid: dc2259c4-388e-4285-ba18-df619b6672b6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: SjGkzJQ9I6ZZjC3V73atcPMczhMm0oiTrB8mUQXz1HY
-    short-id: 37fbf155c7a9f3ff
+    public-key: R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU
+    short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 12 - xiaoyu
-  server: 91.201.65.122
-  port: 9059
+  server: 202.50.253.45
+  port: 19999
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: 9XwYyZsK8SNzQDtY
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 13 - xiaoyu
+  server: 202.50.253.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -144,6 +157,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 10 - xiaoyu
   - 🇮🇹 意大利 (Italy) 11 - xiaoyu
   - 🇮🇹 意大利 (Italy) 12 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 13 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -161,5 +175,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 10 - xiaoyu
   - 🇮🇹 意大利 (Italy) 11 - xiaoyu
   - 🇮🇹 意大利 (Italy) 12 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 13 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -36,7 +36,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -57,12 +57,33 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
           "short_id": "a3a578ab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 04 - xiaoyu",
+      "server": "es.srv.dvzh.net",
+      "server_port": 443,
+      "uuid": "9ab3a362-1518-496d-b08d-eced45cec936",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "es.srv.dvzh.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "9GEc6lOjnGQyyE1951OZSBMWt4uCXsOjKyj9fysxHH0",
+          "short_id": "e0ccc8c2f487d913"
         }
       }
     },
@@ -73,7 +94,8 @@
         "auto",
         "🇮🇱 以色列 (Israel) 01 - xiaoyu",
         "🇮🇱 以色列 (Israel) 02 - xiaoyu",
-        "🇮🇱 以色列 (Israel) 03 - xiaoyu"
+        "🇮🇱 以色列 (Israel) 03 - xiaoyu",
+        "🇮🇱 以色列 (Israel) 04 - xiaoyu"
       ]
     },
     {
@@ -82,7 +104,8 @@
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01 - xiaoyu",
         "🇮🇱 以色列 (Israel) 02 - xiaoyu",
-        "🇮🇱 以色列 (Israel) 03 - xiaoyu"
+        "🇮🇱 以色列 (Israel) 03 - xiaoyu",
+        "🇮🇱 以色列 (Israel) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

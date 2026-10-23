@@ -5,14 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaoyu
-  server: 31.133.0.186
+  server: 217.30.10.44
+  port: 9062
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: tkhHVxxfM2QErBWe
+- name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
+  server: 217.30.10.44
+  port: 9042
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
+  server: 82.118.22.161
   port: 443
   udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
+  type: vless
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: ''
+- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
   server: 82.118.22.161
   port: 443
   udp: true
@@ -25,22 +44,6 @@ proxies:
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
   client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: pl2.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
-  server: 31.133.0.186
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: 31.133.0.186
-  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
   server: 82.118.22.161
   port: 443
@@ -54,106 +57,6 @@ proxies:
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  server: 31.133.0.186
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  server: 31.133.0.186
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 10 - xiaoyu
-  server: pl2.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 11 - xiaoyu
-  server: 31.133.0.186
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 12 - xiaoyu
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇵🇱 波兰 (Poland) 13 - xiaoyu
-  server: pl1.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl1.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 14 - xiaoyu
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 15 - xiaoyu
-  server: pl1.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl1.dedushka.top
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -164,16 +67,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaoyu
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 10 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 11 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 12 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 13 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 14 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 15 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -184,15 +77,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaoyu
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 10 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 11 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 12 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 13 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 14 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 15 - xiaoyu
 rules:
 - MATCH,PROXIES

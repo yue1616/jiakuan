@@ -20,16 +20,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -38,7 +30,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -53,8 +45,7 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu"
       ]
     },
     {
@@ -62,8 +53,7 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
