@@ -5,72 +5,30 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
-  server: 93.89.220.37
+  server: ee1.mycloud1.org
   port: 443
   udp: true
   type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: random
+    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
+    short-id: afee962d
+  servername: ee1.mycloud1.org
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
-  server: 93.89.220.37
+  server: 79.98.37.106
   port: 443
   udp: true
   type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: false
+    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
+  servername: ee-central.v8x2b.lol
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-ee
-    headers:
-      Host: tgmansion.site
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-ee
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
-  server: 93.89.220.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,9 +36,6 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,8 +43,5 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

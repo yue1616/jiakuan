@@ -5,13 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaoyu
-  server: scrap.halyvanedorogo.ru
-  port: 35076
+  server: edge10.cyrionflare.com
+  port: 2052
   udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
   server: site.teslamotor.site
   port: 20001
@@ -19,18 +17,12 @@ proxies:
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: 82.118.22.161
-  port: 443
+  server: 217.30.10.44
+  port: 9063
   udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: safari
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
   server: 82.118.22.161
   port: 443
@@ -43,7 +35,7 @@ proxies:
     public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
 - name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
   server: 82.118.22.161
   port: 443
@@ -56,45 +48,6 @@ proxies:
     public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  server: 54.37.131.126
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -106,9 +59,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaoyu
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -119,8 +69,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03 - xiaoyu
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
 rules:
 - MATCH,PROXIES

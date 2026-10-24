@@ -6,6 +6,25 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaoyu",
+      "server": "158.178.137.129",
+      "password": "b42d90fa667942aebc734d60",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
+      },
+      "server_ports": [
+        "20000:30000",
+        "20000:20000"
+      ]
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
       "server": "152.67.115.203",
       "server_port": 443,
       "password": "633bc3be486b646190661ac2387c150a",
@@ -17,22 +36,6 @@
       "obfs": {
         "type": "salamander",
         "password": "850a3fb1cd33a28f12d837578ae1a2e7"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
-      "server": "158.178.137.129",
-      "server_port": 20000,
-      "password": "b42d90fa667942aebc734d60",
-      "tls": {
-        "enabled": true,
-        "server_name": "rmgyvpn.rest",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
       }
     },
     {
@@ -68,7 +71,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -89,13 +92,29 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
           "short_id": "0ad08b47f498efd2"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu",
+      "server": "137.23.3.91",
+      "server_port": 20000,
+      "password": "a34f3990b69f44bfa0d32385",
+      "tls": {
+        "enabled": true,
+        "server_name": "rmgyvpn.rest",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "a34f3990b69f44bfa0d32385"
       }
     },
     {
@@ -107,7 +126,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu"
       ]
     },
     {
@@ -118,7 +138,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

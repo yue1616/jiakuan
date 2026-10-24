@@ -11,7 +11,7 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
@@ -21,10 +21,20 @@ proxies:
   type: hysteria2
   password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
   sni: hy2.aspidnet.xyz
-  skip-cert-verify: true
+  skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+  server: hy2.aspidnet.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -33,7 +43,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -44,50 +54,24 @@ proxies:
     path: /vless
     headers:
       Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  server: 116.204.164.60
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 48942ced-a272-41c1-98ac-75745d83bf93
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
-  server: 144.31.135.38
-  port: 9444
+  server: uae.unixzone.us
+  port: 22573
   udp: true
   type: vless
-  uuid: 01c96414-9fcd-4f79-9274-2c8d8045e48d
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+    path: /
 - name: 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
-  server: 116.204.164.17
-  port: 7443
+  server: uae.unixzone.us
+  port: 22573
   udp: true
   type: vless
-  uuid: 4e2efa26-2969-486b-ae60-390ba54af31b
-  tls: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
+    path: /
 - name: 🇦🇪 阿联酋 (UAE) 08 - xiaoyu
   server: uae.unixzone.us
   port: 22573
@@ -100,6 +84,15 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 09 - xiaoyu
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇦🇪 阿联酋 (UAE) 10 - xiaoyu
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -110,26 +103,17 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 10 - xiaoyu
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
 - name: 🇦🇪 阿联酋 (UAE) 11 - xiaoyu
-  server: 95.174.68.188
-  port: 14430
+  server: 84.235.244.108
+  port: 22573
   udp: true
   type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
   network: ws
   ws-opts:
-    path: /vless
+    path: /
     headers:
-      Host: 95.174.68.188
+      Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 12 - xiaoyu
   server: uae.unixzone.us
   port: 22573
@@ -141,39 +125,6 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 13 - xiaoyu
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 14 - xiaoyu
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇦🇪 阿联酋 (UAE) 15 - xiaoyu
-  server: 54.179.79.12
-  port: 53646
-  udp: true
-  type: vless
-  uuid: a5809b91-4c73-4361-92e4-dee4fd42dd4a
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -191,9 +142,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 10 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 11 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 12 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 13 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 14 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 15 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -211,8 +159,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 10 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 11 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 12 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 13 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 14 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 15 - xiaoyu
 rules:
 - MATCH,PROXIES

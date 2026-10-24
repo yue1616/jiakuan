@@ -45,7 +45,7 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: safari
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -58,7 +58,6 @@ proxies:
   tls: true
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
   servername: github.com
   client-fingerprint: firefox
   network: grpc
@@ -73,8 +72,9 @@ proxies:
   tls: true
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: firefox
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -89,32 +89,42 @@ proxies:
   obfs: salamander
   obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
 - name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
-  server: 78.135.73.47
-  port: 443
+  server: 185.98.63.6
+  port: 8443
   udp: true
   type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  uuid: 6845a59f-970b-4e1e-8e26-06a34ee663d6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: apple.com
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
-  server: 78.135.73.47
-  port: 443
+  server: 151.241.226.201
+  port: 2053
   udp: true
   type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
   tls: true
   reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
+  server: 151.241.226.201
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  tls: true
+  reality-opts:
+    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
+    short-id: 9e419c0759b54d6f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
   server: 78.135.73.47
   port: 443
   udp: true
@@ -126,31 +136,20 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
-  server: 151.241.226.201
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
-  tls: true
-  reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
   client-fingerprint: random
+- name: 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
+  server: trend.eidoslab.link
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: p7X0vRL9R-23Ey-MZZZj7FY0g87nQq0Jzc01DwuryRk
+    short-id: 7597c5df264bcc10
+  servername: trend.eidoslab.link
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 12 - xiaoyu
   server: 151.241.226.201
   port: 2053
@@ -164,6 +163,32 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 13 - xiaoyu
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 14 - xiaoyu
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
   server: 177.3.208.65
   port: 443
   udp: true
@@ -175,7 +200,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-tr
-- name: 🇹🇷 土耳其 (Turkey) 14 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
   server: 177.3.208.65
   port: 443
   udp: true
@@ -190,7 +215,7 @@ proxies:
     path: /vless-tr
     headers:
       Host: tgmansion.site
-- name: 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
   server: 177.3.208.65
   port: 443
   udp: true
@@ -223,6 +248,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 13 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 14 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -243,5 +270,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 13 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 14 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
 rules:
 - MATCH,PROXIES

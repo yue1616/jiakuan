@@ -5,14 +5,82 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (候选) - xiaoyu
-  server: 67.220.95.3
-  port: 18000
+  server: 195.123.240.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
+    short-id: 19296c9f1bf9c7b1
+  servername: www.cloudflare.com
+  client-fingerprint: edge
+- name: 🇺🇸 美国 (United States) 02 (候选) - xiaoyu
+  server: 216.106.186.33
+  port: 443
+  udp: true
+  type: trojan
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: false
+- name: 🇺🇸 美国 (United States) 03 (候选) - xiaoyu
+  server: 104.17.147.222
+  port: 80
   udp: true
   type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
   alterId: 0
   cipher: auto
-- name: 🇺🇸 美国 (United States) 02 (候选) - xiaoyu
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: vmess.lbw666.dpdns.org
+- name: 🇩🇪 德国 (Germany) 04 (候选) - xiaoyu
+  server: 185.176.204.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇳🇱 荷兰 (Netherlands) 05 (候选) - xiaoyu
+  server: 82.38.31.192
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: k1dBOmOB4oqi7Ump37a1bQ
+- name: 🇳🇱 荷兰 (Netherlands) 06 (候选) - xiaoyu
+  server: 178.83.185.156
+  port: 8080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: oZIoA69Q8yhcQV8ka3Pa3A
+- name: 🇺🇸 美国 (United States) 07 (候选) - xiaoyu
+  server: 176.122.158.11
+  port: 443
+  udp: true
+  type: vless
+  uuid: 154c54e0-028d-4c8a-9512-7ad1588cce2a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dV6-Xn1FCpiYvbJ1o79HjMr0IJg29xacSQcaD4jeKAM
+    short-id: f8d85e1a92219c3c
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 08 (候选) - xiaoyu
+  server: 185.156.44.99
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: whatsapp.com
+  skip-cert-verify: true
+- name: 🇺🇸 美国 (United States) 09 (候选) - xiaoyu
   server: 104.17.136.198
   port: 443
   udp: true
@@ -28,71 +96,147 @@ proxies:
     path: /ws
     headers:
       Host: vmess.lbw666.dpdns.org
-- name: 🇺🇸 美国 (United States) 03 (候选) - xiaoyu
-  server: 195.123.240.65
-  port: 443
+- name: 🇫🇷 法国 (France) 10 (候选) - xiaoyu
+  server: ov-france1.09vpn.com
+  port: 80
   udp: true
   type: vless
-  uuid: ce18d0eb-5c71-41f9-96e5-1632e22456e4
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: join---i10vpn---join---i10vpn---join---i10vpn---join---i10vpn
+- name: 🇫🇷 法国 (France) 11 (候选) - xiaoyu
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇬🇧 英国 (United Kingdom) 12 (候选) - xiaoyu
+  server: 138.124.125.193
+  port: 10444
+  udp: true
+  type: vless
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: StPbcmBuzpuYUfa4oZ5SI3Bq1OSF_-oU1vp2AcyvQVE
-    short-id: 19296c9f1bf9c7b1
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇸🇪 瑞典 (Sweden) 04 (候选) - xiaoyu
-  server: 70.34.212.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-- name: 🇳🇱 荷兰 (Netherlands) 05 (候选) - xiaoyu
-  server: 82.38.31.192
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇬🇧 英国 (United Kingdom) 06 (候选) - xiaoyu
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vless
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇬🇧 英国 (United Kingdom) 07 (候选) - xiaoyu
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vless
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: viber.com
-- name: 🇺🇸 美国 (United States) 08 (候选) - xiaoyu
-  server: us16-4.998998.best
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: safari
+- name: 🇷🇴 罗马尼亚 (Romania) 13 (候选) - xiaoyu
+  server: 185.156.44.99
   port: 443
   udp: true
-  type: vmess
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: speedtest.tinkoff.ru
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 14 (候选) - xiaoyu
+  server: 77.90.61.135
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
   tls: true
-  servername: server1.9966338.xyz
+  reality-opts:
+    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
+    short-id: ce1dc482
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇳🇱 荷兰 (Netherlands) 15 (候选) - xiaoyu
+  server: 152.70.58.201
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8892e34a-339b-4526-b88d-cf68c516231c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Hg_ivwbClYmR-SEHdoGgq4yEk6ltbjS5c4yiQRa4_28
+    short-id: 52c723e0fad49689
+  servername: www.nvidia.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 16 (候选) - xiaoyu
+  server: 144.31.125.60
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
+    short-id: 85c86a9863
+  servername: www.intel.com
+  client-fingerprint: random
+- name: 🇫🇷 法国 (France) 17 (候选) - xiaoyu
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /efrsdioy98wert
+    path: //assignment
+- name: 🇫🇷 法国 (France) 18 (候选) - xiaoyu
+  server: www.calmlunch.com
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇹🇭 泰国 (Thailand) 19 (候选) - xiaoyu
+  server: 104.16.10.2
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
     headers:
-      Host: server1.9966338.xyz
-- name: 🇩🇪 德国 (Germany) 09 (候选) - xiaoyu
-  server: 57.129.41.216
+      Host: v2ray.simspeedup.com
+- name: 🇳🇱 荷兰 (Netherlands) 20 (候选) - xiaoyu
+  server: 144.31.205.106
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇵🇱 波兰 (Poland) 21 (候选) - xiaoyu
+  server: 82.118.22.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 22 (候选) - xiaoyu
+  server: ov-germany1.09vpn.com
   port: 80
   udp: true
   type: vless
@@ -100,231 +244,122 @@ proxies:
   network: ws
   ws-opts:
     path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇳🇱 荷兰 (Netherlands) 10 (候选) - xiaoyu
-  server: 82.38.31.180
-  port: 8080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: k1dBOmOB4oqi7Ump37a1bQ
-- name: 🇳🇱 荷兰 (Netherlands) 11 (候选) - xiaoyu
-  server: netherlands02.azotvpn.xyz
-  port: 443
-  udp: true
-  type: vless
-  uuid: a500be68-4ff6-433b-9968-472be69fab14
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ui9MLRYZIz7S6_1E4fZgoamwTypfQAMwJ1olxGcWomE
-    short-id: fc70174007a393b4
-  servername: netherlands02.azotvpn.xyz
-  client-fingerprint: ios
-- name: 🇩🇪 德国 (Germany) 12 (候选) - xiaoyu
-  server: 157.90.175.178
-  port: 1222
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 13 (候选) - xiaoyu
-  server: 147.45.175.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru1.ddnsfree.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇩🇪 德国 (Germany) 14 (候选) - xiaoyu
-  server: 57.129.41.216
+- name: 🇩🇪 德国 (Germany) 23 (候选) - xiaoyu
+  server: ov-germany1.09vpn.com
   port: 80
   udp: true
   type: vless
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
   network: ws
   ws-opts:
     path: /vless/
     headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇰🇷 韩国 (South Korea) 15 (候选) - xiaoyu
-  server: 140.238.2.250
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 16 (候选) - xiaoyu
-  server: 168.222.143.254
-  port: 443
-  udp: true
-  type: vless
-  uuid: ebdf87e8-4f75-4b84-94e0-65ce4894993a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3_Qy1SAtWfbiQbznyhlXxJtqB-5QQ46VF1Uz2h5A7Q4
-    short-id: 2dc17935
-  servername: st.avito.ru
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 17 (候选) - xiaoyu
-  server: 104.24.156.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  tls: true
-  servername: a.cwvps.eu.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: a.cwvps.eu.org
-- name: 🇩🇪 德国 (Germany) 18 (候选) - xiaoyu
-  server: uwu.blueknightnet.qzz.io
-  port: 2052
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 19 (候选) - xiaoyu
-  server: uwu.blueknightnet.qzz.io
-  port: 2052
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-- name: 🇯🇵 日本 (Japan) 20 (候选) - xiaoyu
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 980df025-74b9-4853-93e8-fb813006d7e5
-  tls: true
-  servername: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: d-l28t5-65-b.pbe40wmcujaw726h7cpqernzmawz4stwtrnqve0n1s5reht.workers.dev
-- name: 🌐 其他地区 (Other) 21 (候选) - xiaoyu
-  server: xstack.mahanfixe.workers.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
-  tls: true
-  servername: xstack.mahanfixe.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /xiron
-    headers:
-      Host: xstack.mahanfixe.workers.dev
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 22 (候选) - xiaoyu
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 38.107.234.57
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 23 (候选) - xiaoyu
-  server: 3h-kazakhstan1.09vpn.com
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇯🇵 日本 (Japan) 24 (候选) - xiaoyu
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 0985e268-5c1c-4141-9d96-139f8046c47c
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇩🇪 德国 (Germany) 25 (候选) - xiaoyu
-  server: 104.27.88.172
-  port: 80
-  udp: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
-  network: ws
-  ws-opts:
-    path: /api/ws
-    headers:
-      Host: web-app-nr6wpa.app-tp57xz.workers.dev
-- name: 🇰🇷 韩国 (South Korea) 26 (候选) - xiaoyu
-  server: 64.176.231.183
-  port: 443
-  udp: true
-  type: vless
-  uuid: 583cc910-b57c-4dd0-a4a7-cea51a30b032
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
-    short-id: ca193e889d958f81
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 27 (候选) - xiaoyu
-  server: cctvhikvision.center
-  port: 2052
-  udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇺🇸 美国 (United States) 28 (候选) - xiaoyu
-  server: 15.204.246.107
-  port: 8888
+      Host: OV-Germany1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 24 (候选) - xiaoyu
+  server: 202.50.253.72
+  port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇩🇪 德国 (Germany) 29 (候选) - xiaoyu
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇪🇸 西班牙 (Spain) 25 (候选) - xiaoyu
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇾 塞浦路斯 (Cyprus) 26 (候选) - xiaoyu
+  server: 5.253.29.254
+  port: 14430
+  udp: true
+  type: vless
+  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.253.29.254
+- name: 🇮🇳 印度 (India) 27 (候选) - xiaoyu
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0184
+- name: 🇮🇳 印度 (India) 28 (候选) - xiaoyu
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 29 (候选) - xiaoyu
+  server: 104.17.71.206
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇷🇺 俄罗斯 (Russia) 30 (候选) - xiaoyu
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
+- name: 🇩🇪 德国 (Germany) 31 (候选) - xiaoyu
+  server: cctvhikvision.center
+  port: 2053
+  udp: true
+  type: vless
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
+  tls: true
+  servername: uwu.blueknightnet.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇮🇳 印度 (India) 32 (候选) - xiaoyu
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0200
+- name: 🇩🇪 德国 (Germany) 33 (候选) - xiaoyu
   server: freesocks.work
   port: 2053
   udp: true
@@ -338,8 +373,8 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 30 (候选) - xiaoyu
-  server: undef.network
+- name: 🇩🇪 德国 (Germany) 34 (候选) - xiaoyu
+  server: uwu.blueknightnet.qzz.io
   port: 2052
   udp: true
   type: vless
@@ -349,280 +384,49 @@ proxies:
     path: /@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: 🇮🇳 印度 (India) 31 (候选) - xiaoyu
-  server: 152.67.8.205
-  port: 80
+- name: 🇩🇪 德国 (Germany) 35 (候选) - xiaoyu
+  server: undef.network
+  port: 2052
   udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   network: ws
   ws-opts:
-    path: /
+    path: /@BlueKnight_net--@BlueKnight_net
     headers:
-      Host: in-152.67.8.205-0184
-- name: 🇺🇸 美国 (United States) 32 (候选) - xiaoyu
-  server: 47.251.108.158
-  port: 443
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇩🇪 德国 (Germany) 36 (候选) - xiaoyu
+  server: freesocks.work
+  port: 2053
   udp: true
   type: vless
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  flow: xtls-rprx-vision
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   tls: true
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
-  servername: www.cloudflare.com
-  client-fingerprint: qq
-- name: 🇺🇸 美国 (United States) 33 (候选) - xiaoyu
-  server: 23.95.222.127
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 352ff568-f971-4613-bf48-92997a5d44ed
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ribQDOlZ69PzvZ1EDF0EcmMvbq_T5RQrVRBSGUU2riU
-    short-id: 35cd899f8de04801
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇺🇸 美国 (United States) 34 (候选) - xiaoyu
-  server: 47.251.108.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
-  servername: www.cloudflare.com
+  servername: uwu.blueknightnet.qzz.io
+  skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 35 (候选) - xiaoyu
-  server: 47.251.108.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇳🇱 荷兰 (Netherlands) 36 (候选) - xiaoyu
-  server: 82.38.31.149
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: oZIoA69Q8yhcQV8ka3Pa3A
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
 - name: 🇺🇸 美国 (United States) 37 (候选) - xiaoyu
-  server: gb2.murainternet.network
-  port: 443
-  udp: true
-  type: vless
-  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fyfX-egDrRvXNW1Gt2P_8rH4jdupAcmhFLOCZCzCowo
-    short-id: fc36b4a584871aa5
-  servername: gb2.murainternet.network
-  client-fingerprint: ''
-- name: 🇳🇱 荷兰 (Netherlands) 38 (候选) - xiaoyu
-  server: 163.172.214.188
-  port: 80
-  udp: true
-  type: vless
-  uuid: 40cc9b52-25b8-4cd5-8b45-715ae26e6baf
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: sc-thenetherlands1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 39 (候选) - xiaoyu
-  server: 163.245.42.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 40 (候选) - xiaoyu
-  server: edge.bookmai.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 41 (候选) - xiaoyu
-  server: 163.245.42.48
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 42 (候选) - xiaoyu
-  server: 152.228.162.19
-  port: 80
-  udp: true
-  type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇩🇪 德国 (Germany) 43 (候选) - xiaoyu
-  server: edge.bookmai.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: mother-earth.fyi
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 44 (候选) - xiaoyu
-  server: 169.40.42.168
-  port: 443
-  udp: true
-  type: vless
-  uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
-    short-id: c39cc7310a
-  servername: yahoo.com
-  client-fingerprint: ios
-- name: 🇺🇸 美国 (United States) 45 (候选) - xiaoyu
-  server: 47.251.108.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇺🇸 美国 (United States) 46 (候选) - xiaoyu
-  server: 47.251.108.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
-  servername: www.cloudflare.com
-  client-fingerprint: ios
-- name: 🇩🇪 德国 (Germany) 47 (候选) - xiaoyu
-  server: ov-germany1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 48 (候选) - xiaoyu
-  server: 57.129.41.216
-  port: 80
-  udp: true
-  type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇺🇸 美国 (United States) 49 (候选) - xiaoyu
-  server: 47.251.108.158
-  port: 443
-  udp: true
-  type: vless
-  uuid: 975fc322-6e38-434b-a53c-d39fed49b9a9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SmgYcFIvvFXW3xh4gvGhIJuQsaZvWkAylcjB6TEddEs
-    short-id: 896f52ba2cfca903
-  servername: www.cloudflare.com
-  client-fingerprint: ''
-- name: 🇺🇸 美国 (United States) 50 (候选) - xiaoyu
-  server: guanwang.awsno.com
+  server: 47.88.79.34
   port: 443
   udp: true
   type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  uuid: 9b31490d-190e-4ef1-af0a-7ccab3e7c3b5
   alterId: 0
   cipher: auto
   tls: true
-  servername: guanwang.awsno.com
+  servername: Rib9JXAYoqjGN2KW.v.3dns.vip
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /hls/cctv5phd.m3u8
+    path: /ws-vmess
     headers:
-      Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 51 (候选) - xiaoyu
-  server: guanwang.awsno.com
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: guanwang.awsno.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /hls/cctv5phd.m3u8
-- name: 🇺🇸 美国 (United States) 52 (候选) - xiaoyu
-  server: nomino.11hi8itbaf.workers.dev
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: nomino.11hi8itbaf.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /guanwang.awsno.com/hls/cctv5phd.m3u8
-    headers:
-      Host: nomino.11hi8itbaf.workers.dev
-- name: 🇺🇸 美国 (United States) 53 (候选) - xiaoyu
+      Host: Rib9JXAYoqjGN2KW.v.3dns.vip
+- name: 🇺🇸 美国 (United States) 38 (候选) - xiaoyu
   server: www.shopify.com
   port: 443
   udp: true
@@ -638,7 +442,77 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇺🇸 美国 (United States) 54 (候选) - xiaoyu
+- name: 🇺🇸 美国 (United States) 39 (候选) - xiaoyu
+  server: guanwang.awsno.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+- name: 🇺🇸 美国 (United States) 40 (候选) - xiaoyu
+  server: nomino.11hi8itbaf.workers.dev
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: nomino.11hi8itbaf.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /guanwang.awsno.com/hls/cctv5phd.m3u8
+    headers:
+      Host: nomino.11hi8itbaf.workers.dev
+- name: 🇺🇸 美国 (United States) 41 (候选) - xiaoyu
+  server: guanwang.awsno.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: guanwang.awsno.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /hls/cctv5phd.m3u8
+    headers:
+      Host: guanwang.awsno.com
+- name: 🇺🇸 美国 (United States) 42 (候选) - xiaoyu
+  server: nomino.11hi8itbaf.workers.dev
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: nomino.11hi8itbaf.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /guanwang.awsno.com/hls/cctv5phd.m3u8
+- name: 🇧🇷 巴西 (Brazil) 43 (候选) - xiaoyu
+  server: 147.15.108.14
+  port: 20000
+  udp: true
+  type: hysteria2
+  password: CyG0RFxMjzs41uQD4OLuHQ==
+  sni: rmgyvpn.rest
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+- name: 🇺🇸 美国 (United States) 44 (候选) - xiaoyu
   server: guanwang.awsno.com
   port: 443
   udp: true
@@ -654,283 +528,16 @@ proxies:
     path: /hls/cctv5phd.m3u8
     headers:
       Host: guanwang.awsno.com
-- name: 🇩🇪 德国 (Germany) 55 (候选) - xiaoyu
-  server: mci1.amir12.ir
-  port: 1222
+- name: 🇺🇸 美国 (United States) 45 (候选) - xiaoyu
+  server: uspanel.unixzone.us
+  port: 30016
   udp: true
   type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
-    short-id: a25d0f
-  servername: play.google.com
-  client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 56 (候选) - xiaoyu
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇺🇸 美国 (United States) 57 (候选) - xiaoyu
-  server: 107.150.27.178
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c4ec8b8d-d8b1-49f2-8eb8-5903745f6381
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _7gRLyI2odDAG_D5YV4fbbOoCEH4BfF5XigHTPHPl3I
-    short-id: c71dd992a5c26702
-  servername: www.sme.com.au
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 58 (候选) - xiaoyu
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: fb4c1c39-2204-43bb-853c-f8579a77feb4
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 03dc60cb-a8d4-4226-93fe-0e6cbf77fe5a
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇩🇪 德国 (Germany) 59 (候选) - xiaoyu
-  server: 104.21.5.128
-  port: 2052
-  udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇺🇸 美国 (United States) 60 (候选) - xiaoyu
-  server: 107.150.27.178
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c4ec8b8d-d8b1-49f2-8eb8-5903745f6381
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _7gRLyI2odDAG_D5YV4fbbOoCEH4BfF5XigHTPHPl3I
-    short-id: c71dd992a5c26702
-  servername: www.sme.com.au
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 61 (候选) - xiaoyu
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: a3f199fc-0251-4c05-9e0e-0c1976945a3a
-  tls: true
-  servername: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ruu2rx-oycdrnsrzc.9uokolpk04vmg2ecqb8oys7.workers.dev
-- name: 🇺🇸 美国 (United States) 62 (候选) - xiaoyu
-  server: 23.95.222.127
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 352ff568-f971-4613-bf48-92997a5d44ed
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ribQDOlZ69PzvZ1EDF0EcmMvbq_T5RQrVRBSGUU2riU
-    short-id: 35cd899f8de04801
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇺🇸 美国 (United States) 63 (候选) - xiaoyu
-  server: 107.150.27.178
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c4ec8b8d-d8b1-49f2-8eb8-5903745f6381
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _7gRLyI2odDAG_D5YV4fbbOoCEH4BfF5XigHTPHPl3I
-    short-id: c71dd992a5c26702
-  servername: www.sme.com.au
-  client-fingerprint: safari
-- name: 🇩🇪 德国 (Germany) 64 (候选) - xiaoyu
-  server: 57.129.41.216
-  port: 80
-  udp: true
-  type: vless
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: 57.129.41.216
-- name: 🇷🇺 俄罗斯 (Russia) 65 (候选) - xiaoyu
-  server: du-rov.secureservice.top
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 66 (候选) - xiaoyu
-  server: ov-germany1.09vpn.com
-  port: 80
-  udp: true
-  type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: ov-germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 67 (候选) - xiaoyu
-  server: 57.129.41.216
-  port: 80
-  udp: true
-  type: vless
-  uuid: 18535741-e8b3-4b43-9348-785b55936751
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇺🇸 美国 (United States) 68 (候选) - xiaoyu
-  server: nomino.11hi8itbaf.workers.dev
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 6a89a215-22bf-4bd7-9642-b95b2e09583a
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: nomino.11hi8itbaf.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /guanwang.awsno.com/hls/cctv5phd.m3u8
-- name: 🇯🇵 日本 (Japan) 69 (候选) - xiaoyu
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: a2e2d050-ca0c-44a1-8e55-8946c5b04961
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇯🇵 日本 (Japan) 70 (候选) - xiaoyu
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: e113a561-c9bc-43c6-92da-fd9513f06a00
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 71 (候选) - xiaoyu
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 9c7501fb-4e23-44d8-9a9e-973807ae4f35
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 72 (候选) - xiaoyu
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: 37d1f5ab-e83b-4a84-90bf-712a0b114a87
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 73 (候选) - xiaoyu
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: e5b2a063-a114-4bd0-802d-b2da1fe1d1da
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇮🇳 印度 (India) 74 (候选) - xiaoyu
-  server: 152.67.8.205
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 152.67.8.205
-- name: 🇩🇪 德国 (Germany) 75 (候选) - xiaoyu
-  server: 198.202.146.51.sslip.io
-  port: 443
-  udp: true
-  type: vless
-  uuid: afbd410e-1663-4f40-9d3b-df5117aa23ca
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: B5DMtKe8wjH_WeM8M8IEuKwPqJ6-Ku98JH_LifwehEY
-    short-id: 6fe2994a0e208408
-  servername: 198.202.146.51.sslip.io
-  client-fingerprint: safari
-- name: 🇺🇸 美国 (United States) 76 (候选) - xiaoyu
+    path: /usserver
+- name: 🇺🇸 美国 (United States) 46 (候选) - xiaoyu
   server: 141.101.122.147
   port: 443
   udp: true
@@ -945,7 +552,624 @@ proxies:
     path: /ws
     headers:
       Host: a.cwvps.eu.org
-- name: 🇮🇳 印度 (India) 77 (候选) - xiaoyu
+- name: 🇯🇵 日本 (Japan) 47 (候选) - xiaoyu
+  server: 172.111.146.64
+  port: 80
+  udp: true
+  type: vless
+  uuid: 904f8ffa-4652-4076-8f2f-e586807840ec
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇳🇱 荷兰 (Netherlands) 48 (候选) - xiaoyu
+  server: 51.158.206.8
+  port: 23576
+  udp: true
+  type: vless
+  uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
+  servername: fuck.rkn
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 49 (候选) - xiaoyu
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: viber.com
+- name: 🇫🇷 法国 (France) 50 (候选) - xiaoyu
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: akamaized.net
+- name: 🇫🇷 法国 (France) 51 (候选) - xiaoyu
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 5ce84688-f535-46ad-a512-37b17becf6ea
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 52 (候选) - xiaoyu
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇮🇹 意大利 (Italy) 53 (候选) - xiaoyu
+  server: 202.50.253.99
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 54 (候选) - xiaoyu
+  server: ov-france1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 55 (候选) - xiaoyu
+  server: 31.77.148.89
+  port: 45021
+  udp: true
+  type: vless
+  uuid: ad263f1c-199e-4aaf-bf22-c3ad0407d377
+- name: 🇫🇷 法国 (France) 56 (候选) - xiaoyu
+  server: ov-france1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 57 (候选) - xiaoyu
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇩🇪 德国 (Germany) 58 (候选) - xiaoyu
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.comfreenettirgermanylimburg
+- name: 🇩🇪 德国 (Germany) 59 (候选) - xiaoyu
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 57.129.41.216
+- name: 🇩🇪 德国 (Germany) 60 (候选) - xiaoyu
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇫🇷 法国 (France) 61 (候选) - xiaoyu
+  server: ov-france1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 62 (候选) - xiaoyu
+  server: ov-germany1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 63 (候选) - xiaoyu
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: 152.228.162.19
+- name: 🇫🇷 法国 (France) 64 (候选) - xiaoyu
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇬🇧 英国 (United Kingdom) 65 (候选) - xiaoyu
+  server: uk.2ul.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 77479eaf-c35e-4088-ae47-a2beb88a7272
+  tls: true
+  reality-opts:
+    public-key: C-e3vasFC42zQmJblol4foZozTe6j1c7TJMGqjvRm2U
+    short-id: 77479eaf
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 66 (候选) - xiaoyu
+  server: ccs2g.pai50288.uk
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8be461cb-a0df-47cf-bc0d-4d9e6a22fa74
+  tls: true
+  servername: ccs2g.pai50288.uk
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pai50288
+- name: 🇫🇷 法国 (France) 67 (候选) - xiaoyu
+  server: 141.101.115.104
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇩🇪 德国 (Germany) 68 (候选) - xiaoyu
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 69 (候选) - xiaoyu
+  server: ov-germany1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 18535741-e8b3-4b43-9348-785b55936751
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-germany1.09vpn.com
+- name: 🇫🇷 法国 (France) 70 (候选) - xiaoyu
+  server: 188.114.98.0
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇯🇵 日本 (Japan) 71 (候选) - xiaoyu
+  server: 103.75.118.228
+  port: 12683
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 72 (候选) - xiaoyu
+  server: 163.245.42.48
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 73 (候选) - xiaoyu
+  server: 195.123.213.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 74 (候选) - xiaoyu
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 75 (候选) - xiaoyu
+  server: 57.129.41.216
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 76 (候选) - xiaoyu
+  server: ov-germany1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d90f043-ed7f-40c9-ac2f-352987904958
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇹🇭 泰国 (Thailand) 77 (候选) - xiaoyu
+  server: v2ray.simspeedup.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇬🇧 英国 (United Kingdom) 78 (候选) - xiaoyu
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: viber.com
+- name: 🇫🇷 法国 (France) 79 (候选) - xiaoyu
+  server: 104.19.229.21
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇫🇷 法国 (France) 80 (候选) - xiaoyu
+  server: 45.130.125.160
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇹🇭 泰国 (Thailand) 81 (候选) - xiaoyu
+  server: v2ray.simspeedup.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇫🇷 法国 (France) 82 (候选) - xiaoyu
+  server: 165.215.250.14
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇩🇪 德国 (Germany) 83 (候选) - xiaoyu
+  server: 157.90.175.178
+  port: 2112
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+    short-id: 125ba3
+  servername: play.google.com
+  client-fingerprint: random
+- name: 🇵🇱 波兰 (Poland) 84 (候选) - xiaoyu
+  server: 82.118.22.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇬🇷 希腊 (Greece) 85 (候选) - xiaoyu
+  server: 85.90.197.220
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
+    short-id: 94acb54627612d43
+  servername: www.cloudflare.com
+  client-fingerprint: ios
+- name: 🇩🇪 德国 (Germany) 86 (候选) - xiaoyu
+  server: edge.bookmai.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: firefox
+- name: 🇺🇸 美国 (United States) 87 (候选) - xiaoyu
+  server: us-23.hihu.net
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 8a9aaa70-ced9-11f1-b934-205c6d5f5d78
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /870ao26f
+- name: 🇩🇪 德国 (Germany) 88 (候选) - xiaoyu
+  server: edge.bookmai.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 89 (候选) - xiaoyu
+  server: 23.95.222.127
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 352ff568-f971-4613-bf48-92997a5d44ed
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ribQDOlZ69PzvZ1EDF0EcmMvbq_T5RQrVRBSGUU2riU
+    short-id: 35cd899f8de04801
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 90 (候选) - xiaoyu
+  server: 208.69.78.217
+  port: null
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+  ports: 21000-21199,33000-33199
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 91 (候选) - xiaoyu
+  server: 104.17.72.206
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇷🇴 罗马尼亚 (Romania) 92 (候选) - xiaoyu
+  server: 82.117.255.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
+    short-id: 31e91d43e553bf32
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 93 (候选) - xiaoyu
+  server: 161.97.160.224
+  port: 443
+  udp: true
+  type: vless
+  uuid: b81b4d1b-7f20-48f1-82dc-d24bef898cab
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 33zaT3jHXjtynSQ0Ucw9bK92-XH2zolJmuIeZ1XyZB0
+    short-id: e6
+  servername: passport.yandex.ru
+  client-fingerprint: firefox
+- name: 🇳🇱 荷兰 (Netherlands) 94 (候选) - xiaoyu
+  server: 131.196.254.151
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.pleadcourt.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇬🇧 英国 (United Kingdom) 95 (候选) - xiaoyu
+  server: 23.81.36.148
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 96 (候选) - xiaoyu
+  server: 163.245.42.48
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 97 (候选) - xiaoyu
+  server: 104.17.71.206
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇯🇵 日本 (Japan) 98 (候选) - xiaoyu
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇰🇷 韩国 (South Korea) 99 (候选) - xiaoyu
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇩🇪 德国 (Germany) 100 (候选) - xiaoyu
+  server: 157.90.175.178
+  port: 1222
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
+    short-id: a25d0f
+  servername: play.google.com
+  client-fingerprint: firefox
+- name: 🇫🇷 法国 (France) 101 (候选) - xiaoyu
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: //assignment
+- name: 🇩🇪 德国 (Germany) 102 (候选) - xiaoyu
+  server: hikvision-plus.com
+  port: 2053
+  udp: true
+  type: vless
+  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  tls: true
+  servername: uwu.blueknightnet.qzz.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
+    headers:
+      Host: uwu.blueknightnet.qzz.io
+- name: 🇮🇳 印度 (India) 103 (候选) - xiaoyu
   server: 152.67.8.205
   port: 80
   udp: true
@@ -957,101 +1181,22 @@ proxies:
   ws-opts:
     path: /
     headers:
-      Host: in-152.67.8.205-0250
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 78 (候选) - xiaoyu
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
-- name: 🇸🇬 新加坡 (Singapore) 79 (候选) - xiaoyu
-  server: 146.235.16.130
-  port: 19825
+      Host: in-152.67.8.205-0202
+- name: 🇱🇻 拉脱维亚 (Latvia) 104 (候选) - xiaoyu
+  server: 195.123.213.28
+  port: 443
   udp: true
   type: vless
-  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GvvkY8xYb9QjvwvzYq_uNC4tOGd0DCxRnz6770-xgkI
-    short-id: 6ba85179e30d4fc2
-  servername: sg2-8sb.6121999.dpdns.org
-  client-fingerprint: ''
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 80 (候选) - xiaoyu
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-- name: 🇺🇸 美国 (United States) 81 (候选) - xiaoyu
-  server: 23.95.222.127
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 352ff568-f971-4613-bf48-92997a5d44ed
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ribQDOlZ69PzvZ1EDF0EcmMvbq_T5RQrVRBSGUU2riU
-    short-id: 35cd899f8de04801
-  servername: www.apple.com
-  client-fingerprint: ios
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 82 (候选) - xiaoyu
-  server: 3h-kazakhstan1.09vpn.com
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-- name: 🇺🇸 美国 (United States) 83 (候选) - xiaoyu
-  server: 23.95.222.127
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 352ff568-f971-4613-bf48-92997a5d44ed
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ribQDOlZ69PzvZ1EDF0EcmMvbq_T5RQrVRBSGUU2riU
-    short-id: 35cd899f8de04801
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 84 (候选) - xiaoyu
-  server: or3.sfacg.uk
-  port: 2083
-  udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: cdn.sfacg.uk
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /or3
-    headers:
-      Host: or3.sfacg.uk
-- name: 🇩🇪 德国 (Germany) 85 (候选) - xiaoyu
-  server: mci1.amir12.ir
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 105 (候选) - xiaoyu
+  server: 23.81.36.148
   port: 1222
   udp: true
   type: vless
@@ -1061,278 +1206,146 @@ proxies:
     public-key: zpLKK8HuwXJDH9D0O3t5Z_tO3ajkj7VRtXdr6UGy1zE
     short-id: a25d0f
   servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 86 (候选) - xiaoyu
-  server: 51.38.71.147
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 106 (候选) - xiaoyu
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0179
+- name: 🇮🇹 意大利 (Italy) 107 (候选) - xiaoyu
+  server: 202.50.253.81
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇩🇪 德国 (Germany) 108 (候选) - xiaoyu
+  server: mci.amir12.ir
+  port: 2112
+  udp: true
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  tls: true
+  reality-opts:
+    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
+    short-id: 125ba3
+  servername: play.google.com
+  client-fingerprint: random
+- name: 🇯🇵 日本 (Japan) 109 (候选) - xiaoyu
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
+- name: 🇫🇷 法国 (France) 110 (候选) - xiaoyu
+  server: 89.150.34.41
+  port: 2053
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🇮🇹 意大利 (Italy) 111 (候选) - xiaoyu
+  server: 202.50.253.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇹🇭 泰国 (Thailand) 112 (候选) - xiaoyu
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
-  uuid: fda89998-7e9a-4494-857a-cd0d00661b58
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   tls: true
-  servername: uk1.connectsuite.org
+  servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /cdn-cgi/ws
+    path: /ws
     headers:
-      Host: uk1.connectsuite.org
-- name: 🇩🇪 德国 (Germany) 87 (候选) - xiaoyu
-  server: 172.67.133.118
+      Host: v2ray.simspeedup.com
+- name: 🇨🇦 加拿大 (Canada) 113 (候选) - xiaoyu
+  server: 51.222.200.165
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇫🇷 法国 (France) 114 (候选) - xiaoyu
+  server: 145.223.68.58
+  port: 443
+  udp: true
+  type: vless
+  uuid: edb50d20-2d3e-4c1e-8a75-a17168a89aa5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg
+    short-id: a44ff7d2e80213c2
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 115 (候选) - xiaoyu
+  server: cctvhikvision.center
   port: 2053
   udp: true
   type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
+  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
   tls: true
   servername: uwu.blueknightnet.qzz.io
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
     headers:
       Host: uwu.blueknightnet.qzz.io
-- name: 🇯🇵 日本 (Japan) 88 (候选) - xiaoyu
-  server: 104.16.10.84
+- name: 🇺🇸 美国 (United States) 116 (候选) - xiaoyu
+  server: cf.090227.xyz
   port: 443
   udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  type: vmess
+  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 89 (候选) - xiaoyu
-  server: 104.16.10.56
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇺🇸 美国 (United States) 90 (候选) - xiaoyu
-  server: 31.57.190.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  tls: true
-  servername: a.cwvps.eu.org
+  servername: vmess.lbw666.dpdns.org
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /ws
     headers:
-      Host: a.cwvps.eu.org
-- name: 🇩🇪 德国 (Germany) 91 (候选) - xiaoyu
-  server: mci.amir12.ir
-  port: 2112
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 92 (候选) - xiaoyu
-  server: 172.67.181.232
-  port: 2052
-  udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇸🇬 新加坡 (Singapore) 93 (候选) - xiaoyu
-  server: 3.0.111.82
-  port: 10574
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: safari
-- name: 🇯🇵 日本 (Japan) 94 (候选) - xiaoyu
-  server: 172.111.146.64
+      Host: vmess.lbw666.dpdns.org
+- name: 🇹🇭 泰国 (Thailand) 117 (候选) - xiaoyu
+  server: 103.86.49.57
   port: 80
   udp: true
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
   network: ws
   ws-opts:
-    path: /vmess/
+    path: /ws
     headers:
-      Host: 172.111.146.64
-- name: 🇩🇪 德国 (Germany) 95 (候选) - xiaoyu
-  server: undef.network
-  port: 2053
-  udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 96 (候选) - xiaoyu
-  server: 172.67.195.79
-  port: 2053
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 97 (候选) - xiaoyu
-  server: 157.90.175.178
-  port: 2112
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: random
-- name: 🇩🇪 德国 (Germany) 98 (候选) - xiaoyu
-  server: 157.90.175.178
-  port: 2112
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 99 (候选) - xiaoyu
-  server: mci.amir12.ir
-  port: 2112
-  udp: true
-  type: vless
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-  tls: true
-  reality-opts:
-    public-key: p8pUe3hwND5rhAti-yRQ5qMaIkNdhxOV1K1jpbtJlEQ
-    short-id: 125ba3
-  servername: play.google.com
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 100 (候选) - xiaoyu
-  server: freesocks.work
-  port: 2053
-  udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 101 (候选) - xiaoyu
-  server: 104.21.84.167
-  port: 2053
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 102 (候选) - xiaoyu
-  server: cctvhikvision.center
-  port: 2053
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 103 (候选) - xiaoyu
-  server: cctvhikvision.center
-  port: 2053
-  udp: true
-  type: vless
-  uuid: aa5d861a-7799-41a7-bdf4-7a6414cf98fd
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 104 (候选) - xiaoyu
-  server: freesocks.work
-  port: 2052
-  udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
-- name: 🇩🇪 德国 (Germany) 105 (候选) - xiaoyu
-  server: cctvhikvision.center
-  port: 2053
-  udp: true
-  type: vless
-  uuid: e3fb01b6-69b4-41d7-babf-696d992de194
-  tls: true
-  servername: uwu.blueknightnet.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net--@BlueKnight_net
-    headers:
-      Host: uwu.blueknightnet.qzz.io
+      Host: ais.speedtest.net
 proxy-groups:
 - name: PROXIES
   type: select
@@ -1341,108 +1354,120 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 02 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 03 (候选) - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 04 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 04 (候选) - xiaoyu
   - 🇳🇱 荷兰 (Netherlands) 05 (候选) - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 06 (候选) - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 07 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 08 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 09 (候选) - xiaoyu
-  - 🇳🇱 荷兰 (Netherlands) 10 (候选) - xiaoyu
-  - 🇳🇱 荷兰 (Netherlands) 11 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 12 (候选) - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 13 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 14 (候选) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 15 (候选) - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 16 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 17 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 18 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 19 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 20 (候选) - xiaoyu
-  - 🌐 其他地区 (Other) 21 (候选) - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 22 (候选) - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 23 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 24 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 25 (候选) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 26 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 27 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 28 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 29 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 30 (候选) - xiaoyu
-  - 🇮🇳 印度 (India) 31 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 32 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 33 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 34 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 35 (候选) - xiaoyu
-  - 🇳🇱 荷兰 (Netherlands) 36 (候选) - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 06 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 07 (候选) - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 08 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 09 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 10 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 11 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 12 (候选) - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 13 (候选) - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 14 (候选) - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 15 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 16 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 17 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 18 (候选) - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 19 (候选) - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 20 (候选) - xiaoyu
+  - 🇵🇱 波兰 (Poland) 21 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 22 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 23 (候选) - xiaoyu
+  - 🇮🇹 意大利 (Italy) 24 (候选) - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 25 (候选) - xiaoyu
+  - 🇨🇾 塞浦路斯 (Cyprus) 26 (候选) - xiaoyu
+  - 🇮🇳 印度 (India) 27 (候选) - xiaoyu
+  - 🇮🇳 印度 (India) 28 (候选) - xiaoyu
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 29 (候选) - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 30 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 31 (候选) - xiaoyu
+  - 🇮🇳 印度 (India) 32 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 33 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 34 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 35 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 36 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 37 (候选) - xiaoyu
-  - 🇳🇱 荷兰 (Netherlands) 38 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 39 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 40 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 41 (候选) - xiaoyu
-  - 🇫🇷 法国 (France) 42 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 43 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 38 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 39 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 40 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 41 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 42 (候选) - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 43 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 44 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 45 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 46 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 47 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 48 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 49 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 50 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 51 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 52 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 53 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 54 (候选) - xiaoyu
+  - 🇯🇵 日本 (Japan) 47 (候选) - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 48 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 49 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 50 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 51 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 52 (候选) - xiaoyu
+  - 🇮🇹 意大利 (Italy) 53 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 54 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 55 (候选) - xiaoyu
-  - 🇪🇸 西班牙 (Spain) 56 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 57 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 58 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 56 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 57 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 58 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 59 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 60 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 61 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 62 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 63 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 64 (候选) - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 65 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 66 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 67 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 68 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 69 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 70 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 60 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 61 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 62 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 63 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 64 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 65 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 66 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 67 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 68 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 69 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 70 (候选) - xiaoyu
   - 🇯🇵 日本 (Japan) 71 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 72 (候选) - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 73 (候选) - xiaoyu
-  - 🇮🇳 印度 (India) 74 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 72 (候选) - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 73 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 74 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 75 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 76 (候选) - xiaoyu
-  - 🇮🇳 印度 (India) 77 (候选) - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 78 (候选) - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 79 (候选) - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 80 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 81 (候选) - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 82 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 83 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 84 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 85 (候选) - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 86 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 87 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 88 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 89 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 90 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 91 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 92 (候选) - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 93 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 94 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 95 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 76 (候选) - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 77 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 78 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 79 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 80 (候选) - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 81 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 82 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 83 (候选) - xiaoyu
+  - 🇵🇱 波兰 (Poland) 84 (候选) - xiaoyu
+  - 🇬🇷 希腊 (Greece) 85 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 86 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 87 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 88 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 89 (候选) - xiaoyu
+  - 🇨🇭 瑞士 (Switzerland) 90 (候选) - xiaoyu
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 91 (候选) - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 92 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 93 (候选) - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 94 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 95 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 96 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 97 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 98 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 99 (候选) - xiaoyu
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 97 (候选) - xiaoyu
+  - 🇯🇵 日本 (Japan) 98 (候选) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 99 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 100 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 101 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 101 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 102 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 103 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 104 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 105 (候选) - xiaoyu
+  - 🇮🇳 印度 (India) 103 (候选) - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 104 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 105 (候选) - xiaoyu
+  - 🇮🇳 印度 (India) 106 (候选) - xiaoyu
+  - 🇮🇹 意大利 (Italy) 107 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 108 (候选) - xiaoyu
+  - 🇯🇵 日本 (Japan) 109 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 110 (候选) - xiaoyu
+  - 🇮🇹 意大利 (Italy) 111 (候选) - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 112 (候选) - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 113 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 114 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 115 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 116 (候选) - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 117 (候选) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -1451,107 +1476,119 @@ proxy-groups:
   - 🇺🇸 美国 (United States) 01 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 02 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 03 (候选) - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 04 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 04 (候选) - xiaoyu
   - 🇳🇱 荷兰 (Netherlands) 05 (候选) - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 06 (候选) - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 07 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 08 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 09 (候选) - xiaoyu
-  - 🇳🇱 荷兰 (Netherlands) 10 (候选) - xiaoyu
-  - 🇳🇱 荷兰 (Netherlands) 11 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 12 (候选) - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 13 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 14 (候选) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 15 (候选) - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 16 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 17 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 18 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 19 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 20 (候选) - xiaoyu
-  - 🌐 其他地区 (Other) 21 (候选) - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 22 (候选) - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 23 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 24 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 25 (候选) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 26 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 27 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 28 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 29 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 30 (候选) - xiaoyu
-  - 🇮🇳 印度 (India) 31 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 32 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 33 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 34 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 35 (候选) - xiaoyu
-  - 🇳🇱 荷兰 (Netherlands) 36 (候选) - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 06 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 07 (候选) - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 08 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 09 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 10 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 11 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 12 (候选) - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 13 (候选) - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 14 (候选) - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 15 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 16 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 17 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 18 (候选) - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 19 (候选) - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 20 (候选) - xiaoyu
+  - 🇵🇱 波兰 (Poland) 21 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 22 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 23 (候选) - xiaoyu
+  - 🇮🇹 意大利 (Italy) 24 (候选) - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 25 (候选) - xiaoyu
+  - 🇨🇾 塞浦路斯 (Cyprus) 26 (候选) - xiaoyu
+  - 🇮🇳 印度 (India) 27 (候选) - xiaoyu
+  - 🇮🇳 印度 (India) 28 (候选) - xiaoyu
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 29 (候选) - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 30 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 31 (候选) - xiaoyu
+  - 🇮🇳 印度 (India) 32 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 33 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 34 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 35 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 36 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 37 (候选) - xiaoyu
-  - 🇳🇱 荷兰 (Netherlands) 38 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 39 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 40 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 41 (候选) - xiaoyu
-  - 🇫🇷 法国 (France) 42 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 43 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 38 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 39 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 40 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 41 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 42 (候选) - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 43 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 44 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 45 (候选) - xiaoyu
   - 🇺🇸 美国 (United States) 46 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 47 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 48 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 49 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 50 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 51 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 52 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 53 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 54 (候选) - xiaoyu
+  - 🇯🇵 日本 (Japan) 47 (候选) - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 48 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 49 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 50 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 51 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 52 (候选) - xiaoyu
+  - 🇮🇹 意大利 (Italy) 53 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 54 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 55 (候选) - xiaoyu
-  - 🇪🇸 西班牙 (Spain) 56 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 57 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 58 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 56 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 57 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 58 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 59 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 60 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 61 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 62 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 63 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 64 (候选) - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 65 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 66 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 67 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 68 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 69 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 70 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 60 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 61 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 62 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 63 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 64 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 65 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 66 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 67 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 68 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 69 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 70 (候选) - xiaoyu
   - 🇯🇵 日本 (Japan) 71 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 72 (候选) - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 73 (候选) - xiaoyu
-  - 🇮🇳 印度 (India) 74 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 72 (候选) - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 73 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 74 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 75 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 76 (候选) - xiaoyu
-  - 🇮🇳 印度 (India) 77 (候选) - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 78 (候选) - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 79 (候选) - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 80 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 81 (候选) - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 82 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 83 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 84 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 85 (候选) - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 86 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 87 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 88 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 89 (候选) - xiaoyu
-  - 🇺🇸 美国 (United States) 90 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 91 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 92 (候选) - xiaoyu
-  - 🇸🇬 新加坡 (Singapore) 93 (候选) - xiaoyu
-  - 🇯🇵 日本 (Japan) 94 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 95 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 76 (候选) - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 77 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 78 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 79 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 80 (候选) - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 81 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 82 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 83 (候选) - xiaoyu
+  - 🇵🇱 波兰 (Poland) 84 (候选) - xiaoyu
+  - 🇬🇷 希腊 (Greece) 85 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 86 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 87 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 88 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 89 (候选) - xiaoyu
+  - 🇨🇭 瑞士 (Switzerland) 90 (候选) - xiaoyu
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 91 (候选) - xiaoyu
+  - 🇷🇴 罗马尼亚 (Romania) 92 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 93 (候选) - xiaoyu
+  - 🇳🇱 荷兰 (Netherlands) 94 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 95 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 96 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 97 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 98 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 99 (候选) - xiaoyu
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 97 (候选) - xiaoyu
+  - 🇯🇵 日本 (Japan) 98 (候选) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 99 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 100 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 101 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 101 (候选) - xiaoyu
   - 🇩🇪 德国 (Germany) 102 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 103 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 104 (候选) - xiaoyu
-  - 🇩🇪 德国 (Germany) 105 (候选) - xiaoyu
+  - 🇮🇳 印度 (India) 103 (候选) - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 104 (候选) - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 105 (候选) - xiaoyu
+  - 🇮🇳 印度 (India) 106 (候选) - xiaoyu
+  - 🇮🇹 意大利 (Italy) 107 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 108 (候选) - xiaoyu
+  - 🇯🇵 日本 (Japan) 109 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 110 (候选) - xiaoyu
+  - 🇮🇹 意大利 (Italy) 111 (候选) - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 112 (候选) - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 113 (候选) - xiaoyu
+  - 🇫🇷 法国 (France) 114 (候选) - xiaoyu
+  - 🇩🇪 德国 (Germany) 115 (候选) - xiaoyu
+  - 🇺🇸 美国 (United States) 116 (候选) - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 117 (候选) - xiaoyu
 rules:
 - MATCH,PROXIES
