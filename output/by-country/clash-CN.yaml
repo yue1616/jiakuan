@@ -13,13 +13,27 @@ proxies:
   tls: true
   servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
-  client-fingerprint: ios
+  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /vlessws
     headers:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 02 - xiaoyu
+  server: 8.35.211.242
+  port: 443
+  udp: true
+  type: vless
+  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  tls: true
+  servername: vpn.cintaku.qzz.io
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vlessws
+    headers:
+      Host: vpn.cintaku.qzz.io
+- name: 🇨🇳 CN 03 - xiaoyu
   server: 188.114.98.0
   port: 443
   udp: true
@@ -28,13 +42,13 @@ proxies:
   tls: true
   servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /vlessws
     headers:
       Host: vpn.cintaku.qzz.io
-- name: 🇨🇳 CN 03 - xiaoyu
+- name: 🇨🇳 CN 04 - xiaoyu
   server: vpn.cintaku.qzz.io
   port: 443
   udp: true
@@ -43,19 +57,7 @@ proxies:
   tls: true
   servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vlessws
-- name: 🇨🇳 CN 04 - xiaoyu
-  server: 188.114.98.0
-  port: 443
-  udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: safari
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /vlessws
@@ -70,14 +72,11 @@ proxies:
   tls: true
   servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
-  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 06 - xiaoyu
-  server: 188.114.98.0
+  server: vpn.cintaku.qzz.io
   port: 443
   udp: true
   type: vless
@@ -85,87 +84,12 @@ proxies:
   tls: true
   servername: vpn.cintaku.qzz.io
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /vlessws
     headers:
       Host: vpn.cintaku.qzz.io
 - name: 🇨🇳 CN 07 - xiaoyu
-  server: 188.114.98.0
-  port: 443
-  udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: 🇨🇳 CN 08 - xiaoyu
-  server: vpn.cintaku.qzz.io
-  port: 443
-  udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: 🇨🇳 CN 09 - xiaoyu
-  server: vpn.cintaku.qzz.io
-  port: 443
-  udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: 🇨🇳 CN 10 - xiaoyu
-  server: 188.114.98.0
-  port: 443
-  udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: 🇨🇳 CN 11 - xiaoyu
-  server: vpn.cintaku.qzz.io
-  port: 443
-  udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
-- name: 🇨🇳 CN 12 - xiaoyu
   server: 188.114.98.0
   port: 443
   udp: true
@@ -191,11 +115,6 @@ proxy-groups:
   - 🇨🇳 CN 05 - xiaoyu
   - 🇨🇳 CN 06 - xiaoyu
   - 🇨🇳 CN 07 - xiaoyu
-  - 🇨🇳 CN 08 - xiaoyu
-  - 🇨🇳 CN 09 - xiaoyu
-  - 🇨🇳 CN 10 - xiaoyu
-  - 🇨🇳 CN 11 - xiaoyu
-  - 🇨🇳 CN 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -208,10 +127,5 @@ proxy-groups:
   - 🇨🇳 CN 05 - xiaoyu
   - 🇨🇳 CN 06 - xiaoyu
   - 🇨🇳 CN 07 - xiaoyu
-  - 🇨🇳 CN 08 - xiaoyu
-  - 🇨🇳 CN 09 - xiaoyu
-  - 🇨🇳 CN 10 - xiaoyu
-  - 🇨🇳 CN 11 - xiaoyu
-  - 🇨🇳 CN 12 - xiaoyu
 rules:
 - MATCH,PROXIES

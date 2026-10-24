@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 01 - xiaoyu",
-      "server": "149.22.95.183",
-      "server_port": 443,
-      "method": "aes-128-gcm",
-      "password": "shadowsocks"
+      "server": "51.222.136.236",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
     },
     {
       "type": "vmess",
@@ -30,23 +30,27 @@
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 04 - xiaoyu",
-      "server": "138.197.141.58",
+      "server": "137.184.174.93",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇨🇦 加拿大 (Canada) 05 - xiaoyu",
-      "server": "51.222.136.236",
-      "server_port": 8882,
-      "method": "aes-256-gcm",
-      "password": "kDWvXYZoTBcGkC4"
+      "server": "155.138.138.2",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "ca.tronsg.com",
+        "insecure": false
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇨🇦 加拿大 (Canada) 06 - xiaoyu",
-      "server": "137.184.174.93",
+      "server": "138.197.141.58",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
@@ -54,27 +58,6 @@
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 07 - xiaoyu",
-      "server": "38.145.220.58",
-      "server_port": 2093,
-      "uuid": "0b418782-e023-447e-ba99-e66b84ff118d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
-          "short_id": "8a9725533854a7e8"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 08 - xiaoyu",
       "server": "66.70.179.198",
       "server_port": 2053,
       "uuid": "dc620cd6-a9d8-4a0f-8f18-006b895db77e",
@@ -83,13 +66,25 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
           "public_key": "k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU",
           "short_id": "83f8317a948bb769"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇦 加拿大 (Canada) 08 - xiaoyu",
+      "server": "ca.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "ca.tronsg.com",
+        "insecure": true
       }
     },
     {
@@ -103,7 +98,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -123,7 +118,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -133,24 +128,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇦 加拿大 (Canada) 11 - xiaoyu",
-      "server": "209.200.246.148",
+      "server": "ca.tronsg.com",
       "server_port": 443,
-      "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
-      "flow": "xtls-rprx-vision",
+      "password": "Trojan@82164024",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk",
-          "short_id": "f98843107912e782"
-        }
+        "server_name": "ca.tronsg.com",
+        "insecure": false
       }
     },
     {
@@ -165,7 +151,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -198,42 +184,36 @@
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 14 - xiaoyu",
-      "server": "milo.rubinaz.xyz",
-      "server_port": 8080,
-      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 15 - xiaoyu",
-      "server": "milo.networkforexir.site",
-      "server_port": 8080,
-      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 16 - xiaoyu",
-      "server": "50.7.245.205",
-      "server_port": 2093,
-      "uuid": "0b418782-e023-447e-ba99-e66b84ff118d",
+      "server": "209.200.246.148",
+      "server_port": 443,
+      "uuid": "ca52e2b6-fb9f-4dac-b6dc-49da9923f251",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
-          "short_id": "8a9725533854a7e8"
+          "public_key": "uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk",
+          "short_id": "f98843107912e782"
         }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 15 - xiaoyu",
+      "server": "149.22.95.183",
+      "server_port": 443,
+      "method": "aes-128-gcm",
+      "password": "shadowsocks"
+    },
+    {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 17 - xiaoyu",
-      "server": "50.7.245.204",
+      "tag": "🇨🇦 加拿大 (Canada) 16 - xiaoyu",
+      "server": "38.145.220.58",
       "server_port": 2093,
       "uuid": "0b418782-e023-447e-ba99-e66b84ff118d",
       "flow": "xtls-rprx-vision",
@@ -253,7 +233,21 @@
     },
     {
       "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 17 - xiaoyu",
+      "server": "milo.networkforexir.site",
+      "server_port": 8080,
+      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
+    },
+    {
+      "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 18 - xiaoyu",
+      "server": "milo.rubinaz.xyz",
+      "server_port": 8080,
+      "uuid": "6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 19 - xiaoyu",
       "server": "213.152.165.203",
       "server_port": 2093,
       "uuid": "0b418782-e023-447e-ba99-e66b84ff118d",
@@ -274,47 +268,99 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 19 - xiaoyu",
-      "server": "511.150333.xyz",
-      "server_port": 21002,
-      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
-          "short_id": "3ab8d93dd9b1a5be"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 20 - xiaoyu",
-      "server": "510.150333.xyz",
-      "server_port": 21004,
-      "uuid": "67952583-8572-42e1-943d-0602794f885b",
+      "server": "50.7.245.204",
+      "server_port": 2093,
+      "uuid": "0b418782-e023-447e-ba99-e66b84ff118d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
-          "short_id": "4e0418d648f86141"
+          "public_key": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
+          "short_id": "8a9725533854a7e8"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 21 - xiaoyu",
+      "server": "50.7.245.205",
+      "server_port": 2093,
+      "uuid": "0b418782-e023-447e-ba99-e66b84ff118d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
+          "short_id": "8a9725533854a7e8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 22 - xiaoyu",
+      "server": "67.159.47.236",
+      "server_port": 2093,
+      "uuid": "0b418782-e023-447e-ba99-e66b84ff118d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
+          "short_id": "8a9725533854a7e8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 23 - xiaoyu",
+      "server": "67.159.46.132",
+      "server_port": 2093,
+      "uuid": "0b418782-e023-447e-ba99-e66b84ff118d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
+          "short_id": "8a9725533854a7e8"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇦 加拿大 (Canada) 24 - xiaoyu",
+      "server": "51.222.200.165",
+      "server_port": 5000,
+      "method": "aes-256-gcm",
+      "password": "Y6R9pAtvxxzmGC"
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 25 - xiaoyu",
       "server": "511.150333.xyz",
       "server_port": 21001,
       "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
@@ -334,7 +380,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 22 - xiaoyu",
+      "tag": "🇨🇦 加拿大 (Canada) 26 - xiaoyu",
+      "server": "511.150333.xyz",
+      "server_port": 21002,
+      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
+          "short_id": "3ab8d93dd9b1a5be"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 27 - xiaoyu",
       "server": "510.150333.xyz",
       "server_port": 21004,
       "uuid": "67952583-8572-42e1-943d-0602794f885b",
@@ -354,130 +420,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 23 - xiaoyu",
-      "server": "511.150333.xyz",
-      "server_port": 21003,
-      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
-          "short_id": "bab49aa4c2a88d27"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 24 - xiaoyu",
-      "server": "510.150333.xyz",
-      "server_port": 21003,
-      "uuid": "67952583-8572-42e1-943d-0602794f885b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
-          "short_id": "f3602a3a1cf928b7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 25 - xiaoyu",
-      "server": "511.150333.xyz",
-      "server_port": 21004,
-      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
-          "short_id": "2df2bd9d8366cef1"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 26 - xiaoyu",
-      "server": "510.150333.xyz",
-      "server_port": 21003,
-      "uuid": "67952583-8572-42e1-943d-0602794f885b",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
-          "short_id": "f3602a3a1cf928b7"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 27 - xiaoyu",
-      "server": "511.150333.xyz",
-      "server_port": 21004,
-      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
-          "short_id": "2df2bd9d8366cef1"
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 28 - xiaoyu",
-      "server": "103.106.229.37",
-      "server_port": 21004,
-      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
+      "server": "510.150333.xyz",
+      "server_port": 21003,
+      "uuid": "67952583-8572-42e1-943d-0602794f885b",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
-          "short_id": "2df2bd9d8366cef1"
+          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
+          "short_id": "f3602a3a1cf928b7"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 29 - xiaoyu",
-      "server": "510.150333.xyz",
-      "server_port": 21002,
-      "uuid": "67952583-8572-42e1-943d-0602794f885b",
+      "server": "511.150333.xyz",
+      "server_port": 21004,
+      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
       "tls": {
         "enabled": true,
         "server_name": "www.cloudflare.com",
@@ -487,8 +453,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
-          "short_id": "d9a6b52e98121db2"
+          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
+          "short_id": "2df2bd9d8366cef1"
         }
       }
     },
@@ -515,6 +481,126 @@
     {
       "type": "vless",
       "tag": "🇨🇦 加拿大 (Canada) 31 - xiaoyu",
+      "server": "511.150333.xyz",
+      "server_port": 21004,
+      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
+          "short_id": "2df2bd9d8366cef1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 32 - xiaoyu",
+      "server": "510.150333.xyz",
+      "server_port": 21002,
+      "uuid": "67952583-8572-42e1-943d-0602794f885b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
+          "short_id": "d9a6b52e98121db2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 33 - xiaoyu",
+      "server": "510.150333.xyz",
+      "server_port": 21004,
+      "uuid": "67952583-8572-42e1-943d-0602794f885b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
+          "short_id": "4e0418d648f86141"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 34 - xiaoyu",
+      "server": "103.106.229.37",
+      "server_port": 21004,
+      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
+          "short_id": "2df2bd9d8366cef1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 35 - xiaoyu",
+      "server": "510.150333.xyz",
+      "server_port": 21003,
+      "uuid": "67952583-8572-42e1-943d-0602794f885b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA",
+          "short_id": "f3602a3a1cf928b7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 36 - xiaoyu",
+      "server": "511.150333.xyz",
+      "server_port": 21003,
+      "uuid": "41b1c169-5905-4d98-b6a6-56896c25737c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU",
+          "short_id": "bab49aa4c2a88d27"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 37 - xiaoyu",
       "server": "510.150333.xyz",
       "server_port": 21001,
       "uuid": "67952583-8572-42e1-943d-0602794f885b",
@@ -534,8 +620,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 32 - xiaoyu",
-      "server": "67.159.46.132",
+      "tag": "🇨🇦 加拿大 (Canada) 38 - xiaoyu",
+      "server": "67.159.49.26",
       "server_port": 2093,
       "uuid": "0b418782-e023-447e-ba99-e66b84ff118d",
       "flow": "xtls-rprx-vision",
@@ -555,8 +641,29 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇦 加拿大 (Canada) 33 - xiaoyu",
-      "server": "67.159.49.37",
+      "tag": "🇨🇦 加拿大 (Canada) 39 - xiaoyu",
+      "server": "67.159.49.34",
+      "server_port": 2093,
+      "uuid": "0b418782-e023-447e-ba99-e66b84ff118d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM",
+          "short_id": "8a9725533854a7e8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇦 加拿大 (Canada) 40 - xiaoyu",
+      "server": "67.159.49.36",
       "server_port": 2093,
       "uuid": "0b418782-e023-447e-ba99-e66b84ff118d",
       "flow": "xtls-rprx-vision",
@@ -611,7 +718,14 @@
         "🇨🇦 加拿大 (Canada) 30 - xiaoyu",
         "🇨🇦 加拿大 (Canada) 31 - xiaoyu",
         "🇨🇦 加拿大 (Canada) 32 - xiaoyu",
-        "🇨🇦 加拿大 (Canada) 33 - xiaoyu"
+        "🇨🇦 加拿大 (Canada) 33 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 34 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 35 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 36 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 37 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 38 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 39 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 40 - xiaoyu"
       ]
     },
     {
@@ -650,7 +764,14 @@
         "🇨🇦 加拿大 (Canada) 30 - xiaoyu",
         "🇨🇦 加拿大 (Canada) 31 - xiaoyu",
         "🇨🇦 加拿大 (Canada) 32 - xiaoyu",
-        "🇨🇦 加拿大 (Canada) 33 - xiaoyu"
+        "🇨🇦 加拿大 (Canada) 33 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 34 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 35 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 36 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 37 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 38 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 39 - xiaoyu",
+        "🇨🇦 加拿大 (Canada) 40 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

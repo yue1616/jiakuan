@@ -14,7 +14,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -38,7 +38,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -54,6 +54,54 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
+      "server": "193.233.253.180",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaoyu",
+      "server": "193.233.253.180",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu",
       "server": "193.233.253.180",
       "server_port": 8444,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -77,65 +125,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaoyu",
-      "server": "193.233.253.180",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu",
-      "server": "193.233.253.180",
-      "server_port": 8444,
-      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 06 - xiaoyu",
-      "server": "45.9.118.177",
-      "server_port": 8443,
-      "uuid": "88c4ce99-31f1-4329-912d-2a3564b3d58b",
+      "server": "147.45.47.83",
+      "server_port": 443,
+      "uuid": "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "apple.com",
+        "server_name": "ozon.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -176,7 +176,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -186,16 +186,197 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 09 - xiaoyu",
-      "server": "195.133.5.194",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
+      "server": "103.91.147.247",
+      "server_port": 443,
+      "uuid": "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 10 - xiaoyu",
+      "server": "193.223.104.124",
+      "server_port": 443,
+      "uuid": "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 11 - xiaoyu",
+      "server": "193.223.104.127",
+      "server_port": 443,
+      "uuid": "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 12 - xiaoyu",
+      "server": "45.9.118.177",
+      "server_port": 8443,
+      "uuid": "88c4ce99-31f1-4329-912d-2a3564b3d58b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 13 - xiaoyu",
+      "server": "147.45.47.83",
+      "server_port": 443,
+      "uuid": "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 14 - xiaoyu",
+      "server": "193.223.104.124",
+      "server_port": 443,
+      "uuid": "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 15 - xiaoyu",
+      "server": "45.151.71.164",
+      "server_port": 443,
+      "uuid": "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "abuse.ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 16 - xiaoyu",
+      "server": "45.151.71.152",
+      "server_port": 443,
+      "uuid": "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "abuse.ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 17 - xiaoyu",
+      "server": "45.151.71.147",
+      "server_port": 443,
+      "uuid": "8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "abuse.ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 18 - xiaoyu",
       "server": "77.90.61.135",
       "server_port": 443,
       "uuid": "8815925b-c7b8-4f94-9c24-9dc864f63a29",
@@ -204,7 +385,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -215,47 +396,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 11 - xiaoyu",
-      "server": "xsru1.ddnsfree.com",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "tag": "🇷🇺 俄罗斯 (Russia) 19 - xiaoyu",
+      "server": "194.87.143.165",
+      "server_port": 8443,
+      "uuid": "f9613819-d2fe-4b3a-a2e6-40c184c6854c",
       "tls": {
         "enabled": true,
-        "server_name": "xsru1.ddnsfree.com",
+        "server_name": "wsru1.wba-pn.ru",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
+        "type": "ws",
+        "path": "/"
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 12 - xiaoyu",
-      "server": "147.45.175.81",
-      "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
-      "tls": {
-        "enabled": true,
-        "server_name": "xsru1.ddnsfree.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 13 - xiaoyu",
+      "tag": "🇷🇺 俄罗斯 (Russia) 20 - xiaoyu",
       "server": "46.243.142.104",
       "server_port": 443,
       "uuid": "9ba53795-4356-40ab-8067-76ec2ae2a3d8",
@@ -281,38 +442,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 14 - xiaoyu",
-      "server": "194.87.143.165",
-      "server_port": 8443,
-      "uuid": "f9613819-d2fe-4b3a-a2e6-40c184c6854c",
-      "tls": {
-        "enabled": true,
-        "server_name": "wsru1.wba-pn.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "194.87.143.165"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 15 - xiaoyu",
-      "server": "176.32.33.153",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa"
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 16 - xiaoyu",
+      "tag": "🇷🇺 俄罗斯 (Russia) 21 - xiaoyu",
       "server": "77.90.61.135",
       "server_port": 443,
       "uuid": "8815925b-c7b8-4f94-9c24-9dc864f63a29",
@@ -321,7 +451,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -350,7 +480,12 @@
         "🇷🇺 俄罗斯 (Russia) 13 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 14 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 15 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 16 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 16 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 17 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 18 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 19 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 20 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 21 - xiaoyu"
       ]
     },
     {
@@ -372,7 +507,12 @@
         "🇷🇺 俄罗斯 (Russia) 13 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 14 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 15 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 16 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 16 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 17 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 18 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 19 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 20 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 21 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

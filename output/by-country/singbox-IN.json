@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇮🇳 印度 (India) 01 - xiaoyu",
+      "server": "in.tronsg.com",
+      "server_port": 443,
+      "password": "Trojan@82164024",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02 - xiaoyu",
       "server": "in.smrtai.top",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
@@ -24,8 +36,23 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 03 - xiaoyu",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "in-152.67.8.205-0200"
+        }
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 04 - xiaoyu",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -45,21 +72,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 - xiaoyu",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 05 - xiaoyu",
       "server": "13.140.56.100",
       "server_port": 14430,
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
@@ -70,7 +83,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 06 - xiaoyu",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -90,7 +103,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 06 - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 07 - xiaoyu",
       "server": "194.61.31.126",
       "server_port": 2053,
       "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
@@ -110,22 +123,15 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 07 - xiaoyu",
-      "server": "5.253.29.254",
-      "server_port": 10443,
-      "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d"
-    },
-    {
-      "type": "vmess",
       "tag": "🇮🇳 印度 (India) 08 - xiaoyu",
-      "server": "152.67.8.205",
-      "server_port": 80,
-      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
-      "security": "auto",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
       "transport": {
         "type": "ws",
+        "path": "/vless",
         "headers": {
-          "Host": "in-152.67.8.205-0204"
+          "Host": "13.140.56.100"
         }
       }
     },

@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01 - xiaoyu
-  server: 149.22.95.183
-  port: 443
+  server: 51.222.136.236
+  port: 8882
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
 - name: 🇨🇦 加拿大 (Canada) 02 - xiaoyu
   server: 134.195.196.211
   port: 18000
@@ -28,40 +28,28 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇨🇦 加拿大 (Canada) 04 - xiaoyu
-  server: 138.197.141.58
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 05 - xiaoyu
-  server: 51.222.136.236
-  port: 8882
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇨🇦 加拿大 (Canada) 06 - xiaoyu
   server: 137.184.174.93
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 07 - xiaoyu
-  server: 38.145.220.58
-  port: 2093
+- name: 🇨🇦 加拿大 (Canada) 05 - xiaoyu
+  server: 155.138.138.2
+  port: 443
   udp: true
-  type: vless
-  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
-    short-id: 8a9725533854a7e8
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 08 - xiaoyu
+  type: trojan
+  password: Trojan@82164024
+  sni: ca.tronsg.com
+  skip-cert-verify: false
+- name: 🇨🇦 加拿大 (Canada) 06 - xiaoyu
+  server: 138.197.141.58
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 (Canada) 07 - xiaoyu
   server: 66.70.179.198
   port: 2053
   udp: true
@@ -72,7 +60,15 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
     short-id: 83f8317a948bb769
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 08 - xiaoyu
+  server: ca.tronsg.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: ca.tronsg.com
+  skip-cert-verify: true
 - name: 🇨🇦 加拿大 (Canada) 09 - xiaoyu
   server: 66.70.179.198
   port: 2053
@@ -84,7 +80,7 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
     short-id: 83f8317a948bb769
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇨🇦 加拿大 (Canada) 10 - xiaoyu
   server: 66.70.179.198
   port: 2053
@@ -96,20 +92,15 @@ proxies:
     public-key: k4l6TxwkBbx9DhZAFpByq5rfCWFSgyOex3f_eFe9CWU
     short-id: 83f8317a948bb769
   servername: www.cloudflare.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 11 - xiaoyu
-  server: 209.200.246.148
+  server: ca.tronsg.com
   port: 443
   udp: true
-  type: vless
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  servername: www.cloudflare.com
-  client-fingerprint: random
+  type: trojan
+  password: Trojan@82164024
+  sni: ca.tronsg.com
+  skip-cert-verify: false
 - name: 🇨🇦 加拿大 (Canada) 12 - xiaoyu
   server: 209.200.246.148
   port: 443
@@ -122,7 +113,7 @@ proxies:
     public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
     short-id: f98843107912e782
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
 - name: 🇨🇦 加拿大 (Canada) 13 - xiaoyu
   server: 209.200.246.148
   port: 443
@@ -137,32 +128,27 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 14 - xiaoyu
-  server: milo.rubinaz.xyz
-  port: 8080
+  server: 209.200.246.148
+  port: 443
   udp: true
   type: vless
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-- name: 🇨🇦 加拿大 (Canada) 15 - xiaoyu
-  server: milo.networkforexir.site
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-- name: 🇨🇦 加拿大 (Canada) 16 - xiaoyu
-  server: 50.7.245.205
-  port: 2093
-  udp: true
-  type: vless
-  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
-    short-id: 8a9725533854a7e8
-  servername: www.apple.com
-  client-fingerprint: ''
-- name: 🇨🇦 加拿大 (Canada) 17 - xiaoyu
-  server: 50.7.245.204
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 15 - xiaoyu
+  server: 149.22.95.183
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇨🇦 加拿大 (Canada) 16 - xiaoyu
+  server: 38.145.220.58
   port: 2093
   udp: true
   type: vless
@@ -174,7 +160,19 @@ proxies:
     short-id: 8a9725533854a7e8
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 17 - xiaoyu
+  server: milo.networkforexir.site
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
 - name: 🇨🇦 加拿大 (Canada) 18 - xiaoyu
+  server: milo.rubinaz.xyz
+  port: 8080
+  udp: true
+  type: vless
+  uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
+- name: 🇨🇦 加拿大 (Canada) 19 - xiaoyu
   server: 213.152.165.203
   port: 2093
   udp: true
@@ -187,31 +185,66 @@ proxies:
     short-id: 8a9725533854a7e8
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 19 - xiaoyu
-  server: 511.150333.xyz
-  port: 21002
-  udp: true
-  type: vless
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  tls: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: 3ab8d93dd9b1a5be
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 20 - xiaoyu
-  server: 510.150333.xyz
-  port: 21004
+  server: 50.7.245.204
+  port: 2093
   udp: true
   type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
+  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: 4e0418d648f86141
-  servername: www.cloudflare.com
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: 8a9725533854a7e8
+  servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 21 - xiaoyu
+  server: 50.7.245.205
+  port: 2093
+  udp: true
+  type: vless
+  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: 8a9725533854a7e8
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 22 - xiaoyu
+  server: 67.159.47.236
+  port: 2093
+  udp: true
+  type: vless
+  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: 8a9725533854a7e8
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 23 - xiaoyu
+  server: 67.159.46.132
+  port: 2093
+  udp: true
+  type: vless
+  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: 8a9725533854a7e8
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 24 - xiaoyu
+  server: 51.222.200.165
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇨🇦 加拿大 (Canada) 25 - xiaoyu
   server: 511.150333.xyz
   port: 21001
   udp: true
@@ -223,7 +256,19 @@ proxies:
     short-id: ab39fc68ab3dee81
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 22 - xiaoyu
+- name: 🇨🇦 加拿大 (Canada) 26 - xiaoyu
+  server: 511.150333.xyz
+  port: 21002
+  udp: true
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 3ab8d93dd9b1a5be
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 27 - xiaoyu
   server: 510.150333.xyz
   port: 21004
   udp: true
@@ -235,68 +280,20 @@ proxies:
     short-id: 4e0418d648f86141
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 23 - xiaoyu
-  server: 511.150333.xyz
-  port: 21003
-  udp: true
-  type: vless
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  tls: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: bab49aa4c2a88d27
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 24 - xiaoyu
-  server: 510.150333.xyz
-  port: 21003
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: f3602a3a1cf928b7
-  servername: www.cloudflare.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 25 - xiaoyu
-  server: 511.150333.xyz
-  port: 21004
-  udp: true
-  type: vless
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  tls: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: 2df2bd9d8366cef1
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 26 - xiaoyu
-  server: 510.150333.xyz
-  port: 21003
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: f3602a3a1cf928b7
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 27 - xiaoyu
-  server: 511.150333.xyz
-  port: 21004
-  udp: true
-  type: vless
-  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
-  tls: true
-  reality-opts:
-    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
-    short-id: 2df2bd9d8366cef1
-  servername: www.cloudflare.com
-  client-fingerprint: random
 - name: 🇨🇦 加拿大 (Canada) 28 - xiaoyu
-  server: 103.106.229.37
+  server: 510.150333.xyz
+  port: 21003
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: f3602a3a1cf928b7
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 29 - xiaoyu
+  server: 511.150333.xyz
   port: 21004
   udp: true
   type: vless
@@ -305,18 +302,6 @@ proxies:
   reality-opts:
     public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
     short-id: 2df2bd9d8366cef1
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 29 - xiaoyu
-  server: 510.150333.xyz
-  port: 21002
-  udp: true
-  type: vless
-  uuid: 67952583-8572-42e1-943d-0602794f885b
-  tls: true
-  reality-opts:
-    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
-    short-id: d9a6b52e98121db2
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 30 - xiaoyu
@@ -332,6 +317,78 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 31 - xiaoyu
+  server: 511.150333.xyz
+  port: 21004
+  udp: true
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 2df2bd9d8366cef1
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 32 - xiaoyu
+  server: 510.150333.xyz
+  port: 21002
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: d9a6b52e98121db2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 33 - xiaoyu
+  server: 510.150333.xyz
+  port: 21004
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: 4e0418d648f86141
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 34 - xiaoyu
+  server: 103.106.229.37
+  port: 21004
+  udp: true
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: 2df2bd9d8366cef1
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇨🇦 加拿大 (Canada) 35 - xiaoyu
+  server: 510.150333.xyz
+  port: 21003
+  udp: true
+  type: vless
+  uuid: 67952583-8572-42e1-943d-0602794f885b
+  tls: true
+  reality-opts:
+    public-key: IRaSB0ImgMO7fsrIbh9i3Pz-bgo5F1jKeC51Fpfs9AA
+    short-id: f3602a3a1cf928b7
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 36 - xiaoyu
+  server: 511.150333.xyz
+  port: 21003
+  udp: true
+  type: vless
+  uuid: 41b1c169-5905-4d98-b6a6-56896c25737c
+  tls: true
+  reality-opts:
+    public-key: HZwHZBP3x4Yo4UQiHcypRJIU_UdZY5OAapQM8RUqVAU
+    short-id: bab49aa4c2a88d27
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 37 - xiaoyu
   server: 510.150333.xyz
   port: 21001
   udp: true
@@ -343,8 +400,8 @@ proxies:
     short-id: a51c3ccb2320024a
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 32 - xiaoyu
-  server: 67.159.46.132
+- name: 🇨🇦 加拿大 (Canada) 38 - xiaoyu
+  server: 67.159.49.26
   port: 2093
   udp: true
   type: vless
@@ -356,8 +413,21 @@ proxies:
     short-id: 8a9725533854a7e8
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 33 - xiaoyu
-  server: 67.159.49.37
+- name: 🇨🇦 加拿大 (Canada) 39 - xiaoyu
+  server: 67.159.49.34
+  port: 2093
+  udp: true
+  type: vless
+  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: C_GA8wVjeLmyqLK6em5OHn4WPlsbndA-RyvyNU1aGFM
+    short-id: 8a9725533854a7e8
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 40 - xiaoyu
+  server: 67.159.49.36
   port: 2093
   udp: true
   type: vless
@@ -407,6 +477,13 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 31 - xiaoyu
   - 🇨🇦 加拿大 (Canada) 32 - xiaoyu
   - 🇨🇦 加拿大 (Canada) 33 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 34 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 35 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 36 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 37 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 38 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 39 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 40 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -445,5 +522,12 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 31 - xiaoyu
   - 🇨🇦 加拿大 (Canada) 32 - xiaoyu
   - 🇨🇦 加拿大 (Canada) 33 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 34 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 35 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 36 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 37 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 38 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 39 - xiaoyu
+  - 🇨🇦 加拿大 (Canada) 40 - xiaoyu
 rules:
 - MATCH,PROXIES

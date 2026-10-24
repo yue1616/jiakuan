@@ -14,14 +14,8 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: a39ca173b57ac7021b08bf3e3de9f1f6
-- name: 🇺🇸 美国 (United States) 02 (家宽) R50 - xiaoyu
-  server: 23.160.56.99
-  port: 2087
-  udp: true
-  type: vless
-  uuid: f1e7eafa-0d6f-441e-8565-29f34171aef2
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
-  server: hinet1.2yly.com
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
+  server: 61.230.160.34
   port: 24215
   udp: true
   type: vless
@@ -30,22 +24,20 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
-  - 🇺🇸 美国 (United States) 02 (家宽) R50 - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
-  - 🇺🇸 美国 (United States) 02 (家宽) R50 - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

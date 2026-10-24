@@ -6,20 +6,6 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - xiaoyu",
-      "server": "V2rAy.SiMsPeEdUp.CoM",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "aIs.SpEeDtEsT.nEt"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaoyu",
       "server": "103.86.49.57",
       "server_port": 80,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
@@ -27,23 +13,34 @@
         "type": "ws",
         "path": "/ws",
         "headers": {
-          "Host": "aIs.SpEeDtEsT.nEt"
+          "Host": "ais.speedtest.net"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 02 - xiaoyu",
+      "server": "support.zoom.us.v2ray.simspeedup.com",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "support.zoom.us.v2ray.simspeedup.com"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 03 - xiaoyu",
-      "server": "188.114.97.6",
+      "server": "104.18.26.90",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "tls": {
         "enabled": true,
         "server_name": "v2ray.simspeedup.com",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -60,6 +57,17 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 04 - xiaoyu",
+      "server": "v2ray.simspeedup.com",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "transport": {
+        "type": "ws",
+        "path": "/ws"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 05 - xiaoyu",
       "server": "188.114.98.0",
       "server_port": 443,
       "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
@@ -84,7 +92,8 @@
         "🇹🇭 泰国 (Thailand) 01 - xiaoyu",
         "🇹🇭 泰国 (Thailand) 02 - xiaoyu",
         "🇹🇭 泰国 (Thailand) 03 - xiaoyu",
-        "🇹🇭 泰国 (Thailand) 04 - xiaoyu"
+        "🇹🇭 泰国 (Thailand) 04 - xiaoyu",
+        "🇹🇭 泰国 (Thailand) 05 - xiaoyu"
       ]
     },
     {
@@ -94,7 +103,8 @@
         "🇹🇭 泰国 (Thailand) 01 - xiaoyu",
         "🇹🇭 泰国 (Thailand) 02 - xiaoyu",
         "🇹🇭 泰国 (Thailand) 03 - xiaoyu",
-        "🇹🇭 泰国 (Thailand) 04 - xiaoyu"
+        "🇹🇭 泰国 (Thailand) 04 - xiaoyu",
+        "🇹🇭 泰国 (Thailand) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
