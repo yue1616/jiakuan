@@ -13,6 +13,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 02 - xiaoyu
   server: free.sahanwickramasinghe.me
   port: 80
@@ -22,10 +24,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 03 - xiaoyu
-  server: free.sahanwickramasinghe.me
+  server: support.zoom.us
   port: 80
   udp: true
   type: vless
@@ -33,23 +33,33 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 04 - xiaoyu
-  server: free.sahanwickramasinghe.me
-  port: 80
+  server: 51.75.67.209
+  port: 8443
   udp: true
   type: vless
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 05 - xiaoyu
-  server: support.zoom.us
-  port: 80
+  server: 51.75.67.209
+  port: 8443
   udp: true
   type: vless
-  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
@@ -67,10 +77,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 07 - xiaoyu
-  server: 51.75.67.209
+  server: free.sahanwickramasinghe.me
   port: 8443
   udp: true
   type: vless
@@ -78,12 +86,10 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 08 - xiaoyu
   server: free.sahanwickramasinghe.me
   port: 8443
@@ -96,6 +102,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 09 - xiaoyu
   server: free.sahanwickramasinghe.me
   port: 8443
@@ -120,10 +128,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 11 - xiaoyu
-  server: 51.75.67.209
+  server: free.sahanwickramasinghe.me
   port: 8443
   udp: true
   type: vless
@@ -131,6 +137,7 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
@@ -150,72 +157,6 @@ proxies:
     headers:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 13 - xiaoyu
-  server: 51.75.67.209
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 14 - xiaoyu
-  server: free.sahanwickramasinghe.me
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 15 - xiaoyu
-  server: 51.75.67.209
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 16 - xiaoyu
-  server: 51.75.67.209
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 17 - xiaoyu
-  server: 51.75.67.209
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 18 - xiaoyu
   server: 104.17.71.206
   port: 8443
   udp: true
@@ -230,7 +171,65 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 19 - xiaoyu
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 14 - xiaoyu
+  server: 104.17.74.206
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 15 - xiaoyu
+  server: centurylink.es
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 16 - xiaoyu
+  server: centurylink.es
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 17 - xiaoyu
+  server: 104.17.74.206
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 18 - xiaoyu
   server: 104.17.72.206
   port: 8443
   udp: true
@@ -239,6 +238,22 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 19 - xiaoyu
+  server: centurylink.es
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
@@ -274,7 +289,7 @@ proxies:
     headers:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 22 - xiaoyu
-  server: centurylink.es
+  server: 104.17.73.206
   port: 8443
   udp: true
   type: vless
@@ -282,7 +297,6 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
@@ -297,57 +311,23 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 24 - xiaoyu
-  server: centurylink.es
-  port: 8443
+  server: support.zoom.us
+  port: 80
   udp: true
   type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   network: ws
   ws-opts:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 25 - xiaoyu
-  server: 104.17.70.206
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 26 - xiaoyu
-  server: 104.17.74.206
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 27 - xiaoyu
   server: 104.17.73.206
   port: 8443
   udp: true
@@ -362,8 +342,47 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 26 - xiaoyu
+  server: 51.75.67.209
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 27 - xiaoyu
+  server: 51.75.67.209
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 28 - xiaoyu
-  server: 104.17.72.206
+  server: 51.75.67.209
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 29 - xiaoyu
+  server: 104.17.70.206
   port: 8443
   udp: true
   type: vless
@@ -377,21 +396,8 @@ proxies:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
-- name: 🇱🇰 斯里兰卡 (Sri Lanka) 29 - xiaoyu
-  server: free.sahanwickramasinghe.me
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
-  tls: true
-  servername: free.sahanwickramasinghe.me
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 30 - xiaoyu
-  server: centurylink.es
+  server: 104.17.72.206
   port: 8443
   udp: true
   type: vless
@@ -413,11 +419,21 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: free.sahanwickramasinghe.me
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 32 - xiaoyu
+  server: free.sahanwickramasinghe.me
+  port: 80
+  udp: true
+  type: vless
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -454,6 +470,7 @@ proxy-groups:
   - 🇱🇰 斯里兰卡 (Sri Lanka) 29 - xiaoyu
   - 🇱🇰 斯里兰卡 (Sri Lanka) 30 - xiaoyu
   - 🇱🇰 斯里兰卡 (Sri Lanka) 31 - xiaoyu
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 32 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -490,5 +507,6 @@ proxy-groups:
   - 🇱🇰 斯里兰卡 (Sri Lanka) 29 - xiaoyu
   - 🇱🇰 斯里兰卡 (Sri Lanka) 30 - xiaoyu
   - 🇱🇰 斯里兰卡 (Sri Lanka) 31 - xiaoyu
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 32 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -20,18 +20,52 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽) R50 - xiaoyu",
+      "server": "23.160.56.99",
+      "server_port": 2087,
+      "uuid": "f1e7eafa-0d6f-441e-8565-29f34171aef2"
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 03 (家宽) - xiaoyu",
+      "server": "104.21.1.78",
+      "server_port": 443,
+      "uuid": "65d3f9b3-d289-4a8e-9c87-90bba156de30",
+      "tls": {
+        "enabled": true,
+        "server_name": "ld.235231.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ld.235231.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
+        "🇺🇸 美国 (United States) 02 (家宽) R50 - xiaoyu",
+        "🇺🇸 美国 (United States) 03 (家宽) - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
+        "🇺🇸 美国 (United States) 02 (家宽) R50 - xiaoyu",
+        "🇺🇸 美国 (United States) 03 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -7,29 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu",
       "server": "213.183.63.60",
-      "server_port": 9054,
-      "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu",
-      "server": "213.183.63.60",
       "server_port": 9061,
       "method": "aes-256-cfb",
       "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu",
-      "server": "213.183.63.60",
-      "server_port": 9064,
-      "method": "aes-256-cfb",
-      "password": "cp8pRSUAyLhTfVWH"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu",
       "server": "213.183.63.60",
       "server_port": 9049,
       "method": "aes-256-cfb",
@@ -37,23 +21,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu",
-      "server": "213.183.63.60",
-      "server_port": 9085,
-      "method": "aes-256-cfb",
-      "password": "9ej82EKe2gq7gLAM"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu",
-      "server": "213.183.63.60",
-      "server_port": 9066,
-      "method": "aes-256-cfb",
-      "password": "2KUaE2a8NWTvuCZ3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu",
       "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
@@ -61,7 +29,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
       "server": "213.183.63.60",
       "server_port": 9098,
       "method": "aes-256-cfb",
@@ -69,11 +37,27 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 09 - xiaoyu",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu",
       "server": "213.183.63.60",
-      "server_port": 9029,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
+      "password": "cp8pRSUAyLhTfVWH"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu",
+      "server": "213.183.63.60",
+      "server_port": 9054,
+      "method": "aes-256-cfb",
+      "password": "VcFuyXvND2yQWSFY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu",
+      "server": "213.183.63.60",
+      "server_port": 9066,
+      "method": "aes-256-cfb",
+      "password": "2KUaE2a8NWTvuCZ3"
     },
     {
       "type": "selector",
@@ -86,9 +70,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 09 - xiaoyu"
+        "🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu"
       ]
     },
     {
@@ -101,9 +83,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 09 - xiaoyu"
+        "🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

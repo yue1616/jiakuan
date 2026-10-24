@@ -11,7 +11,7 @@ proxies:
   type: hysteria2
   password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
   sni: fi.67chat.ru
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   server: 2.26.3.75
   port: 443
@@ -19,8 +19,23 @@ proxies:
   type: hysteria2
   password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
   sni: fi.67chat.ru
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
+  server: 31.77.202.166
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
+  tls: true
+  reality-opts:
+    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
+    short-id: 07f508fe5d2355d3
+  servername: finland02.azotvpn.xyz
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
   server: 2.26.106.232
   port: 8443
   udp: true
@@ -35,7 +50,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
   server: finland02.azotvpn.xyz
   port: 8443
   udp: true
@@ -50,18 +65,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
-  server: 95.216.27.15
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
   server: 95.216.27.15
   port: 2053
@@ -96,7 +99,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 09 - xiaoyu
   server: 45.144.234.157
   port: 14430
@@ -107,19 +110,28 @@ proxies:
   ws-opts:
     path: /vless
 - name: 🇫🇮 芬兰 (Finland) 10 - xiaoyu
-  server: 31.77.199.147
-  port: 4443
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
   reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 11 - xiaoyu
+  server: static.86.39.13.49.clients.your-server.de
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6c688f63-fad4-45d8-a6a1-1e978ed26b8b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.75.209.109.65.clients.your-server.de
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 12 - xiaoyu
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -132,6 +144,49 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 13 - xiaoyu
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 14 - xiaoyu
+  server: hw3.divarkhaghazi.com
+  port: 465
+  udp: true
+  type: vless
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com.
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 15 - xiaoyu
+  server: uk9.998998.best
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  tls: true
+  servername: server8.9966338.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /fdtiouasopeiyre0r95y8
+    headers:
+      Host: server8.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -148,6 +203,10 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 10 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 11 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 12 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 13 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 14 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 15 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -164,5 +223,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 10 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 11 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 12 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 13 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 14 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 15 - xiaoyu
 rules:
 - MATCH,PROXIES

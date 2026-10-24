@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇳 印度 (India) 01 (家宽) - xiaoyu
-  server: 122.176.216.52
+- name: 🇮🇶 IQ 01 - xiaoyu
+  server: 104.25.5.52
   port: 443
   udp: true
   type: vless
-  uuid: 16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+  uuid: 93fa8bdb-9cca-4a3e-8355-b7c12e4f595e
   tls: true
-  servername: app-6ada5023.deploy.meerasolution.com
+  servername: fornewiran.ade-1000.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
+    path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
     headers:
-      Host: app-6ada5023.deploy.meerasolution.com
+      Host: fornewiran.ade-1000.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇳 印度 (India) 01 (家宽) - xiaoyu
+  - 🇮🇶 IQ 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇳 印度 (India) 01 (家宽) - xiaoyu
+  - 🇮🇶 IQ 01 - xiaoyu
 rules:
 - MATCH,PROXIES
