@@ -15,7 +15,7 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: safari
+  client-fingerprint: ios
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -30,7 +30,7 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -45,11 +45,36 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+  server: 153.56.210.134
+  port: 34121
+  udp: true
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
+  server: 62.133.63.45
+  port: 8444
+  udp: true
+  type: vless
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  servername: github.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
   server: 62.133.63.45
   port: 8444
   udp: true
@@ -63,17 +88,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
-  server: 153.56.210.134
-  port: 34121
-  udp: true
-  type: hysteria2
-  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
-- name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
   server: 185.98.63.6
   port: 8443
   udp: true
@@ -85,8 +100,8 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
-  server: 45.151.71.147
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
+  server: 45.151.71.152
   port: 443
   udp: true
   type: vless
@@ -96,19 +111,6 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: abuse.ozon.ru
-  client-fingerprint: ''
-- name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
-  server: 78.135.73.47
-  port: 443
-  udp: true
-  type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
   client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 09 - xiaoyu
   server: 151.241.226.201
@@ -121,7 +123,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 10 - xiaoyu
   server: 151.241.226.201
   port: 2053
@@ -133,7 +135,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 11 - xiaoyu
   server: 151.241.226.201
   port: 2053
@@ -158,7 +160,7 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 13 - xiaoyu
   server: 78.135.73.47
   port: 443
@@ -171,8 +173,21 @@ proxies:
     public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
     short-id: f46cd3ea3d1eb72d
   servername: www.datadoghq.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 14 - xiaoyu
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
   server: 177.3.208.65
   port: 443
   udp: true
@@ -184,7 +199,60 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-tr
-- name: 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
+    headers:
+      Host: tgmansion.site
+- name: 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
+  server: trend.eidoslab.link
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: p7X0vRL9R-23Ey-MZZZj7FY0g87nQq0Jzc01DwuryRk
+    short-id: 7597c5df264bcc10
+  servername: trend.eidoslab.link
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
+  server: 177.3.208.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vless-tr
+- name: 🇹🇷 土耳其 (Turkey) 18 - xiaoyu
+  server: 177.3.208.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vless-tr
+- name: 🇹🇷 土耳其 (Turkey) 19 - xiaoyu
+  server: 177.3.208.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-tr
+- name: 🇹🇷 土耳其 (Turkey) 20 - xiaoyu
   server: 177.3.208.65
   port: 443
   udp: true
@@ -199,34 +267,6 @@ proxies:
     path: /vless-tr
     headers:
       Host: tgmansion.site
-- name: 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
-  server: 177.3.208.65
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-tr
-- name: 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
-  server: 62.133.63.45
-  port: 8444
-  udp: true
-  type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -249,6 +289,9 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 18 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 19 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 20 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -271,5 +314,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 15 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 16 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 17 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 18 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 19 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 20 - xiaoyu
 rules:
 - MATCH,PROXIES

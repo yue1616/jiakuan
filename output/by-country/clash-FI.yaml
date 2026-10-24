@@ -21,17 +21,16 @@ proxies:
   sni: fi.67chat.ru
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
-  server: 95.216.27.15
-  port: 2053
+  server: 45.144.234.157
+  port: 14430
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
-  tls: true
-  reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: firefox
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
   server: 95.216.27.15
   port: 2053
@@ -45,32 +44,6 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
-  server: 185.119.81.7
-  port: 443
-  udp: true
-  type: vless
-  uuid: 2f5cfa10-43e5-4912-800d-557308a26a29
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 9BUlinkTIxNgD2Em4KShtEbXOjBKvz2mDwT1VqoeR1k
-    short-id: 80c4e0bda641d6c9
-  servername: ht689zw45oor.cloudydigital.net
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -82,66 +55,41 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: random
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaoyu
-  server: finlandlanzarotte.live
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaoyu
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
-  servername: finlandlanzarotte.live
-  client-fingerprint: qq
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 09 - xiaoyu
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇫🇮 芬兰 (Finland) 10 - xiaoyu
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 11 - xiaoyu
-  server: finp2g.yandex-api.store
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 78559873-84ef-4cab-a0b2-46d4cd20de4a
-  tls: true
-  servername: finp2g.yandex-api.store
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /assets
-- name: 🇫🇮 芬兰 (Finland) 12 - xiaoyu
-  server: hw3.divarkhaghazi.com
-  port: 465
-  udp: true
-  type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 13 - xiaoyu
   server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
@@ -156,22 +104,34 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 14 - xiaoyu
-  server: finp2g.yandex-api.store
-  port: 8443
+- name: 🇫🇮 芬兰 (Finland) 10 - xiaoyu
+  server: 31.77.199.147
+  port: 4443
   udp: true
   type: vless
-  uuid: 78559873-84ef-4cab-a0b2-46d4cd20de4a
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
   tls: true
-  servername: finp2g.yandex-api.store
-  skip-cert-verify: false
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
   client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 11 - xiaoyu
+  server: hw3.divarkhaghazi.com
+  port: 465
+  udp: true
+  type: vless
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  tls: true
+  servername: hw3.divarkhaghazi.com.
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /assets
+    path: /
     headers:
-      Host: finp2g.yandex-api.store
-- name: 🇫🇮 芬兰 (Finland) 15 - xiaoyu
+      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 12 - xiaoyu
   server: hw3.divarkhaghazi.com
   port: 465
   udp: true
@@ -186,7 +146,7 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 16 - xiaoyu
+- name: 🇫🇮 芬兰 (Finland) 13 - xiaoyu
   server: 177.3.214.156
   port: 443
   udp: true
@@ -198,19 +158,18 @@ proxies:
     public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
   servername: finlandlanzarotte.live
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 17 - xiaoyu
-  server: 31.77.199.147
-  port: 4443
+- name: 🇫🇮 芬兰 (Finland) 14 - xiaoyu
+  server: finlandlanzarotte.live
+  port: 443
   udp: true
   type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
+    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
+  servername: finlandlanzarotte.live
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -230,9 +189,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 12 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 13 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 14 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 15 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 16 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 17 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -252,8 +208,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 12 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 13 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 14 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 15 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 16 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 17 - xiaoyu
 rules:
 - MATCH,PROXIES

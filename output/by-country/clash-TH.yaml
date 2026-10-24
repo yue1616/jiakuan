@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇭 泰国 (Thailand) 01 - xiaoyu
-  server: 103.86.49.57
+  server: v2ray.simspeedup.com
   port: 80
   udp: true
   type: vless
@@ -14,7 +14,7 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: ais.speedtest.net
+      Host: v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 02 - xiaoyu
   server: support.zoom.us.v2ray.simspeedup.com
   port: 80
@@ -27,6 +27,39 @@ proxies:
     headers:
       Host: support.zoom.us.v2ray.simspeedup.com
 - name: 🇹🇭 泰国 (Thailand) 03 - xiaoyu
+  server: 103.86.49.57
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 泰国 (Thailand) 04 - xiaoyu
+  server: v2ray.simspeedup.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: ais.speedtest.net
+- name: 🇹🇭 泰国 (Thailand) 05 - xiaoyu
+  server: 103.86.49.57
+  port: 80
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: aIs.SpEeDtEsT.nEt
+- name: 🇹🇭 泰国 (Thailand) 06 - xiaoyu
   server: 104.18.26.90
   port: 443
   udp: true
@@ -41,17 +74,66 @@ proxies:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 04 - xiaoyu
-  server: v2ray.simspeedup.com
-  port: 80
+- name: 🇹🇭 泰国 (Thailand) 07 - xiaoyu
+  server: 104.16.10.185
+  port: 443
   udp: true
   type: vless
   uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
     path: /ws
-- name: 🇹🇭 泰国 (Thailand) 05 - xiaoyu
-  server: 188.114.98.0
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 08 - xiaoyu
+  server: 104.18.26.90
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 09 - xiaoyu
+  server: 104.18.26.90
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 10 - xiaoyu
+  server: 188.114.97.6
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  tls: true
+  servername: v2ray.simspeedup.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 11 - xiaoyu
+  server: 188.114.97.6
   port: 443
   udp: true
   type: vless
@@ -74,6 +156,12 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 03 - xiaoyu
   - 🇹🇭 泰国 (Thailand) 04 - xiaoyu
   - 🇹🇭 泰国 (Thailand) 05 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 06 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 07 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 08 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 09 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 10 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,5 +172,11 @@ proxy-groups:
   - 🇹🇭 泰国 (Thailand) 03 - xiaoyu
   - 🇹🇭 泰国 (Thailand) 04 - xiaoyu
   - 🇹🇭 泰国 (Thailand) 05 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 06 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 07 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 08 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 09 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 10 - xiaoyu
+  - 🇹🇭 泰国 (Thailand) 11 - xiaoyu
 rules:
 - MATCH,PROXIES

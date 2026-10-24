@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -36,7 +36,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -109,6 +109,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 06 - xiaoyu",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
+      "tls": {
+        "enabled": true,
+        "server_name": "tgmansion.site",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-il",
+        "headers": {
+          "Host": "tgmansion.site"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -117,7 +140,8 @@
         "🇮🇱 以色列 (Israel) 02 - xiaoyu",
         "🇮🇱 以色列 (Israel) 03 - xiaoyu",
         "🇮🇱 以色列 (Israel) 04 - xiaoyu",
-        "🇮🇱 以色列 (Israel) 05 - xiaoyu"
+        "🇮🇱 以色列 (Israel) 05 - xiaoyu",
+        "🇮🇱 以色列 (Israel) 06 - xiaoyu"
       ]
     },
     {
@@ -128,7 +152,8 @@
         "🇮🇱 以色列 (Israel) 02 - xiaoyu",
         "🇮🇱 以色列 (Israel) 03 - xiaoyu",
         "🇮🇱 以色列 (Israel) 04 - xiaoyu",
-        "🇮🇱 以色列 (Israel) 05 - xiaoyu"
+        "🇮🇱 以色列 (Israel) 05 - xiaoyu",
+        "🇮🇱 以色列 (Israel) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

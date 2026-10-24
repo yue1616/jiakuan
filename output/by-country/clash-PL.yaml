@@ -5,31 +5,23 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaoyu
-  server: 49.12.249.167
-  port: 147
+  server: 5.22.221.127
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 5uDrCF_iLoxCiRkKku6f7A
+  type: vless
+  uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
   server: site.teslamotor.site
   port: 20001
   udp: true
   type: vless
   uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
   server: 82.118.22.161
   port: 443
@@ -42,7 +34,32 @@ proxies:
     public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
     short-id: fa3ea655619a3e78
   servername: www.cloudflare.com
-  client-fingerprint: safari
+  client-fingerprint: random
+- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
+  server: 82.118.22.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  server: ru1.radiolumens.uk
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +69,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaoyu
   - 🇵🇱 波兰 (Poland) 03 - xiaoyu
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 05 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +80,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaoyu
   - 🇵🇱 波兰 (Poland) 03 - xiaoyu
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 05 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 02 - xiaoyu
   server: 185.95.231.156
   port: 443
@@ -29,7 +29,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 03 - xiaoyu
   server: 185.95.231.156
   port: 443
@@ -69,6 +69,21 @@ proxies:
     short-id: 7c
   servername: yahoo.com
   client-fingerprint: firefox
+- name: 🇮🇱 以色列 (Israel) 06 - xiaoyu
+  server: 177.3.208.65
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-il
+    headers:
+      Host: tgmansion.site
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +94,7 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 03 - xiaoyu
   - 🇮🇱 以色列 (Israel) 04 - xiaoyu
   - 🇮🇱 以色列 (Israel) 05 - xiaoyu
+  - 🇮🇱 以色列 (Israel) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,5 +105,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 03 - xiaoyu
   - 🇮🇱 以色列 (Israel) 04 - xiaoyu
   - 🇮🇱 以色列 (Israel) 05 - xiaoyu
+  - 🇮🇱 以色列 (Israel) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

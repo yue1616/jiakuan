@@ -9,11 +9,10 @@ proxies:
   port: 8444
   udp: true
   type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  uuid: a346c521-7a7f-452b-9356-a4893feb5982
   tls: true
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
   servername: github.com
   client-fingerprint: firefox
   network: grpc
@@ -30,7 +29,7 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: safari
+  client-fingerprint: ios
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -45,7 +44,7 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: ios
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -60,7 +59,7 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: chrome
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
@@ -69,28 +68,45 @@ proxies:
   port: 8444
   udp: true
   type: vless
-  uuid: a346c521-7a7f-452b-9356-a4893feb5982
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
   tls: true
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  server: 147.45.47.83
+  server: 193.233.253.180
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
+  servername: github.com
+  client-fingerprint: random
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  server: 201.24.121.243
   port: 443
   udp: true
   type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
+  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
   tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  servername: kk-ru24a1.testkknegr.online
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vlgrpc
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
   server: 193.160.141.2
   port: 8443
   udp: true
@@ -102,55 +118,7 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  server: 77.90.61.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
-  tls: true
-  reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  server: 103.91.147.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  server: 193.223.104.124
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: ''
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  server: 193.223.104.127
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   server: 45.9.118.177
   port: 8443
   udp: true
@@ -162,31 +130,19 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: apple.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
-  server: 147.45.47.83
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  server: 77.90.61.135
   port: 443
   udp: true
   type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
+  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
   tls: true
   reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
+    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
+    short-id: ce1dc482
+  servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
-  server: 193.223.104.124
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: ozon.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   server: 45.151.71.164
   port: 443
   udp: true
@@ -198,19 +154,7 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: abuse.ozon.ru
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  server: 45.151.71.152
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: abuse.ozon.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   server: 45.151.71.147
   port: 443
   udp: true
@@ -221,20 +165,15 @@ proxies:
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: abuse.ozon.ru
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
-  server: 77.90.61.135
-  port: 443
+  client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
-  tls: true
-  reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: rWIg16plgZ82V7MTNcw1UTgiYK4ooPUB95qVhKIwIDc=
+- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
   server: 194.87.143.165
   port: 8443
   udp: true
@@ -247,33 +186,31 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
-  server: 46.243.142.104
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
+  server: 194.87.143.165
+  port: 8443
   udp: true
   type: vless
-  uuid: 9ba53795-4356-40ab-8067-76ec2ae2a3d8
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   tls: true
-  servername: santehdv.site
+  servername: wsru1.wba-pn.ru
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: random
   network: ws
   ws-opts:
-    path: /media/stream/qUWu2oaFgxAw
-    headers:
-      Host: santehdv.site
-- name: 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
-  server: 77.90.61.135
+    path: /
+- name: 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
+  server: 147.45.47.83
   port: 443
   udp: true
   type: vless
-  uuid: 8815925b-c7b8-4f94-9c24-9dc864f63a29
+  uuid: 8a1f8853-9a71-4ef2-a64c-4f0a94c2e14b
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: XlEzAhUOUC-hZA2Uk2sctG5WR9lPeAUAHGNQVu9oAVg
-    short-id: ce1dc482
-  servername: www.cloudflare.com
-  client-fingerprint: ios
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: ozon.ru
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -295,11 +232,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -321,10 +253,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 15 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 16 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 17 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 18 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 19 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 20 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 21 - xiaoyu
 rules:
 - MATCH,PROXIES
