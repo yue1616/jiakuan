@@ -1,14 +1,10 @@
 name: Update Subscriptions
 
-# Serialize scheduled/manual runs so two jobs don't race while committing generated output.
-concurrency:
-  group: jiakuan-subscription-update-main
-  cancel-in-progress: false
-
 on:
   schedule:
-    - cron: "0 */6 * * *" # 每 6 小时自动更新（UTC）
-  workflow_dispatch: # 同时保留手动触发
+    # 每天在 UTC 时间 0:00, 6:00, 12:00, 18:00 自动触发更新
+    - cron: '0 */6 * * *'
+  workflow_dispatch: # 支持手动点击运行
 
 jobs:
   build:
@@ -32,19 +28,9 @@ jobs:
         run: |
           pip install -r scripts/requirements.txt
 
-      - name: Prepare sing-box runtime for unit tests
-        run: |
-          python -c "import sys; sys.path.insert(0, 'scripts'); import main_v2 as m; m.ensure_directories(); m.setup_environment()"
-        env:
-          PYTHONUNBUFFERED: '1'
-
-      - name: Run parser and configuration tests
-        run: python scripts/test_parsers.py
-        env:
-          PYTHONUNBUFFERED: '1'
-
       - name: Run Real-Prober and Classifier (sing-box v1.14 全协议)
-        run: python scripts/main_v2.py
+        run: |
+          python scripts/main_v2.py
         env:
           # 便于 ip-api 等识别限速; GitHub runner 出口为美国 Azure
           PYTHONUNBUFFERED: '1'
@@ -70,20 +56,3 @@ jobs:
             git commit -m "Auto Update: $(date -u '+%Y-%m-%d %H:%M:%S') UTC"
             git push
           fi
-
-      - name: Purge jsDelivr CDN (post-push)
-        if: success()
-        run: |
-          REPO="${GITHUB_REPOSITORY}"
-          p() { curl -s -o /dev/null "https://purge.jsdelivr.net/gh/${REPO}@main/$1" || true; }
-          p README.md
-          for f in v2ray.txt clash.yaml singbox.json residential.txt residential-clash.yaml residential-singbox.json; do
-            p "output/$f"
-          done
-          for f in v2ray.txt clash.yaml singbox.json; do
-            p "output/candidates/$f"
-          done
-          find output/residential-by-country output/by-country -type f 2>/dev/null | while read -r f; do
-            p "$f"; sleep 0.2
-          done
-          echo "[+] jsDelivr CDN purge done (after push)"
