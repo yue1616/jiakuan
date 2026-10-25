@@ -6,129 +6,26 @@
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaoyu",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "server": "46.28.71.135",
+      "server_port": 443,
+      "uuid": "7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "l97bke0sf1.hat.onl",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "v1.segment.UWfv4bkH4bz1Hs3u.ts"
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 02 - xiaoyu",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaoyu",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaoyu",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaoyu",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaoyu",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - xiaoyu",
       "server": "193.238.154.78",
       "server_port": 443,
       "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
@@ -153,12 +50,7 @@
       "outbounds": [
         "auto",
         "🇪🇸 西班牙 (Spain) 01 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 02 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 03 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 04 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 05 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 06 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 07 - xiaoyu"
+        "🇪🇸 西班牙 (Spain) 02 - xiaoyu"
       ]
     },
     {
@@ -166,12 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇸 西班牙 (Spain) 01 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 02 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 03 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 04 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 05 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 06 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 07 - xiaoyu"
+        "🇪🇸 西班牙 (Spain) 02 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
