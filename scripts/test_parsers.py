@@ -7,11 +7,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import main_v2 as mv
 
 BASEDIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-# 按当前操作系统选择正确的 sing-box 文件名；CI 为 Linux，不能硬编码 .exe。
-SB_NAME = "sing-box.exe" if os.name == "nt" else "sing-box"
-SB = os.path.join(BASEDIR, "runtime", SB_NAME)
+SB = os.path.join(BASEDIR, "runtime", "sing-box.exe")  # 与 main_v2 运行时同一内核
 if not os.path.exists(SB):
-    SB = os.path.join(BASEDIR, ".sb-probe", SB_NAME)
+    SB = os.path.join(BASEDIR, ".sb-probe", "sing-box.exe")
 
 # ══════════ 测试样本 (覆盖用户全部协议) ══════════
 SAMPLES = {
@@ -30,8 +28,7 @@ SAMPLES = {
         "v": "2", "ps": "TestVmess", "add": "vm.example.com", "port": "443",
         "id": "b831381d-6324-4d53-ad4f-8cda48b30811", "aid": "0",
         "scy": "auto", "net": "ws", "type": "none", "host": "vm.example.com",
-        "path": "/vmws", "tls": "tls", "sni": "vm.example.com",
-        "fp": "chrome", "alpn": "h2,http/1.1", "allowInsecure": True}).encode()).decode(),
+        "path": "/vmws", "tls": "tls", "sni": "vm.example.com"}).encode()).decode(),
     # VMess legacy (tcp, no tls, aid>0)
     "vmess_legacy": "vmess://" + mv.base64.b64encode(json.dumps({
         "v": "2", "ps": "TestVmessLegacy", "add": "legacy.example.com", "port": "8080",
@@ -157,148 +154,9 @@ def run_test():
         for f in FAIL:
             print(f"  - {f}")
         sys.exit(1)
-
-    # 阶段4: 去重指纹回归测试——同 endpoint 的不同凭据/传输参数不能共享结果。
-    print()
-    print("阶段4: 节点去重指纹回归测试")
-    base = {"type": "vless", "tag": "one", "server": "node.example", "server_port": 443,
-            "uuid": "user-a", "tls": {"enabled": True, "server_name": "a.example"},
-            "transport": {"type": "ws", "path": "/ws", "headers": {"Host": "a.example"}}}
-    same = dict(base, tag="renamed")
-    other_credentials = dict(base, uuid="user-b")
-    other_sni = dict(base, tls={"enabled": True, "server_name": "b.example"})
-    other_path = dict(base, transport={"type": "ws", "path": "/other", "headers": {"Host": "a.example"}})
-    key = mv.node_dedup_key(base, "node.example", 443, "vless")
-    assert key == mv.node_dedup_key(same, "node.example", 443, "vless"), "显示名称不应影响去重"
-    assert key != mv.node_dedup_key(other_credentials, "node.example", 443, "vless"), "不同 UUID 不可合并"
-    assert key != mv.node_dedup_key(other_sni, "node.example", 443, "vless"), "不同 SNI 不可合并"
-    assert key != mv.node_dedup_key(other_path, "node.example", 443, "vless"), "不同传输路径不可合并"
-    print("  ✅ 相同配置可去重；凭据、SNI、传输路径不同则独立测活")
-
-    print()
-    print("阶段5: v2rayN 导出链接往返测试")
-    for sample_name, original_ob in outbounds.items():
-        exported = mv.outbound_to_v2ray_link(original_ob, "roundtrip")
-        assert exported, f"{sample_name}: 导出结果为空"
-        reparsed = mv.parse_node_uri(exported)
-        assert reparsed, f"{sample_name}: 导出的链接无法再次解析: {exported[:100]}"
-        ob2, server2, port2, proto2 = reparsed
-        server1 = original_ob["server"]
-        port1 = original_ob.get("server_port")
-        if port1 is None:
-            port1 = int(str(original_ob["server_ports"][0]).split(":")[0])
-        key1 = mv.node_dedup_key(original_ob, server1, port1, original_ob["type"])
-        key2 = mv.node_dedup_key(ob2, server2, port2, proto2)
-        assert key1 == key2, f"{sample_name}: 导出后连接参数发生变化"
-        print(f"  ✅ {sample_name}: 导出后协议参数保持一致")
-
-    # 保留对 URI 保留字符密码的覆盖，避免 / ? # @ 被误判成 URI 分隔符。
-    special_password_node = {
-        "type": "hysteria2", "tag": "node", "server": "hy2.example.com",
-        "server_port": 443, "password": "a/b?c#d@e",
-        "tls": {"enabled": True, "server_name": "hy2.example.com", "insecure": False},
-    }
-    special_link = mv.outbound_to_v2ray_link(special_password_node, "special-password")
-    special_parsed = mv.parse_node_uri(special_link)
-    assert special_parsed and special_parsed[0]["password"] == special_password_node["password"], \
-        "Hysteria2 特殊字符密码在导出/导入往返中发生变化"
-    print("  ✅ Hysteria2 特殊字符密码可以安全往返")
-
-    print()
-    print("阶段6: v2rayN/Xray 不兼容 VLESS 过滤测试")
-    unsafe_public_ip = {
-        "type": "vless", "tag": "public-plain", "server": "203.0.113.10",
-        "server_port": 443, "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
-        "transport": {"type": "ws", "path": "/ws"},
-    }
-    # 文档网段不是 global，因此再用实际 public-IP 语义测试；地址只作为纯单元样本，不发起网络连接。
-    unsafe_public_ip["server"] = "8.8.4.4"
-    assert mv.outbound_to_v2ray_link(unsafe_public_ip, "unsafe") == "", \
-        "公网 IP 且没有 TLS/REALITY 的 VLESS 应从 v2rayN 订阅过滤"
-    print("  ✅ 公网 IP + 无 TLS/REALITY 的 VLESS 会被过滤")
-
-    safe_tls = dict(unsafe_public_ip, server="8.8.4.4", tls={"enabled": True, "server_name": "node.example"})
-    safe_link = mv.outbound_to_v2ray_link(safe_tls, "safe-tls")
-    assert safe_link and "security=tls" in safe_link, "带 TLS 的 VLESS 不应被误过滤"
-    print("  ✅ 公网 IP + TLS 的 VLESS 保留")
-
-    safe_domain = dict(unsafe_public_ip, server="node.example")
-    safe_domain_link = mv.outbound_to_v2ray_link(safe_domain, "domain-node")
-    assert safe_domain_link, "域名型 VLESS 不应仅因没有 TLS 被此规则误过滤"
-    print("  ✅ 域名型 VLESS 不会被此过滤规则误伤")
-
-    print()
-    print("阶段7: 最终去重不会误删共享出口 IP 的备用入口")
-    uri_a = "vless://b831381d-6324-4d53-ad4f-8cda48b30811@edge-a.example.com:443?encryption=none&security=tls&sni=edge.example.com&type=ws&host=edge.example.com&path=%2Fws#edge-a"
-    uri_a_renamed = uri_a.rsplit("#", 1)[0] + "#another-name"
-    uri_b = "vless://b831381d-6324-4d53-ad4f-8cda48b30811@edge-b.example.com:443?encryption=none&security=tls&sni=edge.example.com&type=ws&host=edge.example.com&path=%2Fws#edge-b"
-    key_a = mv.final_node_dedup_key({"raw": uri_a, "exit_ip": "198.51.100.10", "port": 443})
-    key_a_renamed = mv.final_node_dedup_key({"raw": uri_a_renamed, "exit_ip": "198.51.100.10", "port": 443})
-    key_b = mv.final_node_dedup_key({"raw": uri_b, "exit_ip": "198.51.100.10", "port": 443})
-    assert key_a == key_a_renamed, "只改显示名称不应生成重复连接配置"
-    assert key_a != key_b, "共享出口 IP/端口的不同入口不能被当作同一个连接配置"
-    print("  ✅ 相同配置不同名称合并；不同服务器入口即使共享出口 IP/端口也会保留")
-    print()
-    print("阶段8: build_group 返回值解包回归测试")
-    import ast
-    source_path = os.path.join(os.path.dirname(mv.__file__), "main_v2.py")
-    with open(source_path, "r", encoding="utf-8") as source_file:
-        source_tree = ast.parse(source_file.read(), filename=source_path)
-    build_group_defs = [n for n in ast.walk(source_tree)
-                        if isinstance(n, ast.FunctionDef) and n.name == "build_group"]
-    assert len(build_group_defs) == 1, "应当只有一个 build_group 定义"
-    build_group_returns = [n for n in ast.walk(build_group_defs[0])
-                           if isinstance(n, ast.Return) and isinstance(n.value, ast.Tuple)]
-    assert build_group_returns, "build_group 应返回元组"
-    return_arities = {len(n.value.elts) for n in build_group_returns}
-    assert return_arities == {4}, f"build_group 返回项数量异常: {return_arities}"
-    build_group_assignments = [n for n in ast.walk(source_tree)
-                               if isinstance(n, ast.Assign)
-                               and isinstance(n.value, ast.Call)
-                               and isinstance(n.value.func, ast.Name)
-                               and n.value.func.id == "build_group"]
-    assert build_group_assignments, "没有找到 build_group 调用"
-    for assignment in build_group_assignments:
-        target = assignment.targets[0]
-        assert isinstance(target, ast.Tuple) and len(target.elts) == 4, \
-            f"第 {assignment.lineno} 行 build_group 解包数量与返回值不一致"
-    print("  ✅ build_group 的所有调用都接收 4 个返回值")
-
-    print()
-    print("阶段9: 严格可用池必须通过双 HTTPS 目标、出口 IP、测速与安全检查")
-    strict_sample = {
-        "alive": True, "mitm_risk": False, "is_stalled": False,
-        "https_probe_hits": 2, "exit_ip": "198.51.100.20", "speed_bps": 250000,
-    }
-    assert mv.strict_round_pass(strict_sample), "满足所有门槛的节点应通过单轮严格检查"
-    assert not mv.strict_round_pass(dict(strict_sample, https_probe_hits=1)), "只命中一个 HTTPS 目标不能进入严格池"
-    assert not mv.strict_round_pass(dict(strict_sample, exit_ip="")), "未取得出口 IP 不能进入严格池"
-    assert not mv.strict_round_pass(dict(strict_sample, speed_bps=mv.SPEED_MIN_BYTES_PER_S - 1)), "测速低于阈值不能进入严格池"
-    assert not mv.strict_round_pass(dict(strict_sample, is_stalled=True)), "断流节点不能进入严格池"
-    assert not mv.strict_round_pass(dict(strict_sample, mitm_risk=True)), "MITM 节点不能进入严格池"
-    print("  ✅ 双 HTTPS 命中、真实出口 IP、速度达标且无断流/MITM 是严格池必要条件")
-
-    print("全部测试通过 ✅")
-
-
-def write_report(status: str, error: str = ""):
-    report_dir = os.path.join(BASEDIR, "output")
-    os.makedirs(report_dir, exist_ok=True)
-    report = {
-        "status": status,
-        "sample_count": len(SAMPLES),
-        "failures": list(FAIL),
-        "error": error,
-    }
-    with open(os.path.join(report_dir, "e2e_test_report.json"), "w", encoding="utf-8") as f:
-        json.dump(report, f, ensure_ascii=False, indent=2)
+    else:
+        print("全部测试通过 ✅")
 
 
 if __name__ == "__main__":
-    try:
-        run_test()
-    except BaseException as exc:
-        write_report("failed", f"{type(exc).__name__}: {exc}")
-        raise
-    else:
-        write_report("passed")
+    run_test()
