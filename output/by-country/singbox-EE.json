@@ -6,195 +6,48 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu",
-      "server": "ee-central.v8x2b.lol",
+      "server": "ee1.mycloud1.org",
       "server_port": 443,
-      "uuid": "846cedee-2a52-0001-a0b9-11850ead6a8b",
+      "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ee-central.v8x2b.lol",
+        "server_name": "ee1.mycloud1.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw",
-          "short_id": ""
+          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
+          "short_id": "afee962d"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
-      "server": "79.98.37.106",
+      "server": "ee1.mycloud1.org",
       "server_port": 443,
-      "uuid": "846cedee-2a52-0001-a0b9-11850ead6a8b",
+      "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ee-central.v8x2b.lol",
+        "server_name": "ee1.mycloud1.org",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw",
-          "short_id": ""
+          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
+          "short_id": "afee962d"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
-      "server": "79.98.37.106",
-      "server_port": 443,
-      "uuid": "846cedee-2a52-0001-a0b9-11850ead6a8b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee-central.v8x2b.lol",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
-      "server": "93.89.220.37",
-      "server_port": 443,
-      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ibm.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
-          "short_id": "e88cb983f3c97528"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu",
-      "server": "194.26.141.223",
-      "server_port": 443,
-      "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee1.mycloud1.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-          "short_id": "afee962d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu",
-      "server": "93.89.220.37",
-      "server_port": 443,
-      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ibm.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
-          "short_id": "e88cb983f3c97528"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaoyu",
-      "server": "ee1.mycloud1.org",
-      "server_port": 443,
-      "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee1.mycloud1.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-          "short_id": "afee962d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaoyu",
-      "server": "93.89.220.37",
-      "server_port": 443,
-      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ibm.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
-          "short_id": "e88cb983f3c97528"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 09 - xiaoyu",
-      "server": "ee1.mycloud1.org",
-      "server_port": 443,
-      "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee1.mycloud1.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
-          "short_id": "afee962d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 10 - xiaoyu",
       "server": "13.143.239.119",
       "server_port": 443,
       "uuid": "f36c82e2-e33e-4054-960a-34619d9fdd5b",
@@ -215,28 +68,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 11 - xiaoyu",
-      "server": "79.98.37.106",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
+      "server": "194.26.141.223",
       "server_port": 443,
-      "uuid": "846cedee-2a52-0001-a0b9-11850ead6a8b",
+      "uuid": "605dea9b-b485-45c9-af9b-cc2b0195023c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ee-central.v8x2b.lol",
+        "server_name": "ee1.mycloud1.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw",
-          "short_id": ""
+          "public_key": "Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E",
+          "short_id": "afee962d"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 12 - xiaoyu",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu",
       "server": "177.3.208.65",
       "server_port": 443,
       "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
@@ -256,7 +109,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 13 - xiaoyu",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu",
       "server": "177.3.208.65",
       "server_port": 443,
       "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
@@ -287,14 +140,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 09 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 10 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 11 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 12 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 13 - xiaoyu"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu"
       ]
     },
     {
@@ -306,14 +152,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
         "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
         "🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 07 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 08 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 09 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 10 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 11 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 12 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 13 - xiaoyu"
+        "🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

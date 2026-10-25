@@ -7,29 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01 - xiaoyu",
       "server": "185.135.86.175",
-      "server_port": 9082,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "45xgMgm386pjWjTx"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu",
-      "server": "185.135.86.175",
-      "server_port": 9007,
-      "method": "aes-256-cfb",
-      "password": "kSPmvwdFzGMMW5pY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
-      "server": "185.135.86.175",
-      "server_port": 9033,
-      "method": "aes-256-cfb",
-      "password": "UTJA57ypk2XKQpnm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu",
       "server": "185.135.86.175",
       "server_port": 9094,
       "method": "aes-256-cfb",
@@ -37,31 +21,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu",
       "server": "185.135.86.175",
-      "server_port": 9034,
+      "server_port": 9017,
       "method": "aes-256-cfb",
-      "password": "Yg4MbdXFQ9HFFVY6"
+      "password": "HAVAdE3nXhqA5nHp"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu",
-      "server": "185.135.86.175",
-      "server_port": 9036,
-      "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu",
-      "server": "185.135.86.175",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu",
       "server": "185.135.86.175",
       "server_port": 9086,
       "method": "aes-256-cfb",
@@ -69,15 +37,39 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu",
       "server": "185.135.86.175",
-      "server_port": 9017,
+      "server_port": 9082,
       "method": "aes-256-cfb",
-      "password": "HAVAdE3nXhqA5nHp"
+      "password": "45xgMgm386pjWjTx"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu",
+      "server": "185.135.86.175",
+      "server_port": 9033,
+      "method": "aes-256-cfb",
+      "password": "UTJA57ypk2XKQpnm"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu",
+      "server": "185.135.86.175",
+      "server_port": 9007,
+      "method": "aes-256-cfb",
+      "password": "kSPmvwdFzGMMW5pY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu",
+      "server": "185.135.86.175",
+      "server_port": 9034,
+      "method": "aes-256-cfb",
+      "password": "Yg4MbdXFQ9HFFVY6"
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - xiaoyu",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 09 - xiaoyu",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -98,7 +90,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 10 - xiaoyu",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -119,7 +111,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 11 - xiaoyu",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -140,7 +132,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu",
       "server": "195.123.208.32",
       "server_port": 443,
       "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
@@ -151,6 +143,27 @@
         "utls": {
           "enabled": true,
           "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk",
+          "short_id": "757b9e1ef18e60f0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu",
+      "server": "195.123.208.32",
+      "server_port": 443,
+      "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -202,27 +215,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 16 - xiaoyu",
-      "server": "195.123.208.32",
-      "server_port": 443,
-      "uuid": "1ebcb694-875c-4be7-b6a2-d53c8208991b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk",
-          "short_id": "757b9e1ef18e60f0"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -241,8 +233,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 14 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 15 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 16 - xiaoyu"
+        "🇱🇻 拉脱维亚 (Latvia) 15 - xiaoyu"
       ]
     },
     {
@@ -263,8 +254,7 @@
         "🇱🇻 拉脱维亚 (Latvia) 12 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 13 - xiaoyu",
         "🇱🇻 拉脱维亚 (Latvia) 14 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 15 - xiaoyu",
-        "🇱🇻 拉脱维亚 (Latvia) 16 - xiaoyu"
+        "🇱🇻 拉脱维亚 (Latvia) 15 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

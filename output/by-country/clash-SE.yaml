@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaoyu
-  server: 50.7.38.243
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
   server: promo.betust.net
   port: 443
   udp: true
@@ -20,14 +12,15 @@ proxies:
   password: d4ca9415f0eac7897472e1e5b86d2e96
   sni: promo.betust.net
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
-  server: 84.21.191.180
-  port: 1081
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
+  server: 50.7.38.243
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: iWhDZY1CQ-7AQYQtmc8Ki4r3H4UYP0SF
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
+  type: hysteria2
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   server: 91.242.228.29
   port: 443
   udp: true
@@ -40,7 +33,7 @@ proxies:
     short-id: afee962d
   servername: se1.mycloud1.org
   client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   server: se1.mycloud1.org
   port: 443
   udp: true
@@ -53,32 +46,6 @@ proxies:
     short-id: afee962d
   servername: se1.mycloud1.org
   client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
-  server: 89.22.224.146
-  port: 43788
-  udp: true
-  type: vless
-  uuid: 49a6eeaf-7dbf-4aa5-ba21-b36cd47e724e
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,9 +55,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,8 +64,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
 rules:
 - MATCH,PROXIES

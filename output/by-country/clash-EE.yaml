@@ -5,120 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
-  server: ee-central.v8x2b.lol
+  server: ee1.mycloud1.org
   port: 443
   udp: true
   type: vless
-  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
+  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
-  servername: ee-central.v8x2b.lol
-  client-fingerprint: firefox
+    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
+    short-id: afee962d
+  servername: ee1.mycloud1.org
+  client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
-  server: 79.98.37.106
+  server: ee1.mycloud1.org
   port: 443
   udp: true
   type: vless
-  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
+  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
-  servername: ee-central.v8x2b.lol
+    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
+    short-id: afee962d
+  servername: ee1.mycloud1.org
   client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
-  server: 79.98.37.106
-  port: 443
-  udp: true
-  type: vless
-  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
-  servername: ee-central.v8x2b.lol
-  client-fingerprint: edge
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
-  server: 93.89.220.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
-  server: 194.26.141.223
-  port: 443
-  udp: true
-  type: vless
-  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
-    short-id: afee962d
-  servername: ee1.mycloud1.org
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu
-  server: 93.89.220.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: edge
-- name: 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaoyu
-  server: ee1.mycloud1.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
-    short-id: afee962d
-  servername: ee1.mycloud1.org
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaoyu
-  server: 93.89.220.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: random
-- name: 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaoyu
-  server: ee1.mycloud1.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
-    short-id: afee962d
-  servername: ee1.mycloud1.org
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaoyu
   server: 13.143.239.119
   port: 443
   udp: true
@@ -131,19 +43,20 @@ proxies:
     short-id: 7230e3b3f137543c
   servername: www.transip.nl
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaoyu
-  server: 79.98.37.106
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
+  server: 194.26.141.223
   port: 443
   udp: true
   type: vless
-  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
+  uuid: 605dea9b-b485-45c9-af9b-cc2b0195023c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
-  servername: ee-central.v8x2b.lol
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 12 - xiaoyu
+    public-key: Su5ULcRQKF-0DJIHZeTNEnXHBpyQtizmUrcNIYhZI0E
+    short-id: afee962d
+  servername: ee1.mycloud1.org
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
   server: 177.3.208.65
   port: 443
   udp: true
@@ -156,7 +69,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless-ee
-- name: 🇪🇪 爱沙尼亚 (Estonia) 13 - xiaoyu
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu
   server: 177.3.208.65
   port: 443
   udp: true
@@ -182,13 +95,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 12 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 13 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -200,12 +106,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 06 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 07 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 08 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 09 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 10 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 11 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 12 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 13 - xiaoyu
 rules:
 - MATCH,PROXIES
