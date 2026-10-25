@@ -6,54 +6,47 @@
     {
       "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 01 - xiaoyu",
-      "server": "43.201.148.241",
-      "server_port": 2096,
-      "method": "chacha20-ietf-poly1305",
-      "password": "bf5129f1-31f5-4edf-a07a-27ec31b26c1d"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaoyu",
-      "server": "141.164.45.187",
-      "server_port": 8119,
-      "method": "aes-256-gcm",
-      "password": "cdBIDV42DCwnfIN"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaoyu",
       "server": "211.178.105.134",
       "server_port": 6123,
       "method": "aes-256-cfb",
       "password": "qwerREWQ@@"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaoyu",
-      "server": "141.164.45.187",
-      "server_port": 9090,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaoyu",
-      "server": "141.164.45.187",
-      "server_port": 2376,
-      "method": "aes-256-gcm",
-      "password": "faBAoD54k87UJG7"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaoyu",
-      "server": "141.164.45.187",
-      "server_port": 6697,
-      "method": "aes-256-gcm",
-      "password": "TEzjfAYq2IjtuoS"
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaoyu",
+      "server": "3.39.4.109",
+      "server_port": 18967,
+      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
+          "short_id": "48050fab"
+        }
+      }
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - xiaoyu",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaoyu",
+      "server": "132.226.226.189",
+      "server_port": 50160,
+      "password": "1671a252e2a97dc2bda4e515475931da",
+      "tls": {
+        "enabled": true,
+        "server_name": "132.226.226.189",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 04 - xiaoyu",
       "server": "152.70.237.123",
       "server_port": 2053,
       "password": "maintell",
@@ -65,27 +58,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaoyu",
-      "server": "132.226.226.189",
+      "tag": "🇰🇷 韩国 (South Korea) 05 - xiaoyu",
+      "server": "152.67.200.82",
       "server_port": 50160,
-      "password": "1671a252e2a97dc2bda4e515475931da",
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
       "tls": {
         "enabled": true,
-        "server_name": "132.226.226.189",
-        "insecure": true
+        "server_name": "152-67-200-82.liao.kdns.fr",
+        "insecure": false
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - xiaoyu",
-      "server": "141.164.45.187",
-      "server_port": 8888,
-      "method": "aes-256-gcm",
-      "password": "Y6R9pAtvxxzmGC"
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - xiaoyu",
+      "tag": "🇰🇷 韩国 (South Korea) 06 - xiaoyu",
       "server": "151.245.106.49",
       "server_port": 2053,
       "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
@@ -94,7 +79,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -105,7 +90,31 @@
     },
     {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - xiaoyu",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - xiaoyu",
+      "server": "tjhg.m2k699.com",
+      "server_port": 24999,
+      "password": "29086912-33e4-4e06-ba2b-60f1a195864f",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.itunes.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaoyu",
+      "server": "150-230-252-217.liao.kdns.fr",
+      "server_port": 50160,
+      "password": "9cfc9458e48c028ec03ff86ebc71c744",
+      "tls": {
+        "enabled": true,
+        "server_name": "127.0.0.1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - xiaoyu",
       "server": "154.90.62.70",
       "server_port": 56127,
       "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
@@ -116,32 +125,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 12 - xiaoyu",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
-      "tls": {
-        "enabled": true,
-        "server_name": "152-67-200-82.liao.kdns.fr",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 13 - xiaoyu",
-      "server": "150-230-252-217.liao.kdns.fr",
-      "server_port": 50160,
-      "password": "9cfc9458e48c028ec03ff86ebc71c744",
-      "tls": {
-        "enabled": true,
-        "server_name": "150-230-252-217.liao.kdns.fr",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 14 - xiaoyu",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - xiaoyu",
       "server": "3.39.4.109",
       "server_port": 13672,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -161,81 +146,20 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 15 - xiaoyu",
-      "server": "3.39.4.109",
-      "server_port": 18967,
-      "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0",
-          "short_id": "48050fab"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 16 - xiaoyu",
-      "server": "tjhg.m2k699.com",
-      "server_port": 24999,
-      "password": "29086912-33e4-4e06-ba2b-60f1a195864f",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.itunes.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 17 - xiaoyu",
-      "server": "132.145.80.230",
-      "server_port": 80,
-      "uuid": "5155860e-d07d-46c3-9128-3afbd84626c7",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "132.145.80.230"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - xiaoyu",
+      "server": "141.164.45.187",
+      "server_port": 2376,
+      "method": "aes-256-gcm",
+      "password": "faBAoD54k87UJG7"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 18 - xiaoyu",
+      "tag": "🇰🇷 韩国 (South Korea) 12 - xiaoyu",
       "server": "141.164.45.187",
-      "server_port": 8000,
+      "server_port": 6679,
       "method": "aes-256-gcm",
-      "password": "KixLvKzwjekG00rm"
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 19 - xiaoyu",
-      "server": "47.80.19.173",
-      "server_port": 2053,
-      "uuid": "319d5ffb-57e8-4bbd-ac0c-5d55d0c253de",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms",
-          "short_id": "3c4041d3"
-        }
-      }
+      "password": "TEzjfAYq2IjtuoS"
     },
     {
       "type": "selector",
@@ -253,14 +177,7 @@
         "🇰🇷 韩国 (South Korea) 09 - xiaoyu",
         "🇰🇷 韩国 (South Korea) 10 - xiaoyu",
         "🇰🇷 韩国 (South Korea) 11 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 12 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 13 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 14 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 15 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 16 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 17 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 18 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 19 - xiaoyu"
+        "🇰🇷 韩国 (South Korea) 12 - xiaoyu"
       ]
     },
     {
@@ -278,14 +195,7 @@
         "🇰🇷 韩国 (South Korea) 09 - xiaoyu",
         "🇰🇷 韩国 (South Korea) 10 - xiaoyu",
         "🇰🇷 韩国 (South Korea) 11 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 12 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 13 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 14 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 15 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 16 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 17 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 18 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 19 - xiaoyu"
+        "🇰🇷 韩国 (South Korea) 12 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,28 +5,33 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaoyu
-  server: 202.146.222.174
+  server: 165.154.63.139
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
+  type: vless
+  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
+    short-id: ca4aedd4
+  servername: www.amazon.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%80%d2%b9%d2%af
+  sni: https://t.me/wangcai2üá®üá
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
   server: 50.7.44.28
@@ -42,6 +47,14 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
   server: 151.242.85.236
   port: 443
   udp: true
@@ -53,36 +66,23 @@ proxies:
     public-key: gUu1n11Ef_GEoatNQzJJucvIjGTt4qxOWdxMzjoHwDM
     short-id: 9b6fa4047c24629f
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
-  server: 47.243.65.243
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+  server: 2b9hwy8ocx7q74nm.v.3dns.vip
   port: 443
   udp: true
   type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   tls: true
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /ws-vmess
-    headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
-  server: hkgb707.ifastcdncache.com
-  port: 60852
-  udp: true
-  type: vmess
-  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
-  alterId: 2
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
-  server: tjadly.m2k699.com
+  server: tjjnd.m2k699.com
   port: 24999
   udp: true
   type: trojan
@@ -90,19 +90,31 @@ proxies:
   sni: www.itunes.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
-  server: 165.154.63.139
-  port: 443
+  server: forwarded.frnhk.xyz
+  port: 53003
   udp: true
   type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
+  uuid: f5f0babe-aea2-4f07-a1fc-3c9820253f49
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
+    public-key: Ks12iVvH2fkIAN7VmHFocBin8b25K8Bac_ab3k1HmSo
+  servername: www.uni-frankfurt.de
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
+  server: 38.22.88.248
+  port: 27509
+  udp: true
+  type: vless
+  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
+    short-id: 6ba85179e30d4fc2
+  servername: www.suffolk.edu
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
   server: nas.aizhzo.com
   port: 5010
   udp: true
@@ -127,6 +139,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -142,5 +155,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
 rules:
 - MATCH,PROXIES
