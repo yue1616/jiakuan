@@ -11,71 +11,44 @@ proxies:
   type: vless
   uuid: 44dfa3a7-f648-4587-819b-e653c0823f28
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
-  server: 2.27.244.55
-  port: 443
+  server: 2.26.6.1
+  port: 2087
   udp: true
   type: vless
-  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   tls: true
-  servername: qbak5xqeb.hat.onl
+  servername: 2.26.6.1
   skip-cert-verify: false
   client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.uxvgqd.v1.PlaybackStream
 - name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: 151.241.138.221
-  port: 443
+  server: 78.17.128.153
+  port: 35076
   udp: true
-  type: vless
-  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
-  tls: true
-  servername: cj1zbqb16amm.hat.onl
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: v1.segment.9099K6xCUJFolqrvvjWHzO0shnIQZkWopQ20zcM6.ts
+  type: hysteria2
+  password: b4c8ee9caa74b7ba0a61
+  sni: scrap.halyvanedorogo.ru
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
-  server: 151.241.138.58
-  port: 443
+  server: 150.241.87.200
+  port: 2096
   udp: true
   type: vless
-  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
   tls: true
-  servername: i6v77egmox.hat.onl
+  servername: stb6390.rumedia-cdn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: hls.4s05-998t.8-qyShEYmHZ_zmes.m3u8
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: stb6390.rumedia-cdn.com
 - name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
-  server: 151.241.138.234
-  port: 443
+  server: site.teslamotor.site
+  port: 20001
   udp: true
   type: vless
-  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
-  tls: true
-  servername: m37wv2rk.hat.onl
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: media.vs31ppigl.v2.PlaybackRelay
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  server: 151.241.138.235
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
-  tls: true
-  servername: pqeumz9zs.hat.onl
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vod.rmbxyignqfOOrue8HKvvsrjzpNeju9_7.frag.302.mp4
-- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
   server: 77.232.135.141
   port: 8445
   udp: true
@@ -88,21 +61,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  server: site.teslamotor.site
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  server: scrap.halyvanedorogo.ru
-  port: 35076
-  udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 10 - xiaoyu
+- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
   server: 54.37.131.126
   port: 80
   udp: true
@@ -115,18 +74,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 11 - xiaoyu
-  server: pl1.h1cloud.net
-  port: 27591
-  udp: true
-  type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  tls: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-    short-id: 6c5c7900406a1ae7
-  servername: www.samsung.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -139,10 +86,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
   - 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 10 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -155,9 +98,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
   - 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 10 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 11 - xiaoyu
 rules:
 - MATCH,PROXIES
