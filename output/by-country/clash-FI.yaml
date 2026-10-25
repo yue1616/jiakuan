@@ -11,7 +11,7 @@ proxies:
   type: hysteria2
   password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
   sni: fi.67chat.ru
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   server: 2.26.3.75
   port: 443
@@ -19,42 +19,39 @@ proxies:
   type: hysteria2
   password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
   sni: fi.67chat.ru
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
-  server: 45.144.234.157
-  port: 14430
+  server: 2.26.3.75
+  port: 443
   udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  type: hysteria2
+  password: d5530551-5e9a-4ac5-8539-cee87e38d9e2
+  sni: 2.26.3.75
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
-  server: 95.216.27.15
-  port: 2053
+  server: 177.3.214.156
+  port: 443
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: chrome
+    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
+  servername: finlandlanzarotte.live
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
-  server: 95.216.27.15
-  port: 2053
+  server: finlandlanzarotte.live
+  port: 443
   udp: true
   type: vless
-  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
-    short-id: d368b94e275ab080
-  servername: www.google.com
-  client-fingerprint: random
+    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
+  servername: finlandlanzarotte.live
+  client-fingerprint: qq
 - name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
   server: 95.216.27.15
   port: 2053
@@ -66,17 +63,32 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
-  server: 45.144.234.157
-  port: 14430
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: random
 - name: 🇫🇮 芬兰 (Finland) 08 - xiaoyu
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
+  tls: true
+  reality-opts:
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaoyu
   server: 31.77.199.147
   port: 4443
   udp: true
@@ -89,7 +101,41 @@ proxies:
     short-id: 7da2eae792187ab9
   servername: images.unsplash.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaoyu
+- name: 🇫🇮 芬兰 (Finland) 10 - xiaoyu
+  server: 2.27.203.251
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1ef7d97f-3aa5-4fe6-8521-84cf4794bf7a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QYdQmsVvUj4jwo9gH20nJA5x015gaAL0nGipORe6ZmY
+  servername: edge-fi2.lovely.my
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 11 - xiaoyu
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇫🇮 芬兰 (Finland) 12 - xiaoyu
+  server: 31.77.199.147
+  port: 4443
+  udp: true
+  type: vless
+  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
+    short-id: 7da2eae792187ab9
+  servername: images.unsplash.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 13 - xiaoyu
   server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
@@ -104,72 +150,20 @@ proxies:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 10 - xiaoyu
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 11 - xiaoyu
-  server: hw3.divarkhaghazi.com
-  port: 465
-  udp: true
-  type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 12 - xiaoyu
-  server: hw3.divarkhaghazi.com
-  port: 465
-  udp: true
-  type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
-  tls: true
-  servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 13 - xiaoyu
-  server: 177.3.214.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
-  servername: finlandlanzarotte.live
-  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 14 - xiaoyu
-  server: finlandlanzarotte.live
-  port: 443
+  server: hw3.divarkhaghazi.com
+  port: 465
   udp: true
   type: vless
-  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
-  flow: xtls-rprx-vision
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   tls: true
-  reality-opts:
-    public-key: 6lZ5dkQN2sH9tYca374W4N1n9eCanD_F2FfghcksKSo
-  servername: finlandlanzarotte.live
-  client-fingerprint: qq
+  servername: hw3.divarkhaghazi.com.
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select
