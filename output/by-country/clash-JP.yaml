@@ -26,6 +26,90 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04 - xiaoyu
+  server: 191.223.221.53
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
+- name: 🇯🇵 日本 (Japan) 05 - xiaoyu
+  server: 152.69.195.67
+  port: 47878
+  udp: true
+  type: vless
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- name: 🇯🇵 日本 (Japan) 06 - xiaoyu
+  server: v6.hdacd.com
+  port: 30806
+  udp: true
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  alterId: 2
+  cipher: auto
+- name: 🇯🇵 日本 (Japan) 07 - xiaoyu
+  server: 45.32.52.173
+  port: 8886
+  udp: true
+  type: trojan
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  sni: 45.32.52.173
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 08 - xiaoyu
+  server: 8.209.247.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 09 - xiaoyu
+  server: 45.32.10.7
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 96ab5cd282733fd4c312a61f972f330a
+  sni: vp3.yysyy.online
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 10 - xiaoyu
+  server: funagfrdfs.alixxplay.com
+  port: 35544
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
+    short-id: 25c79e5856c7
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 11 - xiaoyu
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: none
+- name: 🇯🇵 日本 (Japan) 12 - xiaoyu
+  server: 103.75.118.228
+  port: 11452
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 13 - xiaoyu
   server: 172.111.146.64
   port: 80
   udp: true
@@ -38,50 +122,43 @@ proxies:
     path: /vmess/
     headers:
       Host: 172.111.146.64
-- name: 🇯🇵 日本 (Japan) 05 - xiaoyu
-  server: 31.76.91.98
+- name: 🇯🇵 日本 (Japan) 14 - xiaoyu
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 15 - xiaoyu
+  server: 84.247.155.196
   port: 443
   udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 16 - xiaoyu
+  server: 3.114.220.22
+  port: 10583
+  udp: true
   type: vless
-  uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ejx56dFtS4LK_Th6HSLFFdm7v7zqRpv8KfjrWAw4Sjg
-    short-id: bd6f67b6b2152b45
-  servername: fuji.etherhub.cc
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 06 - xiaoyu
-  server: 45.32.10.7
-  port: 443
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 17 - xiaoyu
+  server: 138.3.208.26
+  port: 50160
   udp: true
   type: hysteria2
-  password: 96ab5cd282733fd4c312a61f972f330a
-  sni: vp3.yysyy.online
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 07 - xiaoyu
-  server: 45.32.52.173
-  port: 8886
-  udp: true
-  type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 45.32.52.173
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: '1'
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - xiaoyu
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 09 - xiaoyu
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 10 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 18 - xiaoyu
   server: 45.76.98.127
   port: 443
   udp: true
@@ -98,44 +175,7 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 11 - xiaoyu
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: '1'
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 12 - xiaoyu
-  server: 38.175.202.26
-  port: 443
-  udp: true
-  type: hysteria2
-  password: wvA0PtDIuFbSqooIC2goKzFr
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 13 - xiaoyu
-  server: 3.114.220.22
-  port: 10583
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 14 - xiaoyu
-  server: tjrb.m2k699.com
-  port: 24999
-  udp: true
-  type: trojan
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  sni: www.itunes.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 15 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 19 - xiaoyu
   server: 3.114.220.22
   port: 18007
   udp: true
@@ -147,8 +187,16 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: edge
-- name: 🇯🇵 日本 (Japan) 16 - xiaoyu
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 20 - xiaoyu
+  server: tjrb.m2k699.com
+  port: 24999
+  udp: true
+  type: trojan
+  password: 29086912-33e4-4e06-ba2b-60f1a195864f
+  sni: www.itunes.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 21 - xiaoyu
   server: 3.114.220.22
   port: 19645
   udp: true
@@ -160,9 +208,16 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇯🇵 日本 (Japan) 17 - xiaoyu
-  server: 66.90.115.130
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 22 - xiaoyu
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 23 - xiaoyu
+  server: 66.90.115.123
   port: 2090
   udp: true
   type: vless
@@ -174,16 +229,8 @@ proxies:
     short-id: bb472a184677af64
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 18 - xiaoyu
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 19 - xiaoyu
-  server: 104.21.6.186
+- name: 🇯🇵 日本 (Japan) 24 - xiaoyu
+  server: 104.17.50.53
   port: 443
   udp: true
   type: vless
@@ -197,69 +244,6 @@ proxies:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 20 - xiaoyu
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: aff1ffd0-594c-44c9-9f79-4096fde005ea
-  tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇯🇵 日本 (Japan) 21 - xiaoyu
-  server: jp032012.ssgreen.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 0cf58a80-6fc7-40d1-b491-cb1c42cc8777
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: jp032012.ssgreen.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: jp032012.ssgreen.org
-- name: 🇯🇵 日本 (Japan) 22 - xiaoyu
-  server: JP032007.ssgreen.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 2458b4f7-1f67-4b26-876c-4080c086cce9
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: JP032007.ssgreen.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032007.ssgreen.org
-- name: 🇯🇵 日本 (Japan) 23 - xiaoyu
-  server: JP032004.ssgreen.org
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 3a331c35-433c-4609-a86a-9f9bc3c9b6c8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: JP032004.ssgreen.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /wes
-    headers:
-      Host: JP032004.ssgreen.org
 proxy-groups:
 - name: PROXIES
   type: select
@@ -288,6 +272,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 21 - xiaoyu
   - 🇯🇵 日本 (Japan) 22 - xiaoyu
   - 🇯🇵 日本 (Japan) 23 - xiaoyu
+  - 🇯🇵 日本 (Japan) 24 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -316,5 +301,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 21 - xiaoyu
   - 🇯🇵 日本 (Japan) 22 - xiaoyu
   - 🇯🇵 日本 (Japan) 23 - xiaoyu
+  - 🇯🇵 日本 (Japan) 24 - xiaoyu
 rules:
 - MATCH,PROXIES

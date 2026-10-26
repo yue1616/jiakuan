@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaoyu
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -13,17 +23,26 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
-  server: 130.49.161.70
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+  server: forshynewh.duckdns.org
   port: 443
   udp: true
   type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
+  password: 329e13e4-ee7c-4802-ac72-5fcab79c2402
+  sni: forshynewh.duckdns.org
   skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -34,15 +53,6 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
-  server: uae.unixzone.us
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +62,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +72,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
 rules:
 - MATCH,PROXIES
