@@ -1,0 +1,49 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
+  server: 79.98.37.106
+  port: 443
+  udp: true
+  type: vless
+  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
+  servername: ee-central.v8x2b.lol
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
+  server: 185.178.208.167
+  port: 443
+  udp: true
+  type: vless
+  uuid: d49f7cc7-0c15-4a49-9644-ef72e00d8e56
+  tls: true
+  servername: dropstyle.lol
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /service/metrics/51dec2df3071/
+    headers:
+      Host: dropstyle.lol
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
+rules:
+- MATCH,PROXIES

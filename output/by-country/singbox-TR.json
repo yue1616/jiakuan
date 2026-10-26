@@ -25,29 +25,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
-      "server": "45.151.71.167",
-      "server_port": 443,
-      "uuid": "680e92ac-1688-49e0-af96-7327fbc30ce8",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "abuse.ozon.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
       "server": "153.56.210.134",
       "server_port": 34121,
       "password": "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9",
@@ -63,6 +42,20 @@
     },
     {
       "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
+      "server": "trdatair.egekaradecojistik.net.tr",
+      "server_port": 35577,
+      "uuid": "b7d3a581-74d6-4ead-9235-ce9dedf08152",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "play.google.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
       "server": "151.241.226.201",
       "server_port": 2053,
@@ -72,7 +65,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -82,32 +75,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
-      "server": "62.133.63.45",
-      "server_port": 8444,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaoyu",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
       "server": "location8.cpanel-host10.ir",
       "server_port": 56134,
       "method": "chacha20-ietf-poly1305",
@@ -122,8 +91,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 06 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu"
       ]
     },
     {
@@ -134,8 +102,7 @@
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 06 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
