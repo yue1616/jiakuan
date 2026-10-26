@@ -5,32 +5,41 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
-  server: 79.98.37.106
+  server: 141.0.187.15
   port: 443
   udp: true
-  type: vless
-  uuid: 846cedee-2a52-0001-a0b9-11850ead6a8b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: USSepsAbvP9LpByHLV2xD2H8dq8GAJ6G0fINEqD4PAw
-  servername: ee-central.v8x2b.lol
-  client-fingerprint: firefox
+  type: hysteria2
+  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
+  sni: crt.onecloudstream.com
+  skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
-  server: 185.178.208.167
-  port: 443
+  server: 13.143.239.69
+  port: 8443
   udp: true
   type: vless
-  uuid: d49f7cc7-0c15-4a49-9644-ef72e00d8e56
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  servername: dropstyle.lol
+  servername: ee4.pad-sservice.lat
   skip-cert-verify: false
   client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /service/metrics/51dec2df3071/
+    path: /EE4W
     headers:
-      Host: dropstyle.lol
+      Host: ee4.pad-sservice.lat
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
+  server: 93.89.220.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
+    short-id: e88cb983f3c97528
+  servername: ibm.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -38,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -45,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

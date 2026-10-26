@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaoyu
-  server: 128.241.25.72
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 65f26a08-9a5e-4b28-9004-f98676cc1e49
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -28,9 +13,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   server: 130.49.161.70
   port: 443
   udp: true
@@ -40,33 +23,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
-  server: 23.27.20.142
-  port: 48537
-  udp: true
-  type: vless
-  uuid: ed79c2d4-5558-428f-87f5-af4abc97a16d
-  tls: true
-  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  server: 84.235.244.108
-  port: 22573
-  udp: true
-  type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: uae.unixzone.us
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -77,6 +34,15 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  server: uae.unixzone.us
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,8 +52,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,7 +61,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

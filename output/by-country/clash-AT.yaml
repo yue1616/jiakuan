@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02 - xiaoyu
-  server: au5.pad-sservice.lat
+  server: 62.83.19.127
   port: 8443
   udp: true
   type: vless
@@ -27,20 +27,6 @@ proxies:
     headers:
       Host: au5.pad-sservice.lat
 - name: 🇦🇹 奥地利 (Austria) 03 - xiaoyu
-  server: au6.pad-sservice.lat
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  tls: true
-  servername: au6.pad-sservice.lat
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /AU6W
-    headers:
-      Host: au6.pad-sservice.lat
-- name: 🇦🇹 奥地利 (Austria) 04 - xiaoyu
   server: au2.pad-sservice.lat
   port: 8443
   udp: true
@@ -55,14 +41,20 @@ proxies:
     path: /A11U
     headers:
       Host: au2.pad-service.com
-- name: 🇦🇹 奥地利 (Austria) 05 - xiaoyu
-  server: 68.210.96.82
+- name: 🇦🇹 奥地利 (Austria) 04 - xiaoyu
+  server: au6.pad-sservice.lat
   port: 8443
   udp: true
-  type: hysteria2
-  password: krdyzYNnXFQqyPtjiXw9lQ
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: au6.pad-sservice.lat
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /AU6W
+    headers:
+      Host: au6.pad-sservice.lat
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,7 +64,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 02 - xiaoyu
   - 🇦🇹 奥地利 (Austria) 03 - xiaoyu
   - 🇦🇹 奥地利 (Austria) 04 - xiaoyu
-  - 🇦🇹 奥地利 (Austria) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,6 +73,5 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 02 - xiaoyu
   - 🇦🇹 奥地利 (Austria) 03 - xiaoyu
   - 🇦🇹 奥地利 (Austria) 04 - xiaoyu
-  - 🇦🇹 奥地利 (Austria) 05 - xiaoyu
 rules:
 - MATCH,PROXIES
