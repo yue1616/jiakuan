@@ -4,15 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu",
-      "server": "kw119.zxmm.eu.org",
-      "server_port": 20031,
-      "password": "00a72bf349e6479b",
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu",
+      "server": "ir-new-ded.failspace.top",
+      "server_port": 443,
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "kw119.zxmm.eu.org",
-        "insecure": true
+        "server_name": "ir-new-ded.failspace.top",
+        "insecure": false
       }
     },
     {
@@ -20,14 +21,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu"
+        "🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
