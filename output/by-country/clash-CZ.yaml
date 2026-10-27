@@ -18,17 +18,29 @@ proxies:
   servername: gateway.icloud.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 02 - xiaoyu
+  server: cz-prg.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 03 - xiaoyu
   server: 193.124.17.190
   port: 443
   udp: true
   type: vless
-  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
+  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: bbcab8fa80a3
-  servername: www.microsoft.com
+    short-id: d659da01fb94
+  servername: www.foxsports.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -37,6 +49,7 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaoyu
   - 🇨🇿 捷克 (Czech) 02 - xiaoyu
+  - 🇨🇿 捷克 (Czech) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +57,6 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaoyu
   - 🇨🇿 捷克 (Czech) 02 - xiaoyu
+  - 🇨🇿 捷克 (Czech) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

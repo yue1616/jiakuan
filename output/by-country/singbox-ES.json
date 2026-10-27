@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaoyu",
+      "server": "5.188.181.201",
+      "server_port": 9005,
+      "method": "aes-256-cfb",
+      "password": "ZET59LF6DvCC8KVt"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02 - xiaoyu",
+      "server": "5.188.181.201",
+      "server_port": 9025,
+      "method": "aes-256-cfb",
+      "password": "XPtzA9sCug3SPR4c"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaoyu",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -14,7 +30,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,37 +41,13 @@
     },
     {
       "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 02 - xiaoyu",
+      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaoyu",
       "server": "66.163.118.62",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
         "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaoyu",
-      "server": "66.163.118.131",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 04 - xiaoyu",
-      "server": "66.163.118.166",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "learn.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
     },
@@ -101,6 +93,18 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - xiaoyu",
+      "server": "66.163.118.244",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -110,7 +114,8 @@
         "🇪🇸 西班牙 (Spain) 03 - xiaoyu",
         "🇪🇸 西班牙 (Spain) 04 - xiaoyu",
         "🇪🇸 西班牙 (Spain) 05 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 06 - xiaoyu"
+        "🇪🇸 西班牙 (Spain) 06 - xiaoyu",
+        "🇪🇸 西班牙 (Spain) 07 - xiaoyu"
       ]
     },
     {
@@ -122,7 +127,8 @@
         "🇪🇸 西班牙 (Spain) 03 - xiaoyu",
         "🇪🇸 西班牙 (Spain) 04 - xiaoyu",
         "🇪🇸 西班牙 (Spain) 05 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 06 - xiaoyu"
+        "🇪🇸 西班牙 (Spain) 06 - xiaoyu",
+        "🇪🇸 西班牙 (Spain) 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

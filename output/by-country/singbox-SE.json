@@ -18,24 +18,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
-      "server": "191.44.114.179",
-      "server_port": 8443,
-      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
-      "flow": "xtls-rprx-vision",
+      "server": "swe2.obxodvpn.us",
+      "server_port": 4443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
       "tls": {
         "enabled": true,
-        "server_name": "www.wikipedia.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY",
-          "short_id": ""
-        }
+        "server_name": "nl1.obxodvpn.us",
+        "insecure": false
       }
     },
     {
@@ -60,15 +51,27 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
-      "server": "promo.betust.net",
+      "server": "se1-cl3.vless-fiberstasis.top",
       "server_port": 443,
-      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
       "tls": {
         "enabled": true,
-        "server_name": "promo.betust.net",
-        "insecure": false
+        "server_name": "se1-cl3.vless-fiberstasis.top",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo",
+          "short_id": "11d37dd92940329e"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc-se-3"
       }
     },
     {
@@ -95,30 +98,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaoyu",
-      "server": "se1-cl3.vless-fiberstasis.top",
-      "server_port": 443,
-      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
-      "tls": {
-        "enabled": true,
-        "server_name": "se1-cl3.vless-fiberstasis.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo",
-          "short_id": "11d37dd92940329e"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-se-3"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -127,8 +106,7 @@
         "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu"
       ]
     },
     {
@@ -139,8 +117,7 @@
         "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
