@@ -12,7 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -20,20 +20,9 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
-      "server": "forshynewh.duckdns.org",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
+      "server": "217.60.72.225",
       "server_port": 443,
       "password": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
       "tls": {
@@ -44,12 +33,47 @@
     },
     {
       "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
+      "server": "188.34.142.174",
+      "server_port": 444,
+      "uuid": "da46ec1f-84ad-4470-866f-010b58357b19",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
         "type": "ws",
+        "path": "/",
         "headers": {
           "Host": "uae.unixzone.us"
         }
@@ -57,7 +81,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
@@ -78,7 +102,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu"
       ]
     },
     {
@@ -89,7 +114,8 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
