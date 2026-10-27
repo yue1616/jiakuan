@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaoyu",
-      "server": "staging.lastilhame.monster",
+      "server": "104.253.216.227",
       "server_port": 49917,
       "method": "chacha20-ietf-poly1305",
       "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
@@ -14,21 +14,21 @@
     {
       "type": "vless",
       "tag": "🇺🇦 乌克兰 (Ukraine) 02 - xiaoyu",
-      "server": "staging.lastilhame.monster",
+      "server": "104.253.216.227",
       "server_port": 443,
-      "uuid": "455cfdc6-9abf-4e40-863f-5ff6cc63457c",
+      "uuid": "ee39fb11-56a3-4ee7-9e7c-35a4235bd30e",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
+        "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
-          "short_id": "18e4d2d21241"
+          "short_id": "b27ba098687b"
         }
       }
     },

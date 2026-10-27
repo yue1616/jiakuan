@@ -11,7 +11,7 @@ proxies:
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
-  server: pl1.obxodvpn.us
+  server: 191.217.251.225
   port: 4443
   udp: true
   type: hysteria2
@@ -31,18 +31,11 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
-  server: 45.148.119.127
-  port: 443
+  server: site.teslamotor.site
+  port: 20001
   udp: true
   type: vless
-  uuid: 329e13e4-ee7c-4802-ac72-5fcab79c2402
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: firefox
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 - name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
   server: poland-new-new.failspace.top
   port: 443
@@ -55,6 +48,19 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  server: 77.232.135.141
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
   server: 31.184.253.134
   port: 53869
   udp: true
@@ -67,26 +73,7 @@ proxies:
     short-id: 0f2cc340a69ed7
   servername: www.moddb.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  server: 77.232.135.141
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  server: site.teslamotor.site
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -96,19 +83,19 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 10 - xiaoyu
-  server: 54.37.131.126
-  port: 80
+- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
+  server: 82.118.22.161
+  port: 443
   udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  type: vless
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -123,7 +110,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - xiaoyu
   - 🇵🇱 波兰 (Poland) 08 - xiaoyu
   - 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -138,6 +124,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - xiaoyu
   - 🇵🇱 波兰 (Poland) 08 - xiaoyu
   - 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 10 - xiaoyu
 rules:
 - MATCH,PROXIES

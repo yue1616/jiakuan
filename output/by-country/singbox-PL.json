@@ -13,7 +13,7 @@
     {
       "type": "hysteria2",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaoyu",
-      "server": "pl1.obxodvpn.us",
+      "server": "191.217.251.225",
       "server_port": 4443,
       "password": "146d567c-6335-4e63-a8aa-7ec068642440",
       "tls": {
@@ -45,23 +45,9 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 04 - xiaoyu",
-      "server": "45.148.119.127",
-      "server_port": 443,
-      "uuid": "329e13e4-ee7c-4802-ac72-5fcab79c2402",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI",
-          "short_id": "50"
-        }
-      }
+      "server": "site.teslamotor.site",
+      "server_port": 20001,
+      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
     },
     {
       "type": "vless",
@@ -86,6 +72,26 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 06 - xiaoyu",
+      "server": "77.232.135.141",
+      "server_port": 8445,
+      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru1.radiolumens.uk",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "beru-pl"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 07 - xiaoyu",
       "server": "31.184.253.134",
       "server_port": 53869,
       "uuid": "252b4a9c-520d-459c-9dbc-366995206089",
@@ -106,34 +112,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - xiaoyu",
-      "server": "77.232.135.141",
-      "server_port": 8445,
-      "uuid": "36cf792c-f07d-4500-97ea-a395e5178deb",
-      "tls": {
-        "enabled": true,
-        "server_name": "ru1.radiolumens.uk",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "beru-pl"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 08 - xiaoyu",
-      "server": "site.teslamotor.site",
-      "server_port": 20001,
-      "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 - xiaoyu",
       "server": "2.26.6.1",
       "server_port": 2087,
       "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
@@ -148,17 +127,23 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 09 - xiaoyu",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
         }
       }
     },
@@ -175,8 +160,7 @@
         "🇵🇱 波兰 (Poland) 06 - xiaoyu",
         "🇵🇱 波兰 (Poland) 07 - xiaoyu",
         "🇵🇱 波兰 (Poland) 08 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 10 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 09 - xiaoyu"
       ]
     },
     {
@@ -191,8 +175,7 @@
         "🇵🇱 波兰 (Poland) 06 - xiaoyu",
         "🇵🇱 波兰 (Poland) 07 - xiaoyu",
         "🇵🇱 波兰 (Poland) 08 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 10 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 09 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
