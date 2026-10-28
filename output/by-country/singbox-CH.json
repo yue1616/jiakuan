@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaoyu",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02 - xiaoyu",
+      "tag": "🇨🇭 瑞士 (Switzerland) 01 - xiaoyu",
       "server": "140.238.213.114",
       "server_port": 50160,
       "password": "84a506ca5aca505696a454d828420b3f",
@@ -25,7 +17,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaoyu",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02 - xiaoyu",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -45,29 +37,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04 - xiaoyu",
-      "server": "45.90.57.119",
-      "server_port": 8443,
-      "uuid": "f5e70ce3-cfb4-4df1-b25c-d19bfae627c0",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "twitch.tv",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI",
-          "short_id": "16036bbef04d0509"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaoyu",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03 - xiaoyu",
       "server": "208.69.78.217",
       "server_port": 33013,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
@@ -83,7 +54,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06 - xiaoyu",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04 - xiaoyu",
+      "server": "45.90.57.119",
+      "server_port": 8443,
+      "uuid": "f5e70ce3-cfb4-4df1-b25c-d19bfae627c0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "twitch.tv",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI",
+          "short_id": "16036bbef04d0509"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05 - xiaoyu",
       "server": "208.69.78.217",
       "server_port": 2053,
       "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
@@ -110,8 +102,7 @@
         "🇨🇭 瑞士 (Switzerland) 02 - xiaoyu",
         "🇨🇭 瑞士 (Switzerland) 03 - xiaoyu",
         "🇨🇭 瑞士 (Switzerland) 04 - xiaoyu",
-        "🇨🇭 瑞士 (Switzerland) 05 - xiaoyu",
-        "🇨🇭 瑞士 (Switzerland) 06 - xiaoyu"
+        "🇨🇭 瑞士 (Switzerland) 05 - xiaoyu"
       ]
     },
     {
@@ -122,8 +113,7 @@
         "🇨🇭 瑞士 (Switzerland) 02 - xiaoyu",
         "🇨🇭 瑞士 (Switzerland) 03 - xiaoyu",
         "🇨🇭 瑞士 (Switzerland) 04 - xiaoyu",
-        "🇨🇭 瑞士 (Switzerland) 05 - xiaoyu",
-        "🇨🇭 瑞士 (Switzerland) 06 - xiaoyu"
+        "🇨🇭 瑞士 (Switzerland) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

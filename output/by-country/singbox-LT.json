@@ -7,21 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu",
       "server": "195.238.126.20",
-      "server_port": 9086,
-      "method": "aes-256-cfb",
-      "password": "37Z4TFCYhfxcpc9Q"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu",
-      "server": "195.238.126.20",
       "server_port": 9002,
       "method": "aes-256-cfb",
       "password": "b8KkNDjEd5QqFyRm"
     },
     {
       "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu",
       "server": "195.238.126.20",
       "server_port": 9045,
       "method": "aes-256-cfb",
@@ -29,19 +37,11 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu",
       "server": "195.238.126.20",
       "server_port": 9078,
       "method": "aes-256-cfb",
       "password": "JCJpbRbQZNw9XFZG"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu",
-      "server": "195.238.126.20",
-      "server_port": 9008,
-      "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
     },
     {
       "type": "shadowsocks",

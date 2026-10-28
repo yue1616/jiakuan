@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaoyu
+  server: dog-hk.kunlun01dns.com
+  port: 21018
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
   server: 165.154.63.139
   port: 443
   udp: true
@@ -16,22 +24,14 @@ proxies:
     public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
     short-id: ca4aedd4
   servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
   server: 50.7.44.28
@@ -45,32 +45,23 @@ proxies:
     public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
     short-id: 08a4b1f473932632
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
-  server: hk2.open-bridonyx.top
+  server: 202.146.222.29
   port: 443
   udp: true
-  type: vless
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
-    short-id: 3b74d85e
-  servername: hk2.open-bridonyx.top
-  client-fingerprint: qq
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
-  server: 103.238.227.211
-  port: 21003
+  server: 202.146.222.89
+  port: 443
   udp: true
-  type: vless
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
-  tls: true
-  reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: eb9539689690d35c
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vk.com
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
   server: 103.238.227.211
   port: 21002
@@ -84,6 +75,39 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
+  server: 103.238.227.211
+  port: 21003
+  udp: true
+  type: vless
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  tls: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+    short-id: eb9539689690d35c
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
+  server: 38.22.88.248
+  port: 27509
+  udp: true
+  type: vless
+  uuid: 29d23018-3265-494c-b9fe-e320b619b1e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nseaofwmjSciWUI2ZOXft9lUJutKvKEDUc-aSpE3e1M
+    short-id: 6ba85179e30d4fc2
+  servername: www.suffolk.edu
+  client-fingerprint: random
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
+  server: dog-hk.kunlun01dns.com
+  port: 21041
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
   server: 122.10.117.1
   port: 11674
   udp: true
@@ -109,6 +133,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -122,5 +149,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
 rules:
 - MATCH,PROXIES
