@@ -5,12 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaoyu
-  server: ams1.rvpn.app
-  port: 8388
+  server: 130.49.161.70
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: x2A6AsyZ-rAllz0wbKHzWA
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   server: 185.253.116.33
   port: 14430
@@ -23,15 +26,20 @@ proxies:
     headers:
       Host: 185.253.116.33
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
-  server: 130.49.161.70
-  port: 443
+  server: 57.129.130.34
+  port: 52014
   udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
+  type: vless
+  uuid: 33c621aa-f24c-406a-9e96-f60f528704a4
+  tls: true
+  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
   skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   server: forshynewh.duckdns.org
   port: 443
@@ -41,14 +49,18 @@ proxies:
   sni: forshynewh.duckdns.org
   skip-cert-verify: false
 - name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  server: uae.unixzone.us
-  port: 22573
+  server: uae.purchasebot.net
+  port: 443
   udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
+  uuid: 0d607d84-0ae0-4b9c-a4f3-1766ab456e02
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _0hmzeEAGEx6boacV3d-FrFGaFBYfdvJno39FxveJwM
+    short-id: e7c5f2a9
+  servername: bunny.net
+  client-fingerprint: firefox
 - name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
   server: 95.174.68.188
   port: 14430
@@ -58,6 +70,26 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
+  server: ams1.rvpn.app
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: x2A6AsyZ-rAllz0wbKHzWA
+- name: 🇦🇪 阿联酋 (UAE) 08 - xiaoyu
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +101,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,5 +114,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 08 - xiaoyu
 rules:
 - MATCH,PROXIES

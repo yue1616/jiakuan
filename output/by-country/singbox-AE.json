@@ -4,12 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaoyu",
-      "server": "ams1.rvpn.app",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "x2A6AsyZ-rAllz0wbKHzWA"
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
     },
     {
       "type": "vless",
@@ -26,19 +34,26 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "server": "57.129.130.34",
+      "server_port": 52014,
+      "uuid": "33c621aa-f24c-406a-9e96-f60f528704a4",
       "tls": {
         "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
+        "server_name": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev"
+        }
       }
     },
     {
@@ -56,11 +71,22 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
-      "server": "uae.unixzone.us",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws"
+      "server": "uae.purchasebot.net",
+      "server_port": 443,
+      "uuid": "0d607d84-0ae0-4b9c-a4f3-1766ab456e02",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "bunny.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_0hmzeEAGEx6boacV3d-FrFGaFBYfdvJno39FxveJwM",
+          "short_id": "e7c5f2a9"
+        }
       }
     },
     {
@@ -71,7 +97,31 @@
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
         "type": "ws",
-        "path": "/vless"
+        "path": "/vless",
+        "headers": {
+          "Host": "95.174.68.188"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - xiaoyu",
+      "server": "ams1.rvpn.app",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "x2A6AsyZ-rAllz0wbKHzWA"
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 08 - xiaoyu",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
       }
     },
     {
@@ -84,7 +134,9 @@
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 07 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 08 - xiaoyu"
       ]
     },
     {
@@ -96,7 +148,9 @@
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 07 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 08 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

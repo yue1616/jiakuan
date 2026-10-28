@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
-  server: 87.236.166.52
-  port: 56134
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: uvKNudV-N8AUCrykPiyznA
-- name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   server: 78.135.73.168
   port: 443
   udp: true
@@ -24,13 +17,29 @@ proxies:
     short-id: f4b2a12c
   servername: tr2.tv-quoralyx.top
   client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
-  server: 206.1.103.237
-  port: 19999
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
+  server: 153.56.210.134
+  port: 34121
   udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: 1/kU1gF9gGRGdF5JH2jf3GeeLsItfkkOhmMP5cnPMUI=:ojXUsKiyV41J4EsaiAZFaKCW+zhuD3Tl0Z7pWkKq6eM=
+  type: hysteria2
+  password: c8ed6cd1-6566-4f7a-819e-1c55b2b360c9
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
+  server: 78.135.73.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
+    short-id: f46cd3ea3d1eb72d
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   server: 151.241.226.201
   port: 2053
@@ -54,23 +63,43 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
     short-id: 457fab2ac885dbe0
   servername: github.com
-  client-fingerprint: firefox
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
-  server: 78.135.73.47
+  server: 177.3.208.65
   port: 443
   udp: true
   type: vless
-  uuid: 25e16692-d097-4e69-9e2d-8415609c1968
+  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
+  tls: true
+  servername: tgmansion.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /vless-tr
+- name: 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
+  server: tr2.h1cloud.net
+  port: 25021
+  udp: true
+  type: vless
+  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8
-    short-id: f46cd3ea3d1eb72d
-  servername: www.datadoghq.com
+    public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
+    short-id: 17fa3af0924c88b3
+  servername: www.samsung.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
+  server: vip.brelux.ir
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: gCs4favaVa7ErDOoQ2AMpc-QVxA4Q4Jy
 proxy-groups:
 - name: PROXIES
   type: select
@@ -82,6 +111,8 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -93,5 +124,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 07 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 08 - xiaoyu
 rules:
 - MATCH,PROXIES

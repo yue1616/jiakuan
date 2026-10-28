@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaoyu
+  server: 136.148.211.243
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  tls: true
+  reality-opts:
+    public-key: qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo
+    short-id: 11d37dd92940329e
+  servername: se1-cl3.vless-fiberstasis.top
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-se-3
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -15,7 +30,7 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   server: swe2.obxodvpn.us
   port: 4443
   udp: true
@@ -23,43 +38,31 @@ proxies:
   password: 146d567c-6335-4e63-a8aa-7ec068642440
   sni: nl1.obxodvpn.us
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
-  server: promo.betust.net
-  port: 443
-  udp: true
-  type: hysteria2
-  password: d4ca9415f0eac7897472e1e5b86d2e96
-  sni: promo.betust.net
-  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
-  server: se1-cl3.vless-fiberstasis.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
-  tls: true
-  reality-opts:
-    public-key: qJja_3vaCxm3As6alnqjpIIThwGm4e4m_MOluQBNFgo
-    short-id: 11d37dd92940329e
-  servername: se1-cl3.vless-fiberstasis.top
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-se-3
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   server: 191.44.114.179
-  port: 2096
+  port: 8443
   udp: true
   type: vless
   uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  flow: xtls-rprx-vision
   tls: true
-  servername: st33614.rumedia-cdn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st33614.rumedia-cdn.com
+  reality-opts:
+    public-key: WEHGKyXsOD5i2kNCJ3GrjeNZQBsrzH76OrPDJ7x2YwY
+    short-id: 9d48935b2c2b8011
+  servername: www.wikipedia.org
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
+  server: se3.h1cloud.net
+  port: 25387
+  udp: true
+  type: vless
+  uuid: 5a519754-a673-4462-83f6-5eb25d2af141
+  tls: true
+  reality-opts:
+    public-key: _nrnGiJUdyeLv2afSwe6P4j02AMayY34WFMjUJp5Kwc
+    short-id: 9608a9c65d315d52
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
   server: 191.44.114.154
   port: 8443
@@ -73,6 +76,42 @@ proxies:
     short-id: c4359f3827231250
   servername: www.wikipedia.org
   client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
+  server: promo.betust.net
+  port: 443
+  udp: true
+  type: hysteria2
+  password: d4ca9415f0eac7897472e1e5b86d2e96
+  sni: promo.betust.net
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
+  server: 191.44.114.179
+  port: 2096
+  udp: true
+  type: vless
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  tls: true
+  servername: st33614.rumedia-cdn.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /cdn/v3/live
+    headers:
+      Host: st33614.rumedia-cdn.com
+- name: 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
+  server: 89.22.224.146
+  port: 43788
+  udp: true
+  type: vless
+  uuid: acc10ba5-a222-44b3-8a1a-4f247ffc6466
+  tls: true
+  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +123,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,5 +137,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
 rules:
 - MATCH,PROXIES

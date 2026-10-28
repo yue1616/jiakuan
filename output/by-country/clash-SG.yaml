@@ -5,20 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01 - xiaoyu
-  server: 139.180.220.175
-  port: 8388
+  server: 104.17.3.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  tls: true
+  servername: nautica-cff.kloningstrife002.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 02 - xiaoyu
+  server: 129.150.59.74
+  port: 14384
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: qpSevKaUXYQKvSjp
-- name: 🇸🇬 新加坡 (Singapore) 02 - xiaoyu
-  server: 149.88.23.202
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  cipher: 2022-blake3-aes-256-gcm
+  password: sUR6Ny8Y6PSvHhl/DUxconwxg6VZyFdsdfaVCvEatJo=:7bTEhHgpErKiRjE1ega+H6pcpJsNLFB0CjQseujAHrA=
 - name: 🇸🇬 新加坡 (Singapore) 03 - xiaoyu
   server: 149.88.23.207
   port: 18000
@@ -28,20 +35,72 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 04 - xiaoyu
-  server: 68.183.235.122
-  port: 8080
+  server: 149.88.23.202
+  port: 18000
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 05 - xiaoyu
-  server: 68.183.227.4
+  server: 128.199.172.224
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 06 - xiaoyu
+  server: 68.183.227.4
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 07 - xiaoyu
+  server: 68.183.227.45
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 08 - xiaoyu
+  server: 95.111.195.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇸🇬 新加坡 (Singapore) 09 - xiaoyu
+  server: 68.183.235.240
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 10 - xiaoyu
+  server: 68.183.235.122
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 11 - xiaoyu
+  server: 128.1.186.132
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 12 - xiaoyu
+  server: 128.1.186.73
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 13 - xiaoyu
   server: 139.180.146.200
   port: 8886
   udp: true
@@ -49,35 +108,14 @@ proxies:
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   sni: 139.180.146.200
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 07 - xiaoyu
-  server: 68.183.235.240
+- name: 🇸🇬 新加坡 (Singapore) 14 - xiaoyu
+  server: 68.183.227.236
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 08 - xiaoyu
-  server: 128.199.172.224
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 09 - xiaoyu
-  server: 68.183.227.45
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 10 - xiaoyu
-  server: 128.1.186.73
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 11 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 15 - xiaoyu
   server: 172.237.88.103
   port: 443
   udp: true
@@ -90,23 +128,28 @@ proxies:
     short-id: 5a42dbd7e26a0415
   servername: zoom.us
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 12 - xiaoyu
-  server: 68.183.227.236
-  port: 8080
+- name: 🇸🇬 新加坡 (Singapore) 16 - xiaoyu
+  server: 138.2.73.238
+  port: 50160
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 13 - xiaoyu
-  server: 45.77.40.28
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: 138.2.73.238
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 17 - xiaoyu
+  server: 206.206.76.75
   port: 443
   udp: true
   type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+  flow: xtls-rprx-vision
   tls: true
-  servername: sg003.zestapp778.com
-  skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 14 - xiaoyu
+  reality-opts:
+    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
+    short-id: 9930177816ab09da
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇸🇬 新加坡 (Singapore) 18 - xiaoyu
   server: 134.185.81.5
   port: 47881
   udp: true
@@ -119,60 +162,42 @@ proxies:
     short-id: 38d72071
   servername: www.tesla.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 15 - xiaoyu
-  server: 206.206.76.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 16 - xiaoyu
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 17 - xiaoyu
-  server: funagfrdfs.alixxplay.com
-  port: 46105
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Lk5nwDxC2tr3J7hT8emhUUiMX8cHyKX9TiRj_EnAiik
-    short-id: 28f5c1f8f98a
-  servername: www.lamer.com.sg
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 18 - xiaoyu
-  server: v2.drsachi.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: tiktok.com
 - name: 🇸🇬 新加坡 (Singapore) 19 - xiaoyu
-  server: sg02-hy.poke-mon.xyz
-  port: 20000
+  server: 45.77.40.28
+  port: 443
   udp: true
-  type: hysteria2
-  password: ade5e8ac-60f0-41a7-b3cf-8ab94a4e9e0b
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: sg003.zestapp778.com
+  skip-cert-verify: false
 - name: 🇸🇬 新加坡 (Singapore) 20 - xiaoyu
+  server: 5.34.177.164
+  port: 443
+  udp: true
+  type: vless
+  uuid: ca678d26-5435-4d13-b378-06c4c3b070ff
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwWhNuekusD1iPZZ--7G891dU9PCacxyCYwsZxOApHA
+    short-id: b2efed6d157e7bb0
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 21 - xiaoyu
+  server: 67.159.52.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: a16bd0e2-ff2e-4e4c-a955-0c684255a065
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -YTGWg5DjsLDyaDfr1D83kiUK22LVcrK3yC53lqqigs
+    short-id: feedbacc
+  servername: sg.fasti.win
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 22 - xiaoyu
   server: 3.0.111.82
   port: 12972
   udp: true
@@ -184,8 +209,21 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 21 - xiaoyu
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 23 - xiaoyu
+  server: 3.0.111.82
+  port: 17623
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 (Singapore) 24 - xiaoyu
   server: 3.0.111.82
   port: 10574
   udp: true
@@ -198,20 +236,7 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 22 - xiaoyu
-  server: 172.237.88.103
-  port: 447
-  udp: true
-  type: vless
-  uuid: efd11a89-7506-44ce-95b6-6654859f155b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
-    short-id: 5a42dbd7e26a0415
-  servername: netflix.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 23 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 25 - xiaoyu
   server: 139.162.27.96
   port: 2096
   udp: true
@@ -225,20 +250,7 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 24 - xiaoyu
-  server: 3.0.111.82
-  port: 17623
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇸🇬 新加坡 (Singapore) 25 - xiaoyu
+- name: 🇸🇬 新加坡 (Singapore) 26 - xiaoyu
   server: 54.251.9.130
   port: 24146
   udp: true
@@ -250,8 +262,8 @@ proxies:
     public-key: VeluC9A7XDurAWQNgXKShS2SJSgoK79QHFgiAMYrvGo
     short-id: 7205d9079521832c
   servername: www.intel.com
-  client-fingerprint: edge
-- name: 🇸🇬 新加坡 (Singapore) 26 - xiaoyu
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 27 - xiaoyu
   server: sg2-8sb.6121999.dpdns.org
   port: 19825
   udp: true
@@ -264,6 +276,32 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: sg2-8sb.6121999.dpdns.org
   client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 28 - xiaoyu
+  server: 172.237.88.103
+  port: 447
+  udp: true
+  type: vless
+  uuid: efd11a89-7506-44ce-95b6-6654859f155b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EeLAX-BAjzSdRes-zpUFzVOYsBedmP8lUOHhXXJFXyI
+    short-id: 5a42dbd7e26a0415
+  servername: netflix.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 29 - xiaoyu
+  server: 147.93.173.45
+  port: 10444
+  udp: true
+  type: vless
+  uuid: 75c5f51b-d548-4eab-a26e-aa10fc3dbc7b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -295,6 +333,9 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 24 - xiaoyu
   - 🇸🇬 新加坡 (Singapore) 25 - xiaoyu
   - 🇸🇬 新加坡 (Singapore) 26 - xiaoyu
+  - 🇸🇬 新加坡 (Singapore) 27 - xiaoyu
+  - 🇸🇬 新加坡 (Singapore) 28 - xiaoyu
+  - 🇸🇬 新加坡 (Singapore) 29 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -326,5 +367,8 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 24 - xiaoyu
   - 🇸🇬 新加坡 (Singapore) 25 - xiaoyu
   - 🇸🇬 新加坡 (Singapore) 26 - xiaoyu
+  - 🇸🇬 新加坡 (Singapore) 27 - xiaoyu
+  - 🇸🇬 新加坡 (Singapore) 28 - xiaoyu
+  - 🇸🇬 新加坡 (Singapore) 29 - xiaoyu
 rules:
 - MATCH,PROXIES
