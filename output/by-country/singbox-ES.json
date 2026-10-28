@@ -7,34 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 01 - xiaoyu",
       "server": "5.188.181.201",
-      "server_port": 9025,
+      "server_port": 9005,
       "method": "aes-256-cfb",
-      "password": "XPtzA9sCug3SPR4c"
+      "password": "ZET59LF6DvCC8KVt"
     },
     {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 02 - xiaoyu",
-      "server": "83.147.18.3",
-      "server_port": 443,
-      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
-          "short_id": "fd8cf7e1173f0edb"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaoyu",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -43,13 +22,25 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
           "short_id": "29e8dcd2b37aaa7f"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 03 - xiaoyu",
+      "server": "66.163.118.131",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
       }
     },
     {
@@ -73,37 +64,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaoyu",
-      "server": "46.28.71.247",
-      "server_port": 443,
-      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
-          "short_id": "0dfc23fe80778c00"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaoyu",
-      "server": "dns22.m3hrzd.ir",
-      "server_port": 1354,
-      "method": "chacha20-ietf-poly1305",
-      "password": "U5Jk0BhRNKjb5wQBBOXx2wwkWZ_yWU0N"
-    },
-    {
       "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 07 - xiaoyu",
+      "tag": "🇪🇸 西班牙 (Spain) 05 - xiaoyu",
       "server": "66.163.118.244",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -114,47 +76,26 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 08 - xiaoyu",
-      "server": "193.238.154.78",
-      "server_port": 443,
-      "uuid": "897d47f8-4dd5-42a1-bcd0-bef19caff55a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gateway.icloud.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4eE3K8Eac-ELze-LwRyJolqmhPqgCVqwQM1DKu6i0Ts",
-          "short_id": "e93d46ee3735069e"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 09 - xiaoyu",
-      "server": "66.163.118.251",
+      "tag": "🇪🇸 西班牙 (Spain) 06 - xiaoyu",
+      "server": "66.163.118.62",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "resources.discovergreatjobsandadvanceyourcareer.com",
+        "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
     },
     {
       "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 10 - xiaoyu",
-      "server": "66.163.118.131",
+      "tag": "🇪🇸 西班牙 (Spain) 07 - xiaoyu",
+      "server": "66.163.118.166",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "www.discovergreatjobsandadvanceyourcareer.com",
+        "server_name": "learn.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
       }
     },
@@ -169,10 +110,7 @@
         "🇪🇸 西班牙 (Spain) 04 - xiaoyu",
         "🇪🇸 西班牙 (Spain) 05 - xiaoyu",
         "🇪🇸 西班牙 (Spain) 06 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 07 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 08 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 09 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 10 - xiaoyu"
+        "🇪🇸 西班牙 (Spain) 07 - xiaoyu"
       ]
     },
     {
@@ -185,10 +123,7 @@
         "🇪🇸 西班牙 (Spain) 04 - xiaoyu",
         "🇪🇸 西班牙 (Spain) 05 - xiaoyu",
         "🇪🇸 西班牙 (Spain) 06 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 07 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 08 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 09 - xiaoyu",
-        "🇪🇸 西班牙 (Spain) 10 - xiaoyu"
+        "🇪🇸 西班牙 (Spain) 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
