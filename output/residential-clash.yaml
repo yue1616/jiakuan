@@ -4,25 +4,22 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  server: 218.237.185.234
-  port: 4652
+- name: 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  server: 172.66.44.211
+  port: 2083
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  server: 125.227.86.45
-  port: 443
-  udp: true
-  type: trojan
-  password: 0a9f1f5a397bd427
-  sni: TG.freecodes
-  skip-cert-verify: true
-  network: grpc
-  grpc-opts:
-    grpc-service-name: db
-- name: 🇮🇳 印度 (India) 03 (家宽) - xiaoyu
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: wk1.f1w.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wk1.f1w.de5.net
+- name: 🇮🇳 印度 (India) 02 (家宽) - xiaoyu
   server: 122.176.216.52
   port: 443
   udp: true
@@ -42,16 +39,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇮🇳 印度 (India) 03 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  - 🇮🇳 印度 (India) 02 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇮🇳 印度 (India) 03 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 01 (家宽) - xiaoyu
+  - 🇮🇳 印度 (India) 02 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

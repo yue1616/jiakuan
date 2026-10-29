@@ -4,35 +4,31 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
-      "server": "125.227.86.45",
-      "server_port": 443,
-      "password": "0a9f1f5a397bd427",
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
+      "server": "172.66.44.211",
+      "server_port": 2083,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "TG.freecodes",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ]
+        "server_name": "wk1.f1w.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "db"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "wk1.f1w.de5.net"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03 (家宽) - xiaoyu",
+      "tag": "🇮🇳 印度 (India) 02 (家宽) - xiaoyu",
       "server": "122.176.216.52",
       "server_port": 443,
       "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
@@ -58,18 +54,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
-        "🇮🇳 印度 (India) 03 (家宽) - xiaoyu"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
+        "🇮🇳 印度 (India) 02 (家宽) - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
-        "🇮🇳 印度 (India) 03 (家宽) - xiaoyu"
+        "🇺🇸 美国 (United States) 01 (家宽) - xiaoyu",
+        "🇮🇳 印度 (India) 02 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

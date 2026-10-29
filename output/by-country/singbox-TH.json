@@ -6,21 +6,14 @@
     {
       "type": "vless",
       "tag": "🇹🇭 泰国 (Thailand) 01 - xiaoyu",
-      "server": "45.154.26.63",
-      "server_port": 443,
-      "uuid": "ff85e702-b605-4109-884d-2c1f065d0954",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk",
-          "short_id": "3c032a7e"
+      "server": "103.86.49.57",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "ais.speedtest.net"
         }
       }
     },
@@ -41,12 +34,56 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03 - xiaoyu",
+      "server": "45.154.26.63",
+      "server_port": 443,
+      "uuid": "ff85e702-b605-4109-884d-2c1f065d0954",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk",
+          "short_id": "3c032a7e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 04 - xiaoyu",
+      "server": "154.21.203.106",
+      "server_port": 21033,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.kaidee.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4",
+          "short_id": "cbd39bea0805e2"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01 - xiaoyu",
-        "🇹🇭 泰国 (Thailand) 02 - xiaoyu"
+        "🇹🇭 泰国 (Thailand) 02 - xiaoyu",
+        "🇹🇭 泰国 (Thailand) 03 - xiaoyu",
+        "🇹🇭 泰国 (Thailand) 04 - xiaoyu"
       ]
     },
     {
@@ -54,7 +91,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01 - xiaoyu",
-        "🇹🇭 泰国 (Thailand) 02 - xiaoyu"
+        "🇹🇭 泰国 (Thailand) 02 - xiaoyu",
+        "🇹🇭 泰国 (Thailand) 03 - xiaoyu",
+        "🇹🇭 泰国 (Thailand) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

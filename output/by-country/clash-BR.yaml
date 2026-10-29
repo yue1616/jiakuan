@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01 - xiaoyu
-  server: 216.238.104.154
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
-  skip-cert-verify: false
-- name: 🇧🇷 巴西 (Brazil) 02 - xiaoyu
   server: 147.15.108.14
   port: 20000
   udp: true
@@ -22,6 +14,25 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
+  ports: 20000-30000,20000-20000
+- name: 🇧🇷 巴西 (Brazil) 02 - xiaoyu
+  server: 216.128.173.124
+  port: 15040
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: br001.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇧🇷 巴西 (Brazil) 03 - xiaoyu
+  server: 216.238.104.154
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -29,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaoyu
   - 🇧🇷 巴西 (Brazil) 02 - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaoyu
   - 🇧🇷 巴西 (Brazil) 02 - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

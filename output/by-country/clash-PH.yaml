@@ -6,6 +6,14 @@ log-level: info
 proxies:
 - name: 🇵🇭 菲律宾 (Philippines) 01 - xiaoyu
   server: ph001.zestapp778.com
+  port: 46293
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: ph001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇵🇭 菲律宾 (Philippines) 02 - xiaoyu
+  server: ph001.zestapp778.com
   port: 15656
   udp: true
   type: vless
@@ -13,18 +21,19 @@ proxies:
   tls: true
   servername: ph001.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇭 菲律宾 (Philippines) 01 - xiaoyu
+  - 🇵🇭 菲律宾 (Philippines) 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇭 菲律宾 (Philippines) 01 - xiaoyu
+  - 🇵🇭 菲律宾 (Philippines) 02 - xiaoyu
 rules:
 - MATCH,PROXIES

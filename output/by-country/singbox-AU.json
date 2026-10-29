@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaoyu",
+      "server": "45.63.30.142",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "45.63.30.142",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
       "server": "51.161.204.242",
       "server_port": 443,
       "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
@@ -15,7 +27,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -23,25 +35,6 @@
           "short_id": "d15c17cef9b2e456"
         }
       }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
-      "server": "158.178.137.129",
-      "password": "b42d90fa667942aebc734d60",
-      "tls": {
-        "enabled": true,
-        "server_name": "rmgyvpn.rest",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "b42d90fa667942aebc734d60"
-      },
-      "server_ports": [
-        "20000:30000",
-        "20000:20000"
-      ]
     },
     {
       "type": "hysteria2",
@@ -60,27 +53,43 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
-      "server": "45.63.30.142",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "server": "158.178.137.129",
+      "password": "b42d90fa667942aebc734d60",
       "tls": {
         "enabled": true,
-        "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": false
-      }
+        "server_name": "rmgyvpn.rest",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
+      },
+      "server_ports": [
+        "20000:30000",
+        "20000:20000"
+      ]
     },
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
-      "server": "au001.zestapp778.com",
-      "server_port": 35652,
-      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "server": "51.161.204.244",
+      "server_port": 443,
+      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "au001.zestapp778.com",
-        "insecure": false
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
+          "short_id": "0ad08b47f498efd2"
+        }
       }
     },
     {
@@ -96,6 +105,22 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 07 - xiaoyu",
+      "server": "au001.zestapp778.com",
+      "server_port": 35652,
+      "uuid": "e9a8144e-5237-488a-afb1-9ca3d8d54c80",
+      "tls": {
+        "enabled": true,
+        "server_name": "au001.zestapp778.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -105,7 +130,8 @@
         "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu"
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu",
+        "🇦🇺 澳大利亚 (Australia) 07 - xiaoyu"
       ]
     },
     {
@@ -117,7 +143,8 @@
         "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu"
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu",
+        "🇦🇺 澳大利亚 (Australia) 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
