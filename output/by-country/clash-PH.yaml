@@ -12,14 +12,6 @@ proxies:
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
   servername: ph001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇵🇭 菲律宾 (Philippines) 02 - xiaoyu
-  server: ph001.zestapp778.com
-  port: 46293
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: ph001.zestapp778.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -27,13 +19,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇭 菲律宾 (Philippines) 01 - xiaoyu
-  - 🇵🇭 菲律宾 (Philippines) 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇭 菲律宾 (Philippines) 01 - xiaoyu
-  - 🇵🇭 菲律宾 (Philippines) 02 - xiaoyu
 rules:
 - MATCH,PROXIES

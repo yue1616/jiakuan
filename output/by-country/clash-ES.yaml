@@ -15,30 +15,25 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 02 - xiaoyu
-  server: 66.163.118.131
+  server: 66.163.118.251
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.discovergreatjobsandadvanceyourcareer.com
+  sni: resources.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 - name: 🇪🇸 西班牙 (Spain) 03 - xiaoyu
-  server: 46.28.71.247
+  server: 66.163.118.244
   port: 443
   udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: api.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaoyu
-  server: 156.252.229.136
+  server: 156.252.229.11
   port: 8443
   udp: true
   type: vless
@@ -50,7 +45,7 @@ proxies:
   servername: play.googleapis.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 05 - xiaoyu
-  server: 156.252.229.11
+  server: 156.252.229.136
   port: 8443
   udp: true
   type: vless
@@ -72,7 +67,7 @@ proxies:
     public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
     short-id: 974f7f8f
   servername: play.googleapis.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 07 - xiaoyu
   server: 193.238.154.78
   port: 443
@@ -86,22 +81,6 @@ proxies:
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 08 - xiaoyu
-  server: 66.163.118.244
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 09 - xiaoyu
-  server: 66.163.118.166
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -114,8 +93,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 05 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 06 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 07 - xiaoyu
-  - 🇪🇸 西班牙 (Spain) 08 - xiaoyu
-  - 🇪🇸 西班牙 (Spain) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -128,7 +105,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 05 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 06 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 07 - xiaoyu
-  - 🇪🇸 西班牙 (Spain) 08 - xiaoyu
-  - 🇪🇸 西班牙 (Spain) 09 - xiaoyu
 rules:
 - MATCH,PROXIES

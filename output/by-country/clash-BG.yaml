@@ -6,68 +6,52 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu
   server: 213.183.63.60
-  port: 9028
+  port: 9064
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9eeJ2fwnZA5Fxgz8
+  password: cp8pRSUAyLhTfVWH
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu
-  server: 213.183.63.60
-  port: 9098
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
-  server: 213.183.63.60
-  port: 9061
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 4R3hUfZ2FHhDmNcP
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu
-  server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu
-  server: 213.183.63.60
-  port: 9049
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: PRBf4BS2HvJqtWxY
-- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu
-  server: 213.183.63.60
-  port: 9085
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu
   server: 213.183.63.60
   port: 9030
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: GeregetR8cvQHzYr
-- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu
-  server: 213.183.63.60
-  port: 9064
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
-- name: 🇧🇬 保加利亚 (Bulgaria) 09 - xiaoyu
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
   server: 213.183.63.60
   port: 9066
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 2KUaE2a8NWTvuCZ3
-- name: 🇧🇬 保加利亚 (Bulgaria) 10 - xiaoyu
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu
+  server: 93.152.223.244
+  port: 443
+  udp: true
+  type: vless
+  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yKwDGqOdkC_nEPOQHMvAQLPcPK8YHskv_opYoY66Yk8
+  servername: ddk5-ger.newagetechnologies.live
+  client-fingerprint: qq
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu
+  server: 213.183.63.60
+  port: 9029
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu
+  server: 213.183.63.60
+  port: 9028
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9eeJ2fwnZA5Fxgz8
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu
   server: 195.123.226.21
   port: 443
   udp: true
@@ -80,18 +64,18 @@ proxies:
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
   client-fingerprint: chrome
-- name: 🇧🇬 保加利亚 (Bulgaria) 11 - xiaoyu
-  server: 93.152.223.244
-  port: 443
+- name: 🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu
+  server: p1real4.greewebservices.ir
+  port: 1260
   udp: true
   type: vless
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  flow: xtls-rprx-vision
+  uuid: f234330e-f9df-46e3-8f60-b2af5173c147
   tls: true
   reality-opts:
-    public-key: yKwDGqOdkC_nEPOQHMvAQLPcPK8YHskv_opYoY66Yk8
-  servername: ddk5-ger.newagetechnologies.live
-  client-fingerprint: qq
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 9b60d3
+  servername: play.googleapis.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -105,9 +89,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu
-  - 🇧🇬 保加利亚 (Bulgaria) 09 - xiaoyu
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaoyu
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -121,8 +102,5 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu
-  - 🇧🇬 保加利亚 (Bulgaria) 09 - xiaoyu
-  - 🇧🇬 保加利亚 (Bulgaria) 10 - xiaoyu
-  - 🇧🇬 保加利亚 (Bulgaria) 11 - xiaoyu
 rules:
 - MATCH,PROXIES

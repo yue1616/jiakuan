@@ -4,15 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaoyu",
+      "server": "ams1.rvpn.app",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "x2A6AsyZ-rAllz0wbKHzWA"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -21,25 +29,17 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
+      "server": "ae.privatevip.ir",
+      "server_port": 450,
+      "uuid": "7c730089-1791-4828-89b2-86e7e1663063",
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/",
         "headers": {
-          "Host": "185.253.116.33"
+          "Host": "ae.privatevip.ir"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
-      "server": "ams1.rvpn.app",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "x2A6AsyZ-rAllz0wbKHzWA"
     },
     {
       "type": "vless",
@@ -56,6 +56,31 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -63,7 +88,9 @@
         "🇦🇪 阿联酋 (UAE) 01 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 04 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu"
       ]
     },
     {
@@ -73,7 +100,9 @@
         "🇦🇪 阿联酋 (UAE) 01 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 04 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
