@@ -38,15 +38,15 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 04 - xiaoyu
-  server: 139.84.132.62
-  port: 443
+  server: in002.zestapp778.com
+  port: 42733
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: 139.84.132.62
-  skip-cert-verify: true
+  password: 5t6i121em5lkmsmk
+  sni: in002.zestapp778.com
+  skip-cert-verify: false
 - name: 🇮🇳 印度 (India) 05 - xiaoyu
   server: 152.67.8.205
   port: 80
@@ -59,16 +59,6 @@ proxies:
   ws-opts:
     path: /
 - name: 🇮🇳 印度 (India) 06 - xiaoyu
-  server: in002.zestapp778.com
-  port: 46362
-  udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: in002.zestapp778.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 07 - xiaoyu
   server: 172.105.39.124
   port: 7002
   udp: true
@@ -86,7 +76,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - xiaoyu
   - 🇮🇳 印度 (India) 05 - xiaoyu
   - 🇮🇳 印度 (India) 06 - xiaoyu
-  - 🇮🇳 印度 (India) 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,6 +87,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - xiaoyu
   - 🇮🇳 印度 (India) 05 - xiaoyu
   - 🇮🇳 印度 (India) 06 - xiaoyu
-  - 🇮🇳 印度 (India) 07 - xiaoyu
 rules:
 - MATCH,PROXIES

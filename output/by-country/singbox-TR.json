@@ -4,8 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
       "server": "153.56.210.134",
       "server_port": 34121,
       "password": "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9",
@@ -21,51 +41,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
-      "server": "62.133.63.45",
-      "server_port": 8444,
-      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
-      "tls": {
-        "enabled": true,
-        "server_name": "github.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": "457fab2ac885dbe0"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "GunService"
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
       "server": "177.3.208.65",
       "server_port": 443,
       "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
@@ -75,7 +51,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -85,28 +61,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
-      "server": "136.234.9.23",
-      "server_port": 25021,
-      "uuid": "2446e2e2-1ce3-4502-9050-1dd32bacc68c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.samsung.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg",
-          "short_id": "17fa3af0924c88b3"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaoyu",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
       "server": "83.217.9.230",
       "server_port": 43000,
       "uuid": "4f8493b1-9876-46c4-8ded-01cafb22cee0",
@@ -133,9 +88,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 06 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu"
       ]
     },
     {
@@ -145,9 +98,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 06 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
