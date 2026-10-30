@@ -5,18 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01 - xiaoyu
-  server: 208.69.78.217
-  port: 33195
+  server: 132.243.175.144
+  port: 8388
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02 - xiaoyu
   server: 208.69.78.217
-  port: 21086
+  port: 21021
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -26,7 +23,7 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 03 - xiaoyu
   server: 208.69.78.217
-  port: 33152
+  port: 21080
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -35,15 +32,13 @@ proxies:
   obfs: salamander
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 04 - xiaoyu
-  server: 208.69.78.217
-  port: 21113
+  server: 208.69.78.19
+  port: 443
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 05 - xiaoyu
   server: 208.69.78.217
   port: 33117
@@ -56,233 +51,6 @@ proxies:
   obfs-password: mbQXP2ASuHbF6ZPq
 - name: 🇨🇭 瑞士 (Switzerland) 06 - xiaoyu
   server: 208.69.78.217
-  port: 33187
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaoyu
-  server: 208.69.78.217
-  port: 33141
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaoyu
-  server: 152.67.75.161
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 3a702d4d1de4949005d8431220e040fb
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
-- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaoyu
-  server: 208.69.78.217
-  port: 33013
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 10 - xiaoyu
-  server: 208.69.78.217
-  port: 33092
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 11 - xiaoyu
-  server: 208.69.78.217
-  port: 21080
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 12 - xiaoyu
-  server: 208.69.78.217
-  port: 33174
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 13 - xiaoyu
-  server: 208.69.78.217
-  port: 33042
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 14 - xiaoyu
-  server: 208.69.78.19
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 15 - xiaoyu
-  server: 208.69.78.217
-  port: 8444
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 16 - xiaoyu
-  server: 208.69.78.217
-  port: 21090
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 17 - xiaoyu
-  server: 208.69.78.217
-  port: 21021
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 18 - xiaoyu
-  server: 208.69.78.217
-  port: 21154
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 19 - xiaoyu
-  server: 208.69.78.217
-  port: 21016
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 20 - xiaoyu
-  server: 208.69.78.217
-  port: 21054
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 21 - xiaoyu
-  server: 208.69.78.217
-  port: 21046
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 22 - xiaoyu
-  server: 208.69.78.217
-  port: 33171
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 23 - xiaoyu
-  server: 208.69.78.217
-  port: 33044
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 24 - xiaoyu
-  server: 208.69.78.217
-  port: 21000
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-  ports: 21000-21199,33000-33199
-- name: 🇨🇭 瑞士 (Switzerland) 25 - xiaoyu
-  server: 208.69.78.60
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 26 - xiaoyu
-  server: 208.69.78.217
-  port: 21084
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 27 - xiaoyu
-  server: 208.69.78.217
-  port: 21147
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 28 - xiaoyu
-  server: 208.69.78.217
-  port: 21158
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 29 - xiaoyu
-  server: 208.69.78.217
   port: 2053
   udp: true
   type: vless
@@ -293,82 +61,7 @@ proxies:
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
   client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 30 - xiaoyu
-  server: 208.69.78.217
-  port: 33025
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 31 - xiaoyu
-  server: 208.69.78.217
-  port: 21161
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 32 - xiaoyu
-  server: 208.69.78.217
-  port: 21047
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 33 - xiaoyu
-  server: 208.69.78.217
-  port: 33133
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 34 - xiaoyu
-  server: 208.69.78.217
-  port: 21067
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 35 - xiaoyu
-  server: 208.69.78.217
-  port: 33130
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 36 - xiaoyu
-  server: 57.129.130.63
-  port: 52014
-  udp: true
-  type: vless
-  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 37 - xiaoyu
+- name: 🇨🇭 瑞士 (Switzerland) 07 - xiaoyu
   server: 45.90.57.119
   port: 8443
   udp: true
@@ -380,8 +73,8 @@ proxies:
     public-key: L6DeK_a25_ZjPKFOrQLoCPWuXi5KCIH_EcRpARmCwkI
     short-id: 16036bbef04d0509
   servername: twitch.tv
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 38 - xiaoyu
+  client-fingerprint: safari
+- name: 🇨🇭 瑞士 (Switzerland) 08 - xiaoyu
   server: 149.33.15.213
   port: 443
   udp: true
@@ -390,21 +83,15 @@ proxies:
   tls: true
   servername: swz.proxyplankton.ru
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 39 - xiaoyu
-  server: 175.41.179.37
-  port: 51262
-  udp: true
-  type: vless
-  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+- name: 🇨🇭 瑞士 (Switzerland) 09 - xiaoyu
+  server: 208.69.78.208
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -419,36 +106,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaoyu
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaoyu
   - 🇨🇭 瑞士 (Switzerland) 09 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 10 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 11 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 12 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 13 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 14 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 15 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 16 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 17 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 18 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 19 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 20 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 21 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 22 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 23 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 24 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 25 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 26 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 27 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 28 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 29 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 30 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 31 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 32 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 33 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 34 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 35 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 36 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 37 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 38 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 39 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -463,35 +120,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 07 - xiaoyu
   - 🇨🇭 瑞士 (Switzerland) 08 - xiaoyu
   - 🇨🇭 瑞士 (Switzerland) 09 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 10 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 11 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 12 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 13 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 14 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 15 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 16 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 17 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 18 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 19 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 20 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 21 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 22 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 23 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 24 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 25 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 26 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 27 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 28 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 29 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 30 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 31 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 32 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 33 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 34 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 35 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 36 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 37 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 38 - xiaoyu
-  - 🇨🇭 瑞士 (Switzerland) 39 - xiaoyu
 rules:
 - MATCH,PROXIES
