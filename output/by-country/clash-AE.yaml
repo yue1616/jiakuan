@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaoyu
-  server: ams1.rvpn.app
+  server: 178.253.16.185
   port: 8388
   udp: true
   type: ss
@@ -22,28 +22,6 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
-  server: ae.privatevip.ir
-  port: 450
-  udp: true
-  type: vless
-  uuid: 7c730089-1791-4828-89b2-86e7e1663063
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: ae.privatevip.ir
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -52,8 +30,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
-  server: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -63,6 +41,15 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
 proxy-groups:
 - name: PROXIES
   type: select
@@ -73,7 +60,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,6 +70,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
 rules:
 - MATCH,PROXIES
