@@ -6,26 +6,12 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaoyu
   server: 217.30.10.44
-  port: 9095
+  port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
+  password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
-  server: 217.30.10.44
-  port: 9042
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
   server: 70.34.252.255
   port: 443
   udp: true
@@ -33,7 +19,22 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
+- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
+  server: 188.225.83.133
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5f1c2e83-d4aa-4f10-81e9-e0ccc018974c
+  tls: true
+  reality-opts:
+    public-key: JqmkP6Fys7jN2Fu1iDJuWKVNPhlgHfy_pj1DHFVKVhw
+    short-id: a1b2c3d4e5f6a7b8
+  servername: xnodtwx.artemida.live
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
   server: 31.59.143.147
   port: 443
   udp: true
@@ -46,30 +47,38 @@ proxies:
     short-id: ae97223a8f799889
   servername: pl2.waspnest.space
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
+  server: ru1.radiolumens.uk
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  server: 150.251.113.34
+  server: 87.242.119.253
   port: 443
   udp: true
   type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
+  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
   tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
+  servername: hvtlr-ru-47sb.fade.mom
+  skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  server: pl-waw.dontblockmepls.com
-  port: 2063
+  server: 2.26.6.1
+  port: 2087
   udp: true
   type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
   tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
+  servername: 2.26.6.1
+  skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
   server: 54.37.131.126
@@ -85,14 +94,17 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  server: 2.26.6.1
-  port: 2087
+  server: 150.251.113.34
+  port: 443
   udp: true
   type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
+  flow: xtls-rprx-vision
   tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: false
+  reality-opts:
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

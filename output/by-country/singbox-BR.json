@@ -12,27 +12,7 @@
       "tls": {
         "enabled": true,
         "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇧🇷 巴西 (Brazil) 02 - xiaoyu",
-      "server": "br001.zestapp778.com",
-      "server_port": 39533,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "br001.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
     },
     {
@@ -40,16 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01 - xiaoyu",
-        "🇧🇷 巴西 (Brazil) 02 - xiaoyu"
+        "🇧🇷 巴西 (Brazil) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01 - xiaoyu",
-        "🇧🇷 巴西 (Brazil) 02 - xiaoyu"
+        "🇧🇷 巴西 (Brazil) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

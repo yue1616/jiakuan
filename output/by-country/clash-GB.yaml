@@ -12,18 +12,18 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaoyu
-  server: 155.117.5.208
-  port: 10002
-  udp: true
-  type: vless
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaoyu
   server: 141.98.101.181
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaoyu
+  server: 155.117.5.208
+  port: 10002
+  udp: true
+  type: vless
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
 - name: 🇬🇧 英国 (United Kingdom) 04 - xiaoyu
   server: 51.89.194.151
   port: 2053
@@ -35,14 +35,14 @@ proxies:
     public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
     short-id: d051f678212f9d54
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇬🇧 英国 (United Kingdom) 05 - xiaoyu
-  server: 104.239.12.81
-  port: 43385
+  server: 146.70.61.37
+  port: 8080
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 06 - xiaoyu
   server: en001.zestapp778.com
   port: 29813
@@ -50,28 +50,8 @@ proxies:
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: en001.zestapp778.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇬🇧 英国 (United Kingdom) 07 - xiaoyu
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 08 - xiaoyu
-  server: 191.44.108.31
-  port: 443
-  udp: true
-  type: vless
-  uuid: 558b26f6-061b-4079-9b84-ca13b3e90ae3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
-    short-id: 3ba10d9ce34380c9
-  servername: www.google.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 09 - xiaoyu
   server: 191.44.108.6
   port: 443
   udp: true
@@ -83,16 +63,16 @@ proxies:
     public-key: A0QL_j-ReX7AotEj1w8qX9rHRgN2WycTZ43gUvuvZ00
     short-id: 3cf8d11aa0415d29
   servername: c9.qwyak.ru
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 10 - xiaoyu
-  server: 98.98.142.161
-  port: 8080
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 08 - xiaoyu
+  server: 104.239.12.81
+  port: 43385
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
-  server: 191.44.108.30
+  cipher: chacha20-ietf-poly1305
+  password: AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa
+- name: 🇬🇧 英国 (United Kingdom) 09 - xiaoyu
+  server: 191.44.108.31
   port: 443
   udp: true
   type: vless
@@ -100,44 +80,11 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 3pBHfffYFRPpe8Lt47cLSSgCgwNR-70blFzpEbm11AE
-    short-id: b2baf331493d3de1
-  servername: c8.qwyak.ru
-  client-fingerprint: ''
-- name: 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
-  server: 98.98.207.163
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 13 - xiaoyu
-  server: 138.124.125.193
-  port: 10444
-  udp: true
-  type: vless
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: safari
-- name: 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
-  server: 146.19.143.218
-  port: 443
-  udp: true
-  type: vless
-  uuid: ca14493b-b984-4ffb-bc0e-9cb5da969e15
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg
-    short-id: 4a7b1c8d
-  servername: tau1.freerunet.online
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
+    public-key: QLh2Y5Ig7pncEIvOYpZlLH2rUHZ3CRuyAo1A_emWZQU
+    short-id: 3ba10d9ce34380c9
+  servername: www.google.com
+  client-fingerprint: ios
+- name: 🇬🇧 英国 (United Kingdom) 10 - xiaoyu
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -149,7 +96,34 @@ proxies:
     short-id: 9922313fffed1c63
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
+  server: 98.98.142.161
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
+  server: 98.98.207.163
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 13 - xiaoyu
+  server: 146.19.143.218
+  port: 443
+  udp: true
+  type: vless
+  uuid: ca14493b-b984-4ffb-bc0e-9cb5da969e15
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: l1mx_plNc2oiWxJCcZLh3SGfFU-5QxYpgQ__Ea59WEg
+    short-id: 4a7b1c8d
+  servername: tau1.freerunet.online
+  client-fingerprint: qq
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
   server: 193.163.203.170
   port: 443
   udp: true
@@ -162,6 +136,30 @@ proxies:
     short-id: b28db60d77c50b4f
   servername: yandex.ru
   client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
+  server: 144.48.11.97
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 4799abf0-d0d9-4a46-9c31-b1f76ae00e1e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lmT0SFJL1A8_ariRWL65dhShaqFbpitjGanv7EFnoR0
+    short-id: 725e6ea0
+  servername: 144.48.11.97
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
 - name: 🇬🇧 英国 (United Kingdom) 17 - xiaoyu
   server: 46.250.240.80
   port: 2053
@@ -201,43 +199,27 @@ proxies:
   servername: www.foxsports.com
   client-fingerprint: chrome
 - name: 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
-  server: 83.147.18.3
-  port: 443
+  server: 138.124.125.193
+  port: 10444
   udp: true
   type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: fd8cf7e1173f0edb
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: ads.x5.ru
+  client-fingerprint: random
 - name: 🇬🇧 英国 (United Kingdom) 21 - xiaoyu
-  server: webdisk.jaggyslawa.org
-  port: 443
+  server: 51.38.71.147
+  port: 8443
   udp: true
   type: vless
-  uuid: b62e3646-b84d-443c-9c94-718b646502e0
-  flow: xtls-rprx-vision
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
   tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: dda5f542d835
-  servername: www.foxsports.com
-  client-fingerprint: edge
-- name: 🇬🇧 英国 (United Kingdom) 22 - xiaoyu
-  server: 144.48.11.97
-  port: 43000
-  udp: true
-  type: vless
-  uuid: 4799abf0-d0d9-4a46-9c31-b1f76ae00e1e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lmT0SFJL1A8_ariRWL65dhShaqFbpitjGanv7EFnoR0
-    short-id: 725e6ea0
-  servername: 144.48.11.97
+  servername: node-uk.connectsuite.org
+  skip-cert-verify: false
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -265,7 +247,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 21 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 22 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -292,6 +273,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 21 - xiaoyu
-  - 🇬🇧 英国 (United Kingdom) 22 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -31,7 +31,7 @@ proxies:
   servername: udemy.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 03 - xiaoyu
-  server: 31.77.13.22
+  server: cz-prg.dontblockmepls.com
   port: 2063
   udp: true
   type: vless
