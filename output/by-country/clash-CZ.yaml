@@ -31,7 +31,7 @@ proxies:
   servername: udemy.com
   client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 03 - xiaoyu
-  server: cz-prg.dontblockmepls.com
+  server: 31.77.13.22
   port: 2063
   udp: true
   type: vless
@@ -42,6 +42,19 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: firefox
+- name: 🇨🇿 捷克 (Czech) 04 - xiaoyu
+  server: 193.124.17.190
+  port: 443
+  udp: true
+  type: vless
+  uuid: ed042cf7-efe0-49bd-848b-8d7e655111ff
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 1036b2383b72
+  servername: www.mozilla.org
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +63,7 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaoyu
   - 🇨🇿 捷克 (Czech) 02 - xiaoyu
   - 🇨🇿 捷克 (Czech) 03 - xiaoyu
+  - 🇨🇿 捷克 (Czech) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,5 +72,6 @@ proxy-groups:
   - 🇨🇿 捷克 (Czech) 01 - xiaoyu
   - 🇨🇿 捷克 (Czech) 02 - xiaoyu
   - 🇨🇿 捷克 (Czech) 03 - xiaoyu
+  - 🇨🇿 捷克 (Czech) 04 - xiaoyu
 rules:
 - MATCH,PROXIES

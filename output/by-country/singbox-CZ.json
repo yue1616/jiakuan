@@ -48,7 +48,7 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03 - xiaoyu",
-      "server": "cz-prg.dontblockmepls.com",
+      "server": "31.77.13.22",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
       "flow": "xtls-rprx-vision",
@@ -67,13 +67,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 04 - xiaoyu",
+      "server": "193.124.17.190",
+      "server_port": 443,
+      "uuid": "ed042cf7-efe0-49bd-848b-8d7e655111ff",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "1036b2383b72"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - xiaoyu",
         "🇨🇿 捷克 (Czech) 02 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 03 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 03 - xiaoyu",
+        "🇨🇿 捷克 (Czech) 04 - xiaoyu"
       ]
     },
     {
@@ -82,7 +104,8 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - xiaoyu",
         "🇨🇿 捷克 (Czech) 02 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 03 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 03 - xiaoyu",
+        "🇨🇿 捷克 (Czech) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -18,6 +18,26 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
+      "server": "78.17.27.137",
+      "server_port": 8443,
+      "uuid": "48d9a277-776b-4ab8-a357-88a1958beed8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.aalto.fi",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM",
+          "short_id": "a05ccbf2edb5ebd1"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -26,32 +46,6 @@
         "path": "/vless",
         "headers": {
           "Host": "45.144.234.157"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
-      "server": "65.109.211.81",
-      "server_port": 465,
-      "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
-      "tls": {
-        "enabled": true,
-        "server_name": "hw6.divarkhaghazi.com.",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hw6.divarkhaghazi.com."
         }
       }
     },
@@ -84,20 +78,26 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-      "server": "78.17.27.137",
-      "server_port": 8443,
-      "uuid": "48d9a277-776b-4ab8-a357-88a1958beed8",
+      "server": "65.109.211.81",
+      "server_port": 465,
+      "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
       "tls": {
         "enabled": true,
-        "server_name": "www.aalto.fi",
+        "server_name": "hw6.divarkhaghazi.com.",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "DZ0BYEIHEe9KmJzM_j5EAN0t3_BTcfO63P7x6SRCeQM",
-          "short_id": "a05ccbf2edb5ebd1"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "hw6.divarkhaghazi.com."
         }
       }
     },
@@ -123,6 +123,27 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
+      "server": "178.72.185.235",
+      "server_port": 40446,
+      "uuid": "572b3d30-3ced-4b88-9e06-4241f124cc88",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.booking.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I",
+          "short_id": "d4e5f60718293a4b"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -132,7 +153,8 @@
         "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 06 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 07 - xiaoyu"
       ]
     },
     {
@@ -144,7 +166,8 @@
         "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 06 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
