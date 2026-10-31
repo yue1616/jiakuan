@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01 - xiaoyu",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
       "server": "50.7.38.243",
       "server_port": 443,
       "password": "d4ca9415f0eac7897472e1e5b86d2e96",
@@ -17,7 +25,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
       "server": "70.34.207.14",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -29,7 +37,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
       "server": "192.142.23.46",
       "server_port": 443,
       "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
@@ -41,7 +49,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
       "server": "31.172.65.4",
       "server_port": 8443,
       "uuid": "9c6e83fc-b755-4ad4-9b0a-14b610153d8f",
@@ -61,41 +69,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
-      "server": "178.72.185.235",
-      "server_port": 40447,
-      "uuid": "572b3d30-3ced-4b88-9e06-4241f124cc88",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.booking.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EbXSjwJKAI1cmU2TK3af62qS2k58x8Rnct1525c0m1I",
-          "short_id": "30fc443cf34a1471"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaoyu",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -104,8 +77,7 @@
         "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu"
       ]
     },
     {
@@ -116,8 +88,7 @@
         "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -19,64 +19,21 @@ proxies:
   cipher: aes-256-cfb
   password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: 155.117.5.208
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
-  server: 168.222.43.53
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
-  server: 177.1.192.38
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rczv8z0BFqH3QS9PfFAzLYZY8Iao1yEBhwcRskkQugo
-    short-id: b3e515e37815559d
-  servername: upnl.giftsbattle.vip
-  client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  server: pol.rvpn.app
-  port: 8388
+  server: 217.30.10.44
+  port: 9076
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 8z2OB_gvFvpKgjFi8s9Cvw
-- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  server: 177.1.192.67
+  cipher: aes-256-cfb
+  password: S2zDyyPcmZN2h8EC
+- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
+  server: 70.34.252.255
   port: 443
   udp: true
-  type: vless
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5QmUszafz1gigUjf3R2GwZ9RVsEwZT-polu0l8zfNgA
-    short-id: 830e615a39f4c811
-  servername: up4.uni-plan.com
-  client-fingerprint: ''
-- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  server: 177.1.192.90
-  port: 443
-  udp: true
-  type: vless
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PA7rbht6SKwvUgysJka_ffHvVEzl4s4RPDO3uPeuLxc
-    short-id: e12ed4adc5aee929
-  servername: up6.uni-plan.com
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
   server: 31.59.143.147
   port: 443
   udp: true
@@ -89,81 +46,21 @@ proxies:
     short-id: ae97223a8f799889
   servername: pl2.waspnest.space
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 10 - xiaoyu
-  server: 177.1.192.117
+- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  server: 150.251.113.34
   port: 443
   udp: true
   type: vless
-  uuid: 706bce83-91db-4260-b175-cba29145cd56
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: Lt3gSdGmfQMx50yH-OOJaNBSg80vzIveaNVwUUWJwzQ
-    short-id: 3952a220c86628a8
-  servername: up7.uni-plan.com
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 11 - xiaoyu
-  server: 70.34.252.255
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 12 - xiaoyu
-  server: 177.1.192.172
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7a0348d6-55d3-4c23-b22f-6277fcb2264c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: O-prl81hoCx8QH-WAtyhOWsz7O6Klc5KbZRUDfg0WVo
-    short-id: 91db3119
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 13 - xiaoyu
-  server: 177.1.192.84
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7a0348d6-55d3-4c23-b22f-6277fcb2264c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zW8sqVtk0BD03BKJj2UihUm_IgFfbJ-oPgR8xCTkgyU
-    short-id: 3ea64ca4
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 14 - xiaoyu
-  server: 177.1.192.76
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7a0348d6-55d3-4c23-b22f-6277fcb2264c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: utnaPfWs-8DrJIP5p0gaQ9ix9VfRvUvoR1ZSE25uTWY
-    short-id: 10aff1a6
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 15 - xiaoyu
-  server: 177.1.192.83
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7a0348d6-55d3-4c23-b22f-6277fcb2264c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qpTl87QSiZJ6JTLo-qtZbz5tw4bhm2BlKSb3rWXj3U8
-    short-id: aea0b3b9
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 16 - xiaoyu
-  server: 31.77.13.19
+- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
+  server: pl-waw.dontblockmepls.com
   port: 2063
   udp: true
   type: vless
@@ -174,7 +71,7 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 17 - xiaoyu
+- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
   server: 54.37.131.126
   port: 80
   udp: true
@@ -187,30 +84,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 18 - xiaoyu
-  server: 77.232.135.141
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 19 - xiaoyu
-  server: 87.242.119.253
-  port: 443
-  udp: true
-  type: vless
-  uuid: aba9cdd4-026c-0001-87a9-9b3e5f24dd82
-  tls: true
-  servername: hvtlr-ru-47sb.fade.mom
-  skip-cert-verify: false
-  client-fingerprint: qq
-- name: 🇵🇱 波兰 (Poland) 20 - xiaoyu
+- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -219,18 +93,6 @@ proxies:
   tls: true
   servername: 2.26.6.1
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 21 - xiaoyu
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -246,18 +108,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - xiaoyu
   - 🇵🇱 波兰 (Poland) 08 - xiaoyu
   - 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 10 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 11 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 12 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 13 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 14 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 15 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 16 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 17 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 18 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 19 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 20 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 21 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -272,17 +122,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 07 - xiaoyu
   - 🇵🇱 波兰 (Poland) 08 - xiaoyu
   - 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 10 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 11 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 12 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 13 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 14 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 15 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 16 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 17 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 18 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 19 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 20 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 21 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -11,9 +11,9 @@ proxies:
   type: hysteria2
   password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
   sni: nl1.obxodvpn.us
-  skip-cert-verify: true
+  skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
-  server: 185.225.205.53
+  server: 31.77.68.36
   port: 443
   udp: true
   type: vless
@@ -21,36 +21,11 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
-    short-id: 2e82d7ac
+    public-key: Daj7jHuHFEC_LV-Fv1fBSaTSQRM9vfgf_DtjMn9svl0
+    short-id: 64e4efa1
   servername: addons.mozilla.org
-  client-fingerprint: qq
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
-  server: 5.1.40.6
-  port: 2083
-  udp: true
-  type: vless
-  uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
-  tls: true
-  servername: speedtestmark.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-ws
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
-  server: ee.h1cloud.net
-  port: 25895
-  udp: true
-  type: vless
-  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
-  tls: true
-  reality-opts:
-    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
-    short-id: a73f0410d728c823
-  servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
   server: 132.243.66.98
   port: 443
   udp: true
@@ -73,8 +48,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,7 +56,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
-  - 🇪🇪 爱沙尼亚 (Estonia) 05 - xiaoyu
 rules:
 - MATCH,PROXIES
