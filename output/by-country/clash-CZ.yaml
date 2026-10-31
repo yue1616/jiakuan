@@ -29,7 +29,7 @@ proxies:
     public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
     short-id: e90360ec7cc61b20
   servername: udemy.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇨🇿 捷克 (Czech) 03 - xiaoyu
   server: cz-prg.dontblockmepls.com
   port: 2063
