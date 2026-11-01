@@ -27,6 +27,23 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaoyu",
+      "server": "178.208.89.190",
+      "server_port": 443,
+      "uuid": "689a62e4-37e7-41de-9e6a-f2a56368c9e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "prod-eu-east-cz6.api-gateway.service-mesh.ingress-observability.speedtestinternet.link",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - xiaoyu",
       "server": "212.102.38.25",
       "server_port": 443,
       "uuid": "b34a52cb-cd52-49a8-9362-b8e97c151d49",
@@ -47,7 +64,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 03 - xiaoyu",
+      "tag": "🇨🇿 捷克 (Czech) 04 - xiaoyu",
       "server": "31.77.13.22",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
@@ -57,7 +74,7 @@
         "server_name": "rusbid.de",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -73,7 +90,8 @@
         "auto",
         "🇨🇿 捷克 (Czech) 01 - xiaoyu",
         "🇨🇿 捷克 (Czech) 02 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 03 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 03 - xiaoyu",
+        "🇨🇿 捷克 (Czech) 04 - xiaoyu"
       ]
     },
     {
@@ -82,7 +100,8 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - xiaoyu",
         "🇨🇿 捷克 (Czech) 02 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 03 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 03 - xiaoyu",
+        "🇨🇿 捷克 (Czech) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

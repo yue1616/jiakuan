@@ -4,48 +4,59 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
-  server: 0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com
-  port: 443
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaoyu
+  server: us001.zestapp778.com
+  port: 57277
+  udp: true
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  server: ench-snet-app.w-ctrip.cn
+  port: 45502
+  udp: true
+  type: trojan
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  sni: cm.g.doubleclick.net
+  skip-cert-verify: true
+- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaoyu
+  server: tr2.h1cloud.net
+  port: 25021
   udp: true
   type: vless
-  uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
+  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
-  servername: download.windowsupdate.com
+    public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
+    short-id: 17fa3af0924c88b3
+  servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
-  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  server: 2219f493-tmm5c0-tpftcp-13x18.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: e4499a62-0cfe-11eb-ad8c-f23c9164ca5d
-  sni: 2219f493-tmm5c0-tpftcp-13x18.nw4.hyhuawei.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

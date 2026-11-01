@@ -4,10 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu",
+      "server": "141.0.187.15",
+      "server_port": 443,
+      "password": "70043bfa-d6fb-4980-b27e-773e9e8b2004",
+      "tls": {
+        "enabled": true,
+        "server_name": "crt.onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
       "server": "179.253.179.109",
-      "server_port": 57043,
+      "server_port": 57443,
       "uuid": "da8fab8e-4a25-4eb0-b224-88ab96c753ce",
       "tls": {
         "enabled": true,
@@ -20,9 +32,21 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
+      "server": "141.0.187.50",
+      "server_port": 443,
+      "password": "e5ec2586-59b3-40fa-91b7-bb37a2f7744e",
+      "tls": {
+        "enabled": true,
+        "server_name": "crt.onecloudstream.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
-      "server": "ee.h1cloud.net",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
+      "server": "79.182.39.237",
       "server_port": 25895,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
       "tls": {
@@ -30,7 +54,7 @@
         "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -45,7 +69,9 @@
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu"
       ]
     },
     {
@@ -53,7 +79,9 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
+        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
+        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

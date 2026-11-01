@@ -12,33 +12,33 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 02 - xiaoyu
-  server: 202.50.253.63
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 03 - xiaoyu
   server: 202.50.253.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 04 - xiaoyu
-  server: 91.201.65.122
-  port: 9074
+- name: 🇮🇹 意大利 (Italy) 03 - xiaoyu
+  server: 202.50.253.54
+  port: 19999
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: p5wSkb2uM3pKSS3j
-- name: 🇮🇹 意大利 (Italy) 05 - xiaoyu
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 04 - xiaoyu
   server: 202.50.253.27
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 05 - xiaoyu
+  server: 91.201.65.122
+  port: 9070
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: bf7v334KKDV3YDhH
 - name: 🇮🇹 意大利 (Italy) 06 - xiaoyu
   server: 82.118.16.187
   port: 443
@@ -53,41 +53,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 07 - xiaoyu
-  server: 202.50.253.54
-  port: 19999
+  server: 91.201.65.122
+  port: 9092
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-cfb
+  password: TyNkGmp9hs6eGpDK
 - name: 🇮🇹 意大利 (Italy) 08 - xiaoyu
-  server: 202.50.253.99
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 09 - xiaoyu
-  server: 202.50.253.18
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 10 - xiaoyu
-  server: 202.50.253.90
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 11 - xiaoyu
-  server: 202.50.253.36
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 12 - xiaoyu
   server: 82.118.16.189
   port: 443
   udp: true
@@ -100,21 +72,63 @@ proxies:
     short-id: 37fbf155c7a9f3ff
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇮🇹 意大利 (Italy) 13 - xiaoyu
-  server: 202.50.253.45
+- name: 🇮🇹 意大利 (Italy) 09 - xiaoyu
+  server: 91.201.65.122
+  port: 9074
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: p5wSkb2uM3pKSS3j
+- name: 🇮🇹 意大利 (Italy) 10 - xiaoyu
+  server: 202.50.253.63
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 14 - xiaoyu
+- name: 🇮🇹 意大利 (Italy) 11 - xiaoyu
+  server: 91.201.65.122
+  port: 9053
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: SBM7R883jBmnqe6C
+- name: 🇮🇹 意大利 (Italy) 12 - xiaoyu
+  server: 202.50.253.36
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 13 - xiaoyu
   server: 202.50.253.72
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 14 - xiaoyu
+  server: 202.50.253.90
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 15 - xiaoyu
+  server: 202.50.253.99
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 16 - xiaoyu
+  server: 202.50.253.18
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 17 - xiaoyu
   server: 57.131.38.163
   port: 2053
   udp: true
@@ -125,7 +139,7 @@ proxies:
     public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
     short-id: 5b8a942318178e7b
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -146,6 +160,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 13 - xiaoyu
   - 🇮🇹 意大利 (Italy) 14 - xiaoyu
   - 🇮🇹 意大利 (Italy) 15 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 16 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 17 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -166,5 +182,7 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 13 - xiaoyu
   - 🇮🇹 意大利 (Italy) 14 - xiaoyu
   - 🇮🇹 意大利 (Italy) 15 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 16 - xiaoyu
+  - 🇮🇹 意大利 (Italy) 17 - xiaoyu
 rules:
 - MATCH,PROXIES
