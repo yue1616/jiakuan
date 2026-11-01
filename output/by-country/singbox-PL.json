@@ -12,37 +12,8 @@
       "password": "FAdUvMJUq5vDgKEq"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9052,
-      "method": "aes-256-cfb",
-      "password": "jt2ekBNc9HuVtm2a"
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaoyu",
-      "server": "31.59.143.147",
-      "server_port": 443,
-      "uuid": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl2.waspnest.space",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Liu35gmIQJtbul5AeCrceJTjsmln4RaqxX6joKlaBjk",
-          "short_id": "ae97223a8f799889"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaoyu",
       "server": "2.26.255.215",
       "server_port": 443,
       "uuid": "69e41e64-a832-471a-b740-94577ca85520",
@@ -63,7 +34,7 @@
     },
     {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaoyu",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaoyu",
       "server": "70.34.252.255",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -75,7 +46,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06 - xiaoyu",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaoyu",
       "server": "94.249.180.86",
       "server_port": 443,
       "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
@@ -96,7 +67,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07 - xiaoyu",
+      "tag": "🇵🇱 波兰 (Poland) 05 - xiaoyu",
       "server": "82.118.22.161",
       "server_port": 443,
       "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
@@ -112,6 +83,43 @@
           "enabled": true,
           "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
           "short_id": "fa3ea655619a3e78"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 06 - xiaoyu",
+      "server": "2.26.6.1",
+      "server_port": 2087,
+      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
+      "tls": {
+        "enabled": true,
+        "server_name": "2.26.6.1",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 07 - xiaoyu",
+      "server": "31.59.143.147",
+      "server_port": 443,
+      "uuid": "1fe01c8a-ab37-4e95-bbfc-95d4a608931e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl2.waspnest.space",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Liu35gmIQJtbul5AeCrceJTjsmln4RaqxX6joKlaBjk",
+          "short_id": "ae97223a8f799889"
         }
       }
     },
@@ -137,60 +145,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-      "server": "2.26.231.218",
-      "server_port": 2063,
-      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "rusbid.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-      "server": "45.132.178.123",
-      "server_port": 443,
-      "uuid": "902e7be9-d0a8-000e-994f-8320916a9d9e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "media.usicloid.my",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fERXyd24DZcsFqE84AHjugHha0U5H6Wdb2wCIo5kPV8",
-          "short_id": "0cabf7c24918fe72"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 11 - xiaoyu",
-      "server": "2.26.6.1",
-      "server_port": 2087,
-      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.26.6.1",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -202,10 +156,7 @@
         "🇵🇱 波兰 (Poland) 05 - xiaoyu",
         "🇵🇱 波兰 (Poland) 06 - xiaoyu",
         "🇵🇱 波兰 (Poland) 07 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 08 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 11 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 08 - xiaoyu"
       ]
     },
     {
@@ -219,10 +170,7 @@
         "🇵🇱 波兰 (Poland) 05 - xiaoyu",
         "🇵🇱 波兰 (Poland) 06 - xiaoyu",
         "🇵🇱 波兰 (Poland) 07 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 08 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 11 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 08 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

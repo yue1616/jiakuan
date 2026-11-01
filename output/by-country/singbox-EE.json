@@ -4,52 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu",
-      "server": "13.143.239.127",
-      "server_port": 443,
-      "password": "2a0fc918-9c61-451b-a9ad-e8f796e70f52",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl1.obxodvpn.us",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
-      "server": "188.225.62.72",
-      "server_port": 8443,
-      "uuid": "0b25cbd7-30e3-4659-92be-05b33b53c9d1",
-      "tls": {
-        "enabled": true,
-        "server_name": "datacore-tech.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "FoxSiberia103"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
       "server": "179.253.179.109",
       "server_port": 57043,
       "uuid": "da8fab8e-4a25-4eb0-b224-88ab96c753ce",
       "tls": {
         "enabled": true,
         "server_name": "87.121.86.24",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
       "server": "ee.h1cloud.net",
       "server_port": 25895,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
@@ -73,9 +45,7 @@
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu"
       ]
     },
     {
@@ -83,9 +53,7 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu",
-        "🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu"
+        "🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
