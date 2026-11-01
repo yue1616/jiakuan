@@ -45,19 +45,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  server: 206.1.97.108
-  port: 25021
-  udp: true
-  type: vless
-  uuid: 2446e2e2-1ce3-4502-9050-1dd32bacc68c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: od79bUkYtqQtsGrrTdhmkDflx5c9al4vqxwWApvc-Dg
-    short-id: 17fa3af0924c88b3
-  servername: www.samsung.com
-  client-fingerprint: firefox
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
   server: 177.3.208.65
   port: 443
   udp: true
@@ -79,7 +66,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,6 +75,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

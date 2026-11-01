@@ -4,13 +4,33 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  server: 112.169.175.199
-  port: 31157
+- name: 🇺🇸 美国 (United States) 01 (移动家宽) - xiaoyu
+  server: 172.66.47.45
+  port: 2083
   udp: true
   type: vless
-  uuid: bd2fb303-b4c7-49af-a8e3-5c6f11b005dd
-- name: 🇮🇳 印度 (India) 02 (家宽) - xiaoyu
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: wk1.f1w.de5.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: wk1.f1w.de5.net
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
+  server: 0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: ea800f9e-ca6c-11ef-8e74-f23c913c8d2b
+  tls: true
+  reality-opts:
+    public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
+  servername: download.windowsupdate.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 03 (家宽) - xiaoyu
   server: 122.176.216.52
   port: 443
   udp: true
@@ -19,7 +39,7 @@ proxies:
   tls: true
   servername: app-6ada5023.deploy.meerasolution.com
   skip-cert-verify: false
-  client-fingerprint: android
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /ws/16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88
@@ -30,14 +50,16 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇮🇳 印度 (India) 02 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
+  - 🇮🇳 印度 (India) 03 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇮🇳 印度 (India) 02 (家宽) - xiaoyu
+  - 🇺🇸 美国 (United States) 01 (移动家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
+  - 🇮🇳 印度 (India) 03 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

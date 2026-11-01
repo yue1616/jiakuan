@@ -13,6 +13,28 @@ proxies:
   sni: nl1.obxodvpn.us
   skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
+  server: 188.225.62.72
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 0b25cbd7-30e3-4659-92be-05b33b53c9d1
+  tls: true
+  servername: datacore-tech.ru
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: FoxSiberia103
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
+  server: 179.253.179.109
+  port: 57043
+  udp: true
+  type: vless
+  uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
+  tls: true
+  servername: 87.121.86.24
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
   server: ee.h1cloud.net
   port: 25895
   udp: true
@@ -23,7 +45,7 @@ proxies:
     public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
     short-id: a73f0410d728c823
   servername: www.samsung.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +53,8 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +62,7 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
   - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 03 - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 04 - xiaoyu
 rules:
 - MATCH,PROXIES

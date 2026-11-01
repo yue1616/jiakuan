@@ -5,21 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu",
-      "server": "107.189.7.176",
-      "server_port": 32752,
-      "uuid": "4970c1cd-13e1-498a-920a-61d07be2fa65",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu",
+      "server": "0e05f970-tki800-traezq-1t5n1.hk2.hyhuawei.com",
+      "server_port": 443,
+      "uuid": "ea800f9e-ca6c-11ef-8e74-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "download.windowsupdate.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA",
-          "short_id": "d758a643034ad90e"
+          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
+          "short_id": ""
         }
       }
     },
@@ -28,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -48,7 +48,7 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03 - xiaoyu",
-      "server": "cz-prg.dontblockmepls.com",
+      "server": "31.77.13.22",
       "server_port": 2063,
       "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
       "flow": "xtls-rprx-vision",
@@ -67,13 +67,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 04 - xiaoyu",
+      "server": "185.78.76.166",
+      "server_port": 443,
+      "uuid": "f27b6f65-6e59-4f89-b929-afa397ca587f",
+      "tls": {
+        "enabled": true,
+        "server_name": "n.bitpulse.me",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/019bcbad-3813-7cce-8786-3ac0e418f128",
+        "headers": {
+          "Host": "n.bitpulse.me"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - xiaoyu",
         "🇨🇿 捷克 (Czech) 02 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 03 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 03 - xiaoyu",
+        "🇨🇿 捷克 (Czech) 04 - xiaoyu"
       ]
     },
     {
@@ -82,7 +102,8 @@
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - xiaoyu",
         "🇨🇿 捷克 (Czech) 02 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 03 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 03 - xiaoyu",
+        "🇨🇿 捷克 (Czech) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

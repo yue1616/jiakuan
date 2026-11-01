@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaoyu
+  server: 217.60.73.56
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 69e41e64-a832-471a-b740-94577ca85520
+  sni: forshynewh.duckdns.org
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -13,9 +21,7 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 185.253.116.33
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   server: 130.49.161.70
   port: 443
   udp: true
@@ -25,7 +31,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -36,7 +42,7 @@ proxies:
     path: /vless
     headers:
       Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
   server: 84.235.244.108
   port: 22573
   udp: true
@@ -47,6 +53,19 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
+  server: 31.76.227.57
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc
+    short-id: a7856800c2deb7b2
+  servername: assets-mi-26.spbstudentlife.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,6 +75,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,5 +86,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
+  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

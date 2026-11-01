@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu
-  server: 107.189.7.176
-  port: 32752
+- name: 🇦🇱 AL 01 - xiaoyu
+  server: 151.123.187.198
+  port: 443
   udp: true
   type: vless
-  uuid: 4970c1cd-13e1-498a-920a-61d07be2fa65
+  uuid: b24ad12f-f6ce-4f0b-a264-d58a76104026
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: pfFcQxKv4EPhCDUoZMCmTjj4FK7HHQg_me-In3bOejA
-    short-id: d758a643034ad90e
-  servername: www.apple.com
+    public-key: trN5x0amt2YuVzF2vZnK294YBAuh_zl5QkZjPyWz-TI
+    short-id: 8718c58d3d51db59
+  servername: al2.magazinnarubeva.ru
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu
+  - 🇦🇱 AL 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu
+  - 🇦🇱 AL 01 - xiaoyu
 rules:
 - MATCH,PROXIES
