@@ -6,29 +6,36 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇪 阿联酋 (UAE) 01 - xiaoyu",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
-      "server": "forshynewh.duckdns.org",
+      "server": "217.60.73.56",
       "server_port": 443,
       "password": "69e41e64-a832-471a-b740-94577ca85520",
       "tls": {
         "enabled": true,
         "server_name": "forshynewh.duckdns.org",
-        "insecure": false
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
+      "server": "147.45.42.73",
+      "server_port": 20443,
+      "uuid": "f293db4d-7ab1-4faf-bb15-89540d8709cb",
+      "tls": {
+        "enabled": true,
+        "server_name": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev"
+        }
       }
     },
     {
@@ -67,6 +74,50 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+      "server": "142.91.101.39",
+      "server_port": 627,
+      "uuid": "e27ffb19-314e-449b-ac9b-44b28cf50ef5",
+      "tls": {
+        "enabled": true,
+        "server_name": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
+      "server": "app-mi-26.spbstudentlife.com",
+      "server_port": 443,
+      "uuid": "07680ffb-0666-4836-b6ad-ec0de62bc38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-mi-26.spbstudentlife.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "randomized"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc",
+          "short_id": "a7856800c2deb7b2"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -74,7 +125,9 @@
         "🇦🇪 阿联酋 (UAE) 01 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 04 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu"
       ]
     },
     {
@@ -84,7 +137,9 @@
         "🇦🇪 阿联酋 (UAE) 01 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 04 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

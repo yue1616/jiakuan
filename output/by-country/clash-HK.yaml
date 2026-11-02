@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaoyu
-  server: 31.57.248.176
-  port: 50160
+  server: 103.36.91.32
+  port: 8388
   udp: true
-  type: hysteria2
-  password: b0917015b656b3dd2286b5633af0c5c1
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
   server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   port: 443
@@ -21,6 +20,56 @@ proxies:
   sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
+  server: 31.57.248.176
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: b0917015b656b3dd2286b5633af0c5c1
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2рҹүрҹү
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
+  server: dog-hk.kunlun01dns.com
+  port: 21019
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
+  server: hk010.zestapp778.com
+  port: 31884
+  udp: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  tls: true
+  servername: hk010.zestapp778.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -30,28 +79,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
-  server: 165.154.63.139
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8🇨🇳
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
   server: 38.76.180.144
   port: 1443
   udp: true
@@ -62,61 +90,6 @@ proxies:
     path: /vless-ws
     headers:
       Host: 38.76.180.144
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
-  server: 0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 91df5a86-fcdd-11ef-94aa-f23c913c8d2b
-  sni: 0fd83b77-tmm5c0-tuklme-ueq.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
-  server: hik160.pacemakere.com
-  port: 20014
-  udp: true
-  type: trojan
-  password: 778f5385b4254495
-  sni: hik160.pacemakere.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
-  server: 195.58.144.56
-  port: 11907
-  udp: true
-  type: vless
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-  tls: true
-  servername: 195.58.144.56
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
-  server: hk1.huahua.wiki
-  port: 443
-  udp: true
-  type: vless
-  uuid: 99a4a20a-968b-4cb4-804b-a0eaeb1269b6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RT5W1WQ5IscetQH2kbVVejO1fwcbHt24MjCLgpZJbCU
-    short-id: fe9d8966354dfd7d
-  servername: www.apple.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -132,8 +105,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -149,7 +120,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
 rules:
 - MATCH,PROXIES

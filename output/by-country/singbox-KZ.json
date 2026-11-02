@@ -12,51 +12,12 @@
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "3h-kazakhstan1.09vpn.com"
-        }
+        "path": "/vmess/"
       }
     },
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
-      "server": "3h-kazakhstan1.09vpn.com",
-      "server_port": 8443,
-      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
-      "tls": {
-        "enabled": true,
-        "server_name": "3h-kazakhstan1.09vpn.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vless/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
-      "server": "178.236.16.98",
-      "server_port": 35728,
-      "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
-          "short_id": "69a2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu",
       "server": "109.248.170.119",
       "server_port": 13447,
       "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
@@ -75,14 +36,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
+      "server": "3h-kazakhstan1.09vpn.com",
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
+      "tls": {
+        "enabled": true,
+        "server_name": "3h-kazakhstan1.09vpn.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu"
       ]
     },
     {
@@ -91,8 +67,7 @@
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
