@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu
-  server: 3h-kazakhstan1.09vpn.com
+  server: 38.107.234.57
   port: 80
   udp: true
   type: vmess
@@ -15,6 +15,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
+    headers:
+      Host: google.com
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
   server: 109.248.170.119
   port: 13447
@@ -27,18 +29,6 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
-  server: 3h-kazakhstan1.09vpn.com
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  tls: true
-  servername: 3h-kazakhstan1.09vpn.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,7 +36,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -54,6 +43,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

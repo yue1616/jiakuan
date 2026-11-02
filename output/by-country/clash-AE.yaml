@@ -5,29 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaoyu
-  server: 217.60.73.56
+  server: 130.49.161.70
   port: 443
   udp: true
   type: hysteria2
-  password: 69e41e64-a832-471a-b740-94577ca85520
-  sni: forshynewh.duckdns.org
-  skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
-  server: 147.45.42.73
-  port: 20443
-  udp: true
-  type: vless
-  uuid: f293db4d-7ab1-4faf-bb15-89540d8709cb
-  tls: true
-  servername: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
   skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 8n9qi6t-owl.gevc9s4n60cc3wzcmwhjyezydpmbchocxp.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -36,37 +23,15 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
-  server: 91.132.48.199
+- name: 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
+  server: 217.60.73.56
   port: 443
   udp: true
-  type: vless
-  uuid: 0d607d84-0ae0-4b9c-a4f3-1766ab456e02
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _0hmzeEAGEx6boacV3d-FrFGaFBYfdvJno39FxveJwM
-    short-id: e7c5f2a9
-  servername: bunny.net
-  client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  server: 142.91.101.39
-  port: 627
-  udp: true
-  type: vless
-  uuid: e27ffb19-314e-449b-ac9b-44b28cf50ef5
-  tls: true
-  servername: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 7nnoiou0z.3xn99hzq2sh7iekktpkeq7rofs3qc8iohrqs4pb9p.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
+  type: hysteria2
+  password: 69e41e64-a832-471a-b740-94577ca85520
+  sni: forshynewh.duckdns.org
+  skip-cert-verify: true
+- name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   server: app-mi-26.spbstudentlife.com
   port: 443
   udp: true
@@ -79,6 +44,17 @@ proxies:
     short-id: a7856800c2deb7b2
   servername: assets-mi-26.spbstudentlife.com
   client-fingerprint: randomized
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
+  server: 84.235.244.108
+  port: 22573
+  udp: true
+  type: vless
+  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -89,7 +65,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,6 +75,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
 rules:
 - MATCH,PROXIES
