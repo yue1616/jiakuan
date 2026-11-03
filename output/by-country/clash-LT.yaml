@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu
   server: 195.238.126.20
-  port: 9011
+  port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
+  password: Lp27rqyJq72bZsqX
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
   server: 195.238.126.20
   port: 9008
@@ -20,25 +20,25 @@ proxies:
   password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
   server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
-  server: 195.238.126.20
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
   server: 195.238.126.20
-  port: 9068
+  port: 9086
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
+  server: 195.238.126.20
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
   server: 195.238.126.20
   port: 9078
@@ -47,34 +47,19 @@ proxies:
   cipher: aes-256-cfb
   password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
-  server: 195.238.126.84
-  port: 9039
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
   server: 195.238.126.20
   port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
-  server: 185.178.208.167
-  port: 443
+- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
+  server: 195.238.126.20
+  port: 9068
   udp: true
-  type: vless
-  uuid: 2232d904-8e6a-4202-8240-6efd8aec02e9
-  tls: true
-  servername: lorettmay.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /blog/posts
-    headers:
-      Host: lorettmay.top
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,7 +73,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,6 +86,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -5,18 +5,14 @@
   "outbounds": [
     {
       "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu",
-      "server": "206.1.96.108",
-      "server_port": 7443,
-      "password": "M8LP9DztTr3znqCkmf-r08CQLBLLFK1r",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu",
+      "server": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "4eedcde6-d16a-11ef-973a-f23c913c8d2b",
       "tls": {
         "enabled": true,
-        "server_name": "me17.msjia8844.site",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "u3Soh9_Ui0UmcuY6vk0ug8Lq"
+        "server_name": "e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com",
+        "insecure": true
       }
     },
     {
@@ -24,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu"
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

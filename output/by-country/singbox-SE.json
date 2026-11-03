@@ -18,7 +18,33 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
-      "server": "194.104.94.141",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
+      "server": "192.142.23.46",
+      "server_port": 443,
+      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
+      "tls": {
+        "enabled": true,
+        "server_name": "diffoscope.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
+      "server": "se3.shtil.io",
       "server_port": 443,
       "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
       "tls": {
@@ -33,32 +59,6 @@
           "enabled": true,
           "fingerprint": "firefox"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
-      "server": "192.142.23.46",
-      "server_port": 443,
-      "password": "a0052f4f-4c63-0002-a16f-ab2d5d718cd3",
-      "tls": {
-        "enabled": true,
-        "server_name": "diffoscope.com",
-        "insecure": false
       }
     },
     {

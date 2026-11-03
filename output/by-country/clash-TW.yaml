@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu
   server: 160.187.100.109
@@ -18,7 +18,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 127.0.0.1
+  sni: 160.187.100.109
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu
   server: 152.32.167.33
@@ -33,14 +33,6 @@ proxies:
     short-id: cff998a4
   servername: www.amazon.com
   client-fingerprint: firefox
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu
-  server: 47.129.112.129
-  port: 20000
-  udp: true
-  type: hysteria2
-  password: CQUPACy34t6Tjx8FdQdkCiYW
-  sni: sg-transit-3.nebulacloud.win
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -49,7 +41,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +49,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu
 rules:
 - MATCH,PROXIES
