@@ -5,16 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01 - xiaoyu
-  server: 31.222.235.81
+  server: staging.lastilhame.monster
   port: 443
   udp: true
   type: vless
-  uuid: d8b58872-cc25-4bb2-badb-b86399c075fa
+  uuid: de38389f-5651-4f2f-8276-5aabf3b861c9
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: L9IllZt5vcjYVY_6rmCJ_9ypmJsBK8dSWkNVCStrZjk
-    short-id: d8b58872
-  servername: www.cloudflare.com
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 225e930cfd4d
+  servername: www.hollywoodreporter.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
