@@ -12,12 +12,13 @@ proxies:
   cipher: aes-256-cfb
   password: aQqJbtwFGcCCaeL3
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
-  server: 217.30.10.44
-  port: 9042
+  server: 70.34.252.255
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
   server: 2.26.255.215
   port: 443
@@ -32,14 +33,6 @@ proxies:
   servername: cloudflare.com
   client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
-  server: 70.34.252.255
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
   server: 94.249.180.86
   port: 443
   udp: true
@@ -51,6 +44,19 @@ proxies:
     public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
     short-id: a696de84963656de
   servername: amd.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
+  server: 179.198.49.218
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9CKMhiYPXEIfQh_XFbbN1GoBxeLxJkaar2wg9FZKfBo
+    short-id: 75fe71d16ccae610
+  servername: assets-44.topp-con.xyz
   client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
   server: 54.37.131.126
@@ -65,6 +71,31 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
+  server: pl-waw.dontblockmepls.com
+  port: 2063
+  udp: true
+  type: vless
+  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
+  servername: rusbid.de
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
+  server: 217.60.33.67
+  port: 8443
+  udp: true
+  type: vless
+  uuid: dc413f44-7dce-4cc4-b2c7-878ef70ce464
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: -r5xcA3iTzAf63kkb0VIILrLHH1VUq550pFZ-M74Jlc
+    short-id: de
+  servername: go-obsh-auto-drun.keno.su
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,6 +107,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,5 +120,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
 rules:
 - MATCH,PROXIES

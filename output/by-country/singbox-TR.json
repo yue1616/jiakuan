@@ -4,11 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
+      "server": "78.135.73.47",
+      "server_port": 443,
+      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.datadoghq.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
+          "short_id": "f46cd3ea3d1eb72d"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
       "server": "153.56.210.134",
-      "server_port": 34121,
-      "password": "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9",
+      "server_port": 38045,
+      "password": "a81a7b45-dd70-42ef-822f-ef467f944382",
       "tls": {
         "enabled": true,
         "server_name": "www.bing.com",
@@ -16,12 +37,12 @@
       },
       "obfs": {
         "type": "salamander",
-        "password": "9a33460c-b037-47aa-a606-d04211f4e0ec"
+        "password": "642516f2-f9bd-41ce-9904-dee699c39cf9"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
       "server": "153.56.210.134",
       "server_port": 57251,
       "password": "ff0343ad-1c9f-4986-8c62-c01935b508ca",
@@ -37,7 +58,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
       "server": "62.133.63.45",
       "server_port": 8444,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -61,10 +82,10 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
+      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
       "server": "153.56.210.134",
-      "server_port": 38045,
-      "password": "a81a7b45-dd70-42ef-822f-ef467f944382",
+      "server_port": 34121,
+      "password": "c8ed6cd1-6566-4f7a-819e-1c55b2b360c9",
       "tls": {
         "enabled": true,
         "server_name": "www.bing.com",
@@ -72,12 +93,12 @@
       },
       "obfs": {
         "type": "salamander",
-        "password": "642516f2-f9bd-41ce-9904-dee699c39cf9"
+        "password": "9a33460c-b037-47aa-a606-d04211f4e0ec"
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
+      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaoyu",
       "server": "153.56.210.61",
       "server_port": 443,
       "uuid": "0de1d303-d7de-0001-8679-c4cb67e2e2cc",
@@ -87,33 +108,12 @@
         "server_name": "amd.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc",
           "short_id": "a696de84963656de"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 06 - xiaoyu",
-      "server": "78.135.73.47",
-      "server_port": 443,
-      "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sZAJkAu23wp1WKY-qeaeiwR38izP5OyfhumoE9xhbB8",
-          "short_id": "f46cd3ea3d1eb72d"
         }
       }
     },

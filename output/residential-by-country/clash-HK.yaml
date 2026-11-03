@@ -5,24 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
+  server: 112.120.123.140
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  sni: 7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
