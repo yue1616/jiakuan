@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaoyu
-  server: 45.144.174.183
-  port: 8388
+  server: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: I0pPH99n18r05VWm
+  type: hysteria2
+  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  sni: b503b615-tm96o0-tne5x4-1rfon.hk3.hyhuawei.com
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
   server: 165.154.63.139
   port: 443
@@ -23,16 +24,24 @@ proxies:
     public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
     short-id: ca4aedd4
   servername: www.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
-  server: 31.57.248.176
-  port: 50160
+  server: 112.120.123.140
+  port: 443
   udp: true
   type: hysteria2
-  password: b0917015b656b3dd2286b5633af0c5c1
-  sni: www.bing.com%23%e9%a6%83%e5%9a%9f%e9%a6%83%e5%9a%a2%7chk%7c%40wxgqlfx%7c147
-  skip-cert-verify: true
+  password: 3f514ea2-4662-11ed-a8bf-f23c91cfbbc9
+  sni: 9fc34650-tmm5c0-tmj4pk-1kcpe.nw4.hyhuawei.com
+  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
   server: 210.0.244.157
   port: 443
   udp: true
@@ -43,59 +52,23 @@ proxies:
     public-key: T239VP3HbJ2KJCur7hDHJtrs6eKmKQfU_X1Xg6NmPgI
   servername: cloudflare.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
-  server: 154.83.87.6
-  port: 8443
-  udp: true
-  type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  tls: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
-  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
-  server: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 40639730-e027-11ea-87ad-f23c913c8d2b
-  sni: e0064cf5-tmm5c0-to0mym-z93q.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
+  sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: 'off'
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
-  server: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
-  sni: d0f180c2-tmm5c0-tphvvu-gacy.nw4.hyhuawei.com
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2ⁿß«ⁿß
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -105,22 +78,6 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
-  server: rhHiErkwRf6fHs2H.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: rhHiErkwRf6fHs2H.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: rhHiErkwRf6fHs2H.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,10 +91,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -151,9 +104,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -17,16 +17,17 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
-  server: 45.144.234.157
-  port: 14430
+  server: 217.144.188.185
+  port: 443
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
+  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
+  servername: www.nordea.fi
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
   server: 89.144.53.4
   port: 8445
@@ -41,31 +42,6 @@ proxies:
   servername: videos.porsche.com
   client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
-  server: 31.77.199.147
-  port: 4443
-  udp: true
-  type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
-  server: 217.144.188.185
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8d954cbe-7ca9-402d-bfaf-aca6c92c04c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk
-  servername: www.nordea.fi
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
   server: 146.103.118.189
   port: 443
   udp: true
@@ -80,21 +56,8 @@ proxies:
     path: /574ck-finland
     headers:
       Host: nl2.574ck.xyz
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 67a4b4b1-6eed-4dbb-9984-3f86e7efa831
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaoyu
-  server: 104.24.0.1
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
+  server: 188.114.96.3
   port: 2053
   udp: true
   type: trojan
@@ -104,8 +67,19 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaoyu
-  server: 185.4.115.149
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+  server: 45.144.234.157
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
+  server: dns22.m3hrzd.ir
   port: 1346
   udp: true
   type: ss
@@ -123,8 +97,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 06 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 07 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 08 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -137,7 +109,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 06 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 07 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 08 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
 rules:
 - MATCH,PROXIES

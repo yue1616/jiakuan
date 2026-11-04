@@ -12,6 +12,14 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
+  server: 70.34.207.14
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -22,27 +30,17 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
-  server: 70.34.207.14
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
-  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
-  server: 89.125.37.1
-  port: 443
+  server: 138.199.55.230
+  port: 1270
   udp: true
-  type: vless
-  uuid: 518079db-d88d-4035-bbf4-ddd1f9cf1e5f
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: nF_kEdHan2dgl2tlQ_dtNaKZ4oORhuiFrXHbtEDcT2Q
-    short-id: 2d6d073dc88f22a8
-  servername: se.frgcdn.xyz
-  client-fingerprint: chrome
+  servername: xmfhlpy.com
+  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   server: 194.104.94.141
   port: 443
@@ -54,30 +52,6 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
-  server: 193.25.216.31
-  port: 443
-  udp: true
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-  servername: sw.golangwikito.cfd
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
-  server: 138.199.55.230
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
   server: se.mimowhat.online
   port: 443
   udp: true
@@ -96,8 +70,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,7 +81,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
 rules:
 - MATCH,PROXIES

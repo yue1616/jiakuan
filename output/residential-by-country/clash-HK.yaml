@@ -5,12 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
-  server: bgp-1313122-228.834928.xyz
-  port: 20511
+  server: 56481.df6h451rh.xin
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 6rcBjQuF0jM6if5e
+  type: anytls
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
