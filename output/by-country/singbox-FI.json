@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaoyu",
-      "server": "185.4.115.149",
-      "server_port": 1346,
-      "method": "chacha20-ietf-poly1305",
-      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaoyu",
       "server": "95.216.27.15",
       "server_port": 2053,
       "uuid": "b79d736d-0f10-4169-b626-362059d18204",
@@ -22,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -33,28 +25,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
-      "server": "31.77.199.147",
-      "server_port": 4443,
-      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.unsplash.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
-          "short_id": "7da2eae792187ab9"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -68,7 +39,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
       "server": "89.144.53.4",
       "server_port": 8445,
       "uuid": "5c32201a-6c0e-451b-8f0a-24b4bd40df59",
@@ -89,7 +60,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
+      "server": "31.77.199.147",
+      "server_port": 4443,
+      "uuid": "20dd9433-389e-4573-ba7b-689619cf13da",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.unsplash.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A",
+          "short_id": "7da2eae792187ab9"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
       "server": "217.144.188.185",
       "server_port": 443,
       "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
@@ -109,9 +101,53 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
+      "server": "146.103.118.189",
+      "server_port": 443,
+      "uuid": "ce698f0c-a8ec-474a-b5d8-3be8032deeb8",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl2.574ck.xyz",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/574ck-finland",
+        "headers": {
+          "Host": "nl2.574ck.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
-      "server": "104.18.0.1",
+      "server": "6.bmi.ir.asopardaz.ir",
+      "server_port": 8443,
+      "uuid": "67a4b4b1-6eed-4dbb-9984-3f86e7efa831",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hostgator.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+          "short_id": "e915"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
+      "server": "104.24.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {
@@ -135,6 +171,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 09 - xiaoyu",
+      "server": "185.4.115.149",
+      "server_port": 1346,
+      "method": "chacha20-ietf-poly1305",
+      "password": "v1c-i5SSFXP8n4g1Wbc0L9gX82x5O2Qa"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -145,7 +189,9 @@
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 07 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 09 - xiaoyu"
       ]
     },
     {
@@ -158,7 +204,9 @@
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 07 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 09 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

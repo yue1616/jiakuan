@@ -5,17 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu
-  server: 45.86.60.174
-  port: 16443
-  udp: true
-  type: vless
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu
-  server: 5.253.30.99
+  server: 5.253.28.240
   port: 40443
   udp: true
   type: vless
-  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -23,7 +17,7 @@ proxies:
     short-id: 88b6
   servername: deepl.com
   client-fingerprint: random
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaoyu
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu
   server: 5.253.42.164
   port: 40443
   udp: true
@@ -35,8 +29,8 @@ proxies:
     public-key: g77ZJbm18JEotapmVRjaXi133MzkbhkU2lxhVeXx8zw
     short-id: 68a8
   servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaoyu
+  client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaoyu
   server: hydra.yokkastars.com
   port: 2443
   udp: true
@@ -59,7 +53,6 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaoyu
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,6 +61,5 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu
   - 🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu
   - 🇨🇾 塞浦路斯 (Cyprus) 03 - xiaoyu
-  - 🇨🇾 塞浦路斯 (Cyprus) 04 - xiaoyu
 rules:
 - MATCH,PROXIES

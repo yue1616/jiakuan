@@ -6,16 +6,9 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu",
-      "server": "45.86.60.174",
-      "server_port": 16443,
-      "uuid": "13e541f3-d09d-4633-89df-8513db0ced20"
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu",
-      "server": "5.253.30.99",
+      "server": "5.253.28.240",
       "server_port": 40443,
-      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
+      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -33,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaoyu",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu",
       "server": "5.253.42.164",
       "server_port": 40443,
       "uuid": "e99ba96d-dec8-42eb-be53-19e71eef7cab",
@@ -43,7 +36,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -54,7 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04 - xiaoyu",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaoyu",
       "server": "hydra.yokkastars.com",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
@@ -83,8 +76,7 @@
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaoyu",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - xiaoyu"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaoyu"
       ]
     },
     {
@@ -93,8 +85,7 @@
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu",
         "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu",
-        "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaoyu",
-        "🇨🇾 塞浦路斯 (Cyprus) 04 - xiaoyu"
+        "🇨🇾 塞浦路斯 (Cyprus) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
