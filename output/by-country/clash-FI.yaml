@@ -15,7 +15,7 @@ proxies:
     public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
     short-id: 10351b07c712d2a2
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   server: 89.144.53.4
   port: 8445
@@ -41,35 +41,7 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
-  server: 146.103.118.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
-  tls: true
-  servername: nl2.574ck.xyz
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /574ck-finland
-    headers:
-      Host: nl2.574ck.xyz
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 875942c6-1d42-4681-b49b-521a2bf10e8c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: timeline.www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
-  server: 188.114.96.3
+  server: 104.18.0.1
   port: 2053
   udp: true
   type: trojan
@@ -79,6 +51,30 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
+  server: latvia.zovip2.ir
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2a6ac8b1-a485-49d2-97be-20d2759312e2
+  tls: true
+  servername: tr7.zovip2.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /api/v3/pulse
+    headers:
+      Host: tr7.zovip2.ir
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+  server: mein-1.octavia.dpdns.org
+  port: 60000
+  udp: true
+  type: hysteria2
+  password: xo43w4tc13ou2h3x
+  sni: main-1.octavia.dpdns.org
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: ckwudzzsfoltmbmi
 - name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
   server: 217.144.188.185
   port: 443

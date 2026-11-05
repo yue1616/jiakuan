@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
-  server: 56481.df6h451rh.xin
-  port: 443
+- name: 🇧🇷 巴西 (Brazil) 01 - xiaoyu
+  server: 216.238.116.204
+  port: 39533
   udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: images.ctfassets.net
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: br001.zestapp778.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
+  - 🇧🇷 巴西 (Brazil) 01 - xiaoyu
 rules:
 - MATCH,PROXIES
