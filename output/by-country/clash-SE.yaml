@@ -20,25 +20,17 @@ proxies:
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
-  server: 5.178.109.174
-  port: 14430
+  server: 138.199.55.230
+  port: 1270
   udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
-  server: 185.153.55.28
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 769f34f0-1500-488f-b414-03bc90666502
-  sni: se.mimowhat.online
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -50,19 +42,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
-  server: 138.199.55.230
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
-  server: 194.104.94.141
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
+  server: se3.shtil.io
   port: 443
   udp: true
   type: vless
@@ -70,19 +51,18 @@ proxies:
   tls: true
   servername: se3.shtil.io
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
-  server: 31.77.13.20
-  port: 2063
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
+  server: 5.178.109.174
+  port: 14430
   udp: true
   type: vless
-  uuid: b18d5990-96eb-4587-a386-7f8ef7591e6a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
-  servername: rusbid.de
-  client-fingerprint: firefox
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -94,8 +74,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -107,7 +85,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
 rules:
 - MATCH,PROXIES

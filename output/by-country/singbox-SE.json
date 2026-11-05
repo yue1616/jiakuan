@@ -24,34 +24,21 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
-      "server": "185.153.55.28",
-      "server_port": 443,
-      "password": "769f34f0-1500-488f-b414-03bc90666502",
+      "server": "138.199.55.230",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "se.mimowhat.online",
+        "server_name": "xmfhlpy.com",
         "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
+      "tag": "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -66,22 +53,9 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaoyu",
-      "server": "138.199.55.230",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07 - xiaoyu",
-      "server": "194.104.94.141",
+      "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
+      "server": "se3.shtil.io",
       "server_port": 443,
       "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
       "tls": {
@@ -94,28 +68,21 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08 - xiaoyu",
-      "server": "31.77.13.20",
-      "server_port": 2063,
-      "uuid": "b18d5990-96eb-4587-a386-7f8ef7591e6a",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "rusbid.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM",
-          "short_id": ""
+      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaoyu",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
         }
       }
     },
@@ -129,9 +96,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 07 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 08 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu"
       ]
     },
     {
@@ -143,9 +108,7 @@
         "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 07 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 08 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -20,16 +20,61 @@
       }
     },
     {
-      "type": "shadowsocks",
+      "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu",
+      "server": "hy2-new.aspidnet.xyz",
+      "server_port": 443,
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c1b4086fea89914496c7e10967a419216566"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu",
       "server": "194.68.44.42",
       "server_port": 64546,
       "method": "chacha20-ietf-poly1305",
       "password": "U83u9OGpvSatIUW7LsWffr"
     },
     {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04 - xiaoyu",
+      "server": "46.28.67.55",
+      "server_port": 443,
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05 - xiaoyu",
+      "server": "82.152.132.211",
+      "server_port": 8044,
+      "method": "chacha20-ietf-poly1305",
+      "password": "dCamglzrORaopqbpBlptzbt9QdiH4CSN"
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06 - xiaoyu",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
@@ -46,7 +91,10 @@
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu",
         "🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu",
-        "🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu"
+        "🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 04 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 05 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 06 - xiaoyu"
       ]
     },
     {
@@ -55,7 +103,10 @@
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu",
         "🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu",
-        "🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu"
+        "🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 04 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 05 - xiaoyu",
+        "🇷🇴 罗马尼亚 (Romania) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
