@@ -18,7 +18,7 @@ proxies:
   servername: gb1.japancase.site
   client-fingerprint: chrome
 - name: 🇦🇲 亚美尼亚 (Armenia) 02 - xiaoyu
-  server: 157.228.71.76
+  server: it1.japancase.site
   port: 443
   udp: true
   type: vless

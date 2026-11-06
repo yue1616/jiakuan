@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01 - xiaoyu
-  server: 151.241.19.36
+  server: 151.241.19.29
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇪 阿联酋 (UAE) 02 - xiaoyu
-  server: 151.241.19.29
+  server: 151.241.19.36
   port: 19999
   udp: true
   type: ss
@@ -29,28 +29,6 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
-  server: 57.129.130.63
-  port: 52014
-  udp: true
-  type: vless
-  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  server: 38.180.11.182
-  port: 12146
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: 37a7c5fb6a3109207a0860d30bedb37c
-- name: 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -59,7 +37,9 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
+    headers:
+      Host: 95.174.68.188
+- name: 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -68,6 +48,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,8 +60,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -90,7 +70,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 04 - xiaoyu
   - 🇦🇪 阿联酋 (UAE) 05 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 06 - xiaoyu
-  - 🇦🇪 阿联酋 (UAE) 07 - xiaoyu
 rules:
 - MATCH,PROXIES

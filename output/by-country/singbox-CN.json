@@ -4,26 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇹 葡萄牙 (Portugal) 01 - xiaoyu",
-      "server": "185.231.233.91",
-      "server_port": 17167,
-      "method": "aes-128-gcm",
-      "password": "d925ddb6fe1e6e62887cf3dc3f5137f3"
+      "type": "vmess",
+      "tag": "🇨🇳 CN 01 - xiaoyu",
+      "server": "120.48.133.162",
+      "server_port": 10086,
+      "uuid": "2a489513-46b5-488c-9899-9faaf2d83cd9",
+      "security": "auto",
+      "transport": {
+        "type": "ws"
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇹 葡萄牙 (Portugal) 01 - xiaoyu"
+        "🇨🇳 CN 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇹 葡萄牙 (Portugal) 01 - xiaoyu"
+        "🇨🇳 CN 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
