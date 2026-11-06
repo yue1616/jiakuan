@@ -12,7 +12,11 @@
       "tls": {
         "enabled": true,
         "server_name": "connectwithtopemployersandfindidealjobs.com",
-        "insecure": true
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
@@ -37,12 +41,25 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇲🇽 墨西哥 (Mexico) 03 - xiaoyu",
+      "server": "mx001.zestapp778.com",
+      "server_port": 15083,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "mx001.zestapp778.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇲🇽 墨西哥 (Mexico) 01 - xiaoyu",
-        "🇲🇽 墨西哥 (Mexico) 02 - xiaoyu"
+        "🇲🇽 墨西哥 (Mexico) 02 - xiaoyu",
+        "🇲🇽 墨西哥 (Mexico) 03 - xiaoyu"
       ]
     },
     {
@@ -50,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇽 墨西哥 (Mexico) 01 - xiaoyu",
-        "🇲🇽 墨西哥 (Mexico) 02 - xiaoyu"
+        "🇲🇽 墨西哥 (Mexico) 02 - xiaoyu",
+        "🇲🇽 墨西哥 (Mexico) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇱 AL 01 - xiaoyu",
-      "server": "dns22.m3hrzd.ir",
-      "server_port": 1348,
-      "method": "chacha20-ietf-poly1305",
-      "password": "6Gzfdmd2cvye1qyKoub9E7eWijMDR2lK"
+      "type": "trojan",
+      "tag": "🇵🇭 菲律宾 (Philippines) 01 - xiaoyu",
+      "server": "130.94.52.37",
+      "server_port": 46298,
+      "password": "5t6i121em5lkmsmk",
+      "tls": {
+        "enabled": true,
+        "server_name": "ph001.zestapp778.com",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01 - xiaoyu"
+        "🇵🇭 菲律宾 (Philippines) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01 - xiaoyu"
+        "🇵🇭 菲律宾 (Philippines) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

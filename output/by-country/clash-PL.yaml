@@ -5,34 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaoyu
-  server: 217.30.10.44
-  port: 9095
+  server: 201.10.91.31
+  port: 1080
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
+  cipher: aes-256-gcm
+  password: FJo_V-KMvriDekN0CYkdNH0C
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
-  server: 94.249.180.86
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: 70.34.252.255
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
   server: 217.30.10.72
   port: 443
   udp: true
@@ -45,7 +24,43 @@ proxies:
     short-id: 1a2b3c4d
   servername: images.porsche.com
   client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
+  server: 70.34.252.255
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
+  server: 94.249.180.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
+  server: 145.63.143.205
+  port: 8444
+  udp: true
+  type: vless
+  uuid: a8321cfe-39a2-48a0-a918-f01f7d9006ed
+  tls: true
+  servername: pl1.meshbeat.online
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/v1/devices/10be32b380/telemetry
+    headers:
+      Host: pl1.meshbeat.online
+- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
   server: 54.37.131.126
   port: 80
   udp: true
@@ -58,21 +73,32 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  server: 145.63.143.205
-  port: 8444
+- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
+  server: 72.56.233.10
+  port: 8443
   udp: true
   type: vless
-  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
+  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
   tls: true
-  servername: pl1.meshbeat.online
+  servername: lte-v2-ws.gacvpn.site
   skip-cert-verify: false
   client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /api/v1/devices/10be32b380/telemetry
-    headers:
-      Host: pl1.meshbeat.online
+    path: /static/js/runtime.9d03c7.js
+- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
+  server: ru1.radiolumens.uk
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +110,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,5 +123,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
 rules:
 - MATCH,PROXIES

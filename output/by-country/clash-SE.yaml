@@ -20,17 +20,6 @@ proxies:
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
-  server: 138.199.55.230
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -39,20 +28,19 @@ proxies:
   tls: true
   servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
-  server: se3.shtil.io
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
+  server: 95.143.196.97
   port: 443
   udp: true
-  type: vless
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  tls: true
-  servername: se3.shtil.io
+  type: trojan
+  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
+  sni: connect-se.mimowhat.online
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -63,6 +51,50 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
+  server: 138.199.55.230
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
+  server: 194.104.94.141
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  tls: true
+  servername: se3.shtil.io
+  skip-cert-verify: true
+- name: 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
+  server: 62.93.166.184
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
+  server: sw.golangwikito.cfd
+  port: 443
+  udp: true
+  type: vless
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
+    short-id: a1037b25dcef6aa7
+  servername: sw.golangwikito.cfd
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,6 +106,9 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,5 +120,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
 rules:
 - MATCH,PROXIES
