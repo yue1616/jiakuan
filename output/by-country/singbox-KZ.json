@@ -6,22 +6,17 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
-      "server": "95.57.50.87",
-      "server_port": 443,
-      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-      "flow": "xtls-rprx-vision",
+      "server": "3h-kazakhstan1.09vpn.com",
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
       "tls": {
         "enabled": true,
-        "server_name": "kz1.japancase.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE",
-          "short_id": "4000cdda6278d236"
-        }
+        "server_name": "3h-kazakhstan1.09vpn.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless/"
       }
     },
     {
@@ -45,12 +40,55 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
+      "server": "95.143.188.113",
+      "server_port": 443,
+      "uuid": "c47159bb-2c15-440d-b239-8594d7e7efbb",
+      "tls": {
+        "enabled": true,
+        "server_name": "tz5gtjwlki.j.cloudfront.hls.hlsnode.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "sync.v1"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu",
+      "server": "95.57.50.87",
+      "server_port": 443,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "kz1.japancase.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "eV6ewGF7oTHf2pTQHKYvwJt-vU8hUC-1CjiUl20HtXE",
+          "short_id": "4000cdda6278d236"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu"
       ]
     },
     {
@@ -58,7 +96,9 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

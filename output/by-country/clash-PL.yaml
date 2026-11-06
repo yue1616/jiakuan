@@ -6,12 +6,25 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaoyu
   server: 217.30.10.44
-  port: 9076
+  port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
+  password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
+  server: 2.26.255.215
+  port: 443
+  udp: true
+  type: vless
+  uuid: 69e41e64-a832-471a-b740-94577ca85520
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
+    short-id: '50'
+  servername: cloudflare.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
   server: 70.34.252.255
   port: 443
   udp: true
@@ -19,37 +32,33 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: 145.63.143.205
-  port: 8444
-  udp: true
-  type: vless
-  uuid: 35c9f200-7520-4005-b78e-f8a2fb9f68f7
-  tls: true
-  servername: pl1.meshbeat.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/v1/devices/10be32b380/telemetry
-    headers:
-      Host: pl1.meshbeat.online
 - name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
-  server: 129.101.100.126
-  port: 8443
+  server: 94.249.180.86
+  port: 443
   udp: true
   type: vless
-  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
+  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
+  flow: xtls-rprx-vision
   tls: true
-  servername: lte-v2-ws.gacvpn.site
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: amd.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
+  server: 77.232.135.141
+  port: 8445
+  udp: true
+  type: vless
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
   skip-cert-verify: false
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /static/js/runtime.9d03c7.js
-    headers:
-      Host: lte-v2-ws.gacvpn.site
-- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
   server: 54.37.131.126
   port: 80
   udp: true
@@ -62,19 +71,19 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  server: pl3.japancase.site
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
+  server: 129.101.100.126
+  port: 8443
   udp: true
   type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
+  uuid: 981c7ccc-2b17-473c-8358-7fd1d6eec1b4
   tls: true
-  reality-opts:
-    public-key: COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc
-    short-id: 5037f0423dc4e4ff
-  servername: pl3.japancase.site
-  client-fingerprint: edge
+  servername: lte-v2-ws.gacvpn.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /static/js/runtime.9d03c7.js
 proxy-groups:
 - name: PROXIES
   type: select
@@ -86,6 +95,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,5 +107,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
 rules:
 - MATCH,PROXIES
