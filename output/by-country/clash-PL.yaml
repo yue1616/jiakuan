@@ -13,73 +13,67 @@ proxies:
   password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
   server: 217.30.10.44
-  port: 9071
+  port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
+  password: tkhHVxxfM2QErBWe
 - name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: 217.30.10.44
-  port: 9042
+  server: 54.37.235.208
+  port: 11169
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
+  cipher: aes-128-gcm
+  password: 122e6f90890e2691f3da63eddf951495
 - name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
-  server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  server: 217.30.10.44
-  port: 9076
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
-- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  server: 217.30.10.44
-  port: 9099
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
   server: 217.30.10.44
   port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
+- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
   server: 217.30.10.44
-  port: 9062
+  port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 10 - xiaoyu
-  server: 2.26.255.215
-  port: 443
+  password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  server: 217.30.10.44
+  port: 9052
   udp: true
-  type: vless
-  uuid: 69e41e64-a832-471a-b740-94577ca85520
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
+- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
+  server: 217.30.10.44
+  port: 9076
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S2zDyyPcmZN2h8EC
+- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
+  server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
+  server: 217.30.10.44
+  port: 9042
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+- name: 🇵🇱 波兰 (Poland) 10 - xiaoyu
+  server: 217.30.10.44
+  port: 9099
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7heRqkPG3hg4UnRm
 - name: 🇵🇱 波兰 (Poland) 11 - xiaoyu
   server: 70.34.252.255
   port: 443
@@ -89,18 +83,18 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 12 - xiaoyu
-  server: 94.249.180.86
-  port: 443
+  server: 77.232.135.141
+  port: 8445
   udp: true
   type: vless
-  uuid: 0de1d303-d7de-0001-8679-c4cb67e2e2cc
-  flow: xtls-rprx-vision
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
   tls: true
-  reality-opts:
-    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
-    short-id: a696de84963656de
-  servername: amd.com
-  client-fingerprint: chrome
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 13 - xiaoyu
   server: 54.37.131.126
   port: 80
