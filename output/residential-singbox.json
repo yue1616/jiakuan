@@ -4,44 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu",
-      "server": "aac08668-tmm5c0-tw661e-1isea.hk3.hyhuawei.com",
-      "server_port": 443,
-      "password": "d6abdbda-fe9d-11ec-bb74-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "aac08668-tmm5c0-tw661e-1isea.hk3.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu",
-      "server": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
-      "server_port": 443,
-      "password": "40639730-e027-11ea-87ad-f23c913c8d2b",
-      "tls": {
-        "enabled": true,
-        "server_name": "baf80640-tmm5c0-to0mym-z93q.nw4.hyhuawei.com",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu"
+        "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

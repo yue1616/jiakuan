@@ -5,14 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
+  server: 38.110.1.246
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
   server: 45.63.30.142
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: connectwithemployerstohireyouridealteam.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
+  skip-cert-verify: false
+- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
   server: 152.67.115.203
   port: 443
   udp: true
@@ -22,13 +30,13 @@ proxies:
   skip-cert-verify: true
   obfs: salamander
   obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-- name: 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
-  server: user02.godvpn.lol
-  port: 62405
+- name: 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
+  server: au001.zestapp778.com
+  port: 54374
   udp: true
-  type: anytls
-  password: 4bbfa33a-449a-4a50-8dfc-6d0de880f7bc
-  sni: user02.godvpn.lol
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: au001.zestapp778.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -38,6 +46,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +55,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 01 - xiaoyu
   - 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
   - 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
+  - 🇦🇺 澳大利亚 (Australia) 04 - xiaoyu
 rules:
 - MATCH,PROXIES

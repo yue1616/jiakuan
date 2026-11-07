@@ -15,7 +15,7 @@
         "server_name": "kz1.japancase.site",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -25,16 +25,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
-      "server": "38.180.38.19",
-      "server_port": 15231,
-      "method": "aes-128-gcm",
-      "password": "5126ccc78eea4c643cbed4e6c21465e8"
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
       "server": "109.248.170.119",
       "server_port": 13447,
       "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
@@ -58,8 +50,7 @@
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu"
       ]
     },
     {
@@ -67,8 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
