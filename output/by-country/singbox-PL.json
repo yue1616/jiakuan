@@ -4,80 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 01 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9099,
-      "method": "aes-256-cfb",
-      "password": "7heRqkPG3hg4UnRm"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 02 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9062,
-      "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9071,
-      "method": "aes-256-cfb",
-      "password": "mENfxTFQpRKKh4As"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9063,
-      "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 05 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9076,
-      "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 06 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9006,
-      "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 07 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9042,
-      "method": "aes-256-cfb",
-      "password": "S7KwUu7yBy58S3Ga"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 08 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9095,
-      "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9052,
-      "method": "aes-256-cfb",
-      "password": "jt2ekBNc9HuVtm2a"
-    },
-    {
       "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 10 - xiaoyu",
+      "tag": "🇵🇱 波兰 (Poland) 01 - xiaoyu",
       "server": "70.34.252.255",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -89,7 +17,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 11 - xiaoyu",
+      "tag": "🇵🇱 波兰 (Poland) 02 - xiaoyu",
+      "server": "2.26.6.1",
+      "server_port": 2087,
+      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
+      "tls": {
+        "enabled": true,
+        "server_name": "2.26.6.1",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaoyu",
       "server": "94.183.234.245",
       "server_port": 443,
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -109,37 +53,13 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 12 - xiaoyu",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01 - xiaoyu",
         "🇵🇱 波兰 (Poland) 02 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 03 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 04 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 05 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 06 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 07 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 08 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 11 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 12 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 03 - xiaoyu"
       ]
     },
     {
@@ -148,16 +68,7 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01 - xiaoyu",
         "🇵🇱 波兰 (Poland) 02 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 03 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 04 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 05 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 06 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 07 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 08 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 11 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 12 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -28,7 +28,7 @@
       "tls": {
         "enabled": true,
         "server_name": "hy2.aspidnet.xyz",
-        "insecure": true
+        "insecure": false
       },
       "obfs": {
         "type": "salamander",
@@ -64,6 +64,30 @@
       }
     },
     {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
+      "server": "sclass-00.catcat321.com",
+      "server_port": 20123,
+      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.catxstar.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - xiaoyu",
+      "server": "217.217.222.230",
+      "server_port": 20123,
+      "password": "d9064589-74af-432a-9390-5d8a9da281bf",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk.catxstar.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -72,7 +96,9 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 07 - xiaoyu"
       ]
     },
     {
@@ -83,7 +109,9 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

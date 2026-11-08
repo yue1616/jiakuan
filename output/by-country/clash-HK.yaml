@@ -5,60 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaoyu
-  server: 152.32.254.68
-  port: 5010
+  server: 209.33.160.122
+  port: 39098
   udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+  type: vless
+  uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
+  servername: dash.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
-  server: 202.146.222.89
+  server: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
+  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
+  sni: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
+  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: 202.146.222.174
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
-  server: vpn-hk-004.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
-  server: 165.154.63.139
-  port: 443
+  server: 152.32.254.68
+  port: 5010
   udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
-    short-id: ca4aedd4
-  servername: www.amazon.com
-  client-fingerprint: firefox
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: 127.0.0.1
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 proxy-groups:
 - name: PROXIES
   type: select

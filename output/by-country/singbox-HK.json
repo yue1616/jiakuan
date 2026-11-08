@@ -4,31 +4,36 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaoyu",
-      "server": "152.32.254.68",
-      "server_port": 5010,
-      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
+      "server": "209.33.160.122",
+      "server_port": 39098,
+      "uuid": "7852e4df-db54-4f75-a35e-3b8fbe89e56d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "nas.aizhzo.com",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
+        "server_name": "dash.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg",
+          "short_id": ""
+        }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu",
-      "server": "202.146.222.89",
+      "server": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
       "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "password": "3bd247a8-993e-11ec-a8bf-f23c91cfbbc9",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
-        "insecure": true
+        "server_name": "0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com",
+        "insecure": false
       }
     },
     {
@@ -39,53 +44,48 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "server_name": "202.146.222.174",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu",
-      "server": "202.146.222.29",
+      "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1",
+        "server_name": "https://t.me/clashv8\\u0001f1e8\\u0001f1f3",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu",
-      "server": "vpn-hk-004.fastervpn.world",
+      "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vpn-hk-004.fastervpn.world",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu",
-      "server": "165.154.63.139",
-      "server_port": 443,
-      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
-      "flow": "xtls-rprx-vision",
+      "server": "152.32.254.68",
+      "server_port": 5010,
+      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ",
-          "short_id": "ca4aedd4"
-        }
+        "server_name": "127.0.0.1",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
       }
     },
     {
