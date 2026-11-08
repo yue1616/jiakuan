@@ -6,67 +6,67 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaoyu
   server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
-  server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: 217.30.10.44
-  port: 9042
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
-- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
-  server: 217.30.10.44
   port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
+- name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
   server: 217.30.10.44
   port: 9062
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: tkhHVxxfM2QErBWe
-- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
+- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
+  server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
   server: 217.30.10.44
   port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
+- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
   server: 217.30.10.44
   port: 9076
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: S2zDyyPcmZN2h8EC
+- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  server: 217.30.10.44
+  port: 9006
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: FAdUvMJUq5vDgKEq
+- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
+  server: 217.30.10.44
+  port: 9042
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S7KwUu7yBy58S3Ga
+- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
+  server: 217.30.10.44
+  port: 9095
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
+  server: 217.30.10.44
+  port: 9052
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 10 - xiaoyu
   server: 70.34.252.255
   port: 443
@@ -76,32 +76,19 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 11 - xiaoyu
-  server: 2.27.255.171
+  server: 94.183.234.245
   port: 443
   udp: true
   type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: g_1VEWSkHGaqhSpzEG_7qhG2AR24WoSZEc_eLDZ4vyw
-    short-id: 96738b5c79c4af75
-  servername: pl5.japancase.site
-  client-fingerprint: firefox
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: qq
 - name: 🇵🇱 波兰 (Poland) 12 - xiaoyu
-  server: 77.83.246.232
-  port: 443
-  udp: true
-  type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: COvqGpB7lUdZshmbn5zdqiVi81n8Iyha8RbEHtK93xc
-    short-id: 5037f0423dc4e4ff
-  servername: pl3.japancase.site
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 13 - xiaoyu
   server: 54.37.131.126
   port: 80
   udp: true
@@ -114,32 +101,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 14 - xiaoyu
-  server: 2.26.255.215
-  port: 443
-  udp: true
-  type: vless
-  uuid: 69e41e64-a832-471a-b740-94577ca85520
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 15 - xiaoyu
-  server: ru1.radiolumens.uk
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
 proxy-groups:
 - name: PROXIES
   type: select
@@ -157,9 +118,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 10 - xiaoyu
   - 🇵🇱 波兰 (Poland) 11 - xiaoyu
   - 🇵🇱 波兰 (Poland) 12 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 13 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 14 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 15 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -177,8 +135,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 10 - xiaoyu
   - 🇵🇱 波兰 (Poland) 11 - xiaoyu
   - 🇵🇱 波兰 (Poland) 12 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 13 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 14 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 15 - xiaoyu
 rules:
 - MATCH,PROXIES
