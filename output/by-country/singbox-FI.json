@@ -18,50 +18,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
-      "server": "217.144.188.185",
-      "server_port": 443,
-      "uuid": "8d954cbe-7ca9-402d-bfaf-aca6c92c04c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.nordea.fi",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_ZRqqX7UVPTq--m8Lk8YHhrfElad2dIIpTh3D59f8zk",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
-      "server": "static.117.242.109.65.clients.your-server.de",
-      "server_port": 443,
-      "uuid": "320536e8-b0d3-4afa-a5ec-de93356ce562",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "static.0.72.42.77.clients.your-server.de",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          " http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
       "server": "188.114.96.3",
       "server_port": 2053,
       "password": "gHQP0D7D15",
@@ -86,12 +44,25 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-      "server": "fn1s.sublinkplas.ir",
-      "server_port": 53731,
-      "method": "chacha20-ietf-poly1305",
-      "password": "tztS0JGqX91pDVi5g8QyffaUPJlPUnWm"
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
+      "server": "5.129.249.155",
+      "server_port": 443,
+      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-59.topp-con.xyz",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU",
+          "short_id": "b9120cd53ffd7bba"
+        }
+      }
     },
     {
       "type": "selector",
@@ -100,9 +71,7 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 05 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 03 - xiaoyu"
       ]
     },
     {
@@ -111,9 +80,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 05 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
