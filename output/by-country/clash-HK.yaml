@@ -5,59 +5,71 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaoyu
-  server: 209.33.160.122
-  port: 39098
+  server: dog-hk.kunlun01dns.com
+  port: 21019
   udp: true
-  type: vless
-  uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
-  servername: dash.cloudflare.com
-  client-fingerprint: chrome
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
-  server: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
+  server: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 3bd247a8-993e-11ec-a8bf-f23c91cfbbc9
-  sni: 0d6ed79d-tlsio0-u4ai7k-z7a1.nw4.hyhuawei.com
+  password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
+  sni: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
   skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
-  server: 202.146.222.174
-  port: 443
+  server: 152.32.254.68
+  port: 5010
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  sni: https://t.me/clashv8🇨🇳
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  sni: google.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
-  server: 152.32.254.68
-  port: 5010
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+  server: vpn-hk-004.fastervpn.world
+  port: 443
   udp: true
   type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: 127.0.0.1
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
+  server: 101.32.187.182
+  port: 10898
+  udp: true
+  type: vmess
+  uuid: b6b14ef7-a769-406f-9df7-31790ff7a920
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +81,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,5 +94,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
 rules:
 - MATCH,PROXIES
