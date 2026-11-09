@@ -5,51 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01 - xiaoyu
-  server: 62.182.193.228
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
-- name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
   server: 70.34.212.124
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: AxIYWtskJWIIaefW
-- name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
+- name: 🇸🇪 瑞典 (Sweden) 02 - xiaoyu
   server: 138.199.55.243
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
+  server: 62.182.193.228
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
-  server: 31.76.81.144
-  port: 443
-  udp: true
-  type: vless
-  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg
-    short-id: a1037b25dcef6aa7
-  servername: sw.golangwikito.cfd
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
   server: 70.34.207.14
   port: 443
   udp: true
@@ -57,32 +33,7 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
-  server: dexter.subgift1.cyou
-  port: 47022
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: zMs60mW7BeIj7gLbg5YrdH7Ulcey8fB7z/ifZSagtIY=:fSLjt/OPHzZB9m+z8TqWMswEEhDZbwGPnk26OQQ1FfM=
-- name: 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
-  server: 95.143.196.32
-  port: 443
-  udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
-  server: 194.104.94.141
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  tls: true
-  servername: se3.shtil.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇸🇪 瑞典 (Sweden) 10 - xiaoyu
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   server: 62.93.166.184
   port: 1270
   udp: true
@@ -93,7 +44,15 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 11 - xiaoyu
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
+  server: 95.143.196.97
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 769f34f0-1500-488f-b414-03bc90666502
+  sni: se.mimowhat.online
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaoyu
   server: 138.199.55.230
   port: 1270
   udp: true
@@ -104,7 +63,7 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 12 - xiaoyu
+- name: 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -117,6 +76,27 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
+  server: 194.104.94.141
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  tls: true
+  servername: se3.shtil.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 10 - xiaoyu
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 proxy-groups:
 - name: PROXIES
   type: select
@@ -132,8 +112,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 10 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 11 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -149,7 +127,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 08 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 09 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 10 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 11 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 12 - xiaoyu
 rules:
 - MATCH,PROXIES

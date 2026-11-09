@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
-  server: sport.herumhas.shop
+  server: 185.215.184.53
   port: 443
   udp: true
   type: vless
-  uuid: 68a67906-5b37-4779-a6cc-58a1655f18b4
+  uuid: 90157e25-cee1-4217-921e-91f300bc1a24
+  flow: xtls-rprx-vision
   tls: true
-  servername: sport.herumhas.shop
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/v2/checkout/poll
+  reality-opts:
+    public-key: 1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs
+    short-id: 428ef87fd47a3a32
+  servername: dvizhok.su
+  client-fingerprint: ''
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaoyu
   server: esso-music-coroborito.keno.su
   port: 443
