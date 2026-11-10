@@ -4,24 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu
-  server: 87.228.61.175
-  port: 1443
+- name: 🇨🇳 CN 01 - xiaoyu
+  server: 39.108.113.127
+  port: 10086
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: tAGGzgRCi6W95UwG0qerf6
+  type: vmess
+  uuid: b0253c6c-0b96-4950-bde1-669f13bc1a01
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu
+  - 🇨🇳 CN 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu
+  - 🇨🇳 CN 01 - xiaoyu
 rules:
 - MATCH,PROXIES

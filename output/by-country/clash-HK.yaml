@@ -5,22 +5,63 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaoyu
+  server: 104.18.14.19
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 226279dd-28b2-4b61-96be-a2a0b1afd522
+  tls: true
+  servername: hk.zhaoqing.city
+  skip-cert-verify: false
+  client-fingerprint: random
+  network: ws
+  ws-opts:
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+    headers:
+      Host: hk.zhaoqing.city
+- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
+  sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
+  server: 152.32.254.68
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
   server: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
   port: 443
   udp: true
@@ -28,25 +69,39 @@ proxies:
   password: 28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9
   sni: fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
-  server: 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
+  server: 112.120.123.140
   port: 443
   udp: true
   type: hysteria2
-  password: c12f73f6-e8c7-11ed-9246-f23c9164ca5d
-  sni: 193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com
+  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  sni: 7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
-  server: 47.244.120.197
-  port: 23026
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
+  server: 162.19.192.89
+  port: 16632
   udp: true
   type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  uuid: 992b1bc6-6e1e-455d-940b-e99bd39f70a2
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /arki
+    path: /
+    headers:
+      Host: 0606f25bbb646de3feadb8d23c1c6217.mobgslb.tbcache.com
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
+  server: 209.33.160.122
+  port: 39098
+  udp: true
+  type: vless
+  uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg
+  servername: dash.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,6 +112,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +127,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
+  - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
 rules:
 - MATCH,PROXIES

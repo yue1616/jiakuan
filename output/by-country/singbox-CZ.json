@@ -27,7 +27,28 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02 - xiaoyu",
-      "server": "server.slavkiti.monster",
+      "server": "216.106.191.201",
+      "server_port": 10303,
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "suK-MYTtZhJ9IJgsxPLTHLQadNotDqYslQcd5BNV_EQ",
+          "short_id": "6aa50b0cc8d23464"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03 - xiaoyu",
+      "server": "193.124.17.190",
       "server_port": 443,
       "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
       "flow": "xtls-rprx-vision",
@@ -36,7 +57,7 @@
         "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -51,7 +72,8 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 02 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 02 - xiaoyu",
+        "🇨🇿 捷克 (Czech) 03 - xiaoyu"
       ]
     },
     {
@@ -59,7 +81,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01 - xiaoyu",
-        "🇨🇿 捷克 (Czech) 02 - xiaoyu"
+        "🇨🇿 捷克 (Czech) 02 - xiaoyu",
+        "🇨🇿 捷克 (Czech) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

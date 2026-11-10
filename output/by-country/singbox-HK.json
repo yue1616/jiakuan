@@ -4,32 +4,95 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 - xiaoyu",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "server": "104.18.14.19",
+      "server_port": 8443,
+      "uuid": "226279dd-28b2-4b61-96be-a2a0b1afd522",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3",
-        "insecure": true
+        "server_name": "hk.zhaoqing.city",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560",
+        "headers": {
+          "Host": "hk.zhaoqing.city"
+        }
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu",
-      "server": "202.146.222.174",
+      "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "202.146.222.89",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu",
+      "server": "152.32.254.68",
+      "server_port": 5010,
+      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
+      "tls": {
+        "enabled": true,
+        "server_name": "nas.aizhzo.com",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2🇨🇳",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu",
+      "server": "vpn-hk-004.fastervpn.world",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-hk-004.fastervpn.world",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu",
       "server": "fc6ffc71-tmm5c0-ts3rye-mrtr.hk3.hyhuawei.com",
       "server_port": 443,
       "password": "28a8a4d0-3e02-11eb-a8bf-f23c91cfbbc9",
@@ -41,26 +104,50 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu",
-      "server": "193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu",
+      "server": "112.120.123.140",
       "server_port": 443,
-      "password": "c12f73f6-e8c7-11ed-9246-f23c9164ca5d",
+      "password": "5acc7a7c-d7ea-11eb-8673-f23c9164ca5d",
       "tls": {
         "enabled": true,
-        "server_name": "193d0c41-tm96o0-tnggms-6gn6.nw4.hyhuawei.com",
+        "server_name": "7017cade-tmm5c0-u1dz9j-12hj8.nw4.hyhuawei.com",
         "insecure": false
       }
     },
     {
       "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu",
-      "server": "47.244.120.197",
-      "server_port": 23026,
-      "uuid": "b9de1bc9-baa7-41ac-86f7-ccd59695cb21",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu",
+      "server": "162.19.192.89",
+      "server_port": 16632,
+      "uuid": "992b1bc6-6e1e-455d-940b-e99bd39f70a2",
       "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/arki"
+        "path": "/",
+        "headers": {
+          "Host": "0606f25bbb646de3feadb8d23c1c6217.mobgslb.tbcache.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu",
+      "server": "209.33.160.122",
+      "server_port": 39098,
+      "uuid": "7852e4df-db54-4f75-a35e-3b8fbe89e56d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dash.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "DtOZ39u6MyQMG96tl13-M7-HeaqQzW2RLBVPk9py-Vg",
+          "short_id": ""
+        }
       }
     },
     {
@@ -72,7 +159,12 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu",
         "🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu",
         "🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu"
+        "🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu"
       ]
     },
     {
@@ -83,7 +175,12 @@
         "🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu",
         "🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu",
         "🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu"
+        "🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu",
+        "🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -1,0 +1,75 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaoyu",
+      "server": "nl4.japancase.site",
+      "server_port": 443,
+      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl4.japancase.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lXCVb-MY5dJqMUw6xvkuPbi0idyfF-OkSY_6GpOovVI",
+          "short_id": "9f05c35b73b47d53"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 02 - xiaoyu",
+      "server": "104.253.216.227",
+      "server_port": 443,
+      "uuid": "de38389f-5651-4f2f-8276-5aabf3b861c9",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.hollywoodreporter.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg",
+          "short_id": "225e930cfd4d"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaoyu",
+        "🇺🇦 乌克兰 (Ukraine) 02 - xiaoyu"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaoyu",
+        "🇺🇦 乌克兰 (Ukraine) 02 - xiaoyu"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
