@@ -10,25 +10,25 @@ proxies:
   udp: true
   type: hysteria2
   password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
+  sni: 127.0.0.1
+  skip-cert-verify: true
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
+  sni: https://t.me/clashv8
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
   server: 202.146.222.29
@@ -36,30 +36,43 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
-  server: vpn-hk-004.fastervpn.world
+  server: 39.109.111.23
+  port: 28675
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jgtiLXdCnQ9WRWMuu2gsuGQOQTCRZQpspnn228kjTSA
+    short-id: 9a79807253c040
+  servername: www.lamer.com.hk
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
+  server: 20247da3-tmm5c0-u1dz9j-12hj8.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-hk-004.fastervpn.world
+  password: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  sni: 20247da3-tmm5c0-u1dz9j-12hj8.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
-  server: 162.19.192.89
-  port: 16632
-  udp: true
-  type: vmess
-  uuid: 992b1bc6-6e1e-455d-940b-e99bd39f70a2
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 0606f25bbb646de3feadb8d23c1c6217.mobgslb.tbcache.com
 - name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+  server: dogyhkv2.zalolink.com
+  port: 39675
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VW9b1Lj_TPfa52PVrmLypSxQjRiV06sgG96uEd6oBRM
+    short-id: 551a216445
+  servername: www.lamer.com.hk
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
   server: 103.172.116.191
   port: 10103
   udp: true
@@ -72,27 +85,6 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
-  server: 47.129.105.174
-  port: 50000
-  udp: true
-  type: hysteria2
-  password: g4EKHBpZQ9ckIhFRyi3gHDFh
-  sni: sg-transit-3.nebulacloud.win
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
-  server: 47.244.120.197
-  port: 23026
-  udp: true
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
-    headers:
-      Host: 47.244.120.197
 proxy-groups:
 - name: PROXIES
   type: select
@@ -106,7 +98,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -120,6 +111,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
 rules:
 - MATCH,PROXIES
