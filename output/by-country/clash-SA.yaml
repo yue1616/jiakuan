@@ -17,17 +17,34 @@ proxies:
     short-id: 6aa50b0cc8d23464
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇸🇦 沙特 (Saudi Arabia) 02 - xiaoyu
+  server: 81.208.170.142
+  port: 1500
+  udp: true
+  type: vless
+  uuid: e332f028-d343-5b44-8016-b3130f39e133
+  tls: true
+  reality-opts:
+    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
+    short-id: 775eb6408888248e
+  servername: www.ebay.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaoyu
+  - 🇸🇦 沙特 (Saudi Arabia) 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇦 沙特 (Saudi Arabia) 01 - xiaoyu
+  - 🇸🇦 沙特 (Saudi Arabia) 02 - xiaoyu
 rules:
 - MATCH,PROXIES

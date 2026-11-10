@@ -18,19 +18,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇷 IR 02 - xiaoyu
-  server: 198.16.113.219
-  port: 8443
-  udp: true
-  type: vless
-  uuid: e3e0e1c3-599e-4ae1-8ad4-d9e90effacc4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
-    short-id: 69984b9e02545831
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇷 IR 03 - xiaoyu
   server: 198.16.113.222
   port: 8443
   udp: true
@@ -43,6 +30,19 @@ proxies:
     short-id: 69984b9e02545831
   servername: www.apple.com
   client-fingerprint: firefox
+- name: 🇮🇷 IR 03 - xiaoyu
+  server: 198.16.113.221
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇷 IR 04 - xiaoyu
   server: 198.16.113.218
   port: 8443
@@ -56,6 +56,26 @@ proxies:
     short-id: 69984b9e02545831
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇮🇷 IR 05 - xiaoyu
+  server: 198.16.113.219
+  port: 8443
+  udp: true
+  type: vless
+  uuid: e3e0e1c3-599e-4ae1-8ad4-d9e90effacc4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇷 IR 06 - xiaoyu
+  server: mojtun.mlbaz.ir
+  port: 555
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 60806a2e4c3945f4ba08beade8d71d4e
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +85,8 @@ proxy-groups:
   - 🇮🇷 IR 02 - xiaoyu
   - 🇮🇷 IR 03 - xiaoyu
   - 🇮🇷 IR 04 - xiaoyu
+  - 🇮🇷 IR 05 - xiaoyu
+  - 🇮🇷 IR 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +96,7 @@ proxy-groups:
   - 🇮🇷 IR 02 - xiaoyu
   - 🇮🇷 IR 03 - xiaoyu
   - 🇮🇷 IR 04 - xiaoyu
+  - 🇮🇷 IR 05 - xiaoyu
+  - 🇮🇷 IR 06 - xiaoyu
 rules:
 - MATCH,PROXIES

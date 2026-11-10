@@ -30,19 +30,6 @@ proxies:
     short-id: 6aa50b0cc8d23464
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇨🇿 捷克 (Czech) 03 - xiaoyu
-  server: 193.124.17.190
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: ee1716767f9b
-  servername: www.tradingview.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01 - xiaoyu
   - 🇨🇿 捷克 (Czech) 02 - xiaoyu
-  - 🇨🇿 捷克 (Czech) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01 - xiaoyu
   - 🇨🇿 捷克 (Czech) 02 - xiaoyu
-  - 🇨🇿 捷克 (Czech) 03 - xiaoyu
 rules:
 - MATCH,PROXIES
