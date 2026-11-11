@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇸 冰岛 (Iceland) 01 - xiaoyu",
-      "server": "191.44.112.170",
-      "server_port": 443,
-      "uuid": "46d221fa-e9b4-748c-4eae-019a88e42991",
+      "tag": "🇭🇷 克罗地亚 (Croatia) 01 - xiaoyu",
+      "server": "23.95.72.244",
+      "server_port": 50131,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "orbylume.my.to",
-        "insecure": false,
+        "server_name": "api.adidas.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tvpn-tor/is",
-        "headers": {
-          "Host": "orbylume.my.to"
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "D-7bbtY-0R7n8bX_n-tMlnNPkgy1-y7zaxQvmHrcAHQ",
+          "short_id": "edcd88f8279bfd9b"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇸 冰岛 (Iceland) 01 - xiaoyu"
+        "🇭🇷 克罗地亚 (Croatia) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇸 冰岛 (Iceland) 01 - xiaoyu"
+        "🇭🇷 克罗地亚 (Croatia) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

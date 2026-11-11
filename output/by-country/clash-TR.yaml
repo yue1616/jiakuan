@@ -25,16 +25,6 @@ proxies:
   obfs: salamander
   obfs-password: 9a33460c-b037-47aa-a606-d04211f4e0ec
 - name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
-  server: 153.56.210.134
-  port: 57251
-  udp: true
-  type: hysteria2
-  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -46,7 +36,7 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   server: 45.92.219.47
   port: 443
   udp: true
@@ -58,6 +48,29 @@ proxies:
     public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
   servername: ty.galactichub.online
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
+  server: 153.56.210.134
+  port: 57251
+  udp: true
+  type: hysteria2
+  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
+- name: 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
+  server: 154.40.51.62
+  port: 22152
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: dDf2TcDNn3Kk8pAp4EnNC4ZUAmGkzAapRFGFe-41IEk
+    short-id: 86f6705960e3e3
+  servername: iosapps.itunes.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,6 +81,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,5 +92,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 06 - xiaoyu
 rules:
 - MATCH,PROXIES
