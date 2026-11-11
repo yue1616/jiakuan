@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 01 - xiaoyu",
+      "server": "218.237.185.234",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaoyu",
       "server": "129.154.61.196",
       "server_port": 800,
       "uuid": "a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0",
@@ -13,29 +21,21 @@
     },
     {
       "type": "vmess",
-      "tag": "🇰🇷 韩国 (South Korea) 02 - xiaoyu",
+      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaoyu",
       "server": "146.56.112.110",
       "server_port": 8888,
       "uuid": "e7c302f3-90d6-42dd-9d7d-94a3683a3707",
       "security": "auto"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 - xiaoyu",
-      "server": "218.237.185.234",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
       "type": "hysteria2",
       "tag": "🇰🇷 韩国 (South Korea) 04 - xiaoyu",
-      "server": "132.226.226.189",
-      "server_port": 50160,
-      "password": "1671a252e2a97dc2bda4e515475931da",
+      "server": "152.70.237.123",
+      "server_port": 2053,
+      "password": "maintell",
       "tls": {
         "enabled": true,
-        "server_name": "132.226.226.189",
+        "server_name": "152.70.237.123",
         "insecure": true
       }
     },
@@ -57,22 +57,6 @@
     {
       "type": "trojan",
       "tag": "🇰🇷 韩国 (South Korea) 06 - xiaoyu",
-      "server": "158.247.255.150",
-      "server_port": 48851,
-      "password": "5t6i121em5lkmsmk",
-      "tls": {
-        "enabled": true,
-        "server_name": "kr002.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 07 - xiaoyu",
       "server": "158.247.253.243",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -88,29 +72,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaoyu",
-      "server": "152.67.200.82",
+      "tag": "🇰🇷 韩国 (South Korea) 07 - xiaoyu",
+      "server": "132.226.226.189",
       "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "password": "1671a252e2a97dc2bda4e515475931da",
       "tls": {
         "enabled": true,
-        "server_name": "152.67.200.82",
+        "server_name": "off",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 09 - xiaoyu",
-      "server": "152.69.226.63",
-      "server_port": 25555,
-      "uuid": "27c5483f-17f4-48ae-9a04-def53d88440d",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 10 - xiaoyu",
+      "tag": "🇰🇷 韩国 (South Korea) 08 - xiaoyu",
       "server": "152.69.231.175",
       "server_port": 50160,
       "password": "1beb216e3f60aea9555dae60d219a5ca",
@@ -121,40 +95,31 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 09 - xiaoyu",
+      "server": "152.69.226.63",
+      "server_port": 25555,
+      "uuid": "27c5483f-17f4-48ae-9a04-def53d88440d",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 11 - xiaoyu",
-      "server": "150-230-252-217.liao.kdns.fr",
+      "tag": "🇰🇷 韩国 (South Korea) 10 - xiaoyu",
+      "server": "152.67.200.82",
       "server_port": 50160,
-      "password": "9cfc9458e48c028ec03ff86ebc71c744",
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
       "tls": {
         "enabled": true,
-        "server_name": "127.0.0.1",
+        "server_name": "152.67.200.82",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 12 - xiaoyu",
-      "server": "151.245.106.49",
-      "server_port": 2053,
-      "uuid": "a2de9567-9646-45a9-a410-7303a43bdb6c",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo",
-          "short_id": "429499c03d4cc8a0"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇰🇷 韩国 (South Korea) 13 - xiaoyu",
+      "tag": "🇰🇷 韩国 (South Korea) 11 - xiaoyu",
       "server": "154.90.62.70",
       "server_port": 56127,
       "password": "p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B",
@@ -170,35 +135,31 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 14 - xiaoyu",
-      "server": "152.70.237.123",
-      "server_port": 2053,
-      "password": "maintell",
+      "tag": "🇰🇷 韩国 (South Korea) 12 - xiaoyu",
+      "server": "150-230-252-217.liao.kdns.fr",
+      "server_port": 50160,
+      "password": "9cfc9458e48c028ec03ff86ebc71c744",
       "tls": {
         "enabled": true,
-        "server_name": "152.70.237.123",
+        "server_name": "127.0.0.1",
         "insecure": true
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 15 - xiaoyu",
-      "server": "8.220.241.33",
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 13 - xiaoyu",
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 14 - xiaoyu",
+      "server": "140.238.2.250",
       "server_port": 443,
-      "uuid": "f877d913-9f87-45dd-bfe8-d95043081184",
-      "tls": {
-        "enabled": true,
-        "server_name": "cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jSvhKKNVMhMQOCERpOyPwfNkzMnHQExIua0oWRdbuB8",
-          "short_id": ""
-        }
-      }
+      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
+      "security": "auto"
     },
     {
       "type": "selector",
@@ -218,8 +179,7 @@
         "🇰🇷 韩国 (South Korea) 11 - xiaoyu",
         "🇰🇷 韩国 (South Korea) 12 - xiaoyu",
         "🇰🇷 韩国 (South Korea) 13 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 14 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 15 - xiaoyu"
+        "🇰🇷 韩国 (South Korea) 14 - xiaoyu"
       ]
     },
     {
@@ -239,8 +199,7 @@
         "🇰🇷 韩国 (South Korea) 11 - xiaoyu",
         "🇰🇷 韩国 (South Korea) 12 - xiaoyu",
         "🇰🇷 韩国 (South Korea) 13 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 14 - xiaoyu",
-        "🇰🇷 韩国 (South Korea) 15 - xiaoyu"
+        "🇰🇷 韩国 (South Korea) 14 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

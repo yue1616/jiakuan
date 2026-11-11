@@ -14,18 +14,6 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https://t.me/oneclickvpnkeys",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu",
       "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -36,13 +24,68 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu",
+      "server": "103.115.109.49",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu",
+      "server": "83.147.13.74",
+      "server_port": 8443,
+      "uuid": "eb8c97f7-a154-4442-91b0-54c0d055ad0b",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.githubassets.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA",
+          "short_id": "4ad2e4e660550e43"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 - xiaoyu",
+      "server": "23.95.72.244",
+      "server_port": 5462,
+      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api.adidas.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "biUjzfAfxrbE_4GNfOCbSG-YW5tDUlqZTeyhJb6OG30",
+          "short_id": "4b7a508fcd3ef1a1"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 05 - xiaoyu"
       ]
     },
     {
@@ -51,7 +94,9 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu",
+        "🇹🇼 中国台湾 (Taiwan) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

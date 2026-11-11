@@ -5,12 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  server: 49.254.204.133
-  port: 1774
+  server: 23.95.72.244
+  port: 5455
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 57RM7KBz_R-RMNj9BbOXK8yYz0e8Mjv7iA8FvKGbnXU
+    short-id: bb32911d6c
+  servername: api.adidas.com
+  client-fingerprint: firefox
 - name: 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
   server: 23.95.72.244
   port: 50135
@@ -24,19 +30,6 @@ proxies:
     short-id: 8cd0eddfb0
   servername: api.adidas.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
-  server: 23.95.72.244
-  port: 5455
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 57RM7KBz_R-RMNj9BbOXK8yYz0e8Mjv7iA8FvKGbnXU
-    short-id: bb32911d6c
-  servername: api.adidas.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
   - 🇰🇷 韩国 (South Korea) 02 (家宽) - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES

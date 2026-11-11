@@ -18,6 +18,17 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
   server: 109.248.170.119
   port: 13447
   udp: true
@@ -29,17 +40,6 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: firefox
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
 proxy-groups:
 - name: PROXIES
   type: select
