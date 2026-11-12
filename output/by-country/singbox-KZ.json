@@ -4,34 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
-      "server": "172.67.220.103",
-      "server_port": 2087,
-      "password": "80d4cb87-ac70-e074-bc82-6313d2d1b539",
-      "tls": {
-        "enabled": true,
-        "server_name": "ayhanmansur-zedmeli.kdns.fr",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/eyJqdW5rIjoiZXJaQklLRUh1R0UiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjowfQ==",
-        "headers": {
-          "Host": "ayhanmansur-zedmeli.kdns.fr"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
       "server": "185.246.155.91",
       "server_port": 10403,
       "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
@@ -51,15 +25,39 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
+      "server": "109.248.170.119",
+      "server_port": 13447,
+      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
+      "tls": {
+        "enabled": true,
+        "server_name": "yahoo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
+          "short_id": "83"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
       "server": "3h-kazakhstan1.09vpn.com",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
+      "server_port": 8443,
+      "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
+      "tls": {
+        "enabled": true,
+        "server_name": "3h-kazakhstan1.09vpn.com",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/vmess/"
+        "path": "/vless/"
       }
     },
     {

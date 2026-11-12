@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaoyu
-  server: 104.16.10.234
-  port: 443
+  server: 173.245.49.114
+  port: 8443
   udp: true
   type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
   tls: true
-  servername: jp3.yohototo.top
+  servername: moz.ar-marz.fun
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /tyxyws
+    path: /man
     headers:
-      Host: jp3.yohototo.top
+      Host: moz.ar-marz.fun
 proxy-groups:
 - name: PROXIES
   type: select

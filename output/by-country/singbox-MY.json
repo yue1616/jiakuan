@@ -4,25 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaoyu",
-      "server": "23.95.72.244",
-      "server_port": 50684,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "F9djf8t16xjf7WRVmek0OWg_Q6OvmsZdI3rR9xiz2jI",
-          "short_id": "39c553a45e5649d9"
-        }
-      }
+      "server": "192.228.145.118",
+      "server_port": 10086,
+      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "security": "auto"
     },
     {
       "type": "selector",

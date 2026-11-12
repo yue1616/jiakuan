@@ -12,13 +12,47 @@ proxies:
   cipher: 2022-blake3-aes-128-gcm
   password: b7I6g7l7fJhBaMInJ+zkzw==
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
+  sni: https
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu
+  server: 160.187.100.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu
+  server: 23.95.72.244
+  port: 5463
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8kZm9gW7saiRPuqXppCTlOAx_dIsqZUbNOBERMvMDVw
+    short-id: be33ecc1975c
+  servername: api.adidas.com
+  client-fingerprint: firefox
+- name: 🇹🇼 中国台湾 (Taiwan) 05 - xiaoyu
+  server: 23.95.72.244
+  port: 5462
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: biUjzfAfxrbE_4GNfOCbSG-YW5tDUlqZTeyhJb6OG30
+    short-id: 4b7a508fcd3ef1a1
+  servername: api.adidas.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -26,6 +60,9 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -33,5 +70,8 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

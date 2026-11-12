@@ -27,27 +27,6 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
-      "server": "156.226.168.221",
-      "server_port": 35193,
-      "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE",
-          "short_id": "e8daed2d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu",
       "server": "23.95.72.244",
       "server_port": 54468,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
@@ -68,7 +47,7 @@
     },
     {
       "type": "vmess",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 04 - xiaoyu",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu",
       "server": "156.239.224.107",
       "server_port": 57278,
       "uuid": "1270bed5-f908-4ecc-f1c8-de246033b186",
@@ -85,8 +64,7 @@
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu",
         "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 04 - xiaoyu"
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu"
       ]
     },
     {
@@ -95,8 +73,7 @@
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu",
         "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 04 - xiaoyu"
+        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
