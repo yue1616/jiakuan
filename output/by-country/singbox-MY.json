@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaoyu",
+      "tag": "🇲🇾 马来西亚 (Malaysia) 01 - xiaoyu",
       "server": "23.95.72.244",
-      "server_port": 52541,
+      "server_port": 50684,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -19,8 +19,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "_DBQoND5nxcCxxCU0tO0b-h0E10ZFtPTwSp8CJ-f-gs",
-          "short_id": "ce5793a7ad9594"
+          "public_key": "F9djf8t16xjf7WRVmek0OWg_Q6OvmsZdI3rR9xiz2jI",
+          "short_id": "39c553a45e5649d9"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaoyu"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaoyu"
+        "🇲🇾 马来西亚 (Malaysia) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

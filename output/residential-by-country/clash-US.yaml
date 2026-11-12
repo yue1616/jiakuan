@@ -13,14 +13,6 @@ proxies:
   sni: us001.zestapp778.com
   skip-cert-verify: false
 - name: 🇺🇸 美国 (United States) 02 (移动家宽) - xiaoyu
-  server: 130.94.20.17
-  port: 57277
-  udp: true
-  type: trojan
-  password: 5t6i121em5lkmsmk
-  sni: us001.zestapp778.com
-  skip-cert-verify: false
-- name: 🇺🇸 美国 (United States) 03 (移动家宽) - xiaoyu
   server: 23.95.72.244
   port: 5467
   udp: true
@@ -33,6 +25,19 @@ proxies:
     short-id: 6e47891d
   servername: api.adidas.com
   client-fingerprint: chrome
+- name: 🇺🇸 美国 (United States) 03 (移动家宽) - xiaoyu
+  server: 23.95.72.244
+  port: 5465
+  udp: true
+  type: vless
+  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GaZo6ZlyOUxhems08m3fhEc-0j3IYppLUpjNmMqNjlk
+    short-id: 7024258fb07f5eb5
+  servername: api.adidas.com
+  client-fingerprint: edge
 - name: 🇺🇸 美国 (United States) 04 (移动家宽) - xiaoyu
   server: 23.95.72.244
   port: 5466
@@ -45,7 +50,7 @@ proxies:
     public-key: vr-C-6JEfZhnEVO2NDzUIlRhr0LCXFx9BoOBb31AsSg
     short-id: fb16a20a0815
   servername: api.adidas.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

@@ -5,9 +5,9 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇷 克罗地亚 (Croatia) 01 - xiaoyu",
+      "tag": "🇦🇱 AL 01 - xiaoyu",
       "server": "23.95.72.244",
-      "server_port": 50131,
+      "server_port": 52157,
       "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
       "flow": "xtls-rprx-vision",
       "tls": {
@@ -15,12 +15,12 @@
         "server_name": "api.adidas.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "D-7bbtY-0R7n8bX_n-tMlnNPkgy1-y7zaxQvmHrcAHQ",
-          "short_id": "edcd88f8279bfd9b"
+          "public_key": "sTga77Qd2-N5ZLvPPu9nTBg2eKdQ6TJQNmypPnzUHm0",
+          "short_id": "6c62fa"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇷 克罗地亚 (Croatia) 01 - xiaoyu"
+        "🇦🇱 AL 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇷 克罗地亚 (Croatia) 01 - xiaoyu"
+        "🇦🇱 AL 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

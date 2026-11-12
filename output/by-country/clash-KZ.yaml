@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu
+  server: 172.67.220.103
+  port: 2087
+  udp: true
+  type: trojan
+  password: 80d4cb87-ac70-e074-bc82-6313d2d1b539
+  sni: ayhanmansur-zedmeli.kdns.fr
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZXJaQklLRUh1R0UiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W10sInJlbGF5SWR4IjowfQ==
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
   server: 185.246.155.91
   port: 10403
   udp: true
@@ -17,8 +28,8 @@ proxies:
     short-id: 6859f5b59e55aa30
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
-  server: 38.107.234.57
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
+  server: 3h-kazakhstan1.09vpn.com
   port: 80
   udp: true
   type: vmess
@@ -28,18 +39,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vmess/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu
-  server: 109.248.170.119
-  port: 13447
-  udp: true
-  type: vless
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
-  tls: true
-  reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
-  servername: yahoo.com
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
