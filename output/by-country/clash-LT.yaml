@@ -6,79 +6,46 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu
   server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
-  server: 195.238.126.20
   port: 9002
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
-  server: 195.238.126.20
-  port: 9086
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
   server: 195.238.126.20
   port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
   server: 195.238.126.20
   port: 9008
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   server: 195.238.126.20
   port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
   server: 195.238.126.20
   port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
-  server: 84.32.209.103
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3f25b15b-1777-4c08-9ade-60336ac92a82
-  tls: true
-  servername: edge-lt.lindenpixel.com
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
-  server: 23.95.72.244
-  port: 53213
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DPhQNdv-mJEyLG7ifmvXUejKMTJSiwtGaTIthoGMbUY
-    short-id: 29cbf3d804bd
-  servername: api.adidas.com
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -90,9 +57,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,8 +68,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
 rules:
 - MATCH,PROXIES

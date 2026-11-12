@@ -5,18 +5,14 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu",
-      "server": "161.114.15.215",
-      "server_port": 30502,
-      "password": "5KdDtpoJI58OTsoG0PwEYunqB0mkAEDm",
+      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - xiaoyu",
+      "server": "sclass-01.catcat321.com",
+      "server_port": 20103,
+      "password": "d7563108-615c-4338-a7bd-77f359869a4a",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "hk.catxstar.com",
+        "insecure": true
       }
     },
     {
@@ -24,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu"
+        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽) - xiaoyu"
+        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

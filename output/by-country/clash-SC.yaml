@@ -17,19 +17,6 @@ proxies:
   servername: cloudflare-dns.com
   client-fingerprint: firefox
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu
-  server: 23.95.72.244
-  port: 54468
-  udp: true
-  type: vless
-  uuid: 9a5e7b1c-bf39-4b1f-891f-ac87824ee38f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lzrZgPuEIioo0ZRjytB59mywVRsQzIAvuhqiMRUIsQU
-    short-id: 853c1d768b
-  servername: api.adidas.com
-  client-fingerprint: chrome
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu
   server: 156.239.224.107
   port: 57278
   udp: true
@@ -47,7 +34,6 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,6 +41,5 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu
   - 🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu
-  - 🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

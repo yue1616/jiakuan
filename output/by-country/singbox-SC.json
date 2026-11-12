@@ -25,29 +25,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
-      "server": "23.95.72.244",
-      "server_port": 54468,
-      "uuid": "9a5e7b1c-bf39-4b1f-891f-ac87824ee38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "api.adidas.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lzrZgPuEIioo0ZRjytB59mywVRsQzIAvuhqiMRUIsQU",
-          "short_id": "853c1d768b"
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
       "server": "156.239.224.107",
       "server_port": 57278,
       "uuid": "1270bed5-f908-4ecc-f1c8-de246033b186",
@@ -63,8 +42,7 @@
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu"
       ]
     },
     {
@@ -72,8 +50,7 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu"
+        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

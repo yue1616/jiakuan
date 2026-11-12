@@ -18,13 +18,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇮🇱 以色列 (Israel) 02 - xiaoyu
-  server: 129.159.156.109
-  port: 50160
+  server: 64.177.66.60
+  port: 8388
   udp: true
-  type: hysteria2
-  password: f25f19f29ce3fb53a35bf1b35b452a43
-  sni: www.bing.com
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: jfWoSVCVYXRmNBfC
 proxy-groups:
 - name: PROXIES
   type: select

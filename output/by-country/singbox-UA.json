@@ -5,24 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🌐 其他地区 (Other) 01 - xiaoyu",
-      "server": "173.245.49.114",
-      "server_port": 8443,
-      "uuid": "9443badf-414f-4b12-b19a-7cc2c7431163",
+      "tag": "🇺🇦 乌克兰 (Ukraine) 01 - xiaoyu",
+      "server": "83.147.18.75",
+      "server_port": 443,
+      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "moz.ar-marz.fun",
-        "insecure": false,
+        "server_name": "www.bing.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/man",
-        "headers": {
-          "Host": "moz.ar-marz.fun"
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
+          "short_id": "7f1e29593aa94ad1"
         }
       }
     },
@@ -31,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01 - xiaoyu"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01 - xiaoyu"
+        "🇺🇦 乌克兰 (Ukraine) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
