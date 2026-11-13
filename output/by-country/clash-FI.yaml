@@ -5,6 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaoyu
+  server: 65.108.240.210
+  port: 39018
+  udp: true
+  type: vmess
+  uuid: 45dc10c6-04c8-4c70-a06a-d396254a6c0b
+  alterId: 0
+  cipher: auto
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
+  server: 178.214.125.1
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3f3160a0-747d-4fed-bf3d-4d884bfa964d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZxCwJxbsZWJYYCPzeWj7_fxJMVhwh4XGfpvjmEIQjHY
+    short-id: 6172ba9cffe9c22f
+  servername: conf.emaar.ru
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -15,8 +36,51 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
-  server: free.for.member.iiproxy.com
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
+  server: 72.35.246.39
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b6c29ae7-4748-4049-b642-b695c0d2c776
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: TSOm7XIZvGzYoCbh_lFFA9PTQJqI-JU5kKIAffGmUWg
+    short-id: 5e39e518bfac6392
+  servername: vk.ru
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+  server: 146.103.118.189
+  port: 443
+  udp: true
+  type: vless
+  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
+  tls: true
+  servername: nl2.574ck.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /574ck-finland
+    headers:
+      Host: nl2.574ck.xyz
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: Zpv2hwO4eWAy3MmFOvIm5jcEby7exKU4
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaoyu
+  server: 65.109.208.183
   port: 443
   udp: true
   type: vless
@@ -24,19 +88,20 @@ proxies:
   tls: true
   servername: free.for.member.iiproxy.com
   skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
-  server: 169.40.34.41
-  port: 443
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 09 - xiaoyu
+  server: 66.bmi.ir.asopardaz.ir
+  port: 8443
   udp: true
   type: vless
-  uuid: 622654a4-b666-000b-9260-fb717e05154f
+  uuid: 7c356ae5-3b11-4040-9e76-2d2b7b8ea2f4
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 6VMgXXhZdJCiOG05EyK_zTHh00kpFGrZJeZIEPgqhjY
-    short-id: 1c3e8241a8743df9
-  servername: key-master-saver.com
-  client-fingerprint: ios
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: timeline.www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +110,12 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 03 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 07 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 08 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +124,11 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 03 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 07 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 08 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
 rules:
 - MATCH,PROXIES
