@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaoyu",
       "server": "217.30.10.44",
-      "server_port": 9076,
+      "server_port": 9095,
       "method": "aes-256-cfb",
-      "password": "S2zDyyPcmZN2h8EC"
+      "password": "N7j3pdTYkKmsy8CR"
     },
     {
       "type": "shadowsocks",
@@ -23,9 +23,9 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 03 - xiaoyu",
       "server": "217.30.10.44",
-      "server_port": 9095,
+      "server_port": 9076,
       "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
+      "password": "S2zDyyPcmZN2h8EC"
     },
     {
       "type": "shadowsocks",
@@ -44,24 +44,12 @@
       "password": "f63gg8EruDnUrmz4"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 06 - xiaoyu",
-      "server": "201.58.139.66",
-      "server_port": 443,
-      "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
-      "tls": {
-        "enabled": true,
-        "server_name": "57aac2t.pl7.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
-          "short_id": "6c5c7900406a1ae7"
-        }
-      }
+      "server": "51.38.131.73",
+      "server_port": 8443,
+      "method": "aes-256-gcm",
+      "password": "PJirKQcyqbAiqebq4AHetGUkZuQvmT6ffwuyPFZu0ng="
     },
     {
       "type": "vless",
@@ -91,27 +79,6 @@
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 08 - xiaoyu",
       "server": "2.26.224.174",
-      "server_port": 8445,
-      "uuid": "a4e5f910-23f4-470f-82a7-ed9d7be71dec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "blog.ncknms.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "d6qmF8ibk_PxtDJPzSa7LKw9VUI_mZ59DrTvmW3RaFc",
-          "short_id": "10983e6c816181c2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-      "server": "2.26.224.174",
       "server_port": 8443,
       "uuid": "a4e5f910-23f4-470f-82a7-ed9d7be71dec",
       "flow": "xtls-rprx-vision",
@@ -131,22 +98,37 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-      "server": "20.215.66.17",
-      "server_port": 2083,
-      "uuid": "52a5a29f-c162-411a-8a37-a3f11b0dc537",
+      "tag": "🇵🇱 波兰 (Poland) 09 - xiaoyu",
+      "server": "2.26.224.174",
+      "server_port": 8445,
+      "uuid": "a4e5f910-23f4-470f-82a7-ed9d7be71dec",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "blog.ncknms.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4",
-          "short_id": "0123456789abcdef"
+          "public_key": "d6qmF8ibk_PxtDJPzSa7LKw9VUI_mZ59DrTvmW3RaFc",
+          "short_id": "10983e6c816181c2"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 10 - xiaoyu",
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
         }
       }
     },
@@ -172,63 +154,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 12 - xiaoyu",
-      "server": "82.118.22.161",
-      "server_port": 443,
-      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
-          "short_id": "fa3ea655619a3e78"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 13 - xiaoyu",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 14 - xiaoyu",
-      "server": "5.59.204.245",
-      "server_port": 8455,
-      "uuid": "a4e5f910-23f4-470f-82a7-ed9d7be71dec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "notes.ncknms.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "d6qmF8ibk_PxtDJPzSa7LKw9VUI_mZ59DrTvmW3RaFc",
-          "short_id": "10983e6c816181c2"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -243,10 +168,7 @@
         "🇵🇱 波兰 (Poland) 08 - xiaoyu",
         "🇵🇱 波兰 (Poland) 09 - xiaoyu",
         "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 11 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 12 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 13 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 14 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 11 - xiaoyu"
       ]
     },
     {
@@ -263,10 +185,7 @@
         "🇵🇱 波兰 (Poland) 08 - xiaoyu",
         "🇵🇱 波兰 (Poland) 09 - xiaoyu",
         "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 11 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 12 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 13 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 14 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 11 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

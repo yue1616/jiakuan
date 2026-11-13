@@ -6,32 +6,32 @@ log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01 - xiaoyu
   server: 5.188.181.201
+  port: 9031
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: BwcAUZk8hUFAkDGN
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaoyu
+  server: 5.188.181.201
   port: 9014
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: KnJGad3FqTvjqbaX
-- name: 🇪🇸 西班牙 (Spain) 02 - xiaoyu
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaoyu
   server: 5.188.181.201
   port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
-- name: 🇪🇸 西班牙 (Spain) 03 - xiaoyu
-  server: 62.93.179.117
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 04 - xiaoyu
-  server: 62.93.179.97
-  port: 19999
+  server: 5.188.181.201
+  port: 9025
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-cfb
+  password: XPtzA9sCug3SPR4c
 - name: 🇪🇸 西班牙 (Spain) 05 - xiaoyu
   server: 79.127.139.242
   port: 19999
@@ -40,21 +40,21 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 06 - xiaoyu
-  server: 108.181.71.165
-  port: 10840
+  server: 62.93.179.97
+  port: 19999
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: cac96c2692d85bc2dceec378cea6c83f
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 07 - xiaoyu
-  server: 5.188.181.201
-  port: 9001
+  server: 167.17.71.167
+  port: 19999
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: UkXRsXvR6buDMG2Y
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 08 - xiaoyu
-  server: 167.17.71.167
+  server: 62.93.179.117
   port: 19999
   udp: true
   type: ss
@@ -68,29 +68,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 10 - xiaoyu
-  server: 45.136.196.117
-  port: 12741
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: c333f052493849f16c455f5c40c115a7
-- name: 🇪🇸 西班牙 (Spain) 11 - xiaoyu
-  server: 66.163.118.40
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 12 - xiaoyu
-  server: 66.163.118.115
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 13 - xiaoyu
   server: 212.227.235.66
   port: 2053
   udp: true
@@ -102,16 +79,74 @@ proxies:
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 14 - xiaoyu
-  server: 66.163.118.131
+- name: 🇪🇸 西班牙 (Spain) 11 - xiaoyu
+  server: 66.163.118.203
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.discovergreatjobsandadvanceyourcareer.com
+  sni: blog.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 12 - xiaoyu
+  server: 66.163.118.113
+  port: 443
+  udp: true
+  type: vless
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PwN5VWqwWKVfrqqrbLE4kzVu9vIXSENAUiAPjMWIrVY
+    short-id: 32209e627ee109c7
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 13 - xiaoyu
+  server: 66.163.118.251
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 14 - xiaoyu
+  server: 66.163.118.62
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 - name: 🇪🇸 西班牙 (Spain) 15 - xiaoyu
-  server: 196.196.149.80
+  server: 66.163.118.62
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: 66.163.118.62
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 16 - xiaoyu
+  server: 66.163.118.115
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 17 - xiaoyu
+  server: 68.221.177.135
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 18 - xiaoyu
+  server: 195.206.235.121
   port: 443
   udp: true
   type: vless
@@ -122,6 +157,19 @@ proxies:
     public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
     short-id: 42426c882c5fcd41
   servername: 7aa271t.es1.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 19 - xiaoyu
+  server: 83.147.18.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -143,6 +191,10 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 13 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 14 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 15 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 16 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 17 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 18 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 19 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -163,5 +215,9 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 13 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 14 - xiaoyu
   - 🇪🇸 西班牙 (Spain) 15 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 16 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 17 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 18 - xiaoyu
+  - 🇪🇸 西班牙 (Spain) 19 - xiaoyu
 rules:
 - MATCH,PROXIES
