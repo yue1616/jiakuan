@@ -5,34 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu
-  server: 195.238.126.84
-  port: 9039
+  server: 195.238.126.20
+  port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: qYEN5HX4JKeVCdEC
+  password: M3t2ZEQcMGRWBjRa
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
-  server: 195.238.126.20
-  port: 9002
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
-  server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   server: 195.238.126.20
   port: 9012
   udp: true
@@ -46,9 +25,6 @@ proxy-groups:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,8 +32,5 @@ proxy-groups:
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

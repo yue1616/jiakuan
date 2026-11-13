@@ -12,13 +12,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
-  server: 154.46.31.106
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
-- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu
   server: 46.28.67.55
   port: 443
   udp: true
@@ -31,6 +24,16 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu
+  server: hy2-new.aspidnet.xyz
+  port: 443
+  udp: true
+  type: hysteria2
+  password: QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s
+  sni: hy2-new.aspidnet.xyz
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c1b4086fea89914496c7e10967a419216566
 proxy-groups:
 - name: PROXIES
   type: select

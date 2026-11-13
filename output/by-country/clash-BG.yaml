@@ -6,39 +6,40 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu
   server: 213.183.63.60
-  port: 9054
+  port: 9049
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
+  password: PRBf4BS2HvJqtWxY
 - name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu
+  server: 213.183.63.60
+  port: 9029
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: dU3DSNS8wYPXzEKw
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
+  server: 213.183.63.60
+  port: 9064
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: cp8pRSUAyLhTfVWH
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu
   server: 213.183.63.60
   port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aLpQtfEZe445QyHk
-- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu
   server: 213.183.63.60
-  port: 9085
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
-- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu
-  server: 88.80.150.15
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1d46250c-f015-439d-a7fd-c4d9e2a4c63d
-  tls: true
-  servername: bg2.oncloudvpn.com
-  skip-cert-verify: false
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu
+  password: VcFuyXvND2yQWSFY
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu
   server: 195.123.226.21
   port: 443
   udp: true
@@ -51,6 +52,18 @@ proxies:
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu
+  server: p1real5.greewebservices.ir
+  port: 1270
+  udp: true
+  type: vless
+  uuid: b0511969-f769-460b-963b-70c6b84b6967
+  tls: true
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: 9b60d3
+  servername: play.googleapis.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +74,8 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +86,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu
 rules:
 - MATCH,PROXIES

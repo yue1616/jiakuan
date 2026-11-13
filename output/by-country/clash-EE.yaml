@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
-  server: 112.120.123.140
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
+  server: nlll.obxodvpn.us
   port: 443
   udp: true
   type: hysteria2
-  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  sni: 11158b9a-tmm5c0-u3xqxa-1q91p.nw4.hyhuawei.com
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: nlll.obxodvpn.us
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽) - xiaoyu
+  - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaoyu
 rules:
 - MATCH,PROXIES

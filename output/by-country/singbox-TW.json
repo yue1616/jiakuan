@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu",
-      "server": "35.236.180.222",
+      "server": "amasoid.ddns.net",
       "server_port": 14514,
       "method": "2022-blake3-aes-128-gcm",
       "password": "b7I6g7l7fJhBaMInJ+zkzw=="
@@ -19,7 +19,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https",
+        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
         "insecure": true
       }
     },

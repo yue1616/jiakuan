@@ -12,20 +12,8 @@
       "password": "1234!@#$"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu",
-      "server": "112.120.123.140",
-      "server_port": 443,
-      "password": "c11ff50c-f582-11ee-94df-f23c9164ca5d",
-      "tls": {
-        "enabled": true,
-        "server_name": "11158b9a-tmm5c0-u3xqxa-1q91p.nw4.hyhuawei.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -48,8 +36,7 @@
       "outbounds": [
         "auto",
         "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu"
       ]
     },
     {
@@ -57,8 +44,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽) - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
