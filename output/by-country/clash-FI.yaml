@@ -5,16 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaoyu
-  server: 177.202.65.158
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
-  sni: hy2-fi2.snobvpn.online
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -25,6 +15,16 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
+  server: 177.202.65.158
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
+  sni: hy2-fi2.snobvpn.online
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
   server: 94.183.164.119
   port: 24433
@@ -34,6 +34,14 @@ proxies:
   sni: lakes.blog-forme.ru
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+  server: fi1.obxodvpn.us
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
   server: 94.183.234.245
   port: 443
   udp: true
@@ -55,6 +63,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 03 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +73,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 03 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaoyu
   server: 217.30.10.44
-  port: 9042
+  port: 9071
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S7KwUu7yBy58S3Ga
+  password: mENfxTFQpRKKh4As
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
   server: 217.30.10.44
-  port: 9052
+  port: 9006
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
+  password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
   server: 217.30.10.44
   port: 9076
@@ -27,12 +27,26 @@ proxies:
   password: S2zDyyPcmZN2h8EC
 - name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
   server: 217.30.10.44
-  port: 9006
+  port: 9042
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
+  password: S7KwUu7yBy58S3Ga
 - name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
+  server: 81.90.20.203
+  port: 443
+  udp: true
+  type: vless
+  uuid: f37d32d0-ca5a-464f-8c32-92dc33f71408
+  tls: true
+  reality-opts:
+    public-key: qVU44SZtoG7cKR3ZCg4Ipf5rPefL5cbrto2OpzZNoU8
+  servername: instance-103.nolimited.space
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -42,21 +56,6 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: true
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  server: 201.58.189.105
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d7ddade6-b7a0-4cab-a910-d5d5c378d98a
-  tls: true
-  reality-opts:
-    public-key: B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4
-    short-id: 8bd80253
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: google.storage.v2.Storage
 - name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
   server: 54.37.131.126
   port: 80
@@ -70,19 +69,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -95,7 +81,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
   - 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,6 +93,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
   - 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
 rules:
 - MATCH,PROXIES
