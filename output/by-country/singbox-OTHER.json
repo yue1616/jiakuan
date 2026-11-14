@@ -4,15 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇳🇬 尼日利亚 (Nigeria) 01 - xiaoyu",
-      "server": "sclass-01.catcat321.com",
-      "server_port": 20103,
-      "password": "d7563108-615c-4338-a7bd-77f359869a4a",
+      "type": "vless",
+      "tag": "🌐 其他地区 (Other) 01 - xiaoyu",
+      "server": "104.17.169.13",
+      "server_port": 443,
+      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
-        "server_name": "hk.catxstar.com",
+        "server_name": "jp3.yohototo.top",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tyxyws",
+        "headers": {
+          "Host": "jp3.yohototo.top"
+        }
       }
     },
     {
@@ -20,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaoyu"
+        "🌐 其他地区 (Other) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇬 尼日利亚 (Nigeria) 01 - xiaoyu"
+        "🌐 其他地区 (Other) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

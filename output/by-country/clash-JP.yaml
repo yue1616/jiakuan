@@ -5,20 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01 - xiaoyu
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 02 - xiaoyu
-  server: jpa.123069.xyz
+  server: 168.138.205.100
   port: 53758
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 03 - xiaoyu
+- name: 🇯🇵 日本 (Japan) 02 - xiaoyu
   server: 31.76.91.98
   port: 443
   udp: true
@@ -31,34 +24,68 @@ proxies:
     short-id: bd6f67b6b2152b45
   servername: fuji.etherhub.cc
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 04 - xiaoyu
-  server: 168.110.45.41
-  port: 21443
-  udp: true
-  type: hysteria2
-  password: pnKhsG5E1hH1VglAXmT9cq1
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 05 - xiaoyu
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 06 - xiaoyu
-  server: 155.248.175.201
-  port: 23169
+- name: 🇯🇵 日本 (Japan) 03 - xiaoyu
+  server: 103.75.118.228
+  port: 11452
   udp: true
   type: vless
-  uuid: f67b1159-a61f-4ae4-9844-0701b716a290
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
   flow: xtls-rprx-vision
   tls: true
-  servername: djj.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 04 - xiaoyu
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 05 - xiaoyu
+  server: 158.101.151.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: 66171cbe-0b4b-4b24-99f6-d5a822f4dc9a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 99eQkMBHqOEKororOWKFlmH8M0o9VaVpV9w1vQIxhz8
+    short-id: 684c7531e599dec0
+  servername: www.microsoft.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 06 - xiaoyu
+  server: 8.209.247.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  sni: bing.com
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 07 - xiaoyu
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 08 - xiaoyu
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
+- name: 🇯🇵 日本 (Japan) 09 - xiaoyu
   server: 138.3.208.26
   port: 50160
   udp: true
@@ -66,26 +93,6 @@ proxies:
   password: 184cdec28da5a09450803c8debcd2cc9
   sni: 138.3.208.26
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 08 - xiaoyu
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 09 - xiaoyu
-  server: 168.110.45.41
-  port: 23444
-  udp: true
-  type: vless
-  uuid: ee2112e4-1e58-4f77-b162-5ef869358df9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfxKuH7gDFZ2EMjdt8zMfnsZFpeckMhM5q5XZ3ATe2c
-    short-id: 119c9e68498f5900
-  servername: www.microsoft.com
-  client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 10 - xiaoyu
   server: jp.yi-yi.xyz
   port: 8443
@@ -100,29 +107,35 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 11 - xiaoyu
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 12 - xiaoyu
-  server: 13.140.248.125
-  port: 443
+  server: zfapi.zalolink.com
+  port: 43149
   udp: true
   type: vless
-  uuid: 4f82d72b-9644-c39a-ac6b-abbf15a862aa
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
   tls: true
-  servername: xray-p1vi234h-lunar-forest-6.cloady.io
-  skip-cert-verify: false
+  reality-opts:
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  servername: psstatic.cdn.bcebos.com
   client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 12 - xiaoyu
+  server: 142.91.101.39
+  port: 627
+  udp: true
+  type: vless
+  uuid: 569b5df8-ffab-4e9f-b999-21479d7a62a6
+  tls: true
+  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /e3e2aa65089989f0
+    path: /@Marisa_kristi
     headers:
-      Host: xray-p1vi234h-lunar-forest-6.cloady.io
+      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
 - name: 🇯🇵 日本 (Japan) 13 - xiaoyu
-  server: 43.170.8.95
+  server: 168.107.36.135
   port: 443
   udp: true
   type: vless
@@ -130,27 +143,46 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /tyxyws
     headers:
       Host: jp3.yohototo.top
 - name: 🇯🇵 日本 (Japan) 14 - xiaoyu
-  server: 162.159.130.234
-  port: 2083
+  server: xray-p1vi234h-lunar-forest-6.cloady.io
+  port: 443
   udp: true
-  type: vmess
-  uuid: ac251237-576f-40c8-a543-554960c958b1
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 4f82d72b-9644-c39a-ac6b-abbf15a862aa
   tls: true
-  servername: cdn.sfacg.uk
+  servername: xray-p1vi234h-lunar-forest-6.cloady.io
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /or3
+    path: /e3e2aa65089989f0
     headers:
-      Host: or3.sfacg.uk
+      Host: xray-p1vi234h-lunar-forest-6.cloady.io
+- name: 🇯🇵 日本 (Japan) 15 - xiaoyu
+  server: 155.248.175.201
+  port: 23169
+  udp: true
+  type: vless
+  uuid: 7318caa1-93d1-4a9d-c481-504599902700
+  flow: xtls-rprx-vision
+  tls: true
+  servername: djj.zjlo.top
+  skip-cert-verify: true
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 16 - xiaoyu
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -170,6 +202,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 12 - xiaoyu
   - 🇯🇵 日本 (Japan) 13 - xiaoyu
   - 🇯🇵 日本 (Japan) 14 - xiaoyu
+  - 🇯🇵 日本 (Japan) 15 - xiaoyu
+  - 🇯🇵 日本 (Japan) 16 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -189,5 +223,7 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 12 - xiaoyu
   - 🇯🇵 日本 (Japan) 13 - xiaoyu
   - 🇯🇵 日本 (Japan) 14 - xiaoyu
+  - 🇯🇵 日本 (Japan) 15 - xiaoyu
+  - 🇯🇵 日本 (Japan) 16 - xiaoyu
 rules:
 - MATCH,PROXIES
