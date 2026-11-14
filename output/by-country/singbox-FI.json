@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 01 - xiaoyu",
+      "server": "177.202.65.158",
+      "server_port": 443,
+      "password": "247802ca-0fbb-428a-b807-91a6e571b5c7",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2-fi2.snobvpn.online",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -19,19 +35,19 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
       "server": "94.183.164.119",
       "server_port": 24433,
       "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
       "tls": {
         "enabled": true,
-        "server_name": "94.183.164.119",
-        "insecure": true
+        "server_name": "lakes.blog-forme.ru",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
       "server": "94.183.234.245",
       "server_port": 443,
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -57,7 +73,8 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 03 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 04 - xiaoyu"
       ]
     },
     {
@@ -66,7 +83,8 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 03 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

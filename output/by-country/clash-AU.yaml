@@ -11,7 +11,7 @@ proxies:
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: connectwithemployerstohireyouridealteam.com
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 02 - xiaoyu
   server: v1au.mateflora.com
   port: 443
@@ -26,8 +26,8 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇦🇺 澳大利亚 (Australia) 03 - xiaoyu
-  server: zfapi.zalolink.com
-  port: 54528
+  server: doghkzf.zalolink.com
+  port: 48158
   udp: true
   type: vless
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
@@ -37,7 +37,7 @@ proxies:
     public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
     short-id: 54cca3c1c1c7
   servername: www.apple.com
-  client-fingerprint: ios
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

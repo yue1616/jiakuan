@@ -6,29 +6,6 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaoyu",
-      "server": "193.228.128.230",
-      "server_port": 443,
-      "uuid": "de404269-a97c-4f49-9efb-43509c2afa09",
-      "tls": {
-        "enabled": true,
-        "server_name": "ch.primarymaster.online",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rS6r3PZQHZp31tnOmJAuCme4xJgsak_JsZ5hTPwpuiY",
-          "short_id": "8b8dd8a1c0c468d3"
-        }
-      },
-      "transport": {
-        "type": "grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu",
       "server": "200.102.183.50",
       "server_port": 443,
       "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
@@ -51,23 +28,34 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
-      "server": "200.102.183.57",
-      "server_port": 80,
-      "uuid": "664f65f4-33b3-43a3-b9e5-68192d1d428e",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu",
+      "server": "193.228.128.230",
+      "server_port": 443,
+      "uuid": "de404269-a97c-4f49-9efb-43509c2afa09",
       "tls": {
         "enabled": true,
-        "server_name": "68r2nrw6avta71yq.cdn.cachefleet.com",
-        "insecure": false,
+        "server_name": "ch.primarymaster.online",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rS6r3PZQHZp31tnOmJAuCme4xJgsak_JsZ5hTPwpuiY",
+          "short_id": "8b8dd8a1c0c468d3"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "qi8ws15c7jv5q2fa"
+        "type": "grpc"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
+      "server": "185.22.153.117",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
     },
     {
       "type": "vless",
@@ -113,14 +101,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06 - xiaoyu",
-      "server": "185.22.153.117",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "NTiHBg64fsY8u8DbGrtypD9gPGSL386p"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -129,8 +109,7 @@
         "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 04 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 06 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu"
       ]
     },
     {
@@ -141,8 +120,7 @@
         "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 04 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 06 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

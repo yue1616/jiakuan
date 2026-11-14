@@ -4,17 +4,9 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 01 - xiaoyu",
-      "server": "168.138.205.100",
-      "server_port": 53758,
-      "method": "aes-128-gcm",
-      "password": "Bwlqh7GcFB"
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 - xiaoyu",
-      "server": "31.76.91.98",
+      "tag": "🇯🇵 日本 (Japan) 01 - xiaoyu",
+      "server": "31.76.91.70",
       "server_port": 443,
       "uuid": "7072eeba-94fd-4fb3-92f2-a4506dd84cd8",
       "flow": "xtls-rprx-vision",
@@ -23,7 +15,7 @@
         "server_name": "fuji.etherhub.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -34,7 +26,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 03 - xiaoyu",
+      "tag": "🇯🇵 日本 (Japan) 02 - xiaoyu",
       "server": "103.75.118.228",
       "server_port": 11452,
       "uuid": "814bd064-544d-4255-a070-5705c03f6da9",
@@ -54,16 +46,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 04 - xiaoyu",
-      "server": "84.247.155.196",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05 - xiaoyu",
+      "tag": "🇯🇵 日本 (Japan) 03 - xiaoyu",
       "server": "158.101.151.157",
       "server_port": 443,
       "uuid": "66171cbe-0b4b-4b24-99f6-d5a822f4dc9a",
@@ -83,8 +67,25 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 04 - xiaoyu",
+      "server": "166.0.22.236",
+      "server_port": 2053,
+      "uuid": "9f862257-b1fa-4fb9-9558-bcd6b03ff309",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp5.netease.uz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
+    },
+    {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 06 - xiaoyu",
+      "tag": "🇯🇵 日本 (Japan) 05 - xiaoyu",
       "server": "8.209.247.109",
       "server_port": 443,
       "password": "usqmqUKJFIlCmvkCNSY64L3k",
@@ -95,31 +96,8 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 07 - xiaoyu",
-      "server": "84.247.155.196",
-      "server_port": 80,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇯🇵 日本 (Japan) 08 - xiaoyu",
-      "server": "168.138.43.75",
-      "server_port": 80,
-      "uuid": "11c3627f-31e8-4695-dfbd-34076e2f1f5d",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/cctv13.m3u8",
-        "headers": {
-          "Host": "jp01.a0a.xyz"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 09 - xiaoyu",
+      "tag": "🇯🇵 日本 (Japan) 06 - xiaoyu",
       "server": "138.3.208.26",
       "server_port": 50160,
       "password": "184cdec28da5a09450803c8debcd2cc9",
@@ -130,8 +108,24 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 07 - xiaoyu",
+      "server": "84.247.155.196",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 08 - xiaoyu",
+      "server": "168.138.205.100",
+      "server_port": 53758,
+      "method": "aes-128-gcm",
+      "password": "Bwlqh7GcFB"
+    },
+    {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 10 - xiaoyu",
+      "tag": "🇯🇵 日本 (Japan) 09 - xiaoyu",
       "server": "jp.yi-yi.xyz",
       "server_port": 8443,
       "uuid": "36c06e11-028b-40a1-a91f-c8f38f03e829",
@@ -151,75 +145,16 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 10 - xiaoyu",
+      "server": "84.247.155.196",
+      "server_port": 80,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
+    },
+    {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 11 - xiaoyu",
-      "server": "zfapi.zalolink.com",
-      "server_port": 43149,
-      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "psstatic.cdn.bcebos.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE",
-          "short_id": "15aa0ad4"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 12 - xiaoyu",
-      "server": "142.91.101.39",
-      "server_port": 627,
-      "uuid": "569b5df8-ffab-4e9f-b999-21479d7a62a6",
-      "tls": {
-        "enabled": true,
-        "server_name": "9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 13 - xiaoyu",
-      "server": "168.107.36.135",
-      "server_port": 443,
-      "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
-      "tls": {
-        "enabled": true,
-        "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tyxyws",
-        "headers": {
-          "Host": "jp3.yohototo.top"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14 - xiaoyu",
       "server": "xray-p1vi234h-lunar-forest-6.cloady.io",
       "server_port": 443,
       "uuid": "4f82d72b-9644-c39a-ac6b-abbf15a862aa",
@@ -241,31 +176,14 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 15 - xiaoyu",
-      "server": "155.248.175.201",
-      "server_port": 23169,
-      "uuid": "7318caa1-93d1-4a9d-c481-504599902700",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "djj.zjlo.top",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 16 - xiaoyu",
+      "tag": "🇯🇵 日本 (Japan) 12 - xiaoyu",
       "server": "8.211.175.236",
       "server_port": 8443,
       "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
       "tls": {
         "enabled": true,
-        "server_name": "bing.com",
+        "server_name": "8.211.175.236",
         "insecure": true
       }
     },
@@ -285,11 +203,7 @@
         "🇯🇵 日本 (Japan) 09 - xiaoyu",
         "🇯🇵 日本 (Japan) 10 - xiaoyu",
         "🇯🇵 日本 (Japan) 11 - xiaoyu",
-        "🇯🇵 日本 (Japan) 12 - xiaoyu",
-        "🇯🇵 日本 (Japan) 13 - xiaoyu",
-        "🇯🇵 日本 (Japan) 14 - xiaoyu",
-        "🇯🇵 日本 (Japan) 15 - xiaoyu",
-        "🇯🇵 日本 (Japan) 16 - xiaoyu"
+        "🇯🇵 日本 (Japan) 12 - xiaoyu"
       ]
     },
     {
@@ -307,11 +221,7 @@
         "🇯🇵 日本 (Japan) 09 - xiaoyu",
         "🇯🇵 日本 (Japan) 10 - xiaoyu",
         "🇯🇵 日本 (Japan) 11 - xiaoyu",
-        "🇯🇵 日本 (Japan) 12 - xiaoyu",
-        "🇯🇵 日本 (Japan) 13 - xiaoyu",
-        "🇯🇵 日本 (Japan) 14 - xiaoyu",
-        "🇯🇵 日本 (Japan) 15 - xiaoyu",
-        "🇯🇵 日本 (Japan) 16 - xiaoyu"
+        "🇯🇵 日本 (Japan) 12 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

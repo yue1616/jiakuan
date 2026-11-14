@@ -7,37 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu",
       "server": "213.183.63.60",
+      "server_port": 9049,
+      "method": "aes-256-cfb",
+      "password": "PRBf4BS2HvJqtWxY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu",
+      "server": "213.183.63.60",
       "server_port": 9061,
       "method": "aes-256-cfb",
       "password": "4R3hUfZ2FHhDmNcP"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu",
       "server": "213.183.63.60",
       "server_port": 9054,
       "method": "aes-256-cfb",
       "password": "VcFuyXvND2yQWSFY"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu",
-      "server": "213.183.63.60",
-      "server_port": 9029,
-      "method": "aes-256-cfb",
-      "password": "dU3DSNS8wYPXzEKw"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
-    },
-    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
       "server": "195.123.226.21",
       "server_port": 443,
       "uuid": "6589c320-db68-43cd-a273-b46299bab355",
@@ -64,8 +56,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu"
+        "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu"
       ]
     },
     {
@@ -75,8 +66,7 @@
         "🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu"
+        "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

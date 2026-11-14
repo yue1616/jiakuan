@@ -47,8 +47,41 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+      "server": "151.241.19.44",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "xmfhlpy.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
+      "server": "123466.ru",
+      "server_port": 28054,
+      "uuid": "804334e2-04ca-434c-8311-3ccee8218175",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇪 阿联酋 (UAE) 07 - xiaoyu",
+      "server": "123466.ru",
+      "server_port": 26032,
+      "uuid": "804334e2-04ca-434c-8311-3ccee8218175",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 08 - xiaoyu",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -69,7 +102,10 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 07 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 08 - xiaoyu"
       ]
     },
     {
@@ -80,7 +116,10 @@
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 06 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 07 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 08 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
