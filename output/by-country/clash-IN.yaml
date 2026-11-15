@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01 - xiaoyu
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 02 - xiaoyu
   server: 178.212.35.198
   port: 443
   udp: true
@@ -16,55 +27,28 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 02 - xiaoyu
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 03 - xiaoyu
-  server: 103.111.114.136
-  port: 443
-  udp: true
-  type: vless
-  uuid: 555b35c4-30f9-40c6-a61a-7f53ab1bea45
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: 1a2b3c4d
-  servername: videos.porsche.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 04 - xiaoyu
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇮🇳 印度 (India) 05 - xiaoyu
-  server: small-forest-d3e9.sarahds.workers.dev
+  server: 13.140.253.35
   port: 443
   udp: true
   type: vless
   uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
   tls: true
-  servername: small-forest-d3e9.sarahds.workers.dev
+  servername: xray-dmr3b3hy-calm-maple-7.cloady.io
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /0175469f14317d82
     headers:
-      Host: small-forest-d3e9.sarahds.workers.dev
+      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
+- name: 🇮🇳 印度 (India) 04 - xiaoyu
+  server: 172.105.39.124
+  port: 7002
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 proxy-groups:
 - name: PROXIES
   type: select
@@ -74,7 +58,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaoyu
   - 🇮🇳 印度 (India) 03 - xiaoyu
   - 🇮🇳 印度 (India) 04 - xiaoyu
-  - 🇮🇳 印度 (India) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,6 +67,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02 - xiaoyu
   - 🇮🇳 印度 (India) 03 - xiaoyu
   - 🇮🇳 印度 (India) 04 - xiaoyu
-  - 🇮🇳 印度 (India) 05 - xiaoyu
 rules:
 - MATCH,PROXIES
