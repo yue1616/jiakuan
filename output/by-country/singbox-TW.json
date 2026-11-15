@@ -4,22 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu",
-      "server": "amasoid.ddns.net",
-      "server_port": 14514,
-      "method": "2022-blake3-aes-128-gcm",
-      "password": "b7I6g7l7fJhBaMInJ+zkzw=="
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu",
-      "server": "vpn-tw-002.fastervpn.world",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu",
+      "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "css.rbxcdn.com",
+        "server_name": "127.0.0.1",
         "insecure": true
       }
     },
@@ -28,16 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -11,15 +11,7 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: 1234!@#$
-- name: 🇲🇾 马来西亚 (Malaysia) 02 (家宽) - xiaoyu
-  server: 192.228.145.118
-  port: 10086
-  udp: true
-  type: vmess
-  uuid: b831381d-6324-4d53-ad4f-8cda48b30811
-  alterId: 0
-  cipher: auto
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
   server: 60.248.219.78
   port: 443
   udp: true
@@ -39,15 +31,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇲🇾 马来西亚 (Malaysia) 02 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇲🇾 马来西亚 (Malaysia) 02 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
