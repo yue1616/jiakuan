@@ -15,7 +15,7 @@
         "server_name": "cloudflare-dns.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,58 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
-      "server": "179.254.115.201",
-      "server_port": 443,
-      "uuid": "88edfb30-a34b-41e1-a08f-985a93e3bc36",
-      "tls": {
-        "enabled": true,
-        "server_name": "02104dg.es7.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AK4PrvaK2WV1v1NEegq2rE53gVnlXUw_jo3XwA1aIEI",
-          "short_id": "7d0aaf84998bfe61"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "af7e99c1e3f1"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu",
-      "server": "156.239.224.107",
-      "server_port": 57278,
-      "uuid": "1270bed5-f908-4ecc-f1c8-de246033b186",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 02 - xiaoyu",
-        "🇸🇨 塞舌尔 (Seychelles) 03 - xiaoyu"
+        "🇸🇨 塞舌尔 (Seychelles) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
