@@ -16,13 +16,18 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
-  server: 177.202.75.56
-  port: 443
+  server: 157.180.98.124
+  port: 49659
   udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: fi1.obxodvpn.us
-  skip-cert-verify: false
+  type: vless
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  servername: apple.com
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
   server: 135.181.187.44
   port: 443
@@ -43,6 +48,14 @@ proxies:
   sni: 94.183.164.119
   skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
+  server: 177.202.75.56
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
   server: 104.171.133.213
   port: 443
   udp: true
@@ -53,7 +66,7 @@ proxies:
   servername: mirror-75.topp-con.xyz
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
   server: 129.101.100.219
   port: 443
   udp: true
@@ -75,6 +88,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 07 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,5 +100,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 07 - xiaoyu
 rules:
 - MATCH,PROXIES

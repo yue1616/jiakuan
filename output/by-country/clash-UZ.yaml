@@ -4,23 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu
-  server: 45.86.60.174
-  port: 16443
+- name: 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaoyu
+  server: 89.31.28.40
+  port: 1080
   udp: true
-  type: vless
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
+  type: ss
+  cipher: aes-256-gcm
+  password: FJo_V-KMvriDekN0CYkdNH0C
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu
+  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu
+  - 🇺🇿 乌兹别克斯坦 (Uzbekistan) 01 - xiaoyu
 rules:
 - MATCH,PROXIES

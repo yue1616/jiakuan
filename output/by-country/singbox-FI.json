@@ -18,15 +18,24 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
-      "server": "177.202.75.56",
-      "server_port": 443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "server": "157.180.98.124",
+      "server_port": 49659,
+      "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fi1.obxodvpn.us",
-        "insecure": false
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs",
+          "short_id": "81959fce"
+        }
       }
     },
     {
@@ -63,8 +72,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
+      "server": "177.202.75.56",
+      "server_port": 443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1.obxodvpn.us",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
       "server": "104.171.133.213",
       "server_port": 443,
       "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
@@ -85,7 +106,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
       "server": "129.101.100.219",
       "server_port": 443,
       "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
@@ -114,7 +135,8 @@
         "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 06 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 07 - xiaoyu"
       ]
     },
     {
@@ -126,7 +148,8 @@
         "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 06 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 07 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
