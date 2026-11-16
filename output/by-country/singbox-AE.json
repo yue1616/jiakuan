@@ -20,9 +20,33 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
-      "server": "130.49.161.70",
+      "server": "nl41.homelab-cdn.cloud",
+      "server_port": 8443,
+      "uuid": "0ed9418b-e687-4c2d-8869-7e368c44887e",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl41.homelab-cdn.cloud",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NW2c4t6gXODenb0_Mo5Qf-1nrJr5xFQm30zf-IVfHjY",
+          "short_id": "08"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
+      "server": "hy2.aspidnet.xyz",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
       "tls": {
@@ -36,13 +60,29 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05 - xiaoyu",
+      "server": "84.235.244.108",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "uae.unixzone.us"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu"
       ]
     },
     {
@@ -51,7 +91,9 @@
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01 - xiaoyu",
         "🇦🇪 阿联酋 (UAE) 02 - xiaoyu",
-        "🇦🇪 阿联酋 (UAE) 03 - xiaoyu"
+        "🇦🇪 阿联酋 (UAE) 03 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 04 - xiaoyu",
+        "🇦🇪 阿联酋 (UAE) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

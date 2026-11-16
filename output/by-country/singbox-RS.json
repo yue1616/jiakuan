@@ -20,32 +20,18 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇷🇸 塞尔维亚 (Serbia) 02 - xiaoyu",
-      "server": "130.49.163.188",
-      "server_port": 443,
-      "password": "307ee0e53ea04dfd86a7f2f9fcd53844",
-      "tls": {
-        "enabled": true,
-        "server_name": "s5.libertyrunet.store",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaoyu",
-        "🇷🇸 塞尔维亚 (Serbia) 02 - xiaoyu"
+        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaoyu",
-        "🇷🇸 塞尔维亚 (Serbia) 02 - xiaoyu"
+        "🇷🇸 塞尔维亚 (Serbia) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

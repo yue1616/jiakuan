@@ -4,8 +4,37 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaoyu",
+      "server": "38.110.1.246",
+      "server_port": 18000,
+      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
+      "server": "195.114.14.91",
+      "server_port": 443,
+      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "au1.gofizz.in",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "CcxdRFcNF4OLIFqS999iAHZSa6dsFB6wuhyKlBr45DI",
+          "short_id": "7d9e4e85e6f9"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
       "server": "45.63.30.142",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -17,8 +46,8 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
-      "server": "v1au.mateflora.com",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
+      "server": "176.97.68.100",
       "server_port": 443,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
       "flow": "xtls-rprx-vision",
@@ -38,7 +67,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
+      "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
       "server": "43.255.157.53",
       "server_port": 48158,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
@@ -64,7 +93,9 @@
         "auto",
         "🇦🇺 澳大利亚 (Australia) 01 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
+        "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu"
       ]
     },
     {
@@ -73,7 +104,9 @@
       "outbounds": [
         "🇦🇺 澳大利亚 (Australia) 01 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu"
+        "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
+        "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
