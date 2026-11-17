@@ -6,74 +6,40 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu
   server: 195.238.126.20
-  port: 9068
+  port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
+  password: JCJpbRbQZNw9XFZG
 - name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
-  server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
-  server: 195.238.126.20
-  port: 9008
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: y9VURyNzJWNRYEGQ
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
-  server: 195.238.126.20
-  port: 9011
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   server: 195.238.126.20
   port: 9045
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
-  server: 195.238.126.20
-  port: 9086
+- name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
+  server: 195.238.126.84
+  port: 9039
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 37Z4TFCYhfxcpc9Q
-- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
-  server: 84.32.149.211
-  port: 443
+  password: qYEN5HX4JKeVCdEC
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
+  server: 195.238.126.20
+  port: 9008
   udp: true
-  type: vless
-  uuid: 49db4ce7-ad48-41a3-9b6f-4c6dabd94504
-  tls: true
-  reality-opts:
-    public-key: M-cE7q2hNgBeNv7COM8DS2QC3GGi6Pu7pD1lvUfG0mo
-    short-id: e4fc6803b3212ad4
-  servername: acorn.willowfen.top
-  client-fingerprint: ios
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
-  server: 84.32.248.124
-  port: 443
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
+  server: 195.238.126.20
+  port: 9011
   udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7d309e4c16b825f
-  servername: net-io-api.galioncc.com
-  client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
+  type: ss
+  cipher: aes-256-cfb
+  password: M3t2ZEQcMGRWBjRa
+- name: 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
   server: 84.32.83.197
   port: 443
   udp: true
@@ -84,6 +50,18 @@ proxies:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: a7d309e4c16b825f
   servername: api-dns-gw.galioncc.com
+  client-fingerprint: firefox
+- name: 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
+  server: 84.32.248.124
+  port: 443
+  udp: true
+  type: vless
+  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  tls: true
+  reality-opts:
+    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
+    short-id: a7d309e4c16b825f
+  servername: net-io-api.galioncc.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -97,8 +75,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -111,7 +87,5 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 08 - xiaoyu
-  - 🇱🇹 立陶宛 (Lithuania) 09 - xiaoyu
 rules:
 - MATCH,PROXIES

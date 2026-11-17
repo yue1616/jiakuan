@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaoyu",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "45dc10c6-04c8-4c70-a06a-d396254a6c0b",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
+      "tag": "🇫🇮 芬兰 (Finland) 01 - xiaoyu",
       "server": "157.180.98.124",
       "server_port": 49659,
       "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
@@ -33,8 +25,32 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
+      "server": "177.202.75.56",
+      "server_port": 443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "tls": {
+        "enabled": true,
+        "server_name": "fi1.obxodvpn.us",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
+      "server": "94.183.164.119",
+      "server_port": 24433,
+      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "tls": {
+        "enabled": true,
+        "server_name": "94.183.164.119",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -48,77 +64,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
-      "server": "85.192.49.126",
-      "server_port": 443,
-      "uuid": "8197b9b9-8945-460f-99c9-325ef8a8a7c3",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fi3.gofizzin.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ATdIZVxBUo5bVQJtcoWBU1k8qlHdNniJ2gF1iDc8rEQ",
-          "short_id": "76efb045"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-      "server": "177.202.75.56",
-      "server_port": 443,
-      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
+      "server": "209.94.90.47",
+      "server_port": 2083,
+      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
       "tls": {
         "enabled": true,
-        "server_name": "fi1.obxodvpn.us",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
-      "server": "94.183.164.119",
-      "server_port": 24433,
-      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
-      "tls": {
-        "enabled": true,
-        "server_name": "lakes.blog-forme.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
-      "server": "196.196.208.20",
-      "server_port": 443,
-      "uuid": "2208b003-78b1-453c-b5ca-ce847ff0efd6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "45b545t.fi7.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jRHg94HymqCnI9LLFHMBxvi9URv_AOMgJxhLkOVuCl8",
-          "short_id": "0bfd7d104dcc9cae"
+        "server_name": "vipfree.dr-ping.ir",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vipfree.dr-ping.ir"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
-      "server": "fn1s.sublinkplas.ir",
-      "server_port": 53731,
-      "method": "chacha20-ietf-poly1305",
-      "password": "j2-YonHunrTMlNMFlSY4u0UGsBaBgO4b"
     },
     {
       "type": "selector",
@@ -129,10 +90,7 @@
         "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 08 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 05 - xiaoyu"
       ]
     },
     {
@@ -143,10 +101,7 @@
         "🇫🇮 芬兰 (Finland) 02 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 08 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
