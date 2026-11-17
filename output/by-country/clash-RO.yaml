@@ -5,20 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
-  server: 76.164.202.164
+  server: 185.156.44.99
   port: 443
   udp: true
-  type: vless
-  uuid: 0ed9418b-e687-4c2d-8869-7e368c44887e
-  tls: true
-  reality-opts:
-    public-key: -ABl1aWUmg19BGoOGs8DwhPCTj4uUGgdyXZ1xaWh0W4
-    short-id: 376ec5abd2a1b80c
-  servername: de7-164.homelab-cdn.cloud
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.amazon.com
+  skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
   server: 162.249.125.133
   port: 443
@@ -42,14 +35,6 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 04 - xiaoyu
-  server: 185.156.44.99
-  port: 443
-  udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.amazon.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -58,7 +43,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu
-  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,6 +51,5 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 02 - xiaoyu
   - 🇷🇴 罗马尼亚 (Romania) 03 - xiaoyu
-  - 🇷🇴 罗马尼亚 (Romania) 04 - xiaoyu
 rules:
 - MATCH,PROXIES

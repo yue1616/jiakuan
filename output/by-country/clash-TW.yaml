@@ -18,7 +18,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 103.115.109.49
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu
   server: 114.37.105.51
@@ -32,7 +32,7 @@ proxies:
     public-key: 3OEqq4MiCKoUP5yKBOmZsjuwg4i8A1fb8WrEDOFQek8
     short-id: 2c14765d0b
   servername: tw1.gofizzin.com
-  client-fingerprint: edge
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

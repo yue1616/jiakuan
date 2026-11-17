@@ -5,11 +5,11 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01 - xiaoyu
-  server: 198.16.113.221
+  server: 198.16.113.220
   port: 8443
   udp: true
   type: vless
-  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
+  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -44,6 +44,32 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇷 IR 04 - xiaoyu
+  server: 198.16.113.221
+  port: 8443
+  udp: true
+  type: vless
+  uuid: eb6fbbdd-669b-4055-9379-4eeba938578a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇷 IR 05 - xiaoyu
+  server: 198.16.113.218
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 98a24806-141a-43d3-b094-bd66c4eb93b8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8NkTRxC5Q7bptx-8ADobkuhPK-ZN0kEEbzv6tCFGMzE
+    short-id: 69984b9e02545831
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇷 IR 06 - xiaoyu
   server: 198.16.113.222
   port: 8443
   udp: true
@@ -65,6 +91,8 @@ proxy-groups:
   - 🇮🇷 IR 02 - xiaoyu
   - 🇮🇷 IR 03 - xiaoyu
   - 🇮🇷 IR 04 - xiaoyu
+  - 🇮🇷 IR 05 - xiaoyu
+  - 🇮🇷 IR 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,5 +102,7 @@ proxy-groups:
   - 🇮🇷 IR 02 - xiaoyu
   - 🇮🇷 IR 03 - xiaoyu
   - 🇮🇷 IR 04 - xiaoyu
+  - 🇮🇷 IR 05 - xiaoyu
+  - 🇮🇷 IR 06 - xiaoyu
 rules:
 - MATCH,PROXIES

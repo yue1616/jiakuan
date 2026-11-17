@@ -4,12 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇦🇺 澳大利亚 (Australia) 01 - xiaoyu",
-      "server": "38.110.1.246",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
+      "server": "45.63.30.142",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "connectwithemployerstohireyouridealteam.com",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
@@ -33,16 +37,23 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
-      "server": "45.63.30.142",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "server": "159.13.55.48",
+      "password": "b42d90fa667942aebc734d60",
       "tls": {
         "enabled": true,
-        "server_name": "connectwithemployerstohireyouridealteam.com",
-        "insecure": false
-      }
+        "server_name": "hy2-au2.whuiy.xyz",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "b42d90fa667942aebc734d60"
+      },
+      "server_ports": [
+        "20000:30000",
+        "20000:20000"
+      ]
     },
     {
       "type": "vless",
@@ -68,6 +79,27 @@
     {
       "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
+      "server": "zfapi.zalolink.com",
+      "server_port": 54528,
+      "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo",
+          "short_id": "54cca3c1c1c7"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu",
       "server": "43.255.157.53",
       "server_port": 48158,
       "uuid": "57beeeb0-03fc-4fc9-94da-7604488a7134",
@@ -95,7 +127,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu"
       ]
     },
     {
@@ -106,7 +139,8 @@
         "🇦🇺 澳大利亚 (Australia) 02 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 03 - xiaoyu",
         "🇦🇺 澳大利亚 (Australia) 04 - xiaoyu",
-        "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu"
+        "🇦🇺 澳大利亚 (Australia) 05 - xiaoyu",
+        "🇦🇺 澳大利亚 (Australia) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
