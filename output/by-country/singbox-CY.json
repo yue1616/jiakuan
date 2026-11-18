@@ -21,27 +21,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu",
-      "server": "45.86.60.174",
-      "server_port": 16443,
-      "uuid": "13e541f3-d09d-4633-89df-8513db0ced20"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu",
-        "🇨🇾 塞浦路斯 (Cyprus) 02 - xiaoyu"
+        "🇨🇾 塞浦路斯 (Cyprus) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
