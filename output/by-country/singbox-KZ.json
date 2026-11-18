@@ -6,21 +6,20 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
-      "server": "185.246.155.91",
-      "server_port": 10403,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
+      "server": "91.217.10.237",
+      "server_port": 443,
+      "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "api-ns-mgr.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko",
-          "short_id": "6859f5b59e55aa30"
+          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
+          "short_id": "868419504747f6de"
         }
       }
     },
@@ -61,13 +60,35 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu",
+      "server": "185.246.155.91",
+      "server_port": 10403,
+      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko",
+          "short_id": "6859f5b59e55aa30"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu"
       ]
     },
     {
@@ -76,7 +97,8 @@
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
