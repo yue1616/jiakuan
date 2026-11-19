@@ -12,32 +12,20 @@
       "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
     },
     {
-      "type": "vmess",
+      "type": "trojan",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu",
-      "server": "206.237.11.17",
-      "server_port": 50376,
-      "uuid": "9091fd64-7e8e-4b7a-8ae7-84474f234926",
-      "security": "auto"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu",
-      "server": "152.32.254.68",
-      "server_port": 5010,
-      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
+      "server": "47.242.93.89",
+      "server_port": 12012,
+      "password": "12012",
       "tls": {
         "enabled": true,
-        "server_name": "nas.aizhzo.com",
+        "server_name": "ali-hk.b-gfw.cfd",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu",
       "server": "2.26.204.46",
       "server_port": 31001,
       "uuid": "12a4f736-2238-49ee-831f-5516f15cc951",
@@ -58,19 +46,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu",
-      "server": "202.146.222.174",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "202.146.222.174",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -82,20 +58,55 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu",
+      "server": "202.146.222.174",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "https://t.me/wangcai2",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu",
       "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/clashv8",
+        "server_name": "202.146.222.89",
         "insecure": true
       }
     },
     {
       "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu",
+      "server": "172.67.190.141",
+      "server_port": 443,
+      "uuid": "a25a71d1-10ed-4383-855a-f269a34ca691",
+      "tls": {
+        "enabled": true,
+        "server_name": "ave-qualifications-choices-populations.trycloudflare.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/a8b8606819ef",
+        "headers": {
+          "Host": "ave-qualifications-choices-populations.trycloudflare.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu",
-      "server": "104.21.55.229",
+      "server": "172.67.174.37",
       "server_port": 443,
       "uuid": "a25a71d1-10ed-4383-855a-f269a34ca691",
       "tls": {
@@ -118,29 +129,6 @@
     {
       "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu",
-      "server": "172.66.140.62",
-      "server_port": 443,
-      "uuid": "a25a71d1-10ed-4383-855a-f269a34ca691",
-      "tls": {
-        "enabled": true,
-        "server_name": "ave-qualifications-choices-populations.trycloudflare.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/a8b8606819ef",
-        "headers": {
-          "Host": "ave-qualifications-choices-populations.trycloudflare.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu",
       "server": "45.192.193.54",
       "server_port": 35600,
       "uuid": "8614bde7-34cf-4413-8360-e96f1b960528",
@@ -157,6 +145,22 @@
           "public_key": "fJwbUNPAxu-CcoWnzWrvtDkX7QMDvJwFGWzJ3lDcFC4",
           "short_id": ""
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu",
+      "server": "152.32.254.68",
+      "server_port": 5010,
+      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
+      "tls": {
+        "enabled": true,
+        "server_name": "nas.aizhzo.com",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
       }
     },
     {

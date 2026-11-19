@@ -11,6 +11,19 @@ proxies:
   type: vless
   uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
+  server: 13.143.197.74
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 12910384-1ef8-40a3-818a-57277063ea66
+  tls: true
+  servername: kk-tr-74.testkknegr.online
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vlgrpc
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   server: 77.83.245.79
   port: 443
   udp: true
@@ -20,10 +33,18 @@ proxies:
   tls: true
   reality-opts:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+    short-id: 457fab2ac885dbe0
   servername: tr1-r.bankai.party
-  client-fingerprint: qq
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
-  server: 45.141.148.46
+  client-fingerprint: ''
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
+  server: tr.subscriptionservice.ir
+  port: 2089
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
+- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
+  server: 45.141.148.48
   port: 443
   udp: true
   type: vless
@@ -32,25 +53,8 @@ proxies:
   reality-opts:
     public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
     short-id: 868419504747f6de
-  servername: tr1b.galioncc.com
+  servername: net-svc-mgr.galioncc.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  server: 153.56.210.134
-  port: 57251
-  udp: true
-  type: hysteria2
-  password: ff0343ad-1c9f-4986-8c62-c01935b508ca
-  sni: www.bing.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 0ee2089e-70df-4c30-bfea-1fb9be61d93e
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
-  server: tr.subscriptionservice.ir
-  port: 2089
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
 proxy-groups:
 - name: PROXIES
   type: select

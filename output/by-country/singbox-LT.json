@@ -7,21 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu",
       "server": "195.238.126.20",
-      "server_port": 9008,
-      "method": "aes-256-cfb",
-      "password": "y9VURyNzJWNRYEGQ"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu",
-      "server": "195.238.126.20",
       "server_port": 9001,
       "method": "aes-256-cfb",
       "password": "UkXRsXvR6buDMG2Y"
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu",
+      "server": "195.238.126.20",
+      "server_port": 9012,
+      "method": "aes-256-cfb",
+      "password": "xaupMUvhptwxdDUg"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu",
+      "server": "195.238.126.20",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu",
       "server": "84.32.83.197",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
@@ -30,7 +38,7 @@
         "server_name": "api-dns-gw.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -38,14 +46,6 @@
           "short_id": "a7d309e4c16b825f"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu",
-      "server": "195.238.126.20",
-      "server_port": 9012,
-      "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
     },
     {
       "type": "vless",

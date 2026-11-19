@@ -48,6 +48,27 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 03 - xiaoyu",
+      "server": "157.180.98.124",
+      "server_port": 49659,
+      "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs",
+          "short_id": "81959fce"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
       "server": "45.144.234.157",
       "server_port": 14430,
       "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
@@ -60,45 +81,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04 - xiaoyu",
-      "server": "157.180.98.124",
-      "server_port": 49659,
-      "uuid": "88a558b1-9645-42f3-89e5-341570d8486d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs",
-          "short_id": "81959fce"
-        }
-      }
-    },
-    {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 05 - xiaoyu",
-      "server": "45.144.52.252",
-      "server_port": 443,
-      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
-      "flow": "xtls-rprx-vision",
+      "server": "94.183.164.119",
+      "server_port": 24433,
+      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
       "tls": {
         "enabled": true,
-        "server_name": "wergmb.wey-land.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "-GuGq2rg6lgl4LcxHBFhBZCKKEtES2EGeD2qwXilrXI",
-          "short_id": ""
-        }
+        "server_name": "lakes.blog-forme.ru",
+        "insecure": false
       }
     },
     {
@@ -113,7 +104,7 @@
         "server_name": "fin1-r.bankai.party",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -123,15 +114,26 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
-      "server": "94.183.164.119",
-      "server_port": 24433,
-      "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
+      "server": "104.17.145.145",
+      "server_port": 2083,
+      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
       "tls": {
         "enabled": true,
-        "server_name": "lakes.blog-forme.ru",
-        "insecure": false
+        "server_name": "vipfree.dr-ping.ir",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "vipfree.dr-ping.ir"
+        }
       }
     },
     {
@@ -164,6 +166,48 @@
       "password": "g83niIm75fBPKfJ31nak8pAWTiFWLlXY"
     },
     {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 10 - xiaoyu",
+      "server": "107.181.151.128",
+      "server_port": 443,
+      "uuid": "ffd844c7-3651-412c-8715-b34ed2eb5ca3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.hollywoodreporter.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s",
+          "short_id": "f0ad99dc531b"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 11 - xiaoyu",
+      "server": "45.144.52.252",
+      "server_port": 443,
+      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "wergmb.wey-land.net",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-GuGq2rg6lgl4LcxHBFhBZCKKEtES2EGeD2qwXilrXI",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -176,7 +220,9 @@
         "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 09 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 09 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 10 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 11 - xiaoyu"
       ]
     },
     {
@@ -191,7 +237,9 @@
         "🇫🇮 芬兰 (Finland) 06 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 07 - xiaoyu",
         "🇫🇮 芬兰 (Finland) 08 - xiaoyu",
-        "🇫🇮 芬兰 (Finland) 09 - xiaoyu"
+        "🇫🇮 芬兰 (Finland) 09 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 10 - xiaoyu",
+        "🇫🇮 芬兰 (Finland) 11 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

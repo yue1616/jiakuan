@@ -14,7 +14,7 @@
         "server_name": "api-ns-mgr.galioncc.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -55,27 +55,7 @@
         "type": "ws",
         "path": "/vmess/",
         "headers": {
-          "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu",
-      "server": "109.248.170.119",
-      "server_port": 13447,
-      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
-      "tls": {
-        "enabled": true,
-        "server_name": "yahoo.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
-          "short_id": "83"
+          "Host": "3h-kazakhstan1.09vpn.com"
         }
       }
     },
@@ -86,8 +66,7 @@
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu"
       ]
     },
     {
@@ -96,8 +75,7 @@
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04 - xiaoyu"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
