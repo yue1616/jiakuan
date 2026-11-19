@@ -4,38 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
-      "server": "87.76.154.28",
-      "server_port": 57231,
-      "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922"
+      "server": "tr.subscriptionservice.ir",
+      "server_port": 2089,
+      "method": "chacha20-ietf-poly1305",
+      "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
-      "server": "13.143.197.74",
-      "server_port": 8443,
-      "uuid": "12910384-1ef8-40a3-818a-57277063ea66",
-      "tls": {
-        "enabled": true,
-        "server_name": "kk-tr-74.testkknegr.online",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "vlgrpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
       "server": "77.83.245.79",
       "server_port": 443,
       "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
@@ -55,16 +33,15 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-      "server": "tr.subscriptionservice.ir",
-      "server_port": 2089,
-      "method": "chacha20-ietf-poly1305",
-      "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
+      "server": "87.76.154.28",
+      "server_port": 57231,
+      "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922"
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
+      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
       "server": "45.141.148.48",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
@@ -90,8 +67,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu"
       ]
     },
     {
@@ -101,8 +77,7 @@
         "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

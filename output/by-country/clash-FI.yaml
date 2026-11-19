@@ -5,30 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaoyu
-  server: 45.144.52.195
-  port: 443
+  server: 45.144.234.157
+  port: 14430
   udp: true
   type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: wpKYWqa_j7WXClXDdSL-llXhjH918G_U7jfpHAMSGWk
-  servername: fl-modx.nodexphere.net
-  client-fingerprint: chrome
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
-  server: 45.144.53.18
-  port: 443
-  udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: yC04w5WKddcvv6EPSHnqv8uHLaSNK8JFCuRtIJhL1Xc
-  servername: gsdfmb.wey-land.net
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
   server: 157.180.98.124
   port: 49659
   udp: true
@@ -41,26 +28,7 @@ proxies:
     short-id: 81959fce
   servername: apple.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
-  server: 45.144.234.157
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
-  server: 94.183.164.119
-  port: 24433
-  udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
-  skip-cert-verify: false
-- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
   server: 138.124.80.29
   port: 443
   udp: true
@@ -72,8 +40,15 @@ proxies:
     public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
   servername: fin1-r.bankai.party
   client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
-  server: 104.17.145.145
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+  server: fn1s.sublinkplas.ir
+  port: 53731
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: gDxit1g_RLr2gUB54x1DYbbhHrjBDXLD
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
+  server: 198.202.24.142
   port: 2083
   udp: true
   type: vless
@@ -87,50 +62,21 @@ proxies:
     path: /
     headers:
       Host: vipfree.dr-ping.ir
-- name: 🇫🇮 芬兰 (Finland) 08 - xiaoyu
-  server: 45.144.53.119
-  port: 443
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaoyu
+  server: 94.183.164.119
+  port: 24433
   udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: nwWxKBQS8QaH3RIAqNXJoocBNWatkh7inO-LkkiMR1Y
-  servername: gmsddfgsgfb.wey-land.net
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 09 - xiaoyu
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaoyu
   server: fn1s.sublinkplas.ir
   port: 53731
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: g83niIm75fBPKfJ31nak8pAWTiFWLlXY
-- name: 🇫🇮 芬兰 (Finland) 10 - xiaoyu
-  server: 107.181.151.128
-  port: 443
-  udp: true
-  type: vless
-  uuid: ffd844c7-3651-412c-8715-b34ed2eb5ca3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
-    short-id: f0ad99dc531b
-  servername: www.hollywoodreporter.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 11 - xiaoyu
-  server: 45.144.52.252
-  port: 443
-  udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -GuGq2rg6lgl4LcxHBFhBZCKKEtES2EGeD2qwXilrXI
-  servername: wergmb.wey-land.net
-  client-fingerprint: firefox
+  password: 6VxfNRMfOHIXLlOz_l46Efr0zIZoH2-K
 proxy-groups:
 - name: PROXIES
   type: select
@@ -143,10 +89,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 06 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 07 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 08 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 10 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -159,9 +101,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 06 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 07 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 08 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 09 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 10 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 11 - xiaoyu
 rules:
 - MATCH,PROXIES

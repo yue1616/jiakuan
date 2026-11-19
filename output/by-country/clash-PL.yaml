@@ -6,18 +6,18 @@ log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01 - xiaoyu
   server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
+  server: 217.30.10.44
   port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
-  server: 217.30.10.70
-  port: 9005
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: ZET59LF6DvCC8KVt
 - name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
   server: 217.30.10.44
   port: 9052
@@ -27,11 +27,11 @@ proxies:
   password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
   server: 217.30.10.70
-  port: 9040
+  port: 9005
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: p9z5BVADH2YFs3MN
+  password: ZET59LF6DvCC8KVt
 - name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
   server: 217.30.10.44
   port: 9063
@@ -52,25 +52,6 @@ proxies:
   servername: pl8.galioncc.com
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  server: 144.31.0.101
-  port: 443
-  udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1eEtiZY5qDDosntp-9_xFnOIvOBzHy4d3-eA7v11qx0
-  servername: gmtrtb.wey-land.net
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
   server: 54.37.131.126
   port: 80
   udp: true
@@ -83,6 +64,18 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
+  server: 143.246.41.214
+  port: 443
+  udp: true
+  type: vless
+  uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
+  tls: true
+  reality-opts:
+    public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
+    short-id: 1d5ac21e988c571f
+  servername: 702e56t.pl5.h1clayd.click
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,7 +89,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
   - 🇵🇱 波兰 (Poland) 07 - xiaoyu
   - 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 09 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -110,6 +102,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
   - 🇵🇱 波兰 (Poland) 07 - xiaoyu
   - 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 09 - xiaoyu
 rules:
 - MATCH,PROXIES

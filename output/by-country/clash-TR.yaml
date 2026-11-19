@@ -5,25 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
-  server: 87.76.154.28
-  port: 57231
+  server: tr.subscriptionservice.ir
+  port: 2089
   udp: true
-  type: vless
-  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
-  server: 13.143.197.74
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 12910384-1ef8-40a3-818a-57277063ea66
-  tls: true
-  servername: kk-tr-74.testkknegr.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vlgrpc
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   server: 77.83.245.79
   port: 443
   udp: true
@@ -36,14 +24,13 @@ proxies:
     short-id: 457fab2ac885dbe0
   servername: tr1-r.bankai.party
   client-fingerprint: ''
-- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  server: tr.subscriptionservice.ir
-  port: 2089
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
+  server: 87.76.154.28
+  port: 57231
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: lZZzfo1mqH7PqnloAogdi2XBhlgiofMy
-- name: 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
+  type: vless
+  uuid: c34a41b6-598f-46ac-bea3-8b39a906f922
+- name: 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
   server: 45.141.148.48
   port: 443
   udp: true
@@ -64,7 +51,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,6 +60,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 04 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

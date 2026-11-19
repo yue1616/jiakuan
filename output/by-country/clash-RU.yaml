@@ -67,30 +67,19 @@ proxies:
   servername: fin3-r.bankai.party
   client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  server: 94.228.123.26
+  server: 201.24.116.192
   port: 443
   udp: true
   type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
-  reality-opts:
-    public-key: cYVz2YZI-PELLGGm38rrGcipPvnWcSMswOh4j536bmg
-  servername: ghjgdfgdfghjmb.wey-land.net
-  client-fingerprint: qq
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
-  server: 81.200.152.153
-  port: 443
-  udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: t2iopaZn9-fADmIi4taXbGUV6wFTFku4eGi8KISuZAM
-  servername: gmbasdasd.wey-land.net
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
   server: 201.24.121.243
   port: 443
   udp: true
@@ -103,8 +92,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  server: 201.24.116.192
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  server: 200.169.179.233
   port: 443
   udp: true
   type: vless
@@ -112,42 +101,10 @@ proxies:
   tls: true
   servername: vps3.nemnogogo.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: mobile.api.Event
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  server: 147.45.175.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xssite.webredirect.org
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  server: 46.17.47.194
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
-  server: 89.223.124.93
-  port: 443
-  udp: true
-  type: vless
-  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: rLkjhzhSAJrey5Qv3624_5B-MpViafV2dDdDCnqn_l4
-  servername: dfgdfgb.wey-land.net
-  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -161,10 +118,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -178,9 +131,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
 rules:
 - MATCH,PROXIES
