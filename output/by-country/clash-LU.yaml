@@ -5,27 +5,63 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu
-  server: 193.57.88.100
-  port: 16200
+  server: 94.183.234.245
+  port: 443
   udp: true
-  type: trojan
-  password: 4mq9w5ckqw3ewbdg
-  sni: staticxfastline.taymaztest.ir
+  type: vless
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: qq
+- name: 🇱🇺 卢森堡 (Luxembourg) 02 - xiaoyu
+  server: 92.223.84.254
+  port: 443
+  udp: true
+  type: vless
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  tls: true
+  servername: subgift.gcorecdn.com
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /biyasd
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
+- name: 🇱🇺 卢森堡 (Luxembourg) 03 - xiaoyu
+  server: 92.223.84.254
+  port: 443
+  udp: true
+  type: vless
+  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  tls: true
+  servername: subgift.gcorecdn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /t.me-SubGift
+    headers:
+      Host: subgift.gcorecdn.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu
+  - 🇱🇺 卢森堡 (Luxembourg) 02 - xiaoyu
+  - 🇱🇺 卢森堡 (Luxembourg) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇺 卢森堡 (Luxembourg) 01 - xiaoyu
+  - 🇱🇺 卢森堡 (Luxembourg) 02 - xiaoyu
+  - 🇱🇺 卢森堡 (Luxembourg) 03 - xiaoyu
 rules:
 - MATCH,PROXIES

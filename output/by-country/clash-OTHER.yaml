@@ -5,31 +5,81 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaoyu
-  server: 104.18.10.153
+  server: 104.24.31.89
   port: 443
   udp: true
   type: vless
-  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: portland-wins-robbie-skirt.trycloudflare.com
+  servername: jp3.yohototo.top
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /e0843c8ad581
+    path: /tyxyws
     headers:
-      Host: portland-wins-robbie-skirt.trycloudflare.com
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 02 - xiaoyu
+  server: 104.24.31.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 03 - xiaoyu
+  server: 104.24.31.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🌐 其他地区 (Other) 04 - xiaoyu
+  server: 104.24.31.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01 - xiaoyu
+  - 🌐 其他地区 (Other) 02 - xiaoyu
+  - 🌐 其他地区 (Other) 03 - xiaoyu
+  - 🌐 其他地区 (Other) 04 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01 - xiaoyu
+  - 🌐 其他地区 (Other) 02 - xiaoyu
+  - 🌐 其他地区 (Other) 03 - xiaoyu
+  - 🌐 其他地区 (Other) 04 - xiaoyu
 rules:
 - MATCH,PROXIES
