@@ -6,14 +6,30 @@
     {
       "type": "shadowsocks",
       "tag": "🇦🇹 奥地利 (Austria) 01 - xiaoyu",
+      "server": "89.58.16.116",
+      "server_port": 2342,
+      "method": "chacha20-ietf-poly1305",
+      "password": "wuW04H6Tq10Zw7ZVOUg6j1"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaoyu",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇦🇹 奥地利 (Austria) 03 - xiaoyu",
+      "server": "152.53.1.57",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx"
+    },
+    {
       "type": "vmess",
-      "tag": "🇦🇹 奥地利 (Austria) 02 - xiaoyu",
+      "tag": "🇦🇹 奥地利 (Austria) 04 - xiaoyu",
       "server": "154.47.19.225",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -26,7 +42,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 03 - xiaoyu",
+      "tag": "🇦🇹 奥地利 (Austria) 05 - xiaoyu",
       "server": "94.183.234.245",
       "server_port": 443,
       "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
@@ -52,7 +68,9 @@
         "auto",
         "🇦🇹 奥地利 (Austria) 01 - xiaoyu",
         "🇦🇹 奥地利 (Austria) 02 - xiaoyu",
-        "🇦🇹 奥地利 (Austria) 03 - xiaoyu"
+        "🇦🇹 奥地利 (Austria) 03 - xiaoyu",
+        "🇦🇹 奥地利 (Austria) 04 - xiaoyu",
+        "🇦🇹 奥地利 (Austria) 05 - xiaoyu"
       ]
     },
     {
@@ -61,7 +79,9 @@
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01 - xiaoyu",
         "🇦🇹 奥地利 (Austria) 02 - xiaoyu",
-        "🇦🇹 奥地利 (Austria) 03 - xiaoyu"
+        "🇦🇹 奥地利 (Austria) 03 - xiaoyu",
+        "🇦🇹 奥地利 (Austria) 04 - xiaoyu",
+        "🇦🇹 奥地利 (Austria) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

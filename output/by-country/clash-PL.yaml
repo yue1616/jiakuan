@@ -13,45 +13,37 @@ proxies:
   password: mENfxTFQpRKKh4As
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
   server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
-  server: 217.30.10.70
-  port: 9005
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: ZET59LF6DvCC8KVt
-- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
-  server: 217.30.10.44
   port: 9063
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  server: 80.47.10.106
+- name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
+  server: 217.30.10.70
+  port: 9059
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9XwYyZsK8SNzQDtY
+- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
+  server: 217.30.10.70
+  port: 9057
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: wjTugX3ZtHMB9c3Z
+- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
+  server: 45.194.66.177
   port: 443
   udp: true
   type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: pl8.galioncc.com
+  servername: 31tawwo0.virtual-network.lol
+  skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
+- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
   server: 54.37.131.126
   port: 80
   udp: true
@@ -64,18 +56,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  server: 143.246.41.214
-  port: 443
-  udp: true
-  type: vless
-  uuid: be146d46-ae50-4691-838c-b6c87dbaec8f
-  tls: true
-  reality-opts:
-    public-key: 8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA
-    short-id: 1d5ac21e988c571f
-  servername: 702e56t.pl5.h1clayd.click
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,8 +67,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -100,7 +78,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04 - xiaoyu
   - 🇵🇱 波兰 (Poland) 05 - xiaoyu
   - 🇵🇱 波兰 (Poland) 06 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 07 - xiaoyu
-  - 🇵🇱 波兰 (Poland) 08 - xiaoyu
 rules:
 - MATCH,PROXIES

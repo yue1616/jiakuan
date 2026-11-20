@@ -6,12 +6,33 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu
   server: 213.183.63.60
+  port: 9049
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
+- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu
+  server: 213.183.63.60
   port: 9028
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 9eeJ2fwnZA5Fxgz8
-- name: 🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu
+- name: 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
+  server: 213.183.63.60
+  port: 9085
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
+- name: 🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu
+  server: 213.183.63.60
+  port: 9061
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 4R3hUfZ2FHhDmNcP
+- name: 🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu
   server: 195.123.226.21
   port: 443
   udp: true
@@ -24,6 +45,13 @@ proxies:
     short-id: 77bb0d07bddbc832
   servername: gateway.icloud.com
   client-fingerprint: chrome
+- name: 🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu
+  server: 213.183.63.60
+  port: 9054
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: VcFuyXvND2yQWSFY
 proxy-groups:
 - name: PROXIES
   type: select
@@ -31,6 +59,10 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -38,5 +70,9 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu
   - 🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu
+  - 🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu
 rules:
 - MATCH,PROXIES
