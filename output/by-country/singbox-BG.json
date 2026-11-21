@@ -7,21 +7,29 @@
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01 - xiaoyu",
       "server": "213.183.63.60",
-      "server_port": 9049,
+      "server_port": 9064,
       "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
+      "password": "cp8pRSUAyLhTfVWH"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu",
       "server": "213.183.63.60",
-      "server_port": 9061,
+      "server_port": 9029,
       "method": "aes-256-cfb",
-      "password": "4R3hUfZ2FHhDmNcP"
+      "password": "dU3DSNS8wYPXzEKw"
     },
     {
       "type": "shadowsocks",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu",
+      "server": "213.183.63.60",
+      "server_port": 9098,
+      "method": "aes-256-cfb",
+      "password": "aLpQtfEZe445QyHk"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
       "server": "213.183.63.60",
       "server_port": 9066,
       "method": "aes-256-cfb",
@@ -29,7 +37,23 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu",
+      "server": "213.183.63.60",
+      "server_port": 9049,
+      "method": "aes-256-cfb",
+      "password": "PRBf4BS2HvJqtWxY"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu",
+      "server": "213.183.63.60",
+      "server_port": 9085,
+      "method": "aes-256-cfb",
+      "password": "9ej82EKe2gq7gLAM"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu",
       "server": "213.183.63.60",
       "server_port": 9028,
       "method": "aes-256-cfb",
@@ -37,7 +61,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu",
       "server": "87.121.112.83",
       "server_port": 443,
       "password": "9a9f167d-b461-466f-be50-f0ffd598a6f8",
@@ -56,7 +80,10 @@
         "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu"
+        "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu",
+        "🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu",
+        "🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu",
+        "🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu"
       ]
     },
     {
@@ -67,7 +94,10 @@
         "🇧🇬 保加利亚 (Bulgaria) 02 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 03 - xiaoyu",
         "🇧🇬 保加利亚 (Bulgaria) 04 - xiaoyu",
-        "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu"
+        "🇧🇬 保加利亚 (Bulgaria) 05 - xiaoyu",
+        "🇧🇬 保加利亚 (Bulgaria) 06 - xiaoyu",
+        "🇧🇬 保加利亚 (Bulgaria) 07 - xiaoyu",
+        "🇧🇬 保加利亚 (Bulgaria) 08 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

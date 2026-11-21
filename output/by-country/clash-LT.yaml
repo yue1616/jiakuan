@@ -5,36 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
   server: 195.238.126.84
   port: 9039
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: qYEN5HX4JKeVCdEC
+- name: 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
+  server: 195.238.126.20
+  port: 9001
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
   server: 195.238.126.20
   port: 9011
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: M3t2ZEQcMGRWBjRa
-- name: 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
-  server: 46.8.210.33
-  port: 8446
+- name: 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
+  server: 195.238.126.20
+  port: 9045
   udp: true
-  type: hysteria2
-  password: b7941807-1f4d-4bda-a878-92d708b84494
-  sni: litelitvalitter.rooferz.surf
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: nTm4oBa6QCpWoAFDVtF6mpMpfMfN8CM6
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +48,7 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
+  - 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +58,6 @@ proxy-groups:
   - 🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu
   - 🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu
+  - 🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
+  sni: 'off'
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu
   server: 103.115.109.49
@@ -18,18 +18,23 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu
-  server: 34.80.15.95
-  port: 443
-  udp: true
-  type: trojan
-  password: '123456'
-  sni: tw.ctt25.uk
-  skip-cert-verify: false
-- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu
   server: 162.19.192.89
+  port: 16616
+  udp: true
+  type: vmess
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+- name: 🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu
+  server: afzuv.xiaoyan.io
   port: 16616
   udp: true
   type: vmess

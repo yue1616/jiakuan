@@ -13,61 +13,68 @@ proxies:
   password: FAdUvMJUq5vDgKEq
 - name: 🇵🇱 波兰 (Poland) 02 - xiaoyu
   server: 217.30.10.44
-  port: 9076
+  port: 9052
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: S2zDyyPcmZN2h8EC
+  password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 03 - xiaoyu
-  server: 217.30.10.44
-  port: 9071
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mENfxTFQpRKKh4As
-- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
-  server: 217.30.10.70
-  port: 9041
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: U6qnYRhfyDmn8sgn
-- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
-  server: 217.30.10.44
-  port: 9063
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: aQqJbtwFGcCCaeL3
-- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
   server: 217.30.10.44
   port: 9095
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 (Poland) 04 - xiaoyu
+  server: 217.30.10.44
+  port: 9076
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: S2zDyyPcmZN2h8EC
+- name: 🇵🇱 波兰 (Poland) 05 - xiaoyu
+  server: 217.30.10.70
+  port: 9045
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Lp27rqyJq72bZsqX
+- name: 🇵🇱 波兰 (Poland) 06 - xiaoyu
+  server: 217.30.10.70
+  port: 9020
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: BNmAXXxAHYpTRdzu
 - name: 🇵🇱 波兰 (Poland) 07 - xiaoyu
+  server: 217.30.10.44
+  port: 9063
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: aQqJbtwFGcCCaeL3
+- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
+  server: 217.30.10.44
+  port: 9071
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
+- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
+  server: 217.30.10.70
+  port: 9088
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: f8npKgNzdkss2ytn
+- name: 🇵🇱 波兰 (Poland) 10 - xiaoyu
   server: 217.30.10.44
   port: 9099
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7heRqkPG3hg4UnRm
-- name: 🇵🇱 波兰 (Poland) 08 - xiaoyu
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 09 - xiaoyu
-  server: 217.30.10.70
-  port: 9018
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: fG2artUmHfNT2cX7
-- name: 🇵🇱 波兰 (Poland) 10 - xiaoyu
+- name: 🇵🇱 波兰 (Poland) 11 - xiaoyu
   server: 45.194.66.177
   port: 443
   udp: true
@@ -77,7 +84,33 @@ proxies:
   tls: true
   servername: 31tawwo0.virtual-network.lol
   skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 12 - xiaoyu
+  server: 144.31.3.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
+  tls: true
+  servername: clearingmatch.melodramaonline.net
+  skip-cert-verify: false
   client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /media/ws/
+- name: 🇵🇱 波兰 (Poland) 13 - xiaoyu
+  server: 54.37.131.126
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 1e55beca-3c69-4fa7-fb1f-15c1b767435f
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,6 +126,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - xiaoyu
   - 🇵🇱 波兰 (Poland) 09 - xiaoyu
   - 🇵🇱 波兰 (Poland) 10 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 11 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 12 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 13 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,5 +144,8 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 08 - xiaoyu
   - 🇵🇱 波兰 (Poland) 09 - xiaoyu
   - 🇵🇱 波兰 (Poland) 10 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 11 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 12 - xiaoyu
+  - 🇵🇱 波兰 (Poland) 13 - xiaoyu
 rules:
 - MATCH,PROXIES
