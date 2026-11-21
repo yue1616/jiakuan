@@ -7,29 +7,13 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaoyu",
       "server": "217.30.10.44",
-      "server_port": 9062,
+      "server_port": 9006,
       "method": "aes-256-cfb",
-      "password": "tkhHVxxfM2QErBWe"
+      "password": "FAdUvMJUq5vDgKEq"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaoyu",
-      "server": "217.30.10.70",
-      "server_port": 9098,
-      "method": "aes-256-cfb",
-      "password": "aLpQtfEZe445QyHk"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 03 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9063,
-      "method": "aes-256-cfb",
-      "password": "aQqJbtwFGcCCaeL3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 04 - xiaoyu",
       "server": "217.30.10.44",
       "server_port": 9076,
       "method": "aes-256-cfb",
@@ -37,19 +21,35 @@
     },
     {
       "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 03 - xiaoyu",
+      "server": "217.30.10.44",
+      "server_port": 9071,
+      "method": "aes-256-cfb",
+      "password": "mENfxTFQpRKKh4As"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 04 - xiaoyu",
+      "server": "217.30.10.70",
+      "server_port": 9041,
+      "method": "aes-256-cfb",
+      "password": "U6qnYRhfyDmn8sgn"
+    },
+    {
+      "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 05 - xiaoyu",
       "server": "217.30.10.44",
-      "server_port": 9006,
+      "server_port": 9063,
       "method": "aes-256-cfb",
-      "password": "FAdUvMJUq5vDgKEq"
+      "password": "aQqJbtwFGcCCaeL3"
     },
     {
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 06 - xiaoyu",
-      "server": "217.30.10.70",
-      "server_port": 9018,
+      "server": "217.30.10.44",
+      "server_port": 9095,
       "method": "aes-256-cfb",
-      "password": "fG2artUmHfNT2cX7"
+      "password": "N7j3pdTYkKmsy8CR"
     },
     {
       "type": "shadowsocks",
@@ -63,100 +63,32 @@
       "type": "shadowsocks",
       "tag": "🇵🇱 波兰 (Poland) 08 - xiaoyu",
       "server": "217.30.10.44",
-      "server_port": 9071,
-      "method": "aes-256-cfb",
-      "password": "mENfxTFQpRKKh4As"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-      "server": "217.30.10.70",
-      "server_port": 9059,
-      "method": "aes-256-cfb",
-      "password": "9XwYyZsK8SNzQDtY"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-      "server": "217.30.10.70",
-      "server_port": 9020,
-      "method": "aes-256-cfb",
-      "password": "BNmAXXxAHYpTRdzu"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 11 - xiaoyu",
-      "server": "217.30.10.44",
-      "server_port": 9095,
-      "method": "aes-256-cfb",
-      "password": "N7j3pdTYkKmsy8CR"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 12 - xiaoyu",
-      "server": "217.30.10.44",
       "server_port": 9052,
       "method": "aes-256-cfb",
       "password": "jt2ekBNc9HuVtm2a"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 13 - xiaoyu",
+      "tag": "🇵🇱 波兰 (Poland) 09 - xiaoyu",
       "server": "217.30.10.70",
-      "server_port": 9041,
+      "server_port": 9018,
       "method": "aes-256-cfb",
-      "password": "U6qnYRhfyDmn8sgn"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇵🇱 波兰 (Poland) 14 - xiaoyu",
-      "server": "48.102.174.174",
-      "server_port": 443,
-      "password": "9a9f167d-b461-466f-be50-f0ffd598a6f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "polandchuzhoi.site",
-        "insecure": false
-      }
+      "password": "fG2artUmHfNT2cX7"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 15 - xiaoyu",
-      "server": "13.143.239.94",
+      "tag": "🇵🇱 波兰 (Poland) 10 - xiaoyu",
+      "server": "45.194.66.177",
       "server_port": 443,
-      "uuid": "be146d46-ae50-4691-838c-b6c87dbaec8f",
-      "tls": {
-        "enabled": true,
-        "server_name": "702e56t.pl5.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8OI8rEgAiWxH-cG03xgzuz7XTFHrbA1MY9HnPHcgSUA",
-          "short_id": "1d5ac21e988c571f"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 16 - xiaoyu",
-      "server": "150.251.113.34",
-      "server_port": 443,
-      "uuid": "d7d724b5-17ce-4f3c-877d-dfbf0f07afa1",
+      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "31tawwo0.virtual-network.lol",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8",
-          "short_id": "150a627d15154cf2"
+          "fingerprint": "firefox"
         }
       }
     },
@@ -174,13 +106,7 @@
         "🇵🇱 波兰 (Poland) 07 - xiaoyu",
         "🇵🇱 波兰 (Poland) 08 - xiaoyu",
         "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 11 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 12 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 13 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 14 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 15 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 16 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 10 - xiaoyu"
       ]
     },
     {
@@ -196,13 +122,7 @@
         "🇵🇱 波兰 (Poland) 07 - xiaoyu",
         "🇵🇱 波兰 (Poland) 08 - xiaoyu",
         "🇵🇱 波兰 (Poland) 09 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 10 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 11 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 12 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 13 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 14 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 15 - xiaoyu",
-        "🇵🇱 波兰 (Poland) 16 - xiaoyu"
+        "🇵🇱 波兰 (Poland) 10 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

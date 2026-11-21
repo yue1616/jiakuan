@@ -7,9 +7,9 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu",
       "server": "195.238.126.20",
-      "server_port": 9001,
+      "server_port": 9068,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "shadowsocks",
@@ -28,45 +28,8 @@
       "password": "M3t2ZEQcMGRWBjRa"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu",
-      "server": "195.238.126.20",
-      "server_port": 9068,
-      "method": "aes-256-cfb",
-      "password": "mwgRg9hRq3b4Qnwb"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu",
-      "server": "195.238.126.20",
-      "server_port": 9078,
-      "method": "aes-256-cfb",
-      "password": "JCJpbRbQZNw9XFZG"
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu",
-      "server": "94.183.234.245",
-      "server_port": 443,
-      "uuid": "5de0c218-0138-45d8-94d2-c2c3f37a1a6d",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc",
-          "short_id": "7f1e29593aa94ad1"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu",
       "server": "46.8.210.33",
       "server_port": 8446,
       "password": "b7941807-1f4d-4bda-a878-92d708b84494",
@@ -88,10 +51,7 @@
         "🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu",
         "🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu",
         "🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu",
-        "🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu",
-        "🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu",
-        "🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu",
-        "🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu"
+        "🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu"
       ]
     },
     {
@@ -101,10 +61,7 @@
         "🇱🇹 立陶宛 (Lithuania) 01 - xiaoyu",
         "🇱🇹 立陶宛 (Lithuania) 02 - xiaoyu",
         "🇱🇹 立陶宛 (Lithuania) 03 - xiaoyu",
-        "🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu",
-        "🇱🇹 立陶宛 (Lithuania) 05 - xiaoyu",
-        "🇱🇹 立陶宛 (Lithuania) 06 - xiaoyu",
-        "🇱🇹 立陶宛 (Lithuania) 07 - xiaoyu"
+        "🇱🇹 立陶宛 (Lithuania) 04 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
