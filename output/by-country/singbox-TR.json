@@ -6,46 +6,37 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
-      "server": "87.76.154.28",
-      "server_port": 57231,
-      "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
-      "server": "185.246.155.91",
-      "server_port": 10103,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
+      "server": "188.225.36.219",
+      "server_port": 443,
+      "uuid": "25ac78e7-6d1d-4c9a-a450-c01a4871769f",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "olvento.space",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko",
-          "short_id": "6859f5b59e55aa30"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "olvento.sync.v1"
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
-      "server": "tr.subscriptionservice.ir",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
+      "server": "64.49.13.12",
       "server_port": 2089,
       "method": "chacha20-ietf-poly1305",
       "password": "lZZzfo1mqH7PqnloAogdi2XBhlgiofMy"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-      "server": "136.148.64.74",
-      "server_port": 80,
-      "method": "chacha20-ietf-poly1305",
-      "password": "n7_BBoDpxqRJA6hW-RBr67lw_lknGpNC"
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
+      "server": "87.76.154.28",
+      "server_port": 57231,
+      "uuid": "c34a41b6-598f-46ac-bea3-8b39a906f922"
     },
     {
       "type": "selector",
@@ -54,8 +45,7 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 03 - xiaoyu"
       ]
     },
     {
@@ -64,8 +54,7 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
