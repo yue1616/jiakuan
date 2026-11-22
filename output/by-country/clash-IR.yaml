@@ -4,25 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
-  server: 185.156.44.99
-  port: 443
+- name: 🇮🇷 IR 01 - xiaoyu
+  server: 87.82.59.60
+  port: 837
   udp: true
-  type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
-  skip-cert-verify: true
+  type: vless
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
+  - 🇮🇷 IR 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇷🇴 罗马尼亚 (Romania) 01 - xiaoyu
+  - 🇮🇷 IR 01 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -26,7 +26,7 @@ proxies:
   obfs: salamander
   obfs-password: CyG0RFxMjzs41uQD4OLuHQ==
 - name: 🇧🇷 巴西 (Brazil) 03 - xiaoyu
-  server: leviko-br6188.shopingggg.ir
+  server: 103.14.27.207
   port: 1270
   udp: true
   type: vmess
