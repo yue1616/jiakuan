@@ -23,7 +23,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2",
+        "server_name": "https://t.me/wangcai2",
         "insecure": true
       }
     },
@@ -43,29 +43,13 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu",
-      "server": "afzuv.xiaoyan.io",
-      "server_port": 16616,
-      "uuid": "904f0569-8695-466f-97cf-0de2face1b46",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu"
       ]
     },
     {
@@ -74,8 +58,7 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 - xiaoyu",
         "🇹🇼 中国台湾 (Taiwan) 02 - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu",
-        "🇹🇼 中国台湾 (Taiwan) 04 - xiaoyu"
+        "🇹🇼 中国台湾 (Taiwan) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

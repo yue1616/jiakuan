@@ -24,43 +24,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02 - xiaoyu",
-      "server": "172.67.199.215",
-      "server_port": 443,
-      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-forest-d3e9.sarahds.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/0175469f14317d82",
-        "headers": {
-          "Host": "small-forest-d3e9.sarahds.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇳 印度 (India) 01 - xiaoyu",
-        "🇮🇳 印度 (India) 02 - xiaoyu"
+        "🇮🇳 印度 (India) 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇳 印度 (India) 01 - xiaoyu",
-        "🇮🇳 印度 (India) 02 - xiaoyu"
+        "🇮🇳 印度 (India) 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
