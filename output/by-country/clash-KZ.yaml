@@ -5,44 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu
-  server: 91.219.23.76
-  port: 443
+  server: 109.248.170.119
+  port: 13447
   udp: true
   type: vless
-  uuid: 8b1b59c8-8802-0002-a636-ffe786275594
+  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
   tls: true
-  servername: cataloguebroker.comparecarprices.org
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
+  reality-opts:
+    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
+    short-id: '83'
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01 - xiaoyu
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02 - xiaoyu
 rules:
 - MATCH,PROXIES

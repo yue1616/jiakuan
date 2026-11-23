@@ -16,7 +16,7 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
     short-id: 6ba85179e30d4fc2
   servername: apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇷🇺 俄罗斯 (Russia) 02 - xiaoyu
   server: 130.49.189.158
   port: 43558
@@ -25,37 +25,43 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: yZiPrr484OdSYcivDUv+UIygwvyW+HQYytKsIgTw9tU=
 - name: 🇷🇺 俄罗斯 (Russia) 03 - xiaoyu
-  server: 188.68.216.33
+  server: 136.148.83.70
   port: 443
   udp: true
   type: vless
-  uuid: 8596813c-6a35-0001-819d-2de72201a856
+  uuid: 00000000-0000-0001-0000-000000000000
   tls: true
-  servername: pmdhivnevikmltdhqp.fcloudservices.site
+  servername: aszbk-ru-78dc.my-fade.cloud
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: qq
 - name: 🇷🇺 俄罗斯 (Russia) 04 - xiaoyu
-  server: 109.107.189.69
-  port: 8443
+  server: 200.169.179.233
+  port: 443
   udp: true
   type: vless
-  uuid: cfd6ce74-f4c5-4815-bba4-2fd0fa77bf4e
-  flow: xtls-rprx-vision
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
   tls: true
-  reality-opts:
-    public-key: q1EhO97gyUBlF7LiAfeAESI0O2Mg95T4yIk7keOnMEE
-    short-id: 0912cc7f28aa26ba
-  servername: gw-721bd5.dobry.monster
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
   client-fingerprint: ios
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 05 - xiaoyu
-  server: 176.32.33.126
-  port: 18443
+  server: 201.51.12.98
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 06 - xiaoyu
-  server: 201.24.116.192
+  server: 201.51.12.98
   port: 443
   udp: true
   type: vless
@@ -66,21 +72,67 @@ proxies:
   client-fingerprint: firefox
   network: grpc
   grpc-opts:
-    grpc-service-name: mobile.api.Event
+    grpc-service-name: ''
 - name: 🇷🇺 俄罗斯 (Russia) 07 - xiaoyu
+  server: 201.51.12.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+  server: 201.51.12.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
+  server: 46.17.42.129
+  port: 18443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
+- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+  server: 212.233.90.78
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9548ef84-b54d-41dc-b17c-9da21d52ba82
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: FwPphm8xGAKY6u74WDRVrcVye3A7GdLDfJoNSDWFsFQ
+    short-id: 2c6df23e
+  servername: birch-ledger.justext.space
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
   server: 147.45.175.81
   port: 443
   udp: true
   type: vless
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   tls: true
-  servername: xsru1.ddnsfree.com
+  servername: xssite.webredirect.org
   skip-cert-verify: false
   client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 08 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
   server: 185.178.208.167
   port: 443
   udp: true
@@ -95,22 +147,7 @@ proxies:
     path: /session
     headers:
       Host: api.14887277.xyz
-- name: 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
-  server: 185.178.208.167
-  port: 443
-  udp: true
-  type: vless
-  uuid: ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454
-  tls: true
-  servername: unlik.club
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /static/telemetry/3c9aaef00005/
-    headers:
-      Host: tochkacdn.top
-- name: 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
+- name: 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
   server: 95.129.236.117
   port: 443
   udp: true
@@ -125,18 +162,13 @@ proxies:
     path: /edge/node8/push
     headers:
       Host: cdn.dash.gearmonster.org
-- name: 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
-  server: 147.45.221.225
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
+  server: 48.103.218.77
+  port: 18443
   udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: nl.lucheeebezlimitnoekino.stream
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /media/ws/
+  type: ss
+  cipher: aes-256-gcm
+  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
 proxy-groups:
 - name: PROXIES
   type: select
@@ -153,6 +185,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -169,5 +204,8 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 09 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 10 - xiaoyu
   - 🇷🇺 俄罗斯 (Russia) 11 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 12 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 13 - xiaoyu
+  - 🇷🇺 俄罗斯 (Russia) 14 - xiaoyu
 rules:
 - MATCH,PROXIES
