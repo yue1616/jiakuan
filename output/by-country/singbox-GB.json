@@ -12,17 +12,19 @@
       "password": "shadowsocks"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇬🇧 英国 (United Kingdom) 02 - xiaoyu",
-      "server": "142.202.51.22",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+      "server": "64.227.41.219",
+      "server_port": 443,
+      "uuid": "40992c2a-513e-4837-9594-23411fd42afd",
+      "transport": {
+        "type": "http"
+      }
     },
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 03 - xiaoyu",
-      "server": "38.114.120.221",
+      "server": "142.202.51.22",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
@@ -38,35 +40,77 @@
     {
       "type": "shadowsocks",
       "tag": "🇬🇧 英国 (United Kingdom) 05 - xiaoyu",
+      "server": "38.114.120.221",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 06 - xiaoyu",
+      "server": "167.99.203.0",
+      "server_port": 443,
+      "uuid": "40992c2a-513e-4837-9594-23411fd42afd",
+      "transport": {
+        "type": "http"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaoyu",
       "server": "141.98.101.181",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
     },
     {
-      "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 06 - xiaoyu",
-      "server": "136.176.68.34",
-      "server_port": 443,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Jcm0TjP_kw-KmJoiG5EGyY5sQ9RGeqlX9Ajd3ZCnSAo",
-          "short_id": "a6040129ad7f4b74"
+      "type": "vmess",
+      "tag": "🇬🇧 英国 (United Kingdom) 08 - xiaoyu",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "google.com"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 07 - xiaoyu",
+      "tag": "🇬🇧 英国 (United Kingdom) 09 - xiaoyu",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "57.129.132.223"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇬🇧 英国 (United Kingdom) 10 - xiaoyu",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "a25cbf11-2908-4a1b-a3a8-9a571777dca3",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET",
+        "headers": {
+          "Host": "google.com"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇬🇧 英国 (United Kingdom) 11 - xiaoyu",
       "server": "149.7.16.228",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -79,31 +123,15 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 08 - xiaoyu",
-      "server": "146.70.61.37",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 09 - xiaoyu",
-      "server": "98.98.207.163",
-      "server_port": 8080,
-      "method": "rc4-md5",
-      "password": "14fFPrbezE3HDZzsMOr6"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 10 - xiaoyu",
-      "server": "98.98.142.161",
+      "tag": "🇬🇧 英国 (United Kingdom) 12 - xiaoyu",
+      "server": "146.70.61.18",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "vmess",
-      "tag": "🇬🇧 英国 (United Kingdom) 11 - xiaoyu",
+      "tag": "🇬🇧 英国 (United Kingdom) 13 - xiaoyu",
       "server": "142.202.51.42",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -116,42 +144,88 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 12 - xiaoyu",
-      "server": "146.70.46.214",
+      "tag": "🇬🇧 英国 (United Kingdom) 14 - xiaoyu",
+      "server": "146.70.61.37",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
       "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 13 - xiaoyu",
-      "server": "146.70.61.18",
+      "tag": "🇬🇧 英国 (United Kingdom) 15 - xiaoyu",
+      "server": "146.70.46.214",
       "server_port": 8080,
       "method": "rc4-md5",
       "password": "14fFPrbezE3HDZzsMOr6"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇬🇧 英国 (United Kingdom) 14 - xiaoyu",
-      "server": "22egdg.mateflora.com",
-      "server_port": 40055,
-      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 16 - xiaoyu",
+      "server": "138.124.125.193",
+      "server_port": 10444,
+      "uuid": "e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "psstatic.cdn.bcebos.com",
-        "insecure": true,
-        "alpn": [
-          "h3"
-        ]
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "6fltjteoyab7fjf1"
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 17 - xiaoyu",
+      "server": "98.98.207.163",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 18 - xiaoyu",
+      "server": "98.98.142.161",
+      "server_port": 8080,
+      "method": "rc4-md5",
+      "password": "14fFPrbezE3HDZzsMOr6"
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 19 - xiaoyu",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "google.com"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 15 - xiaoyu",
+      "tag": "🇬🇧 英国 (United Kingdom) 20 - xiaoyu",
+      "server": "57.129.132.223",
+      "server_port": 80,
+      "uuid": "9e20b04d-5a81-4e16-b421-01e502f0aac6",
+      "transport": {
+        "type": "ws",
+        "path": "/vless/",
+        "headers": {
+          "Host": "google.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 21 - xiaoyu",
       "server": "213.176.92.168",
       "server_port": 14430,
       "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
@@ -165,7 +239,42 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 16 - xiaoyu",
+      "tag": "🇬🇧 英国 (United Kingdom) 22 - xiaoyu",
+      "server": "193.188.21.253",
+      "server_port": 14430,
+      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "193.188.21.253"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 23 - xiaoyu",
+      "server": "193.188.21.253",
+      "server_port": 10444,
+      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "video.yandex.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo",
+          "short_id": "8debcf36f1cc69ff"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 24 - xiaoyu",
       "server": "144.48.11.146",
       "server_port": 43000,
       "uuid": "4a923161-156f-4914-8cac-762fb2433bfb",
@@ -186,7 +295,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 17 - xiaoyu",
+      "tag": "🇬🇧 英国 (United Kingdom) 25 - xiaoyu",
       "server": "46.250.240.80",
       "server_port": 2053,
       "uuid": "f7fa5a16-1279-46ba-ac18-001b41884080",
@@ -205,16 +314,29 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇬🇧 英国 (United Kingdom) 18 - xiaoyu",
-      "server": "94.156.250.148",
-      "server_port": 7001,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
+      "type": "vless",
+      "tag": "🇬🇧 英国 (United Kingdom) 26 - xiaoyu",
+      "server": "104.222.183.180",
+      "server_port": 443,
+      "uuid": "a1cf2f59-ffe0-4cb3-8c68-e6abf44726fc",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.tradingview.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MYmnKEaJyfk1HrBaKg3AvYebp-sP3rZRNh9MnOcKgXY",
+          "short_id": "705f0a232571"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 19 - xiaoyu",
+      "tag": "🇬🇧 英国 (United Kingdom) 27 - xiaoyu",
       "server": "51.38.71.147",
       "server_port": 443,
       "uuid": "fda89998-7e9a-4494-857a-cd0d00661b58",
@@ -233,18 +355,34 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇬🇧 英国 (United Kingdom) 28 - xiaoyu",
+      "server": "22egdg.mateflora.com",
+      "server_port": 40055,
+      "password": "57beeeb0-03fc-4fc9-94da-7604488a7134",
+      "tls": {
+        "enabled": true,
+        "server_name": "psstatic.cdn.bcebos.com",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "6fltjteoyab7fjf1"
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 20 - xiaoyu",
-      "server": "138.124.125.193",
+      "tag": "🇬🇧 英国 (United Kingdom) 29 - xiaoyu",
+      "server": "213.176.92.168",
       "server_port": 10444,
-      "uuid": "e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4",
+      "uuid": "ba52cc43-700d-4040-9444-29214c98e6e0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ads.x5.ru",
+        "server_name": "video.yandex.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -255,24 +393,32 @@
     },
     {
       "type": "vless",
-      "tag": "🇬🇧 英国 (United Kingdom) 21 - xiaoyu",
-      "server": "104.222.183.180",
+      "tag": "🇬🇧 英国 (United Kingdom) 30 - xiaoyu",
+      "server": "83.147.18.3",
       "server_port": 443,
-      "uuid": "a1cf2f59-ffe0-4cb3-8c68-e6abf44726fc",
+      "uuid": "9f61cdf4-810d-4052-bbc7-2da0c8e20104",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.tradingview.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "MYmnKEaJyfk1HrBaKg3AvYebp-sP3rZRNh9MnOcKgXY",
-          "short_id": "705f0a232571"
+          "public_key": "3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA",
+          "short_id": "fd8cf7e1173f0edb"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇬🇧 英国 (United Kingdom) 31 - xiaoyu",
+      "server": "94.156.250.148",
+      "server_port": 7001,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
@@ -299,7 +445,17 @@
         "🇬🇧 英国 (United Kingdom) 18 - xiaoyu",
         "🇬🇧 英国 (United Kingdom) 19 - xiaoyu",
         "🇬🇧 英国 (United Kingdom) 20 - xiaoyu",
-        "🇬🇧 英国 (United Kingdom) 21 - xiaoyu"
+        "🇬🇧 英国 (United Kingdom) 21 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 22 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 23 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 24 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 25 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 26 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 27 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 28 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 29 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 30 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 31 - xiaoyu"
       ]
     },
     {
@@ -326,7 +482,17 @@
         "🇬🇧 英国 (United Kingdom) 18 - xiaoyu",
         "🇬🇧 英国 (United Kingdom) 19 - xiaoyu",
         "🇬🇧 英国 (United Kingdom) 20 - xiaoyu",
-        "🇬🇧 英国 (United Kingdom) 21 - xiaoyu"
+        "🇬🇧 英国 (United Kingdom) 21 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 22 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 23 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 24 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 25 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 26 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 27 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 28 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 29 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 30 - xiaoyu",
+        "🇬🇧 英国 (United Kingdom) 31 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

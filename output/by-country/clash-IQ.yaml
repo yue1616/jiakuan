@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01 - xiaoyu
-  server: 164.37.224.51
+  server: 201.8.64.254
   port: 443
   udp: true
   type: vless

@@ -4,63 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
-      "server": "istanbul07.npvnot.com",
-      "server_port": 995,
-      "method": "aes-256-gcm",
-      "password": "NjMxYmViZmJhMjIzNjcwMWU4M2U3MDU3MTIzZjQz"
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
-      "server": "185.246.155.91",
-      "server_port": 10103,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "obQkp5VlQpnlt1hRLQ3VfHISYiiISZJyJZAMaIdjCko",
-          "short_id": "6859f5b59e55aa30"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
-      "server": "104.18.32.47",
-      "server_port": 443,
-      "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
-      "tls": {
-        "enabled": true,
-        "server_name": "sinavm3.soft10.ir",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
-        "headers": {
-          "Host": "sinavm3.soft10.ir"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
       "server": "chatgpt.com",
       "server_port": 443,
       "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
@@ -86,8 +31,34 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05 - xiaoyu",
-      "server": "188.225.78.178",
+      "tag": "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
+      "server": "104.18.32.47",
+      "server_port": 443,
+      "uuid": "c2425034-91ef-44bf-9fd4-f2be9c1e989a",
+      "tls": {
+        "enabled": true,
+        "server_name": "sinavm3.soft10.ir",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
+        "headers": {
+          "Host": "sinavm3.soft10.ir"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
+      "server": "cadrin.wtf",
       "server_port": 443,
       "uuid": "a4740bee-81ad-4a58-99c9-eca576ecb6e6",
       "tls": {
@@ -114,9 +85,7 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 03 - xiaoyu"
       ]
     },
     {
@@ -125,9 +94,7 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01 - xiaoyu",
         "🇹🇷 土耳其 (Turkey) 02 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 03 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 04 - xiaoyu",
-        "🇹🇷 土耳其 (Turkey) 05 - xiaoyu"
+        "🇹🇷 土耳其 (Turkey) 03 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
