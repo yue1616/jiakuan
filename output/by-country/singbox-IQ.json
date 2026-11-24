@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇲 亚美尼亚 (Armenia) 01 - xiaoyu",
-      "server": "03e488t.es12.h1clayd.shop",
+      "tag": "🇮🇶 IQ 01 - xiaoyu",
+      "server": "201.8.64.254",
       "server_port": 443,
-      "uuid": "c5470a56-1b9b-451c-b075-02c82ee4aa6c",
-      "flow": "xtls-rprx-vision",
+      "uuid": "cda0862a-0f87-4be9-8ed8-1d0c9e382839",
       "tls": {
         "enabled": true,
-        "server_name": "03e488t.es12.h1clayd.shop",
+        "server_name": "5d0319t.nl7.h1clayd.click",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "F-QRCTOgAul242ISSobCpwO8G6JGN0qeIdJdv60HIRo",
-          "short_id": "bd35558b17a4930b"
+          "public_key": "l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs",
+          "short_id": "361d0dd59c70516f"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaoyu"
+        "🇮🇶 IQ 01 - xiaoyu"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇲 亚美尼亚 (Armenia) 01 - xiaoyu"
+        "🇮🇶 IQ 01 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
