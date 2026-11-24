@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01 - xiaoyu
-  server: 140.238.2.250
-  port: 443
+  server: 211.178.105.134
+  port: 6123
   udp: true
-  type: vmess
-  uuid: 41a7089a-040b-4538-8b8d-010902405bde
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
 - name: 🇰🇷 韩国 (South Korea) 02 - xiaoyu
   server: 152.70.237.123
   port: 2053
@@ -26,7 +25,7 @@ proxies:
   udp: true
   type: hysteria2
   password: 1671a252e2a97dc2bda4e515475931da
-  sni: www.bing.com
+  sni: 132.226.226.189
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 04 - xiaoyu
   server: 152.67.200.82
@@ -34,9 +33,17 @@ proxies:
   udp: true
   type: hysteria2
   password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: vk.com
+  sni: t.me
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 05 - xiaoyu
+  server: 168.107.51.32
+  port: 20045
+  udp: true
+  type: trojan
+  password: 463f7453753f4d47
+  sni: ikr200.zxom.eu.org
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 06 - xiaoyu
   server: 152.69.226.63
   port: 25555
   udp: true
@@ -45,23 +52,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇰🇷 韩国 (South Korea) 06 - xiaoyu
-  server: 168.107.51.32
-  port: 20045
-  udp: true
-  type: trojan
-  password: 463f7453753f4d47
-  sni: ikr200.zxom.eu.org
-  skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 07 - xiaoyu
-  server: 150-230-252-217.liao.kdns.fr
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 9cfc9458e48c028ec03ff86ebc71c744
-  sni: 127.0.0.1
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08 - xiaoyu
   server: 154.90.62.70
   port: 56127
   udp: true
@@ -69,13 +60,27 @@ proxies:
   password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
   sni: 154.90.62.70
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09 - xiaoyu
-  server: 211.178.105.134
-  port: 6123
+- name: 🇰🇷 韩国 (South Korea) 08 - xiaoyu
+  server: dddz-4-z.473221.xyz
+  port: 43118
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
+  type: vless
+  uuid: 5807f1c4-b50e-4ec0-8d01-274045da0da5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: p0crO-ZNRjb07T_GGy9JdkXTjei3-D9f6s2ZzCo2gx8
+    short-id: 1a70fe8d4b05
+  servername: v1-dy.ixigua.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 09 - xiaoyu
+  server: 150-230-252-217.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 9cfc9458e48c028ec03ff86ebc71c744
+  sni: 127.0.0.1
+  skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 10 - xiaoyu
   server: 43.108.109.112
   port: 443
@@ -88,19 +93,6 @@ proxies:
     public-key: vrFq4-k-eiTSyRF3T3e7Fqmlv4XSKmByKYsw55zeX3w
     short-id: b79a86e2b1a586a0
   servername: www.samsung.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 11 - xiaoyu
-  server: 47.80.19.173
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 319d5ffb-57e8-4bbd-ac0c-5d55d0c253de
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DfFU5OG93GxB1x25Dl2BTkxKsBTFF4Su4PXYPbYvmms
-    short-id: 3c4041d3
-  servername: gateway.icloud.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -117,7 +109,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 09 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 10 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 11 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,6 +124,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 09 - xiaoyu
   - 🇰🇷 韩国 (South Korea) 10 - xiaoyu
-  - 🇰🇷 韩国 (South Korea) 11 - xiaoyu
 rules:
 - MATCH,PROXIES

@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇽 墨西哥 (Mexico) 01 - xiaoyu
-  server: 40.233.1.77
-  port: 61503
+- name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaoyu
+  server: 03e488t.es12.h1clayd.shop
+  port: 443
   udp: true
   type: vless
-  uuid: 04bcfbb8-06d1-4922-ad5a-54ab28b1afda
+  uuid: c5470a56-1b9b-451c-b075-02c82ee4aa6c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: U7t4RFE9MSMtC-o1DoJ8pYzKMfgVpTg6ZhTTknBrVkU
-    short-id: 1f2519bb96e5589c
-  servername: www.cloudflare.com
+    public-key: F-QRCTOgAul242ISSobCpwO8G6JGN0qeIdJdv60HIRo
+    short-id: bd35558b17a4930b
+  servername: 03e488t.es12.h1clayd.shop
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇽 墨西哥 (Mexico) 01 - xiaoyu
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇽 墨西哥 (Mexico) 01 - xiaoyu
+  - 🇦🇲 亚美尼亚 (Armenia) 01 - xiaoyu
 rules:
 - MATCH,PROXIES
