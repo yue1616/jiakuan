@@ -4,14 +4,45 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  server: 49.254.204.133
-  port: 1774
+- name: 🇩🇪 德国 (Germany) 01 (家宽) - xiaoyu
+  server: 172.64.88.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: afa524de-2b93-4be9-b846-6bc88d8a2ce1
+  tls: true
+  servername: 1v5Vp5jsQ611A5dsm.PAges.dEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/fbo164EXEqNcjQ9WdWcK?ed=2560
+    headers:
+      Host: 1v5Vp5jsQ611A5dsm.PAges.dEV
+- name: 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaoyu
+  server: 18.197.131.255
+  port: 443
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
+  server: a54ge.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: docs.microsoft.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
+  server: 5641sdds.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 0324fbc29561
+  sni: images.ctfassets.net
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
   server: 60.248.219.78
   port: 443
   udp: true
@@ -25,38 +56,14 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
-  server: ibsdsf.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 2902c46c8493
-  sni: docs.microsoft.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
-  server: 5641sdds.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: images.ctfassets.net
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
-  server: rtifgjdr.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 2902c46c8493
-  sni: docs.microsoft.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaoyu
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
 - name: AUTO
@@ -64,9 +71,9 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽) - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽) - xiaoyu
+  - 🇩🇪 德国 (Germany) 01 (家宽) - xiaoyu
+  - 🇩🇪 德国 (Germany) 02 (移动家宽) - xiaoyu
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽) - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 04 (家宽) - xiaoyu
   - 🇹🇼 中国台湾 (Taiwan) 05 (家宽) - xiaoyu
 rules:
