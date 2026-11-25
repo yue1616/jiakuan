@@ -5,6 +5,48 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01 - xiaoyu
+  server: 109.248.148.138
+  port: 11468
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 263bc9e3c41ea70e1d4d2e89c8fa837a
+- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu
+  server: 185.135.86.175
+  port: 9034
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: Yg4MbdXFQ9HFFVY6
+- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu
+  server: 185.135.86.175
+  port: 9017
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
+  server: 185.135.86.175
+  port: 9094
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
+- name: 🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu
+  server: 185.135.86.175
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu
+  server: 185.135.86.175
+  port: 9007
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: kSPmvwdFzGMMW5pY
+- name: 🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu
   server: 195.123.213.28
   port: 443
   udp: true
@@ -17,27 +59,13 @@ proxies:
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu
-  server: 185.135.86.175
-  port: 9094
+- name: 🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu
+  server: 109.248.148.140
+  port: 11470
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
-- name: 🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
-  server: 185.135.86.175
-  port: 9007
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: kSPmvwdFzGMMW5pY
+  cipher: aes-128-gcm
+  password: 37f61556b774c79cb72c2f176dba794b
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +75,10 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +88,9 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 03 - xiaoyu
   - 🇱🇻 拉脱维亚 (Latvia) 04 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 05 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 06 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 07 - xiaoyu
+  - 🇱🇻 拉脱维亚 (Latvia) 08 - xiaoyu
 rules:
 - MATCH,PROXIES

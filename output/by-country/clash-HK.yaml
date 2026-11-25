@@ -5,28 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 - xiaoyu
-  server: 213.176.92.148
-  port: 40647
+  server: zfd-hkv2.kunlun01dns.com
+  port: 16113
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02 - xiaoyu
-  server: 27.124.5.86
-  port: 8388
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: j4DddfVh3zON1s3Wfbmdn2WWhLCWAaOJyKqdeKvxh4A=
-- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
-  server: 47.242.93.89
-  port: 12012
-  udp: true
-  type: trojan
-  password: '12012'
-  sni: ali-hk.b-gfw.cfd
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -36,37 +22,71 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
-  server: 116.213.43.43
-  port: 11103
-  udp: true
-  type: vless
-  uuid: bb836d81-d0c5-4f01-a584-806cdf65e36a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 5NNdXPMTBLP-xeDKFwcG-j6u-c4DhXIfnlHMqMJZ4n4
-    short-id: 9564e1a7a1cf8b3a
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+- name: 🇭🇰 中国香港 (Hong Kong) 03 - xiaoyu
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: t.me
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04 - xiaoyu
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.89
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05 - xiaoyu
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2рҹүҹү
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06 - xiaoyu
+  server: vpn-hk-004.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-hk-004.fastervpn.world
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07 - xiaoyu
+  server: 47.86.90.31
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 234a8041-2b4d-44a3-a8d8-523cbfd58dc4
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: bywxdhirqkjj8xaz.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: bywxdhirqkjj8xaz.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
-  server: 2.26.204.46
+  server: 23.141.172.229
+  port: 50541
+  udp: true
+  type: hysteria2
+  password: ePPsH1bMFD
+  sni: is1-ssl.mzstatic.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
+  server: 213.176.92.148
+  port: 40647
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
+  server: leviko-hk4530.shopingggg.ir
   port: 31001
   udp: true
   type: vless
@@ -77,92 +97,6 @@ proxies:
     public-key: lzpIiMqHXas_qayw-HvrySb78FNkVroBOqniwqPXPzY
     short-id: 39793bc4708abbbb
   servername: mensura.cdn-apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
-  server: 151.158.0.83
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  tls: true
-  servername: senflarelink-node-6b9.pages.dev
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /flow=
-    headers:
-      Host: senflarelink-node-6b9.pages.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
-  server: 8.210.92.38
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4fc9dc3d-0d57-49e7-9bc0-e323165241bf
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vhu6gifBQ8-hRzW1gqKFkEXDlQbf6Ex8kKj1FcxhmzA
-    short-id: d78318845237d9a9
-  servername: www.ebay.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
-  server: 206.237.18.145
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  tls: true
-  servername: senflarelink-node-m3bfbn.pages.dev
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /flow=
-    headers:
-      Host: senflarelink-node-m3bfbn.pages.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 13 - xiaoyu
-  server: 154.40.61.186
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b69cf773-da16-486e-afce-a45b94f998b3
-  tls: true
-  servername: senflarelink-node-wj1gsa.pages.dev
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /flow=fp=chrome
-    headers:
-      Host: senflarelink-node-wj1gsa.pages.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 14 - xiaoyu
-  server: 23.141.172.229
-  port: 50541
-  udp: true
-  type: hysteria2
-  password: ePPsH1bMFD
-  sni: is1-ssl.mzstatic.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 15 - xiaoyu
-  server: 116.213.43.43
-  port: 11106
-  udp: true
-  type: vless
-  uuid: 2e7bd251-52be-4ffa-b79e-108e1fe07185
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -13uTSuqk44pCU0x6yvldaskzyRIlO2ihmDvM0FsBns
-    short-id: da12e31124830d42
-  servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -179,11 +113,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -199,10 +128,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 08 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 09 - xiaoyu
   - 🇭🇰 中国香港 (Hong Kong) 10 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 11 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 12 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 13 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 14 - xiaoyu
-  - 🇭🇰 中国香港 (Hong Kong) 15 - xiaoyu
 rules:
 - MATCH,PROXIES

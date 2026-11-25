@@ -4,32 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaoyu",
-      "server": "147.45.221.225",
-      "server_port": 443,
-      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
-      "tls": {
-        "enabled": true,
-        "server_name": "nl.lucheeebezlimitnoekino.stream",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/media/ws/"
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu",
-      "server": "130.49.189.158",
-      "server_port": 43558,
-      "method": "chacha20-ietf-poly1305",
-      "password": "LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog="
+      "tag": "🇷🇺 俄罗斯 (Russia) 01 - xiaoyu",
+      "server": "194.87.69.12",
+      "server_port": 18443,
+      "method": "aes-256-gcm",
+      "password": "5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe"
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu",
       "server": "136.148.83.69",
       "server_port": 443,
       "uuid": "7dff1be7-b930-0001-a8ad-dc7850168215",
@@ -45,14 +29,38 @@
     },
     {
       "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
+      "server": "31.58.191.52",
+      "server_port": 3099,
+      "uuid": "cdfc923e-8d34-4b44-ac72-ab41ec560ba8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vimeo.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R6XO56Bp8-HW5dW3oOu5WC-bYVBD9ed8KR_mx6oU6Ew",
+          "short_id": "5701ece7005006b8"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 04 - xiaoyu",
-      "server": "201.24.116.192",
+      "server": "201.51.12.98",
       "server_port": 443,
       "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
         "enabled": true,
         "server_name": "vps3.nemnogogo.com",
         "insecure": false,
+        "alpn": [
+          "h2"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
@@ -84,6 +92,22 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06 - xiaoyu",
+      "server": "147.45.221.225",
+      "server_port": 443,
+      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
+      "tls": {
+        "enabled": true,
+        "server_name": "nl.lucheeebezlimitnoekino.stream",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/media/ws/"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -92,7 +116,8 @@
         "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 04 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 06 - xiaoyu"
       ]
     },
     {
@@ -103,7 +128,8 @@
         "🇷🇺 俄罗斯 (Russia) 02 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 03 - xiaoyu",
         "🇷🇺 俄罗斯 (Russia) 04 - xiaoyu",
-        "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu"
+        "🇷🇺 俄罗斯 (Russia) 05 - xiaoyu",
+        "🇷🇺 俄罗斯 (Russia) 06 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

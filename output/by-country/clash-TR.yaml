@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
-  server: tr.subscriptionservice.ir
-  port: 2089
+  server: 38.180.104.37
+  port: 19084
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: T199MCnogZBKi0QJdcSgUnoL3U9wl7t1
+  cipher: aes-128-gcm
+  password: ff4d354078394558933d699be149ad69
 - name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   server: 143.246.136.128
   port: 50738
@@ -21,21 +21,6 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
-  server: 172.64.155.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: 14eccb4f-ca88-4732-b191-d8daacf63448
-  tls: true
-  servername: sinavm3.soft10.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
-    headers:
-      Host: sinavm3.soft10.ir
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,7 +28,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,6 +35,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
   - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
-  - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
 rules:
 - MATCH,PROXIES
