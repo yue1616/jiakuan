@@ -25,16 +25,16 @@ proxies:
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
-  server: 138.199.55.230
-  port: 1270
+  server: 5.178.109.174
+  port: 14430
   udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   server: 62.93.166.184
   port: 1270
@@ -47,25 +47,15 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
-  server: 5.178.109.174
-  port: 14430
+  server: 138.199.55.230
+  port: 1270
   udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
-  server: 92.63.189.39
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 7aa77858-f235-0003-9434-7ab060848b17
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
   tls: true
-  servername: avelon.onl
+  servername: xmfhlpy.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -77,7 +67,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -88,6 +77,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
-  - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

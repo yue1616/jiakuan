@@ -12,34 +12,106 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇬🇧 英国 (United Kingdom) 02 - xiaoyu
-  server: 142.202.51.22
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇬🇧 英国 (United Kingdom) 03 - xiaoyu
   server: 158.173.24.73
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 04 - xiaoyu
-  server: 38.114.120.221
+- name: 🇬🇧 英国 (United Kingdom) 03 - xiaoyu
+  server: 142.202.51.22
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 英国 (United Kingdom) 04 - xiaoyu
+  server: 94.156.250.148
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
 - name: 🇬🇧 英国 (United Kingdom) 05 - xiaoyu
+  server: 141.98.101.179
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 06 - xiaoyu
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 07 - xiaoyu
+  server: 141.98.101.178
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 08 - xiaoyu
   server: 66.163.117.141
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: n87cM0Lv7Y3T
-- name: 🇬🇧 英国 (United Kingdom) 06 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 09 - xiaoyu
+  server: 91.208.92.90
+  port: 15343
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: cbfd76e13c155f17759032c4e02805c2
+- name: 🇬🇧 英国 (United Kingdom) 10 - xiaoyu
+  server: 141.98.101.182
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
+  server: 149.7.16.228
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
+  server: 38.114.120.221
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 英国 (United Kingdom) 13 - xiaoyu
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
+  server: 128.254.186.190
+  port: 13337
+  udp: true
+  type: hysteria2
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  sni: mother-earth.fyi
+  skip-cert-verify: true
+- name: 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
   server: 136.176.68.34
   port: 443
   udp: true
@@ -52,18 +124,14 @@ proxies:
     short-id: a6040129ad7f4b74
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 07 - xiaoyu
-  server: 149.7.16.228
-  port: 1270
+- name: 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
+  server: 146.70.61.37
+  port: 8080
   udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 08 - xiaoyu
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 17 - xiaoyu
   server: 142.202.51.42
   port: 1270
   udp: true
@@ -74,42 +142,22 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 09 - xiaoyu
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 10 - xiaoyu
+- name: 🇬🇧 英国 (United Kingdom) 18 - xiaoyu
   server: 98.98.142.161
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 11 - xiaoyu
-  server: pro.athforce.ir
-  port: 11199
+- name: 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
+  server: 98.98.207.163
+  port: 8080
   udp: true
   type: ss
-  cipher: aes-128-gcm
-  password: 30hPx6B1UCb9K4eTjq1LR2viW-4V1C2r
-- name: 🇬🇧 英国 (United Kingdom) 12 - xiaoyu
-  server: 138.124.125.193
-  port: 10444
-  udp: true
-  type: vless
-  uuid: e57ce64d-5a1a-4a90-96df-9e1bd3ad26e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: ads.x5.ru
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 13 - xiaoyu
-  server: uk1.connectsuite.org
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
+  server: 51.38.71.147
   port: 443
   udp: true
   type: vless
@@ -117,39 +165,22 @@ proxies:
   tls: true
   servername: uk1.connectsuite.org
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /cdn-cgi/ws
-- name: 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
-  server: 46.250.240.80
-  port: 2053
-  udp: true
-  type: vless
-  uuid: f7fa5a16-1279-46ba-ac18-001b41884080
-  tls: true
-  reality-opts:
-    public-key: nrG0dLD2wazG9wHwqCDb7sF6UNRophzBmCX3hDxuqAE
-    short-id: 3611e663b53177f2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vless
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  network: ws
-  ws-opts:
-    path: /vless/
     headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
-  server: 94.156.250.148
-  port: 7001
+      Host: uk1.connectsuite.org
+- name: 🇬🇧 英国 (United Kingdom) 21 - xiaoyu
+  server: 51.38.71.147
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: RexnBgU7EV5ADxG
+  type: vless
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+  tls: true
+  servername: node-uk.connectsuite.org
+  skip-cert-verify: true
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -171,6 +202,11 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 17 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 18 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 21 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -192,5 +228,10 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 14 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 15 - xiaoyu
   - 🇬🇧 英国 (United Kingdom) 16 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 17 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 18 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 19 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 20 - xiaoyu
+  - 🇬🇧 英国 (United Kingdom) 21 - xiaoyu
 rules:
 - MATCH,PROXIES

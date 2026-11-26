@@ -32,16 +32,17 @@
       }
     },
     {
-      "type": "vmess",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
-      "server": "138.199.55.230",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
       }
     },
     {
@@ -58,29 +59,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06 - xiaoyu",
-      "server": "92.63.189.39",
-      "server_port": 8443,
-      "uuid": "7aa77858-f235-0003-9434-7ab060848b17",
-      "flow": "xtls-rprx-vision",
+      "server": "138.199.55.230",
+      "server_port": 1270,
+      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "avelon.onl",
+        "server_name": "xmfhlpy.com",
         "insecure": false
       }
     },
@@ -93,8 +80,7 @@
         "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu"
       ]
     },
     {
@@ -105,8 +91,7 @@
         "🇸🇪 瑞典 (Sweden) 02 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 03 - xiaoyu",
         "🇸🇪 瑞典 (Sweden) 04 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu",
-        "🇸🇪 瑞典 (Sweden) 06 - xiaoyu"
+        "🇸🇪 瑞典 (Sweden) 05 - xiaoyu"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
