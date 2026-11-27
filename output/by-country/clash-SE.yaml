@@ -23,17 +23,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
-  server: 62.93.166.184
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -46,7 +35,33 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
+  server: 62.93.166.184
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
+  server: 13.51.184.77
+  port: 8084
+  udp: true
+  type: vless
+  uuid: ba27cf53-6904-4f7e-924c-fb820aaf631a
+  tls: true
+  servername: 13.51.184.77
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /xk6ro
+    headers:
+      Host: /?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -67,6 +82,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,5 +93,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   - 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
 rules:
 - MATCH,PROXIES

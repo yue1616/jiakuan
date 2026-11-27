@@ -1,0 +1,55 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu",
+      "server": "v2new.nimbaha9.ir",
+      "server_port": 8080,
+      "uuid": "f279c19a-b324-40cf-af57-049f9b1b68f2",
+      "transport": {
+        "type": "ws",
+        "path": "/XDS45",
+        "headers": {
+          "Host": "v2new.nimbaha9.ir"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaoyu",
+      "server": "195.133.135.238",
+      "server_port": 10086,
+      "uuid": "b831381d-6324-4d53-ad4f-8cda48b30811",
+      "security": "auto"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu",
+        "🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaoyu"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽) - xiaoyu",
+        "🇸🇬 新加坡 (Singapore) 02 (家宽) - xiaoyu"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

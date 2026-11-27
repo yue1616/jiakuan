@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
+  server: tr.subscriptionservice.ir
+  port: 2089
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: T199MCnogZBKi0QJdcSgUnoL3U9wl7t1
+- name: 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
   server: 143.246.136.128
   port: 50738
   udp: true
@@ -14,17 +21,35 @@ proxies:
   servername: turkey-ip1.mmdaqaorg.xyz
   skip-cert-verify: false
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
+  server: 104.21.44.113
+  port: 443
+  udp: true
+  type: vless
+  uuid: 963A4918-A630-29DA-A873-093CDF8AD784
+  tls: true
+  servername: still-bar-5702.vpnetwork3567.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: still-bar-5702.vpnetwork3567.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 02 - xiaoyu
+  - 🇹🇷 土耳其 (Turkey) 03 - xiaoyu
 rules:
 - MATCH,PROXIES
