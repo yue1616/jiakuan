@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇪 爱尔兰 (Ireland) 01 - xiaoyu
-  server: 146.70.90.196
-  port: 17454
+  server: 146.70.90.195
+  port: 17453
   udp: true
   type: ss
   cipher: aes-128-gcm

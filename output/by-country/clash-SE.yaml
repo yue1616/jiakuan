@@ -23,19 +23,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaoyu
-  server: 138.124.86.230
-  port: 48115
-  udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
   server: 62.93.166.184
   port: 1270
   udp: true
@@ -46,22 +33,20 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
-  server: 13.51.184.77
-  port: 8084
+- name: 🇸🇪 瑞典 (Sweden) 04 - xiaoyu
+  server: 138.124.86.230
+  port: 48115
   udp: true
   type: vless
-  uuid: ba27cf53-6904-4f7e-924c-fb820aaf631a
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
   tls: true
-  servername: 13.51.184.77
+  servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
   client-fingerprint: chrome
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /xk6ro
-    headers:
-      Host: /?Telegram---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24---@iranping24/
-- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 05 - xiaoyu
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -72,6 +57,18 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaoyu
+  server: 150.241.87.52
+  port: 443
+  udp: true
+  type: vless
+  uuid: ecc0e60a-f2cc-4266-8353-b228df89730a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GBO_paFyK9FihgPMH8r_vHa4IKMkSGfvAQ2fhPK_1H4
+  servername: pl.galacticworld.online
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

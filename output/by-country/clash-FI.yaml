@@ -12,73 +12,17 @@ proxies:
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
   sni: 94.183.164.119
   skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
-  server: mail1.besttotaldns.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: mail1.besttotaldns.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
-  server: 2.27.203.38
-  port: 443
-  udp: true
-  type: vless
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Xuy5y3WGJjkxyUtkhiY87dwndv4fuD45gO64TWnlThI
-    short-id: fd0cc2b3ac52deb8
-  servername: www.google.com
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
-  server: 31.76.77.231
-  port: 443
-  udp: true
-  type: vless
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PMtmgfkxpREXi51S_EUUi3KbYauQLjGD6c_llKRk8H4
-    short-id: cc85fc7134024405
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
-  server: 193.188.21.253
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 02 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 03 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 04 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇫🇮 芬兰 (Finland) 01 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 02 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 03 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 04 - xiaoyu
-  - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
 rules:
 - MATCH,PROXIES
