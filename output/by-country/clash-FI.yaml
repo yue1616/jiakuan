@@ -5,25 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaoyu
-  server: 65.109.171.194
+  server: 31.76.21.252
   port: 443
   udp: true
   type: vless
-  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
   flow: xtls-rprx-vision
   tls: true
-  servername: mail1.besttotaldns.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: hkbj7k2VDqVjrwQLXhoWIgjUwGOKFJ9Y1gdCv2YGQik
+    short-id: 190004e1840538bf
+  servername: lesson5.schoolpizorbz.xyz
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaoyu
-  server: 94.183.164.119
-  port: 24433
-  udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: 94.183.164.119
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
   server: 2.27.122.255
   port: 443
   udp: true
@@ -36,6 +30,38 @@ proxies:
     short-id: d52d3ecf49447c2a
   servername: sun9-37.userapi.com
   client-fingerprint: qq
+- name: 🇫🇮 芬兰 (Finland) 03 - xiaoyu
+  server: 65.109.171.194
+  port: 443
+  udp: true
+  type: vless
+  uuid: da14e323-6af7-406f-a5c2-1eb7975ada8b
+  flow: xtls-rprx-vision
+  tls: true
+  servername: mail1.besttotaldns.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+  server: 31.76.8.195
+  port: 443
+  udp: true
+  type: vless
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pFmgbfd2eUSmge-8f0dF7Yjo8OFaZWuZ3UWC7EXjwmg
+    short-id: ae3cdc4eca7374a8
+  servername: lesson12.schoolpizorbz.xyz
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaoyu
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +70,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 03 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +80,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 02 - xiaoyu
   - 🇫🇮 芬兰 (Finland) 03 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 04 - xiaoyu
+  - 🇫🇮 芬兰 (Finland) 05 - xiaoyu
 rules:
 - MATCH,PROXIES

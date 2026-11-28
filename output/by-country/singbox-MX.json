@@ -6,10 +6,10 @@
     {
       "type": "shadowsocks",
       "tag": "🇲🇽 墨西哥 (Mexico) 01 - xiaoyu",
-      "server": "38.60.224.141",
-      "server_port": 17184,
+      "server": "147.78.1.170",
+      "server_port": 16670,
       "method": "aes-128-gcm",
-      "password": "wvh0jbIJPYqtf8LF/QMs6QmIqSpSF2Ed"
+      "password": "x4The06KGvUxCwzGHfyc061zlpsUXtvg"
     },
     {
       "type": "selector",

@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇽 墨西哥 (Mexico) 01 - xiaoyu
-  server: 38.60.224.141
-  port: 17184
+  server: 147.78.1.170
+  port: 16670
   udp: true
   type: ss
   cipher: aes-128-gcm
-  password: wvh0jbIJPYqtf8LF/QMs6QmIqSpSF2Ed
+  password: x4The06KGvUxCwzGHfyc061zlpsUXtvg
 proxy-groups:
 - name: PROXIES
   type: select
