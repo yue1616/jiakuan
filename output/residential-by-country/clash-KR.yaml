@@ -4,7 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇰🇷 韩国 (South Korea) 01 (移动家宽) - xiaoyu
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇰🇷 韩国 (South Korea) 02 (移动家宽) - xiaoyu
   server: 130.94.30.242
   port: 443
   udp: true
@@ -16,17 +23,28 @@ proxies:
     short-id: 2da72ce6
   servername: navi.bankrate.com
   client-fingerprint: chrome
+- name: 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
+  server: 211.233.33.228
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: qpowi_vip_tunnel_2026_secure
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇰🇷 韩国 (South Korea) 01 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇰🇷 韩国 (South Korea) 01 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 01 (家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 02 (移动家宽) - xiaoyu
+  - 🇰🇷 韩国 (South Korea) 03 (家宽) - xiaoyu
 rules:
 - MATCH,PROXIES
